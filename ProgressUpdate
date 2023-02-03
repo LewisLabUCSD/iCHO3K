@@ -1,0 +1,6 @@
+Thanasis:
+  - I will made a script to detect the different GPR rules between the 4 datasets, and then try to merge them to the final.
+  - I'll see how to build the pipeline for the confidence score
+  - I couldn't go anywhere with the gpruler
+  - Maybe we can use this file, or some kind of file in GitHub to plan what are we going to do, or which are the main goals?
+  - I also need to create a new branch for my changes, so to not make a mess :P 
