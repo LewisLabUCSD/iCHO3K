@@ -4,3 +4,10 @@ Thanasis:
   - I couldn't go anywhere with the gpruler
   - Maybe we can use this file, or some kind of file in GitHub to plan what are we going to do, or which are the main goals?
   - I also need to create a new branch for my changes, so to not make a mess :P 
+
+Pablo Feb-02-2023:
+  - I don't think the GPRuler tutorial is clear enough about how to run. Maybe I should take a second look at the paper.
+  - I am also familiarizing myself with GitHub branching. I saw that you created a new notebook for the GPR merging, as long as we continue to work on
+  different notebooks I don't think that overwritting code will be a problem, but it is definitely going to be important when we start working on the same notebooks.
+  - The confidence score part its gonna be the most challenging, but definitely the most interesting part.
+  - I've been working on the manual curation of some of the reactions. You can check the changes and updates on the Google Sheet file that I shared with you.
