@@ -11,3 +11,8 @@ Pablo Feb-02-2023:
   different notebooks I don't think that overwritting code will be a problem, but it is definitely going to be important when we start working on the same notebooks.
   - The confidence score part its gonna be the most challenging, but definitely the most interesting part.
   - I've been working on the manual curation of some of the reactions. You can check the changes and updates on the Google Sheet file that I shared with you.
+
+Pablo Feb-15-2023:
+  - Creation of the Google Sheet notebook. This notebook is able to access the CHO Network Reconstruction Google Sheet file, retrieve information
+  from that file and update the file.
+  
