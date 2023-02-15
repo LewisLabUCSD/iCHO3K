@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "theta-ocean-377718",
+  "private_key_id": "c42526ba7637a36d493b9e9536819ced002be84c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDgTmZzF+zO1/hT\no02r5EYuTNNUmduL4cjW7GfMjIEalRAjrgFuHydQV4WICNY6uQ0We64ooFHGjcKr\ng3qInqGfnQ58qxFGr5eZMj2iroFB/xnwbINlB9oNPZ27GyU3chLL9bB9n+3LJbrw\n0pHN2AU8zU5990WwDg4vwx6Z5a0wsQu7756GmLJz7oy2VdHDuSR6xL6CxPXf8wpD\nw0HL+cyK1dR9jK+R+h5i2uWxYqvaqTvmMPOS7hJD3906Gk/xWK5qOFxyMCgtQet9\nM/OfzHc939/yhECSZ8K7NQ1RnFNLXCjMMIUAiciVbfTuNb3fhHcKA765LFg38QrO\n+/bfkHW1AgMBAAECggEAKGRF05zv0lGW0KzcDEOXlbfU6GuqWtamPXmluXJlvz0v\nglVPwZ5PjIquK5B3z2xKXI2aD4vLHgeiEhOjiZ2TOjRkivOdMU7mbDpdWgG1mgZP\ni/lmcdeHnxHE6RAa1BCxLNRJ211ky0u4jaxFgD1RuCC6bTmNbYYibNxkks8GsHki\n9R+D6HaHF9AWmdWbLlEuZRdg9kjM/kKz38PcvrWWANWxI18q/IgT/FFDq5N3annN\nQyZbW2pCJLwWFQlJ6nzAQNzRMnjxKxXoPvGqj15dCBlRfQITazCVLmxzYiaus87Y\nBLi++Sd6U2Z+jLjraosYxjPgdfQp2qdj/1LWQP7w4wKBgQDzRDrrTi6PQiK4lvq+\nifcZBxXqk7VEywxVbnkY91/m+sknIiP5db3alotQCfYuF8NM9gbmFYRSvsr2vXRo\nmZTLliwP9Fj73Iv4Hi7dExf1xpbDsOrHxoiLfuTwhkA3flXD2jTeyBCVex0brNIp\ngVi76ftzuAEZdjdqqRW7BQjhbwKBgQDsDBo9indxxFgwiGJ7jkNFaxN3rG2aFi1B\n1/7+9orOIwrNKAkNUbzbBvjOLScpzZZyuBOcrIakDAB7LFMmLdSjVTkq8DhiKlt8\nt+I6jAjILCAhyqChwZnFZ+aE7OT6e1/r7yK2cAn5OExcBZsm4KNVqha/TMY1Da+L\n2bLKBxTBGwKBgC5Kgoe6VePO6vqDSG2vpUSu832y4+CWXt926TZWBHrYqCR5O61B\nuYH5+cKeUqlMvk5L1t47o/V29vpi7N7mssjW58WVcsVin4P0gmhxNLMBOjk81kBz\nyBH7cKdQdLHaqYleYYcvPPCk/9H/XfKl+XOwv7eygQsOUtdKG6d9+sWjAoGAGCOM\ns2prmJjJo/zuhVAhFQJENWLOuok2C5u5Gf3AaCAxRJWph1EqjQODgiIf9ShvEEA+\n0TDbe/82NWJtBmR9cE6Q0BFM0s0eGfz8B5y2cTIB/zKnhqMzxHpBmqpXKD5hqtED\nrcB7ZJ8bP/Xazfj++w2v0dRaGKbTouuaWwqqVq0CgYAEnRfKTZ6EnTCr6nGxo5Xz\nMfVRQBSIf4zg8sUI/SmeGDwaAM9kYBI8L9Q+WQpIOrJ/Lyj5enaPmATq3CWVDWev\nOLzSlgguEgkHQ45p/9oEEfbK4fpbdr+ryv4fdmFMwiYwcrvGL6gZG0HFBBD4vxly\nMmQNSQ8awkkLdrc2uPA8Aw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "account1@theta-ocean-377718.iam.gserviceaccount.com",
+  "client_id": "105940437761563926854",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/account1%40theta-ocean-377718.iam.gserviceaccount.com"
+}
