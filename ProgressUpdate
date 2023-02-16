@@ -15,4 +15,6 @@ Pablo Feb-02-2023:
 Pablo Feb-15-2023:
   - Creation of the Google Sheet notebook. This notebook is able to access the CHO Network Reconstruction Google Sheet file, retrieve information
   from that file and update the file.
+  - Working on the get_gene_info function to retrieve information from NCBI.
+ 
   
