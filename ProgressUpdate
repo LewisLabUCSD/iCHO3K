@@ -19,3 +19,7 @@ Pablo Feb-15-2023:
  
  Pablo Feb-16-2023:
   - get_gene_info function is fixed. You can try it out by yourself with different gene IDs, even from other species to see if it works correctly.
+
+Thanasis 17/02
+   - Made a new branch, the getfix, with changes in googlesheet and comparegpr. In the end it automcatically assignes the gene information to the temporary google sheet.
+   - But it only check for the first 10 genes, because it reaches a limit in the API requests. Maybe we need to get a license or somehting. 
