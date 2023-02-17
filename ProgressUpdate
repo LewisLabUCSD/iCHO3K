@@ -17,4 +17,5 @@ Pablo Feb-15-2023:
   from that file and update the file.
   - Working on the get_gene_info function to retrieve information from NCBI.
  
-  
+ Pablo Feb-16-2023:
+  - get_gene_info function is fixed. You can try it out by yourself with different gene IDs, even from other species to see if it works correctly.
