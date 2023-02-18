@@ -29,5 +29,7 @@ Pablo Feb-17-2023:
                                         - The gene_list for the loop at the end of the notebook is now obtained from the Rxns sheet of the temporary file on real time
                                         - I added an error cache and a time sleep of 5 secs to avoid reaching the Google API quota limit. Increasing the quota is not that simple.
                                         - I added another error cache to prevent the loop to overwrite data.
-                                        
-                                        
+   
+   - The idea would be now to generate that gene_list from the GPR_final column in which we would have the GPRs from the manual curation and also the computed GPRs from your function.
+   
+                                   
