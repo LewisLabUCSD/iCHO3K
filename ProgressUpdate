@@ -23,3 +23,11 @@ Pablo Feb-15-2023:
 Thanasis 17/02
    - Made a new branch, the getfix, with changes in googlesheet and comparegpr. In the end it automcatically assignes the gene information to the temporary google sheet.
    - But it only check for the first 10 genes, because it reaches a limit in the API requests. Maybe we need to get a license or somehting. 
+
+Pablo Feb-17-2023:
+   - I modified the googlesheet notebook in the new branch in order to add new features:
+                                        - The gene_list for the loop at the end of the notebook is now obtained from the Rxns sheet of the temporary file on real time
+                                        - I added an error cache and a time sleep of 5 secs to avoid reaching the Google API quota limit. Increasing the quota is not that simple.
+                                        - I added another error cache to prevent the loop to overwrite data.
+                                        
+                                        
