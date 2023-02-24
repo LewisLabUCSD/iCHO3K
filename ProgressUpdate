@@ -36,3 +36,8 @@ Pablo Feb-17-2023:
    - I kept the notebook running for a while and it retrieved information for more than a 200 genes or so... So I think that the daily quota for the API is pretty much unlimited.
    - Still working on the gene ontology function. Its in a new notebook called Gene Ontology in case you want to take a look at it.
    - Feel free to work on main or create a new branch.
+
+Than 24/2
+  - I combined the GPR_Final and GPR_Final_Thanasis to GPR_Final. See if you agree, if not you can revert the chanegs from the hisotry in google sheets.
+  - I can't seem to find the ontology for CHO, the bing chat gave me the idea of maybe we can chech if the gene sequence is the same in mouse and find 
+     the ontology from there? Of if we fill the genes with the ontologies of Human and Mouse?
