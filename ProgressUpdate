@@ -32,7 +32,7 @@ Pablo Feb-17-2023:
    
    - The idea would be now to generate that gene_list from the GPR_final column in which we would have the GPRs from the manual curation and also the computed GPRs from your function.
    
-   Pablo Feb-23-2023:
+Pablo Feb-23-2023:
    - I kept the notebook running for a while and it retrieved information for more than a 200 genes or so... So I think that the daily quota for the API is pretty much unlimited.
    - Still working on the gene ontology function. Its in a new notebook called Gene Ontology in case you want to take a look at it.
    - Feel free to work on main or create a new branch.
@@ -41,3 +41,14 @@ Than 24/2
   - I combined the GPR_Final and GPR_Final_Thanasis to GPR_Final. See if you agree, if not you can revert the chanegs from the hisotry in google sheets.
   - I can't seem to find the ontology for CHO, the bing chat gave me the idea of maybe we can chech if the gene sequence is the same in mouse and find 
      the ontology from there? Of if we fill the genes with the ontologies of Human and Mouse?
+     
+Pablo Feb-28-2023:
+  - I found a way to get the GO terms for CHO genes, though we need to find a way to modify the get_gene function to add them to the output.
+  Here is the thing:
+                    - Biomart offers a dataset with all the CHO genes Ensembl IDs and the associated GO terms.
+                    - The problem is that those CHO Ensembl IDs are from the CHOK1GS assembly whereas the Ensembl IDs that we retrieve from NIH are from the PICR assembly.
+                    - So we need to come up with a way to transform the IDs from PICR assembly to CHOK1GS assembly to get the GO terms.
+                    - One way to do that is through the use of the orthologs dataset that I generated a couple of days ago.
+                    - Fom that dataset we can map the CHOK1GS Ensembl ID from the CHO gene Entrez ID, and from that we can get the GO term.
+  - Another thing that we should add to the "Gene" sheet is the gene description attribute. Since there is no gene description for CHO genes we can get this 
+  information from the human ortholog genes. We can use the same approach as with the GO terms to achieve this.
