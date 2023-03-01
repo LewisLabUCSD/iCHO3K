@@ -1,4 +1,5 @@
 from Bio import Entrez
+import pandas as pd
 
 def get_gene_info(gene_id):
     '''
