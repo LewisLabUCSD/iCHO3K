@@ -52,3 +52,7 @@ Pablo Feb-28-2023:
                     - Fom that dataset we can map the CHOK1GS Ensembl ID from the CHO gene Entrez ID, and from that we can get the GO term.
   - Another thing that we should add to the "Gene" sheet is the gene description attribute. Since there is no gene description for CHO genes we can get this 
   information from the human ortholog genes. We can use the same approach as with the GO terms to achieve this.
+ 
+Pablo March-01-2023:
+  - I was able to update the function according to the changes that I mentioned previously and update the Google Sheet notebook aswell.
+  Take a look at it to see if you get the same output aswell.
