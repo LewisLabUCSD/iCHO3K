@@ -56,3 +56,6 @@ Pablo Feb-28-2023:
 Pablo March-01-2023:
   - I was able to update the function according to the changes that I mentioned previously and update the Google Sheet notebook aswell.
   Take a look at it to see if you get the same output aswell.
+  
+Pablo March-02-2023:
+  - Working on a metabolites sheet with information of all the metabolites in our reconstruction. For that I created the Metabolites notebook, we can then merge it to the rest of our notebooks.
