@@ -59,3 +59,6 @@ Pablo March-01-2023:
   
 Pablo March-02-2023:
   - Working on a metabolites sheet with information of all the metabolites in our reconstruction. For that I created the Metabolites notebook, we can then merge it to the rest of our notebooks.
+
+Pablo March-03-2023:
+  - Metabolites sheet created with information from the iCHO1766, iCHO2291 and Recon3D models. The sheet has been added to the Google Sheet files
