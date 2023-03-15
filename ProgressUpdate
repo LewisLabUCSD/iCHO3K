@@ -62,3 +62,6 @@ Pablo March-02-2023:
 
 Pablo March-03-2023:
   - Metabolites sheet created with information from the iCHO1766, iCHO2291 and Recon3D models. The sheet has been added to the Google Sheet files
+
+Pablo March-13-2023:
+  - created the grouped_by_formula excel file to curate the metabolites manually. So far I have curated 27 metabolites that didn't any information. I added the formula, name, KEGG, CHEBI, INCHI and SMILES.
