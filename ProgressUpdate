@@ -65,3 +65,17 @@ Pablo March-03-2023:
 
 Pablo March-13-2023:
   - created the grouped_by_formula excel file to curate the metabolites manually. So far I have curated 27 metabolites that didn't any information. I added the formula, name, KEGG, CHEBI, INCHI and SMILES.
+
+Than
+ - I am not sure why there no biomass. If you can perform an FVA for all reactions. We need to see if the metabolites that are part of the biomass reactions are being uptaken or produced by the cell. THere is a formula in cobra that does that, try asking chatGPT. Maybe one of the demand reactions or sink reactions we removed was essential for biomass? try adding the demand and sink reactions from hefzi.
+- I also saw that if you maximise the ATP demand reaction (DM_atp_c	ATP maintenance) you get flux, so the model is somewhat working. THese are the tests we want to perform later so the GEM is a good cobra model. 
+1. Leak test 1: whether the closed model could produce any exchanged metabolite from nothing
+2. Leak test 2: if something leaked when demand reactions for each metabolite in the model were added
+3. if the model produced energy from water
+4. if the model produced matter when the ATP demand was reversed
+5. if the model had flux through the h[c] demand
+6. if the model produced too much atp demand from glucose
+7. if duplicated reactions occurred
+8. if empty columns were present
+9. if demand reactions had a lb >= 0; 
+10. whether single-gene deletion ran.
