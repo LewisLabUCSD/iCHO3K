@@ -79,3 +79,6 @@ Than
 8. if empty columns were present
 9. if demand reactions had a lb >= 0; 
 10. whether single-gene deletion ran.
+
+Pablo March-20-2023:
+- Addition of 3723 new to our reconstruction from Recon3D. This reactions have an asociated GPR to them.
