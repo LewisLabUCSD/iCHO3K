@@ -74,3 +74,4 @@ def get_gene_info(gene_id):
 
     return gene_symbol, gene_name, gene_description, picr_ensembl_id, chok1gs_ensembl_id, mRNA_ncbi_id, protein_ncbi_id, go_terms
 
+1
