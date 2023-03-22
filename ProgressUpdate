@@ -81,5 +81,9 @@ Than
 10. whether single-gene deletion ran.
 
 Pablo March-20-2023:
-- Addition of 3723 new to our reconstruction from Recon3D. This reactions have an asociated GPR to them.
-- Working on the metabolites of those reactions.
+- Addition of 3723 new to our reconstruction from Recon3D. This reactions have an asociated GPR to them. This is separated in a different file called "CHO Network Reconstruction + Recon3D"
+- Working on the metabolites of those reactions. 
+
+Pablo March-22-2023:
+- All the metabolites in our reconstruction have a formula assigned to them. Some of them have an X as a formula, we will have to look at those metabolites more in close in the future.
+- GPR_fina and GPR_Thanasis has been unified into one column (GPR_final).
