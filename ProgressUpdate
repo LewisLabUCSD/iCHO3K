@@ -83,3 +83,7 @@ Than
 Pablo March-20-2023:
 - Addition of 3723 new to our reconstruction from Recon3D. This reactions have an asociated GPR to them.
 - Working on the metabolites of those reactions.
+
+Than
+ - Can you check if you have access to GUROBU or CPLEX in USCD? The free solver GLPK takes too long.. If you do you can typoe model.solver = 'cplex' or model.solver = 'gurobi'
+ - New FBA branch, with blocked reactions and dead-ends. Do you know how can we convert this to python? https://github.com/opencobra/cobratoolbox/blob/efb2c06be702aaed38349581ba73ed420251992b/src/reconstruction/modelGeneation/detectDeadEnds.m And if yes can you help in the utils.py?
