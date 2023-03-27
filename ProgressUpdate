@@ -87,3 +87,13 @@ Pablo March-20-2023:
 Pablo March-22-2023:
 - All the metabolites in our reconstruction have a formula assigned to them. Some of them have an X as a formula, we will have to look at those metabolites more in close in the future.
 - GPR_fina and GPR_Thanasis has been unified into one column (GPR_final).
+
+Than 27/03/2023:
+- We needed to add the lb and ub as floats to the model. Now it can be saved as sbml. 
+- Lets merge the two branches, FBA and MAIN, now.
+- Working from the blocked reactions 1-1 we can identify the metabolites that are duplicated.
+- Also, i did all my work with just CHO. If you want run the same script (Final CHO Model in FBA branch) for the CHO + recon, to see how many blocked reactions we have.
+-  Did you try https://support.gurobi.com/hc/en-us/articles/4534601245713-How-do-I-get-started-with-Gurobi-for-academic-users-
+  It could be nice, idk if its allowed to add the gurobi in the repo so i can use it as well
+
+
