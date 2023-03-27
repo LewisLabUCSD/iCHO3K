@@ -75,18 +75,48 @@ def get_gene_info(gene_id):
     return gene_symbol, gene_name, gene_description, picr_ensembl_id, chok1gs_ensembl_id, mRNA_ncbi_id, protein_ncbi_id, go_terms
 
 
+
+
 ##### ----- FVA ----- #####
 # Single Core
 def runMinMax_Single(model, end_rxn_index=None):
+
+    '''
+    This function runs a single reaction flux variability analysis (FVA) using linear programming optimization.
+    The purpose of this analysis is to determine the maximum and minimum flux values that each reaction in the model can achieve while still satisfying mass balance constraints.
+    
+
+    Parameters:
+    ---------------
+   input: metabolic model represented as a COBRApy Model object
+
+   optional: end_rxn_index argument specifying the index of the last reaction to analyze 
+   (default is None, meaning all reactions will be analyzed).
+
+    Returns:
+    ---------------
+    minmax: array
+    
+    minmax array with the minimum and maximum values for each reaction side-by-side. 
+
+    '''
+
+    # Import necessary libraries
     import numpy as np
     from cobra.io import load_model
+
+    # If an "end_rxn_index" is not specified, then it is set to "num_rxns", meaning that all reactions in the model will be analyzed.
     num_rxns = len(model.reactions)
     start_rxn_index = 0
     if end_rxn_index is None:
         end_rxn_index = num_rxns
+
+    # Initialize counters and arrays for storing the maximum and minimum flux values for each reaction.
     count = 0
     max_vals = np.zeros((end_rxn_index - start_rxn_index, 1))
     min_vals = np.zeros((end_rxn_index - start_rxn_index, 1))
+
+    # setting each reaction as the objective of the model the loop solves for the maximum and minimum flux values using linear programming.
     for i in range(start_rxn_index, end_rxn_index):
         model.objective = {model.reactions[i]: 1}
         sol = model.optimize('maximize')
@@ -138,7 +168,7 @@ def runMinMax_multi(model, end_rxn_index=None, num_processes=None):
     return minmax
 
 ##### ----- Dead-End metabolite Detection ----- #####
-def detect_dead_ends(S, lb, ub):
+def detect_dead_ends(S):
     import numpy as np
     
     num_metabolites, num_reactions = S.shape
