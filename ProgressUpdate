@@ -96,4 +96,5 @@ Than 27/03/2023:
 -  Did you try https://support.gurobi.com/hc/en-us/articles/4534601245713-How-do-I-get-started-with-Gurobi-for-academic-users-
   It could be nice, idk if its allowed to add the gurobi in the repo so i can use it as well
 
-
+Pablo March-28-2023:
+- Creation of recon3D branch to try to add reaction from Recon3D into our reconstruction.
