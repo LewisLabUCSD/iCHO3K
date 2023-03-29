@@ -83,7 +83,8 @@ def runMinMax_Single(model, end_rxn_index=None):
 
     '''
     This function runs a single reaction flux variability analysis (FVA) using linear programming optimization.
-    The purpose of this analysis is to determine the maximum and minimum flux values that each reaction in the model can achieve while still satisfying mass balance constraints.
+    The purpose of this analysis is to determine the maximum and minimum flux values 
+    that each reaction in the model can achieve while still satisfying mass balance constraints.
     
 
     Parameters:
