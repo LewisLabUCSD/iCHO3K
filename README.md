@@ -2,6 +2,7 @@
 
 ## Requirements
 setuptools>=65.4
+gfortran (>=4.6)
 
 ## Solver Install
 Set up the qMINOS solver. You will need the qminos file, which can be obtained for academic use from Prof. Michael Saunders at Stanford University.
