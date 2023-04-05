@@ -168,25 +168,26 @@ def runMinMax_multi(model, end_rxn_index=None, num_processes=None):
     return minmax
 
 ##### ----- Dead-End metabolite Detection ----- #####
-def detect_dead_ends(S):
+def detect_dead_ends(model):
     import numpy as np
-    
-    num_metabolites, num_reactions = S.shape
-
-    is_dead_end = np.zeros(num_metabolites, dtype=bool)
-
-    for i in range(num_metabolites):
-        if S[i, :].sum() == 0:
-            is_dead_end[i] = True
-
-    while True:
-        num_dead_ends = is_dead_end.sum()
-        for j in range(num_reactions):
-            if np.all(S[~is_dead_end, j] == 0):
-                is_dead_end = np.logical_or(is_dead_end, S[:, j] != 0)
-        if is_dead_end.sum() == num_dead_ends:
-            break
-
-    return is_dead_end
+    from cobra.util import create_stoichiometric_matrix
+    for rxn_exchange in model.exchanges:
+        rxn_exchange.bounds = (-1000, 1000)
+    S = create_stoichiometric_matrix(model, array_type='dense')
+    lb = [i.lower_bound for i in model.reactions]
+    ub = [i.upper_bound for i in model.reactions]
+    ltz = [x < 0 for x in lb]
+    gtz = [x > 0 for x in ub]
+    S = np.hstack((S[:, gtz], -S[:, ltz]))
+    abssum = np.sum(np.abs(S), axis=1)
+    sumabs = np.abs(np.sum(S, axis=1))
+    onlyConsOrProd = sumabs == abssum
+    SPres = S != 0
+    onlyOneReac = np.sum(SPres, axis=1) == 1
+    ExchangedMets = np.zeros((S.shape[0], 1), dtype=bool)
+    print(len(onlyConsOrProd), len(onlyOneReac), len(ExchangedMets) )
+    dead_met = ((onlyConsOrProd | onlyOneReac) & ~ExchangedMets)[1]
+    print(len(dead_met))
+    return dead_met
 
 
