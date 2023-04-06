@@ -168,6 +168,7 @@ def runMinMax_multi(model, end_rxn_index=None, num_processes=None):
     return minmax
 
 ##### ----- Dead-End metabolite Detection ----- #####
+# It is the same function as in COBRA matlab toolbox
 def detect_dead_ends(model):
     import numpy as np
     from cobra.util import create_stoichiometric_matrix
