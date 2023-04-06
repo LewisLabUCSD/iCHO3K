@@ -185,9 +185,7 @@ def detect_dead_ends(model):
     SPres = S != 0
     onlyOneReac = np.sum(SPres, axis=1) == 1
     ExchangedMets = np.zeros((S.shape[0], 1), dtype=bool)
-    print(len(onlyConsOrProd), len(onlyOneReac), len(ExchangedMets) )
     dead_met = ((onlyConsOrProd | onlyOneReac) & ~ExchangedMets)[1]
-    print(len(dead_met))
     return dead_met
 
 
