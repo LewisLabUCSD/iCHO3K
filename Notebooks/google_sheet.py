@@ -64,19 +64,17 @@ class GoogleSheet:
         df = pd.DataFrame(data[1:], columns=data[0])
         return df
 
-    def update_google_sheet(self, sheet_name, df):
-        '''
-        Function to update Google Sheet with a DataFrame
-        '''
 
-        # Convert the DataFrame to a list of lists
+    def update_google_sheet(self, sheet_name, df):
         data = [df.columns.tolist()] + df.values.tolist()
 
-        # Calculate the range based on the DataFrame's shape
-        num_rows = df.shape[0] + 1 # +1 to account for the header row
+        num_rows = df.shape[0] + 1
         num_columns = df.shape[1]
         last_column = get_column_letter(num_columns)
         sheet_range = f'{sheet_name}!A1:{last_column}{num_rows}'
+
+        # Get the current row count of the Google Sheet
+        current_row_count = self.get_row_count(sheet_name)
 
         # Clear the specified range
         self.sheets_api.spreadsheets().values().clear(
@@ -95,3 +93,57 @@ class GoogleSheet:
             valueInputOption='RAW',
             body=body).execute()
 
+        # Delete extra rows from the Google Sheet if needed
+        if num_rows < current_row_count:
+            self.delete_extra_rows(sheet_name, num_rows, current_row_count)
+
+
+    def get_row_count(self, sheet_name):
+        sheet_metadata = self.sheets_api.spreadsheets().get(spreadsheetId=self.sheet_id).execute()
+        sheets = sheet_metadata.get('sheets', '')
+        sheet = None
+
+        for s in sheets:
+            if s['properties']['title'] == sheet_name:
+                sheet = s
+                break
+
+        if sheet is None:
+            raise Exception(f"Sheet '{sheet_name}' not found")
+
+        row_count = sheet['properties']['gridProperties']['rowCount']
+        return row_count
+
+    def delete_extra_rows(self, sheet_name, start_row, end_row):
+        sheet_id = None
+        sheet_metadata = self.sheets_api.spreadsheets().get(spreadsheetId=self.sheet_id).execute()
+        sheets = sheet_metadata.get('sheets', '')
+
+        for s in sheets:
+            if s['properties']['title'] == sheet_name:
+                sheet_id = s['properties']['sheetId']
+                break
+
+        if sheet_id is None:
+            raise Exception(f"Sheet '{sheet_name}' not found")
+
+        delete_range = {
+            "sheetId": sheet_id,
+            "dimension": "ROWS",
+            "startIndex": start_row,
+            "endIndex": end_row
+        }
+
+        body = {
+            "requests": [
+                {
+                    "deleteDimension": {
+                        "range": delete_range
+                    }
+                }
+            ]
+        }
+
+        self.sheets_api.spreadsheets().batchUpdate(
+            spreadsheetId=self.sheet_id,
+            body=body).execute()
