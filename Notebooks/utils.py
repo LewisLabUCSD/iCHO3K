@@ -126,7 +126,7 @@ def runMinMax_Single(model, end_rxn_index=None):
         min_vals[count, 0] = sol.fluxes[i]
         count += 1
         if count % 500 == 0:
-            print(count)
+            print(f'{count} reactions analized')
     minmax = np.concatenate((min_vals, max_vals), axis=1)
     return minmax
 
