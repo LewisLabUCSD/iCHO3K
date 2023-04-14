@@ -31,8 +31,6 @@
 3DHCDCAS Min:  0.0 Max:  0.0
 3DHDCAS Min:  0.0 Max:  0.0
 3DHLCAS Min:  0.0 Max:  0.0
-3HAD141n7m Min:  0.0 Max:  0.0
-3HAD161n9m Min:  0.0 Max:  0.0
 3HAD183n3p Min:  0.0 Max:  0.0
 3HAD226n3m Min:  0.0 Max:  0.0
 3HADICOAx Min:  0.0 Max:  0.0
@@ -40,8 +38,6 @@
 3HAPD120m Min:  0.0 Max:  0.0
 3HAPD140m Min:  0.0 Max:  0.0
 3HBCOARtc Min:  0.0 Max:  0.0
-3HDH141n7m Min:  0.0 Max:  0.0
-3HDH161n9m Min:  0.0 Max:  0.0
 3HDH183n3p Min:  0.0 Max:  0.0
 3HDH226n3m Min:  0.0 Max:  0.0
 3HIBUP_SGLUhep Min:  0.0 Max:  0.0
@@ -105,7 +101,6 @@
 A4GNT2g Min:  0.0 Max:  0.0
 ABUTt2rL Min:  0.0 Max:  0.0
 ACACT141n7m Min:  0.0 Max:  0.0
-ACACT161n9m Min:  0.0 Max:  0.0
 ACACT183n3p Min:  0.0 Max:  0.0
 ACACT226n3m Min:  0.0 Max:  0.0
 ACALDtr Min:  0.0 Max:  0.0
@@ -120,8 +115,6 @@ ACMPGLUChr Min:  0.0 Max:  0.0
 ACMPShc Min:  0.0 Max:  0.0
 ACNAM9PL2 Min:  0.0 Max:  0.0
 ACOAD121n5m Min:  0.0 Max:  0.0
-ACOAD141n7m Min:  0.0 Max:  0.0
-ACOAD161n9m Min:  0.0 Max:  0.0
 ACOAD163n3p Min:  0.0 Max:  0.0
 ACOAD183n3p Min:  0.0 Max:  0.0
 ACOAD226n3m Min:  0.0 Max:  0.0
@@ -2246,11 +2239,9 @@ RE3134C Min:  0.0 Max:  0.0
 RE3134R Min:  0.0 Max:  0.0
 RE3136C Min:  0.0 Max:  0.0
 RE3139X Min:  0.0 Max:  0.0
-RE3140X Min:  0.0 Max:  0.0
 RE3141X Min:  0.0 Max:  0.0
 RE3144C Min:  0.0 Max:  0.0
 RE3144M Min:  0.0 Max:  0.0
-RE3145X Min:  0.0 Max:  0.0
 RE3147R Min:  0.0 Max:  0.0
 RE3150C Min:  0.0 Max:  0.0
 RE3150R Min:  0.0 Max:  0.0
@@ -2790,7 +2781,6 @@ UDPDOLPT_L Min:  0.0 Max:  0.0
 UDPDOLPT_U Min:  0.0 Max:  0.0
 UDPG3DOPA Min:  0.0 Max:  0.0
 UDPG4DOPA Min:  0.0 Max:  0.0
-UDPGALt2g Min:  0.0 Max:  0.0
 UDPGDC Min:  0.0 Max:  0.0
 UDPGGPGTr Min:  0.0 Max:  0.0
 UDPGLCtg Min:  0.0 Max:  0.0
