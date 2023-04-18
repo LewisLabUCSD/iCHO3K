@@ -75,7 +75,32 @@ def get_gene_info(gene_id):
     return gene_symbol, gene_name, gene_description, picr_ensembl_id, chok1gs_ensembl_id, mRNA_ncbi_id, protein_ncbi_id, go_terms
 
 
+##### ----- Identification of duplicated reactions ----- #####
 
+import cobra
+import numpy as np
+
+def duplicated_reactions(model):
+    '''
+    This functions retrieves a list of tuples containing
+    duplicated reactions from the input cobrapy model.
+
+    input: cobrapy model containing reactions and metabolites.
+    output: tuples list with duplicated reactions.
+    '''
+
+    #Create stoichiomtric matrix
+    S = cobra.util.create_stoichiometric_matrix(model, array_type='DataFrame')
+    #Correlation matrix from stoichiomtric matrix
+    cor = np.corrcoef(S.values.T)
+
+    #Extract upper triangle from the correlation matrix
+    U = np.triu(cor, k=1)
+
+    #List 's' of identical reactions
+    s = np.argwhere(U == 1)
+
+    return s
 
 ##### ----- FVA ----- #####
 # Single Core
