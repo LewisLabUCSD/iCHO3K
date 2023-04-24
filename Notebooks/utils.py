@@ -198,21 +198,46 @@ def runMinMax_multi(model, end_rxn_index=None, num_processes=None):
 def detect_dead_ends(model):
     import numpy as np
     from cobra.util import create_stoichiometric_matrix
+    
+    # Set exchange reaction bounds to allow uptake and secretion of all metabolites
     for rxn_exchange in model.exchanges:
         rxn_exchange.bounds = (-1000, 1000)
+    
+    # Create the stoichiometric matrix using the dense array type
     S = create_stoichiometric_matrix(model, array_type='dense')
+    
+    # Get the lower and upper bounds of each reaction
     lb = [i.lower_bound for i in model.reactions]
     ub = [i.upper_bound for i in model.reactions]
+    
+    # Identify reactions that are irreversible (have a lower bound < 0 and an upper bound > 0)
     ltz = [x < 0 for x in lb]
     gtz = [x > 0 for x in ub]
+    
+    # Remove columns corresponding to irreversible reactions from the stoichiometric matrix
     S = np.hstack((S[:, gtz], -S[:, ltz]))
+    
+    # Calculate the absolute sum of each row in the stoichiometric matrix
     abssum = np.sum(np.abs(S), axis=1)
+    
+    # Calculate the absolute sum of all reactants and products in each reaction
     sumabs = np.abs(np.sum(S, axis=1))
+    
+    # Identify metabolites that participate only as reactants or only as products in reactions
     onlyConsOrProd = sumabs == abssum
+    
+    # Identify metabolites that participate in only one reaction
     SPres = S != 0
     onlyOneReac = np.sum(SPres, axis=1) == 1
+    
+    # Identify metabolites that are not exchanged (i.e., not involved in any exchange reactions)
     ExchangedMets = np.zeros((S.shape[0], 1), dtype=bool)
+    
+    # Identify metabolites that are dead ends (i.e., participate only as reactants or only as products in reactions and are not exchanged)
     dead_met = ((onlyConsOrProd | onlyOneReac) & ~ExchangedMets)[1]
+    
+    # Return the list of dead end metabolites
     return dead_met
+
 
 

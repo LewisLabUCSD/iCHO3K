@@ -6,48 +6,48 @@
 1a25dhvitd3_n -- No reactions in nucleus
 2h3mv_c -- Missing the transport from cytosol to extracellular
 2hydog_c -- No reactions in cytosol
-2hydog_e
-2m3ovcoa_m
-2obut_e
-34dhpe_c
-2h34hppr_c
-hLkynr_m
-3hpcoa_c
-3hpp_c
-3hpro_LT_x
-48dhoxquin_c
-3amp_l
-3sala_m
-4abut_n
-4hdebrisoquine_c
-4mptnl_m
-4mptnl_r
-4nphsf_c
-5adtststeroneglc_c
-5adtststeroneglc_r
-5dglcn_c
-5eipenc_c
-5hoxindoa_m
-46dhoxquin_c
-7klitchol_c
-7klitchol_e
-4abutn_m
-4abut_l
-acac_x
-Rtotal_r
-sphings_r
-dhcrm_cho_r
-Rtotal_g
-sphings_g
-dhcrm_cho_g
-sphgn_g
-phcrm_hs_g
-phsphings_g
-phcrm_hs_r
-phsphings_r
-acetone_m
-acgalfucgalacgalfuc12gal14acglcgalgluside_cho_c
-acgalfucgalacgalfucgalacglcgal14acglcgalgluside_cho_c
+2hydog_e -- Because the above met is dead
+2m3ovcoa_m -- No further readctions
+2obut_e -- FIXED, Added the exhange reaction
+34dhpe_c -- FIXED, Added the exhange reactions
+2h34hppr_c -- No reactions in cytosol
+hLkynr_m -- DOes the reaction takes place in mitochondria? http://bigg.ucsd.edu/models/iCHOv1/reactions/3HKYNAKGAT
+3hpcoa_c -- the reaction takes place in cytosol, http://bigg.ucsd.edu/models/iCHOv1/reactions/r0596
+3hpp_c -- same as above
+3hpro_LT_x -- no synthesis for 3hpro_LT_x. Added Inchi and SMILE
+48dhoxquin_c -- no catabolic reactions for the metabolite
+3amp_l -- no catabolic reactions for the metabolite
+3sala_m -- This should not be dead
+4abut_n -- No reactions in nucleos, Recon3D had a demand
+4hdebrisoquine_c -- This should not be dead
+4mptnl_m -- This should not be dead
+4mptnl_r -- No catabolic reactions in ribosome
+4nphsf_c -- This should not be dead
+5adtststeroneglc_c -- This should not be dead
+5adtststeroneglc_r -- This should not be dead
+5dglcn_c -- No catabolic reactions in cytosol
+5eipenc_c -- Added the extracellular readctions, and curated the metabolite IDs
+5hoxindoa_m -- No reactions in mitochondria
+46dhoxquin_c -- No reactions in cytosol
+7klitchol_c -- There is lack of reactions, Look at http://bigg.ucsd.edu/models/Recon3D/metabolites/7klitchol_c. CUrated the metabolite IDs
+7klitchol_e -- Same as above
+4abutn_m -- Not dead
+4abut_l -- No reactions in lysosome
+acac_x -- Not dead
+Rtotal_r -- Added transport to cytosol. Need to add metabolite IDs!
+sphings_r -- Lack of reactions http://bigg.ucsd.edu/models/RECON1/metabolites/sphings_c
+dhcrm_cho_r --  Lack of reactions! http://bigg.ucsd.edu/models/universal/metabolites/dhcrm_hs
+Rtotal_g -- Added transport to cytosol. Need to add metabolite IDs!
+sphings_g -- Added transport to cytosol.
+dhcrm_cho_g --  Lack of reactions! http://bigg.ucsd.edu/models/universal/metabolites/dhcrm_hs
+sphgn_g -- same as sabove
+phcrm_hs_g -- lack of reacrtions http://bigg.ucsd.edu/models/Recon3D/metabolites/phcrm_hs_g
+phsphings_g -- lack of reactins, added met IDS
+phcrm_hs_r -- lack of reaction
+phsphings_r -- same
+acetone_m -- This should be dead
+acgalfucgalacgalfuc12gal14acglcgalgluside_cho_c -- Lets leave the glycans, i dont know what to do with them. There is a guy in my old lab, that knows them pretty well. Maybe Nathan can as for help?
+acgalfucgalacgalfucgalacglcgal14acglcgalgluside_cho_c -- Same as asbove
 acgal_g
 acgam_r
 acgbgbside_cho_c
