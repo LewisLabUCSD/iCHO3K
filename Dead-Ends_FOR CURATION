@@ -48,7 +48,7 @@ phsphings_r -- same
 acetone_m -- This should be dead
 acgalfucgalacgalfuc12gal14acglcgalgluside_cho_c -- Lets leave the glycans, i dont know what to do with them. There is a guy in my old lab, that knows them pretty well. Maybe Nathan can as for help?
 acgalfucgalacgalfucgalacglcgal14acglcgalgluside_cho_c -- Same as asbove
-acgal_g
+acgal_g -- This should not be dead
 acgam_r
 acgbgbside_cho_c
 acgbgbside_cho_g
@@ -1611,7 +1611,7 @@ xolest181_hs_l
 vacc_l
 xolest183_hs_l
 xolest204_hs_l
-xylnact__D_c
+xylnact__D_c FIXED, Added intracellular demand reaction
 pacald_m
 pac_m
 HC00900_m
