@@ -12,34 +12,52 @@ def get_gene_info(gene_id):
     handle = Entrez.efetch(db='gene', id=gene_id, retmode='xml')
     record = Entrez.read(handle)[0]
 
-    gene_name = record['Entrezgene_gene']['Gene-ref']['Gene-ref_desc']
+    try:
+        gene_name = record['Entrezgene_gene']['Gene-ref']['Gene-ref_desc']
+    except:
+        gene_name = record['Entrezgene_prot']['Prot-ref']['Prot-ref_desc']
     gene_symbol = record['Entrezgene_gene']['Gene-ref']['Gene-ref_locus']
 
     # check for different possible formats of the data
     if 'Entrezgene_comments' in record and 'Gene-commentary_comment' in record['Entrezgene_comments'][0]:
-        cho_gene_description = record['Entrezgene_comments'][0]['Gene-commentary_comment'][0]['String']
+        try:
+            cho_gene_description = record['Entrezgene_comments'][0]['Gene-commentary_comment'][0]['String']
+        except:
+            cho_gene_description = ''
     elif 'Entrezgene_summary' in record:
         cho_gene_description = record['Entrezgene_summary']
     else:
-        cho_gene_description = None
+        cho_gene_description = ''
 
     if 'Entrezgene_track-info' in record:
-        picr_ensembl_id = next((xref['Dbtag_tag']['Object-id']['Object-id_str'] for xref in record['Entrezgene_gene']['Gene-ref']['Gene-ref_db'] if xref['Dbtag_db'] == 'Ensembl'), None)
+        try:
+            picr_ensembl_id = next((xref['Dbtag_tag']['Object-id']['Object-id_str'] for xref in record['Entrezgene_gene']['Gene-ref']['Gene-ref_db'] if xref['Dbtag_db'] == 'Ensembl'), None)
+        except:
+            print(f'Gene {gene_id} does not have PICR Ensembl ID')
+            picr_ensembl_id = ''
     else:
-        picr_ensembl_id = None
+        picr_ensembl_id = ''
 
-    xrefs = record['Entrezgene_locus'][0]['Gene-commentary_products']
+    try:
+        xrefs = record['Entrezgene_locus'][0]['Gene-commentary_products']
+        
+        for xref in xrefs:
+            if xref.get('Gene-commentary_accession').startswith('NM_'):
+                mRNA_ncbi_id = xref.get('Gene-commentary_accession')
+                protein_ncbi_id = xref['Gene-commentary_products'][0].get('Gene-commentary_accession')
+                break
+            elif xref.get('Gene-commentary_accession').startswith('XM_'):
+                mRNA_ncbi_id = xref.get('Gene-commentary_accession')
+                protein_ncbi_id = xref['Gene-commentary_products'][0].get('Gene-commentary_accession')
+                break
+            else:
+                mRNA_ncbi_id = ''
+                protein_ncbi_id = ''
+    except KeyError:
+            print(f'Gene {gene_id} does not have mRNA id and protein id')
+            mRNA_ncbi_id = ''
+            protein_ncbi_id = ''
     
-    for xref in xrefs:
-        if xref.get('Gene-commentary_accession').startswith('NM_'):
-            mRNA_ncbi_id = xref.get('Gene-commentary_accession')
-            protein_ncbi_id = xref['Gene-commentary_products'][0].get('Gene-commentary_accession')
-            break
-        elif xref.get('Gene-commentary_accession').startswith('XM_'):
-            mRNA_ncbi_id = xref.get('Gene-commentary_accession')
-            protein_ncbi_id = xref['Gene-commentary_products'][0].get('Gene-commentary_accession')
-            break
-            
     df = pd.read_csv('orthologs&GO.txt')
     for i,row in df.iterrows():
         if row['CHO GeneID'] == gene_id:
@@ -47,28 +65,31 @@ def get_gene_info(gene_id):
             chok1gs_ensembl_id = row['CHO Ensembl ID']
             human_ortholog = str(row['Human GeneID']).replace('.0', '')
             
-            human_handle = Entrez.efetch(db='gene', id=human_ortholog, retmode='xml')
-            human_record = Entrez.read(human_handle)[0]
-            if 'Entrezgene_comments' in human_record and 'Gene-commentary_comment' in human_record['Entrezgene_comments'][0]:
-                human_gene_description = human_record['Entrezgene_comments'][0]['Gene-commentary_comment'][0]['String']
-            elif 'Entrezgene_summary' in human_record:
-                human_gene_description = human_record['Entrezgene_summary']
-            else:
-                human_gene_description = None
-            break
-            
+            try:
+                human_handle = Entrez.efetch(db='gene', id=human_ortholog, retmode='xml')
+                human_record = Entrez.read(human_handle)[0]
+                if 'Entrezgene_comments' in human_record and 'Gene-commentary_comment' in human_record['Entrezgene_comments'][0]:
+                    human_gene_description = human_record['Entrezgene_comments'][0]['Gene-commentary_comment'][0]['String']
+                elif 'Entrezgene_summary' in human_record:
+                    human_gene_description = human_record['Entrezgene_summary']
+                else:
+                    human_gene_description = ''
+                break
+            except (NameError, KeyError):
+                print(f'Gene {gene_id} does not have info on human ortholog description')
+                human_gene_description = ''
         else:
-            go_terms = None
-            chok1gs_ensembl_id = None
-            human_gene_description = None
+            go_terms = ''
+            chok1gs_ensembl_id = ''
+            human_gene_description = ''
     
     # Gene description
-    if cho_gene_description != None and human_gene_description == None:
+    if cho_gene_description != '' and human_gene_description == '':
         gene_description = cho_gene_description
-    elif cho_gene_description == None and human_gene_description != None:
+    elif cho_gene_description == '' and human_gene_description != '':
         gene_description = human_gene_description
     else:
-        gene_description = None
+        gene_description = ''
     
     handle.close()
 
