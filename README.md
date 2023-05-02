@@ -1,7 +1,7 @@
 # Whole Cell Network Reconstruction for CHO cells
 
 <div align="center">
-  <img src="https://www.nist.gov/sites/default/files/styles/2800_x_2800_limit/public/images/2019/08/21/fluorescence_cho1.jpg?itok=rLzay7Vu" alt="Your image description" width="400">
+  <img src="https://www.nist.gov/sites/default/files/styles/2800_x_2800_limit/public/images/2019/08/21/fluorescence_cho1.jpg?itok=rLzay7Vu" width="400">
 </div>
 
 Welcome to the **Whole Cell Network Reconstruction for CHO cells** repository! This project aims to create the most up-to-date and complete whole-cell network reconstruction for Chinese Hamster Ovary (CHO) cells. Our goal is to enable researchers and biotechnologists to better understand CHO cell biology, optimize bioprocesses, and advance the field of cell line engineering.
@@ -55,7 +55,7 @@ If you use the whole-cell network reconstruction or any associated tools in your
 ## 🤝 Contact
 
 <div align="center">
-  <img src="https://www.biopharma-reporter.com/var/wrbm_gb_food_pharma/storage/images/_aliases/wrbm_large/publications/pharmaceutical-science/biopharma-reporter.com/headlines/upstream-processing/bioprocessing-survey-report-is-the-cho-cho-train-slowing-down/7504580-1-eng-GB/Bioprocessing-survey-report-Is-the-CHO-CHO-train-slowing-down.jpg" alt="Happy reconstructing! 🧪🔬🧫">
+  <img src="https://www.biopharma-reporter.com/var/wrbm_gb_food_pharma/storage/images/_aliases/wrbm_large/publications/pharmaceutical-science/biopharma-reporter.com/headlines/upstream-processing/bioprocessing-survey-report-is-the-cho-cho-train-slowing-down/7504580-1-eng-GB/Bioprocessing-survey-report-Is-the-CHO-CHO-train-slowing-down.jpg">
 </div>
 
 
