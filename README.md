@@ -1,6 +1,5 @@
 # Whole Cell Network Reconstruction for CHO cells
 
-![CHO_Cells_Banner](https://www.nist.gov/sites/default/files/styles/2800_x_2800_limit/public/images/2019/08/21/fluorescence_cho1.jpg?itok=rLzay7Vu)
 <div align="center">
   <img src="https://www.nist.gov/sites/default/files/styles/2800_x_2800_limit/public/images/2019/08/21/fluorescence_cho1.jpg?itok=rLzay7Vu" alt="Your image description" width="400">
 </div>
@@ -55,8 +54,10 @@ If you use the whole-cell network reconstruction or any associated tools in your
 
 ## 🤝 Contact
 
+<div align="center">
+  <img src="https://www.biopharma-reporter.com/var/wrbm_gb_food_pharma/storage/images/_aliases/wrbm_large/publications/pharmaceutical-science/biopharma-reporter.com/headlines/upstream-processing/bioprocessing-survey-report-is-the-cho-cho-train-slowing-down/7504580-1-eng-GB/Bioprocessing-survey-report-Is-the-CHO-CHO-train-slowing-down.jpg" alt="Happy reconstructing! 🧪🔬🧫">
+</div>
 
-![Ending_Banner](https://www.biopharma-reporter.com/var/wrbm_gb_food_pharma/storage/images/_aliases/wrbm_large/publications/pharmaceutical-science/biopharma-reporter.com/headlines/upstream-processing/bioprocessing-survey-report-is-the-cho-cho-train-slowing-down/7504580-1-eng-GB/Bioprocessing-survey-report-Is-the-CHO-CHO-train-slowing-down.jpg)
 
 Happy reconstructing! 🧪🔬🧫
 
