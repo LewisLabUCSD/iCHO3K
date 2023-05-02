@@ -1,6 +1,6 @@
 # Whole Cell Network Reconstruction for CHO cells
 
-![CHO_Cells_Banner](banner_image_url_here)
+![CHO_Cells_Banner](https://www.nist.gov/sites/default/files/styles/2800_x_2800_limit/public/images/2019/08/21/fluorescence_cho1.jpg?itok=rLzay7Vu)
 
 Welcome to the **Whole Cell Network Reconstruction for CHO cells** repository! This project aims to create the most up-to-date and complete whole-cell network reconstruction for Chinese Hamster Ovary (CHO) cells. Our goal is to enable researchers and biotechnologists to better understand CHO cell biology, optimize bioprocesses, and advance the field of cell line engineering.
 
