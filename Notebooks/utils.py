@@ -12,10 +12,13 @@ def get_gene_info(gene_id):
     handle = Entrez.efetch(db='gene', id=gene_id, retmode='xml')
     record = Entrez.read(handle)[0]
 
+    organism = record['Entrezgene_source']['BioSource']['BioSource_org']['Org-ref']['Org-ref_taxname']
+
     try:
         gene_name = record['Entrezgene_gene']['Gene-ref']['Gene-ref_desc']
     except:
         gene_name = record['Entrezgene_prot']['Prot-ref']['Prot-ref_desc']
+
     gene_symbol = record['Entrezgene_gene']['Gene-ref']['Gene-ref_locus']
 
     # check for different possible formats of the data
@@ -93,7 +96,7 @@ def get_gene_info(gene_id):
     
     handle.close()
 
-    return gene_symbol, gene_name, gene_description, picr_ensembl_id, chok1gs_ensembl_id, mRNA_ncbi_id, protein_ncbi_id, go_terms
+    return organism, gene_symbol, gene_name, gene_description, picr_ensembl_id, chok1gs_ensembl_id, mRNA_ncbi_id, protein_ncbi_id, go_terms
 
 
 ##### ----- Identification of duplicated reactions ----- #####
