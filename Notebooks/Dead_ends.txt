@@ -45,7 +45,6 @@ oak2g_cho_c
 acg5p_m
 acg5sa_m
 alkylR1oh_x
-ahandrostan_c
 id3acald_m
 12RHPET_c
 dhcholoylcoa_r
@@ -124,7 +123,6 @@ lyxnt_c
 xylnt_c
 thrnt_c
 eryth_c
-dolglcp_U_r
 g1m8mpdol_U_r
 dolichol_L_r
 dolichol_U_r
@@ -738,8 +736,6 @@ pcholste_hs_e
 pchol2linl_hs_e
 pchol2ole_hs_e
 pchol2ste_hs_e
-xolest183_hs_e
-xolest181_hs_e
 pcholn15_hs_e
 pcholar_hs_e
 pcholn183_hs_e
@@ -854,7 +850,6 @@ HC01598_c
 HC01599_c
 HC01600_c
 HC01797_c
-lanost_x
 HC00001_c
 HC00002_c
 HC00003_c
@@ -1166,14 +1161,4 @@ tridecethe
 indpyr_c
 11dhtxb2_c
 melanin_c
-56iqcrbxlt_c
-dolglcp_L_c
-dolglcp_U_c
 ahandrostan_r
-gfser_r
-C11821_x
-xoldiolone_e
-xolest181_hs_l
-vacc_l
-xolest182_hs_l
-xolest183_hs_l
