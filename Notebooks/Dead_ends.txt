@@ -373,7 +373,6 @@ M01208_c
 M00277_c
 M00364_c
 5HPET_m
-CE6247_c
 arachd_n
 gthox_r
 M01202_c
