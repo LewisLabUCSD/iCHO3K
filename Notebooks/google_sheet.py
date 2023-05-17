@@ -6,7 +6,7 @@
 Module Name: google_sheet.py
 Author: Pablo Di Giusto
 Date Created: 2023-04-06
-Last Updated: 2023-04-06
+Last Updated: 2023-05-16
 Version: 1.0.0
 Description: This module facilitates the integration of the Google Sheets with python by generating creating a function to
 retrieve the information from a Google Sheet as a pandas dataframe and another function to update the Google Sheet from a

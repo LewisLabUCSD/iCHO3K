@@ -52,7 +52,6 @@ ga1_cho_l
 gd1b_cho_l
 gm1a_cho_l
 gm2a_cho_l
-dolmanp_r
 C07535_c
 C07535_r
 bvite_c
@@ -1044,16 +1043,5 @@ sph1p_n
 sphmyln_cho_n
 cholp_n
 thbpt_n
-HC00250_m
-f5hoxkyn_c
-slnfser_g
-steethe
-subgly_c
 34dhcinm_c
 dtdprmn_c
-tetdecaethe
-thexdd_c
-thm_m
-phom_c
-thyoxs_c
-3hadpac_x
