@@ -1,4 +1,5 @@
+numpy=1.22.0
 google-api-python-client
 openpyxl
 pyparsing
-networkx
+networkx==2.6.2
