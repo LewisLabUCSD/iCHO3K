@@ -24,7 +24,7 @@ def getPubchemCID(cmp,smiles):
         ids = filter(lambda a: a != 0, result['IdentifierList']['CID'])
         return (';'.join(str(x).replace("'",'') for x in ids))
     else:
-        return (' ')
+        return None
 
 def getEBIID(cmp):
     '''
