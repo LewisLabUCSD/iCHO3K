@@ -9,6 +9,12 @@ from urllib.error import HTTPError
 ommitSyn = ['MCULE-','SMR','MLS','AKOS','SR-','HMS','EU','OPERA','OPREA','MAYBRIDGE','ZINC','IDI']
 
 def getPubchemCID(cmp,smiles):
+    '''
+    Retrieves the PubchemID from the Pubchem database
+
+    Input: cmp: Compound Name, smiles
+    Output: pubchem ID
+    '''
     query = 'https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/smiles/'+urllib.quote(smiles.replace('/','.'))+'/cids/JSON?MaxRecords=20'
     result = requests.get(query).json()
     if('Fault' in result and cmp!=''):
@@ -20,11 +26,17 @@ def getPubchemCID(cmp,smiles):
     else:
         return (' ')
 
-def getEBIID(id):
+def getEBIID(cmp):
+    '''
+    Retrieves a list of publications regarding a compound of interest
+
+    Input: Compound Name 
+    Output: List of publications
+    '''
     import re
     full_list = []
     tmp = []
-    for item in id.split('\n'):
+    for item in cmp.split('\n'):
         try:
             val = [s for s in ommitSyn if item[:re.search(r"\d", item).start()].upper() in s]
         except:
@@ -33,7 +45,7 @@ def getEBIID(id):
         if (len(val) == 0):
             query = 'https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&query='+'"'+str(item)+'"'
             result = requests.get(query).json()
-            #print(result)
+            print(result)
             if (bool(result) and ('errCode' not in result) and len(result.keys())>1):
                 if(result['hitCount']>0):
                     for i in result['resultList']['result']:
@@ -42,12 +54,36 @@ def getEBIID(id):
     return ('\n'.join(full_list))
     
 
-def getChemblID(id):
-    full_list = []
-    query = 'https://www.ebi.ac.uk/chembl/api/data/chembl_id_lookup/search.json?q='
+def getChEMBLID(cmp):
+    '''
+    Retrieves the Chembl ID from the ChEMBL Database
+
+    Input: Compound Name
+    Output: ChEMBL ID
+    '''
+    query = 'https://www.ebi.ac.uk/chembl/api/data/chembl_id_lookup/search.json?q='+str(cmp)
+    result = requests.get(query).json()
+    
+    if result and 'chembl_id_lookups' in result:
+        chembl_id_lookups = result['chembl_id_lookups']
+        if chembl_id_lookups:
+            return chembl_id_lookups[0]['chembl_id']
+    return None
 
 
-def getChemblSmiID(smi,simil_perc):
+def getChEMBLSmiID(smi,simil_perc):
+    '''
+    This function is designed to search for molecules that are similar to a given molecule. 
+    It uses the ChEMBL API to perform this search.
+
+    Inputs
+    smi : SMILES string representing a molecule.
+    simil_perc: Similarity percentage to use for the search (number from 40-100).
+
+    Output
+    String that consists of ChEMBL IDs of the similar molecules.
+
+    '''
     ids = []
     query = 'https://www.ebi.ac.uk/chembl/api/data/similarity/'+urllib.quote(smi)+'/'+str(simil_perc)+'.json'
     result = requests.get(query).json()
@@ -60,9 +96,18 @@ def getChemblSmiID(smi,simil_perc):
     return (str('\n'.join(ids)))
 
 
-def getChemblSimilPerc(smi,treshold_simil):
-    #[mol ID,canonical smiles, similarity percentage]
-    pairs = []
+def getChEMBLSimilPerc(smi,treshold_simil):
+    '''
+    Search for molecules that are similar to a given molecule.
+
+    Inputs
+    smi : SMILES string representing a molecule.
+    treshold_simil: Similarity percentage to use for the search (number from 40-100).
+
+    Output
+    List of lists, where each inner list represents a molecule and contains: 
+    the ChEMBL ID of the molecule, its canonical SMILES string, and the percentage of similarity to the input molecule.
+    '''
 
     query= 'https://www.ebi.ac.uk/chembl/api/data/similarity/'+urllib.quote(smi)+'/'+str(treshold_simil)+'.json'
     result = requests.get(query).json()
@@ -74,19 +119,21 @@ def getChemblSimilPerc(smi,treshold_simil):
                 pairs.append([mol['molecule_chembl_id'],mol['molecule_structures']['canonical_smiles'],mol['similarity']])
     return pairs
 
-def getCIDSmiles(cid):
-    query='https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/'+urllib.quote(str(cid))+'/property/CanonicalSmiles/JSON'
+def getCIDSmilesInChI(cid):
+    '''
+    Takes a PubChem ID and returns the Canonical Smiles and InChI for that compound
+    '''
+    query='https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/'+urllib.quote(str(cid))+'/property/CanonicalSmiles,InChI/JSON'
     result = requests.get(query).json()
-    #print(result) UNCOMMENTED
-    id = result['PropertyTable']['Properties'][0]['CanonicalSMILES']
 
-    return(id)
+    smiles = result['PropertyTable']['Properties'][0]['CanonicalSMILES']
+    inchi = result['PropertyTable']['Properties'][0]['InChI']
 
+    return(smiles, inchi)
 
 def getPubChemSubstructure(smi,treshold_simil):
     #[mol ID,canonical smiles]
     substruc = []
-    #query= 'https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/fastsubstructure/smiles/'+urllib.quote(smi)+'/cids/JSON?Threshold='+str(treshold_simil)+'&MaxRecords=100'
     query= 'https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/fastsimilarity_2d/smiles/'+urllib.quote(smi)+'/cids/JSON?Threshold='+str(treshold_simil)+'&MaxRecords=100'
     result = requests.get(query).json()
     if (bool(result) and 'IdentifierList' in result):
@@ -96,6 +143,7 @@ def getPubChemSubstructure(smi,treshold_simil):
     return (substruc)
 
 def getSynonym(cmp,smi):
+    
     syn_list = []
     query = 'https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/smiles/'+urllib.quote(smi.replace('/','.'))+'/synonyms/json'
     result = requests.get(query).json()
@@ -113,13 +161,13 @@ def getSynonym(cmp,smi):
 
 
 def getMW(smi):
+    '''
+    Takes a SMILES string and returns the Molecular Weight for that compound from the PubChem database.
+    '''
     query = 'https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/smiles/'+urllib.quote(smi)+'/property/MolecularWeight/json'
-    #print(query)
     result = requests.get(query).json()
     if (bool(result) and 'PropertyTable' in result):
         result = result['PropertyTable']['Properties'][0]
-        #print(result)
         return (str(result['MolecularWeight']))
-        #return (str(result['PropertyTable']['Properties']['MolecularWeight']))
     else:
         return('')
