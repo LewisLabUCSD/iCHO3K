@@ -3,3 +3,5 @@ google-api-python-client
 openpyxl
 pyparsing
 networkx==2.6.2
+wordcloud
+scikit-image
