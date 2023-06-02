@@ -13,7 +13,7 @@ def getPubchemCID(cmp,smiles):
     Retrieves the PubchemID from the Pubchem database
 
     Input: cmp: Compound Name, smiles
-    Output: pubchem ID
+    Output: List of Pubchem IDs
     '''
     query = 'https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/smiles/'+urllib.quote(smiles.replace('/','.'))+'/cids/JSON?MaxRecords=20'
     result = requests.get(query).json()
@@ -21,8 +21,8 @@ def getPubchemCID(cmp,smiles):
         query = 'https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/'+urllib.quote(cmp)+'/cids/JSON?MaxRecords=20'
         result = requests.get(query).json()
     if (bool(result) and 'IdentifierList' in result):
-        ids = filter(lambda a: a != 0, result['IdentifierList']['CID'])
-        return (';'.join(str(x).replace("'",'') for x in ids))
+        ids = list(map(str, filter(lambda a: a != 0, result['IdentifierList']['CID'])))
+        return ids
     else:
         return None
 
@@ -130,6 +130,17 @@ def getCIDSmilesInChI(cid):
     inchi = result['PropertyTable']['Properties'][0]['InChI']
 
     return(smiles, inchi)
+
+def getCIDFormula(cid):
+    '''
+    Takes a PubChem ID and returns the Molecular Formula for that compound
+    '''
+    query='https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/'+urllib.quote(str(cid))+'/property/MolecularFormula/JSON'
+    result = requests.get(query).json()
+
+    formula = result['PropertyTable']['Properties'][0]['MolecularFormula']
+
+    return formula
 
 def getPubChemSubstructure(smi,treshold_simil):
     #[mol ID,canonical smiles]
