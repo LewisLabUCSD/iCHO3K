@@ -1,6 +1,27 @@
 from Bio import Entrez
 import pandas as pd
 
+def df_to_dict(df, key_col):
+    """
+    This function takes a pandas dataframe and a key column, and returns a dictionary
+    with the key column as the dictionary keys and the rest of the columns as the values.
+    """
+    # Create an empty dictionary to hold the key-value pairs
+    my_dict = {}
+    
+    # Loop through each row in the dataframe
+    for index, row in df.iterrows():
+        # Use the value in the key column as the dictionary key
+        key_value = row[key_col]
+        
+        # Use the rest of the columns as the dictionary values
+        value_dict = row.drop(key_col).to_dict()
+        
+        # Add the key-value pair to the dictionary
+        my_dict[key_value] = value_dict
+    
+    return my_dict
+
 def get_gene_info(gene_id):
     '''
     This function retrieves information from the NIH Gene database
