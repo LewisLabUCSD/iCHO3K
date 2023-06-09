@@ -1,3 +1,5 @@
+import pandas as pd
+import numpy as np
 import json
 import urllib.parse as urllib
 import requests
@@ -182,3 +184,33 @@ def getMW(smi):
         return (str(result['MolecularWeight']))
     else:
         return('')
+
+
+def homogenize_info(df):
+    '''
+    This function takes the metabolites dataset as input and returns the same dataset with 
+    the same information in the "columns_to_homogenize" columns for the same metabolite
+    '''
+    
+    # Define the columns we're interested in
+    columns_to_homogenize = ["KEGG","CHEBI","ChEMBLID", "PubChem", "Inchi","EHMNID" ,"SMILES","INCHI2", "CID_ID", "PDB (ligand-expo) Experimental Coordinates  File Url", "Pub Chem Url" ,"ChEBI Url"]
+    
+    # Create a temporary column for grouping
+    df['group_key'] = df['BiGG ID'].str[:-2]
+
+    # Filter out rows with 'not found'
+    filtered = df.replace('NaN', np.nan)
+
+    # Group the DataFrame by "BiGG ID" and apply mode function to the groups
+    most_frequent = filtered.groupby('group_key')[columns_to_homogenize].agg(lambda x: pd.Series.mode(x.dropna()).iat[0] if not x.dropna().empty else np.nan).reset_index()
+
+    # Merge the most_frequent DataFrame with the original one and update the original DataFrame
+    for col in columns_to_homogenize:
+        df.set_index('group_key', inplace=True)
+        df.update(most_frequent.set_index('group_key')[col])
+        df.reset_index(inplace=True)
+        
+    # Drop the 'group_key' column
+    df.drop(columns=['group_key'], inplace=True)
+
+    return df
