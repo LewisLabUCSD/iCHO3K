@@ -5,6 +5,8 @@ import urllib.parse as urllib
 import requests
 import re
 from urllib.error import HTTPError
+from rdkit import Chem, DataStructs
+from rdkit.Chem import MACCSkeys, AllChem
 
 
 # VARIABLES
@@ -214,3 +216,85 @@ def homogenize_info(df):
     df.drop(columns=['group_key'], inplace=True)
 
     return df
+
+
+def getCanonical(smi):
+    '''
+    This function takes a "SMILE" string as input and returns the Canonical form of the SMILES
+    It can take Canonical or Isomeric SMILEs
+    '''
+    try:
+        # Convert SMILES strings to RDKit Mol objects
+        mol = Chem.MolFromSmiles(smi)
+    
+        # Convert RDKit Mol object to Canonical SMILES
+        csmi = Chem.MolToSmiles(mol, True)
+        
+        return csmi
+
+    except:
+        # If there's an error, return None
+        print(f'{smi} Not a valid SMILES string')
+        return smi
+
+
+
+def similarity_calc(smi1, smi2):
+    """
+    Calculate the similarity between two molecules.
+
+    Parameters:
+    smi1 (str): The SMILES representation of the first molecule.
+    smi2 (str): The SMILES representation of the second molecule.
+
+    Returns:
+    float: The maximum similarity score calculated by different methods.
+    """
+
+    # Convert SMILES strings to RDKit Mol objects
+    mol1 = Chem.MolFromSmiles(smi1)
+    mol2 = Chem.MolFromSmiles(smi2)
+
+    # Calculate RDKit fingerprints for both molecules
+    fp1 = Chem.RDKFingerprint(mol1)
+    fp2 = Chem.RDKFingerprint(mol2)
+
+    # Calculate Tanimoto similarity between the two fingerprints
+    s = DataStructs.TanimotoSimilarity(fp1, fp2)
+
+    # Initialize a counter
+    x = 0
+
+    # Calculate Dice similarity between the two fingerprints
+    s2 = DataStructs.FingerprintSimilarity(fp1, fp2, metric=DataStructs.DiceSimilarity)
+    if s2 > s:  # If Dice similarity is greater than Tanimoto similarity, update the similarity score
+        s = s2
+
+    # Try to generate MACCS Keys fingerprints and compute Dice similarity
+    try:
+        fps = [MACCSkeys.GenMACCSKeys(mol1), MACCSkeys.GenMACCSKeys(mol2)]
+        s2 = DataStructs.FingerprintSimilarity(fps[0], fps[1], metric=DataStructs.DiceSimilarity)
+        if s2 > s:  # If this similarity is greater than the current maximum, update the similarity score
+            s = s2
+    except:
+        # If there is an error in generating MACCS Keys fingerprints or calculating similarity, increment the counter
+        x += 1
+
+    # Calculate Tanimoto similarity again (this may be redundant since it has been computed earlier)
+    s2 = DataStructs.FingerprintSimilarity(fp1, fp2, metric=DataStructs.TanimotoSimilarity)
+    if s2 > s:  # If this similarity is greater than the current maximum, update the similarity score
+        s = s2
+
+    # Try to generate Morgan fingerprints with features and compute Dice similarity
+    try:
+        ffp1 = AllChem.GetMorganFingerprint(mol1, 4, useFeatures=True)
+        ffp2 = AllChem.GetMorganFingerprint(mol2, 4, useFeatures=True)
+        s2 = DataStructs.DiceSimilarity(ffp1, ffp2)
+        if s2 > s:  # If this similarity is greater than the current maximum, update the similarity score
+            s = s2
+    except:
+        # If there is an error in generating Morgan fingerprints or calculating similarity, increment the counter
+        x += 1
+
+    # Return the highest similarity score found
+    return s
