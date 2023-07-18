@@ -66,6 +66,9 @@ class GoogleSheet:
 
 
     def update_google_sheet(self, sheet_name, df):
+        # Replace NaNs with empty strings
+        df = df.fillna('')
+
         data = [df.columns.tolist()] + df.values.tolist()
 
         num_rows = df.shape[0] + 1
@@ -113,6 +116,7 @@ class GoogleSheet:
 
         row_count = sheet['properties']['gridProperties']['rowCount']
         return row_count
+
 
     def delete_extra_rows(self, sheet_name, start_row, end_row):
         sheet_id = None
