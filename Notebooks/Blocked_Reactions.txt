@@ -1321,7 +1321,6 @@ LCA3GSr Min:  0.0 Max:  0.0
 LCADi_Dm Min:  0.0 Max:  0.0
 LCADim Min:  0.0 Max:  0.0
 LCASULT Min:  0.0 Max:  0.0
-LCAT12e Min:  0.0 Max:  0.0
 LCAT41e Min:  0.0 Max:  0.0
 LCAT42e Min:  0.0 Max:  0.0
 LCAT43e Min:  0.0 Max:  0.0
@@ -1452,7 +1451,6 @@ OCTDECCPT2 Min:  0.0 Max:  0.0
 OFPGLCNACTg Min:  0.0 Max:  0.0
 OGLCNACPt Min:  0.0 Max:  0.0
 OHCUS Min:  0.0 Max:  0.0
-OLEETH Min:  0.0 Max:  0.0
 ORETNF Min:  0.0 Max:  0.0
 ORETNF2 Min:  0.0 Max:  0.0
 ORETNtn Min:  0.0 Max:  0.0
@@ -1486,8 +1484,6 @@ PELINL_HSABCt Min:  0.0 Max:  0.0
 PELINL_HSPLA2 Min:  0.0 Max:  0.0
 PELPALM_HSABCt Min:  0.0 Max:  0.0
 PENDECAETH Min:  0.0 Max:  0.0
-PEOLE_HSABCt Min:  0.0 Max:  0.0
-PEOLE_HSPLA2 Min:  0.0 Max:  0.0
 PEPALM Min:  0.0 Max:  0.0
 PEPALM_HSPLA2 Min:  0.0 Max:  0.0
 PESTE_HSABCt Min:  0.0 Max:  0.0
@@ -2607,7 +2603,6 @@ SK_3hpro_LT_x Min:  0.0 Max:  0.0
 SK_C07535_c Min:  0.0 Max:  0.0
 DM_gfser_r Min:  0.0 Max:  0.0
 DM_slnfser_g Min:  0.0 Max:  0.0
-EX_7klitchol_e Min:  0.0 Max:  0.0
 EX_ahandrostan_e Min:  0.0 Max:  0.0
 EX_alaarggly_e Min:  0.0 Max:  0.0
 EX_alaasnleu_e Min:  0.0 Max:  0.0
