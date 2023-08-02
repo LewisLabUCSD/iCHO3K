@@ -1,16 +1,6 @@
-3ohsubcoa_x
-4abut_n
-5hoxindoa_m
-46dhoxquin_c
-gncore2_g
-dhcrm_cho_r
-dhcrm_cho_g
-sphgn_g
-phcrm_hs_g
 phsphings_g
 phcrm_hs_r
 phsphings_r
-octd11ecoa_m
 dca_x
 ddca_m
 ddca_x
@@ -24,7 +14,6 @@ strdnc_m
 eicostri_c
 docastri_c
 crvnc_m
-5moxact_c
 adpglc_c
 adpman_c
 adprib_m
@@ -75,7 +64,6 @@ CN0016_c
 CN0016_r
 dca24g_r
 dca3g_r
-phcrm_hs_c
 npthld_c
 didecaeth_e
 diholineth_e
@@ -182,7 +170,7 @@ mev_R_r
 acac_r
 M00503_c
 M00510_c
-xolest2_cho_l
+xolest_cho_l
 HC02066_r
 lpchol_cho_r
 M00484_c
@@ -689,7 +677,6 @@ pi_i
 pepslys_r
 4ppan_m
 4hpro_LT_r
-prot_c
 prpncoa_x
 3hpcoa_x
 peracd_c
@@ -904,7 +891,6 @@ nrpphr_r
 CE5538_r
 CN0019_c
 CN0019_r
-rna_c
 sl2n2m2masn_g
 s3lnl3fn3m2masn_g
 s4lndl4fn4m2masn_g
@@ -996,3 +982,4 @@ HC02036_c
 HC02111_c
 HC02111_m
 3tetd7ecoacrn_e
+3ohsubac_e
