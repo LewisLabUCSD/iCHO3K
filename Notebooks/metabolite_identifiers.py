@@ -195,7 +195,7 @@ def homogenize_info(df):
     '''
     
     # Define the columns we're interested in
-    columns_to_homogenize = ["Charge","KEGG","CHEBI","ChEMBLID", "PubChem", "Inchi","EHMNID" ,"SMILES","INCHI2", "CID_ID", "PDB (ligand-expo) Experimental Coordinates  File Url", "Pub Chem Url" ,"ChEBI Url"]
+    columns_to_homogenize = ["KEGG","CHEBI","ChEMBLID", "PubChem", "Inchi","EHMNID" ,"SMILES","INCHI2", "CID_ID", "PDB (ligand-expo) Experimental Coordinates  File Url", "Pub Chem Url" ,"ChEBI Url"]
     
     # Create a temporary column for grouping
     df['group_key'] = df['BiGG ID'].str[:-2]
