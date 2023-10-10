@@ -1,4 +1,4 @@
-numpy=1.22.0
+numpy=1.24.4
 google-api-python-client
 openpyxl
 pyparsing
