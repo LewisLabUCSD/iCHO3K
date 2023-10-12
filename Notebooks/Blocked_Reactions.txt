@@ -744,10 +744,6 @@ NTMELYStner Min:  0.0 Max:  0.0
 OGLCNACPt Min:  0.0 Max:  0.0
 ORETNtn Min:  0.0 Max:  0.0
 ORETNtn2 Min:  0.0 Max:  0.0
-PELINL_HSABCt Min:  0.0 Max:  0.0
-PELPALM_HSABCt Min:  0.0 Max:  0.0
-PEOLE_HSABCt Min:  0.0 Max:  0.0
-PESTE_HSABCt Min:  0.0 Max:  0.0
 PE_HStg Min:  0.0 Max:  0.0
 PHEACGLYtm Min:  0.0 Max:  0.0
 PHEASNMETt Min:  0.0 Max:  0.0

@@ -146,7 +146,36 @@ def duplicated_reactions(model):
     s = np.argwhere(U == 1)
 
     return s
+'''
+def duplicated_reactions(model):
+    ''
+    This functions retrieves a list of tuples containing
+    duplicated reactions from the input cobrapy model.
 
+    input: cobrapy model containing reactions and metabolites.
+    output: tuples list with duplicated reactions.
+    ''
+
+    #Create stoichiomtric matrix
+    S = cobra.util.create_stoichiometric_matrix(model, array_type='dense')
+    n, m = S.shape
+    r = np.array([reaction.reversibility for reaction in model.reactions])
+    Im = np.eye(m)
+    diagR = r * Im
+    S2m2 = np.block([[Im, np.zeros((m, m))], [np.zeros((m, m)), np.diag(r)]])
+    S2m1 = np.hstack((S, -S))
+    S2m = S2m1 @ S2m2
+    #Correlation matrix from stoichiomtric matrix
+    cor = np.corrcoef(S2m.T)
+
+    #Extract upper triangle from the correlation matrix
+    U = np.triu(cor, k=1)
+
+    #List 's' of identical reactions
+    s = np.argwhere(U == 1)
+
+    return s
+'''
 ##### ----- FVA ----- #####
 # Single Core
 def runMinMax_Single(model, end_rxn_index=None):
