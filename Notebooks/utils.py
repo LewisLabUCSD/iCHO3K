@@ -124,29 +124,7 @@ def get_gene_info(gene_id):
 
 import cobra
 import numpy as np
-'''
-def duplicated_reactions(model):
-    ''
-    This functions retrieves a list of tuples containing
-    duplicated reactions from the input cobrapy model.
 
-    input: cobrapy model containing reactions and metabolites.
-    output: tuples list with duplicated reactions.
-    ''
-
-    #Create stoichiomtric matrix
-    S = cobra.util.create_stoichiometric_matrix(model, array_type='DataFrame')
-    #Correlation matrix from stoichiomtric matrix
-    cor = np.corrcoef(S.values.T)
-
-    #Extract upper triangle from the correlation matrix
-    U = np.triu(cor, k=1)
-
-    #List 's' of identical reactions
-    s = np.argwhere(U == 1)
-
-    return s
-'''
 def duplicated_reactions(model):
     '''
     This functions retrieves a list of tuples containing
