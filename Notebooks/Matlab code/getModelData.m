@@ -30,9 +30,9 @@ geneNames = expressionData.gene;
 
 % construct model data structure
 if isfield(expressionData,'symbol')
-    modelIdx = ismember(expressionData.gene,model.geneNames) | ismember(expressionData.symbol,model.geneNames);
+    modelIdx = ismember(expressionData.gene,model.genes) | ismember(expressionData.symbol,model.genes);
 else
-    modelIdx = ismember(expressionData.gene,model.geneNames);
+    modelIdx = ismember(expressionData.gene,model.genes);
 end
 modelData.gene = geneNames(modelIdx);
 if isfield(expressionData,'meanValue')
@@ -52,8 +52,8 @@ for j=1:size(expressionData.valuebyTissue,2)
 end
 
 % sore missing gene IDs
-modelData.ID_geneMissing = model.geneNames(~ismember(model.geneNames,expressionData.gene));
-modelData.ID_genePresent = model.geneNames(ismember(model.geneNames,expressionData.gene));
+modelData.ID_geneMissing = model.genes(~ismember(model.genes,expressionData.gene));
+modelData.ID_genePresent = model.genes(ismember(model.genes,expressionData.gene));
 
 % resolve non-uniques
 geneids = unique(modelData.gene);
