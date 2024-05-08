@@ -24,7 +24,7 @@ model = readCbModel(fullfile(path, 'Notebooks', 'iCHO3644_unblocked.mat'));
 
 % Load Ubiquity Scores
 load(fullfile(path, 'Data/Context_specific_models', 'UbiquityScores.mat'));
-ubiScoreVector = ubiScore(:, 1);
+ubiScoreVector = ubiScore(:, 5);
 
 % Define checkFunctionality, eta, and tol
 checkFunctionality = 1; % Boolean variable that determines if the model should be able to produce the metabolites associated with the protectedRxns
