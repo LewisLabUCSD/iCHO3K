@@ -1,7 +1,7 @@
 warning('off', 'all');
 
 % Initialize COBRA
-initCobraToolbox
+initCobraToolbox(0)
 
 path = '/Users/pablodigiusto/Documents/GitHub/Whole-Cell-Network-Reconstruction-for-CHO-cells';
 addpath('/Users/pablodigiusto/Documents/GitHub/Whole-Cell-Network-Reconstruction-for-CHO-cells/Notebooks/Matlab/Standep');
@@ -100,6 +100,10 @@ meanexpressionData = struct;
 meanexpressionData.gene = updatedGeneNames;
 meanexpressionData.valuebyTissue = meanExpressionDataMatrix;
 meanexpressionData.Tissue = uniqueConditions;
+
+% Save the condition names to a text file
+outputFilePath = fullfile(path,'Data/Context_specific_models', 'uniqueConditions.txt'); % Specify the output file path
+writecell(meanexpressionData.Tissue, outputFilePath);
 
 
 % extract expression data of the genes in the model
