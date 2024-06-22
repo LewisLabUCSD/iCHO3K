@@ -7,7 +7,7 @@ path = '/Users/pablodigiusto/Documents/GitHub/Whole-Cell-Network-Reconstruction-
 addpath('/Users/pablodigiusto/Documents/GitHub/Whole-Cell-Network-Reconstruction-for-CHO-cells/Notebooks/Matlab/Standep');
 
 % Load iCHO3644 model
-model = readCbModel(fullfile(path, 'Notebooks', 'iCHO3644_unblocked.mat'));
+model = readCbModel(fullfile(path, 'Notebooks', 'iCHO3595_unblocked.mat'));
 
 % Create a dictionary with the gene names of our model as keys and the gene IDs as values
 
@@ -45,23 +45,23 @@ end
 
 % Sample Identifiers and Their Conditions
 sampleConditions = {
-    'S1', 'WT_P2'; 'S7', 'WT_P2'; 'S13', 'WT_P2';
-    'S2', 'WT_P4'; 'S8', 'WT_P4'; 'S14', 'WT_P4';
-    'S3', 'WT_P6'; 'S9', 'WT_P6'; 'S15', 'WT_P6';
-    'S4', 'WT_P8'; 'S10', 'WT_P8'; 'S16', 'WT_P8';
-    'S5', 'WT_P12';'S11', 'WT_P12';
-    'S6', 'WT_P14';'S12', 'WT_P14';'S17', 'WT_P14';
-    'S18', 'ZeLa_P4'; 'S23', 'ZeLa_P4'; 'S28', 'ZeLa_P4'; 'S34', 'ZeLa_P4'; 'S39', 'ZeLa_P4';
-    'S19', 'ZeLa_P6'; 'S29', 'ZeLa_P6'; 'S35', 'ZeLa_P6'; 'S40', 'ZeLa_P6';
-    'S20', 'ZeLa_P8'; 'S24', 'ZeLa_P8'; 'S30', 'ZeLa_P8'; 'S36', 'ZeLa_P8'; 'S41', 'ZeLa_P8';
-    'S25', 'ZeLa_P12';'S31', 'ZeLa_P12';'S42', 'ZeLa_P12';
-    'S21', 'ZeLa_P14';'S26', 'ZeLa_P14';'S32', 'ZeLa_P14';'S37', 'ZeLa_P14';'S43', 'ZeLa_P14';
-    'S22', 'ZeLa_P2'; 'S27', 'ZeLa_P2'; 'S33', 'ZeLa_P2'; 'S38', 'ZeLa_P2';
+    'S1', 'WT_P2_Bio141'; 'S7', 'WT_P2_Bio142'; 'S13', 'WT_P2_Bio143';
+    'S2', 'WT_P4_Bio141'; 'S8', 'WT_P4_Bio142'; 'S14', 'WT_P4_Bio143';
+    'S3', 'WT_P6_Bio141'; 'S9', 'WT_P6_Bio142'; 'S15', 'WT_P6_Bio143';
+    'S4', 'WT_P8_Bio141'; 'S10', 'WT_P8_Bio142'; 'S16', 'WT_P8_Bio143';
+    'S5', 'WT_P12_Bio141';'S11', 'WT_P12_Bio142';
+    'S6', 'WT_P14_Bio141';'S12', 'WT_P14_Bio142';'S17', 'WT_P14_Bio143';
+    'S18', 'ZeLa_P4_Bio144'; 'S23', 'ZeLa_P4_Bio145'; 'S28', 'ZeLa_P4_Bio146'; 'S34', 'ZeLa_P4_Bio147'; 'S39', 'ZeLa_P4_Bio148';
+    'S19', 'ZeLa_P6_Bio144'; 'S29', 'ZeLa_P6_Bio146'; 'S35', 'ZeLa_P6_Bio17'; 'S40', 'ZeLa_P6_Bio148';
+    'S20', 'ZeLa_P8_Bio144'; 'S24', 'ZeLa_P8_Bio145'; 'S30', 'ZeLa_P8_Bio146'; 'S36', 'ZeLa_P8_Bio147'; 'S41', 'ZeLa_P8_Bio148';
+    'S25', 'ZeLa_P12_Bio145';'S31', 'ZeLa_P12_Bio146';'S42', 'ZeLa_P12_Bio148';
+    'S21', 'ZeLa_P14_Bio144';'S26', 'ZeLa_P14_Bio145';'S32', 'ZeLa_P14_Bio146';'S37', 'ZeLa_P14_Bio147';'S43', 'ZeLa_P14_Bio148';
+    'S22', 'ZeLa_P2_Bio145'; 'S27', 'ZeLa_P2_Bio146'; 'S33', 'ZeLa_P2_Bio147'; 'S38', 'ZeLa_P2_Bio148';
 };
 
 % Prepare the expression data matrix and cell names
 expressionDataMatrix = table2array(dataTable(:, 2:end)); % Assuming the first column is gene names
-cellNames = dataTable.Properties.VariableNames(2:end); % Adjust if the structure is different
+cellNames = dataTable.Properties.VariableNames(2:end);
 
 % Adjust cellNames based on sampleConditions
 for i = 1:size(sampleConditions, 1)
@@ -78,36 +78,8 @@ expressionData.valuebyTissue = expressionDataMatrix;
 expressionData.Tissue = cellNames;
 
 
-% Get the mean values of gene expression per condition
-
-% Find unique condition names
-uniqueConditions = unique(cellNames);
-
-% Initialize a matrix to store the mean values for each condition
-meanExpressionDataMatrix = zeros(size(expressionDataMatrix, 1), length(uniqueConditions));
-
-% Loop over each unique condition to calculate the mean expression
-for i = 1:length(uniqueConditions)
-    % Find columns that belong to the current condition
-    conditionCols = strcmp(cellNames, uniqueConditions{i});
-    
-    % Calculate the mean across these columns for each gene
-    meanExpressionDataMatrix(:, i) = mean(expressionDataMatrix(:, conditionCols), 2);
-end
-
-% Creating the meanexpressionData Structure
-meanexpressionData = struct;
-meanexpressionData.gene = updatedGeneNames;
-meanexpressionData.valuebyTissue = meanExpressionDataMatrix;
-meanexpressionData.Tissue = uniqueConditions;
-
-% Save the condition names to a text file
-outputFilePath = fullfile(path,'Data/Context_specific_models', 'uniqueConditions.txt'); % Specify the output file path
-writecell(meanexpressionData.Tissue, outputFilePath);
-
-
 % extract expression data of the genes in the model
-modelData = getModelData(meanexpressionData,model);
+modelData = getModelData(expressionData,model);
 
 
 % Calculate enzymes in the model
@@ -118,7 +90,7 @@ prom = getPromEnzymes(model);
 enzymeData = comparePromiscuousSpecific(spec,prom,modelData);
 
 edgeX = [-2 -1 0 1 2 2.5 3 4]; % bins  
-k = 20; % what value should we use
+k = 3; % what value should we use
 distMethod = 'euclidean'; % distance method  
 linkageMethod = 'complete'; % linkage metric for hierarchical clustering
 
@@ -132,13 +104,16 @@ coreRxnMat = models4mClusters1(clustObj,enzymeData.Tissue,model,edgeX,[],[],true
 calcJaccardSimilarity(coreRxnMat,enzymeData.Tissue,'matrix',true);
 
 % Calculate ubiquity scores for mCADRE
-[ubiScore,uScore] = getUbiquityScore(clustObj,edgeX,model); % calculate ubiquity score
+[ubiScores, uScore] = getUbiquityScore(clustObj, edgeX, model); % calculate ubiquity score
 
-size(ubiScore) % ubiquity score for reactions
-
-size(uScore) % this is in theory ubiquity scores for enzymes.. ??
+% Create the ubiData structure
+ubiData = struct;
+ubiData.ubiScores = ubiScores;
+ubiData.uScore = uScore;
+ubiData.rxns = model.rxns;
+ubiData.Condition = cellNames;
 
 % Save the outputs to a .mat file
-output_path = fullfile(path, 'Data/Context_specific_models/UbiquityScores.mat');
-save(output_path, 'ubiScore', 'uScore');
+output_path = fullfile(path, 'Data/Context_specific_models', 'ubiData.mat');
+save(output_path, 'ubiData');
 
