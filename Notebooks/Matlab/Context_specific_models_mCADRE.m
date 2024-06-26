@@ -20,7 +20,7 @@ protectedRxns = {'biomass_cho', 'DNAsyn', 'LipidSyn', 'PROTsyn', 'RNAsyn'};
 confidenceScores = readmatrix(fullfile(path, 'Data/Context_specific_models', 'confidence_scores.csv'));
 
 % Load Model
-model = readCbModel(fullfile(path, 'Notebooks', 'iCHO3644_unblocked.mat'));
+model = readCbModel(fullfile(path, 'Notebooks', 'iCHO3595_unblocked.mat'));
 
 % Load Ubiquity Scores
 load(fullfile(path, 'Data/Context_specific_models', 'UbiquityScores.mat'));
