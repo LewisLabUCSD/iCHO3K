@@ -38,19 +38,20 @@ disp(UbiData);
 
 % Step 4: Model extraction using mCADRE
 sampleConditions = {
-    'S1', 'WT_P2'; 'S7', 'WT_P2'; 'S13', 'WT_P2';
-    'S2', 'WT_P4'; 'S8', 'WT_P4'; 'S14', 'WT_P4';
-    'S3', 'WT_P6'; 'S9', 'WT_P6'; 'S15', 'WT_P6';
-    'S4', 'WT_P8'; 'S10', 'WT_P8'; 'S16', 'WT_P8';
-    'S5', 'WT_P12'; 'S11', 'WT_P12';
-    'S6', 'WT_P14'; 'S12', 'WT_P14'; 'S17', 'WT_P14';
-    'S18', 'ZeLa_P4'; 'S23', 'ZeLa_P4'; 'S28', 'ZeLa_P4'; 'S34', 'ZeLa_P4'; 'S39', 'ZeLa_P4';
-    'S19', 'ZeLa_P6'; 'S29', 'ZeLa_P6'; 'S35', 'ZeLa_P6'; 'S40', 'ZeLa_P6';
-    'S20', 'ZeLa_P8'; 'S24', 'ZeLa_P8'; 'S30', 'ZeLa_P8'; 'S36', 'ZeLa_P8'; 'S41', 'ZeLa_P8';
-    'S25', 'ZeLa_P12'; 'S31', 'ZeLa_P12'; 'S42', 'ZeLa_P12';
-    'S21', 'ZeLa_P14'; 'S26', 'ZeLa_P14'; 'S32', 'ZeLa_P14'; 'S37', 'ZeLa_P14'; 'S43', 'ZeLa_P14';
-    'S22', 'ZeLa_P2'; 'S27', 'ZeLa_P2'; 'S33', 'ZeLa_P2'; 'S38', 'ZeLa_P2';
+    'S1', 'WT_P2_Bio141'; 'S7', 'WT_P2_Bio142'; 'S13', 'WT_P2_Bio143';
+    'S2', 'WT_P4_Bio141'; 'S8', 'WT_P4_Bio142'; 'S14', 'WT_P4_Bio143';
+    'S3', 'WT_P6_Bio141'; 'S9', 'WT_P6_Bio142'; 'S15', 'WT_P6_Bio143';
+    'S4', 'WT_P8_Bio141'; 'S10', 'WT_P8_Bio142'; 'S16', 'WT_P8_Bio143';
+    'S5', 'WT_P12_Bio141';'S11', 'WT_P12_Bio142';
+    'S6', 'WT_P14_Bio141';'S12', 'WT_P14_Bio142';'S17', 'WT_P14_Bio143';
+    'S18', 'ZeLa_P4_Bio144'; 'S23', 'ZeLa_P4_Bio145'; 'S28', 'ZeLa_P4_Bio146'; 'S34', 'ZeLa_P4_Bio147'; 'S39', 'ZeLa_P4_Bio148';
+    'S19', 'ZeLa_P6_Bio144'; 'S29', 'ZeLa_P6_Bio146'; 'S35', 'ZeLa_P6_Bio17'; 'S40', 'ZeLa_P6_Bio148';
+    'S20', 'ZeLa_P8_Bio144'; 'S24', 'ZeLa_P8_Bio145'; 'S30', 'ZeLa_P8_Bio146'; 'S36', 'ZeLa_P8_Bio147'; 'S41', 'ZeLa_P8_Bio148';
+    'S25', 'ZeLa_P12_Bio145';'S31', 'ZeLa_P12_Bio146';'S42', 'ZeLa_P12_Bio148';
+    'S21', 'ZeLa_P14_Bio144';'S26', 'ZeLa_P14_Bio145';'S32', 'ZeLa_P14_Bio146';'S37', 'ZeLa_P14_Bio147';'S43', 'ZeLa_P14_Bio148';
+    'S22', 'ZeLa_P2_Bio145'; 'S27', 'ZeLa_P2_Bio146'; 'S33', 'ZeLa_P2_Bio147'; 'S38', 'ZeLa_P2_Bio148';
 };
+
 
 for i = 1:length(UbiData.ubiScores(1,:))
     % Determine the corresponding cell line and phase
@@ -58,7 +59,7 @@ for i = 1:length(UbiData.ubiScores(1,:))
     condition = sampleConditions{i, 2};
     splitCondition = strsplit(condition, '_');
     cell_line = splitCondition{1};
-    phase = splitCondition{2};
+    phase = [splitCondition{2} '_' splitCondition{3}];
 
     % Update the ubiquity scores for the current sample
     currentUbiScores = UbiData;
