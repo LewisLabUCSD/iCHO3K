@@ -1,8 +1,12 @@
 % Step 1: Initialize the COBRA toolbox
-initCobraToolbox(0);
+% initCobraToolbox(0);
+% 
+% path = '/Users/pablodigiusto/Documents/GitHub/Whole-Cell-Network-Reconstruction-for-CHO-cells';
+% addpath('/Users/pablodigiusto/Documents/GitHub/Whole-Cell-Network-Reconstruction-for-CHO-cells/Notebooks/Matlab/Model_Extraction');
 
-path = '/Users/pablodigiusto/Documents/GitHub/Whole-Cell-Network-Reconstruction-for-CHO-cells';
-addpath('/Users/pablodigiusto/Documents/GitHub/Whole-Cell-Network-Reconstruction-for-CHO-cells/Notebooks/Matlab/Model_Extraction');
+
+path = 'C:\Users\user\Documents\DC\Manual curation_iCHO\Whole-Cell-Network-Reconstruction-for-CHO-cells_origin\Whole-Cell-Network-Reconstruction-for-CHO-cells';
+addpath('C:\Users\user\Documents\DC\Manual curation_iCHO\Whole-Cell-Network-Reconstruction-for-CHO-cells_origin\Whole-Cell-Network-Reconstruction-for-CHO-cells\Notebooks\Matlab\Model_Extraction');
 
 % Step 2: Ensure that the parent genome-scale model is loaded into the
 % workspace and assigned the variable "model"
@@ -23,6 +27,31 @@ else
     error('The variable "ubiData" does not exist in the loaded .mat file.');
 end
 
+
+% Check if the confidence score exists in the loaded data
+if isfield(UbiData, 'confidenceScores')
+    confidenceScores = UbiData.confidenceScores;    
+else
+    % Load confidence scores from CSV file
+    csvFilePath = fullfile(path, 'Data/Context_specific_models', 'confidence_scores.csv');
+    csvData = readtable(csvFilePath);
+    
+    % Ensure rxn exists in the loadedData
+    if isfield(UbiData, 'rxns')
+        rxns = UbiData.rxns;
+        
+        % Check if the lengths of rxn and confidenceScores are equal
+        if height(csvData) == length(rxns)
+            UbiData.confidenceScores = csvData.Var1; % Assuming the scores are in the first column
+            fprintf('The confidence scores were successfully added to loadedData.\n');
+        else
+            error('The length of "confidenceScores" from CSV does not match the length of "rxn".');
+        end
+    else
+        error('The variable "rxns" does not exist in the UbiData.');
+    end
+end
+
 % Verify that UbiData is a structure and contains the field 'ubiScores'
 if ~isstruct(UbiData)
     error('UbiData is not a structure.');
@@ -39,19 +68,20 @@ disp(UbiData);
 
 % Step 4: Define Protected Reactions List
 protected_reactions = {
-    'biomass_cho_s', 'DNAsyn', 'LipidSyn_cho_s', 'PROTsyn_cho_s', 'RNAsyn_cho_s', 'EX_bhb_e', 'EX_nh4_e', 'EX_ac_e', 'EX_ala_L_e', 'EX_arg_L_e', 'EX_asn_L_e', 'EX_asp_L_e', 'EX_2hb_e', 'EX_cit_e',
-    'EX_cys_L_e', 'EX_etoh_e', 'EX_for_e', 'EX_fum_e', 'EX_glc_e', 'EX_glu_L_e', 'EX_gln_L_e', 'EX_gly_e', 'EX_his_L_e', 'EX_4hpro_e',
-    'EX_ile_L_e', 'EX_lac_L_e', 'EX_leu_L_e', 'EX_lys_L_e', 'EX_mal_L_e', 'EX_met_L_e', 'EX_phe_L_e', 'EX_pro_L_e', 'EX_5oxpro_e',
+    'biomass_cho_s', 'DNAsyn', 'LipidSyn_cho_s', 'PROTsyn_cho_s', 'RNAsyn_cho_s', 'EX_bhb_e', 'EX_nh4_e', 'EX_ac_e', 'EX_ala_L_e', 'EX_arg_L_e', 'EX_asn_L_e', 'EX_asp_L_e', 'EX_2hb_e', 'EX_cit_e', ...
+    'EX_cys_L_e', 'EX_etoh_e', 'EX_for_e', 'EX_fum_e', 'EX_glc_e', 'EX_glu_L_e', 'EX_gln_L_e', 'EX_gly_e', 'EX_his_L_e', 'EX_4hpro_e', ...
+    'EX_ile_L_e', 'EX_lac_L_e', 'EX_leu_L_e', 'EX_lys_L_e', 'EX_mal_L_e', 'EX_met_L_e', 'EX_phe_L_e', 'EX_pro_L_e', 'EX_5oxpro_e', ...
     'EX_pyr_e', 'EX_ser_L_e', 'EX_thr_L_e', 'EX_trp_L_e', 'EX_tyr_L_e', 'EX_val_L_e'
 };
 
 % Step 4: Model extraction using mCADRE
 sampleConditions = UbiData.Condition;
 
-for i = 1:length(UbiData.ubiScores(1,:))
+% for i = 1:length(UbiData.ubiScores(1,:))
+for i = 9:10
     % Determine the corresponding cell line and phase
-    sample = sampleConditions{i, 1};
-    condition = sampleConditions{i, 2};
+    condition = sampleConditions{1, i};
+    fprintf('Succesfully loaded condition "%s.\n"',condition);
     splitCondition = strsplit(condition, '_');
     cell_line = splitCondition{1};
     phase = [splitCondition{2} '_' splitCondition{3}];

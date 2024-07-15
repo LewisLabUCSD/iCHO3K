@@ -64,10 +64,10 @@ nm = size(ubiScores,2);
 retr = zeros(length(rxns),nm);
 
 environment = getEnvironment();
-
+confScores = ubiData.confidenceScores;
 for i = 1:nm
     restoreEnvironment(environment);
-    mx = RMF_mCADRE(model,ubiScores(:,i), ‘ProtectedRxns’, protected_reactions);
+    mx = RMF_mCADRE(model,ubiScores(:,i), confScores, protected_reactions);
     retr(:,i) = double(ismember(rxns,mx.rxns));
 end
 

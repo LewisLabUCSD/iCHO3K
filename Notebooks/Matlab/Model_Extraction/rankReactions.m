@@ -61,7 +61,14 @@ function [coreRxn, nonCoreRxn, rankNonCore, zeroExpRxns] = rankReactions(model, 
 
     % Identify zero-expression reactions
     zeroExpRxns = rankNonCore(E_NC(:, 1) == -1e-6);
-    
+    % Check if zeroExpRxns is empty and print a message if true
+    if isempty(zeroExpRxns)
+        fprintf('There are no zero expression non-core reactions.\n');
+    else
+        % Optional: Do something with zeroExpRxns if not empty
+        disp('Zero expression reactions identified:');
+        disp(zeroExpRxns);
+    end
 end
 
 function NC_order = permute_NC(NC_order,E_NC)
