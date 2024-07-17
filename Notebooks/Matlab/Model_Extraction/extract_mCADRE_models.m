@@ -1,4 +1,4 @@
-function extracted_models = extract_mCADRE_models(model,ubiData,cell_line,phase, protected_reactions)
+function extracted_models = extract_mCADRE_models(model,ubiData,cell_line,phase, protected_reactions, checkFunctionality)
 %%
 %   EXTRACT_MCADRE_MODELS extracts context-specific models using the mCADRE
 %   algorithm for a given flux-consistent parent genome-scale model MODEL
@@ -67,7 +67,7 @@ environment = getEnvironment();
 confScores = ubiData.confidenceScores;
 for i = 1:nm
     restoreEnvironment(environment);
-    mx = RMF_mCADRE(model,ubiScores(:,i), confScores, protected_reactions);
+    mx = RMF_mCADRE(model,ubiScores(:,i), confScores, protected_reactions, checkFunctionality);
     retr(:,i) = double(ismember(rxns,mx.rxns));
 end
 

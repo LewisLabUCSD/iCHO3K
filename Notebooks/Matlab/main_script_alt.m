@@ -94,7 +94,7 @@ for i = 9:10
     changeCobraSolverParams('LP', 'feasTol', 1e-9);
 
     % Extract the models
-    extracted_models = extract_mCADRE_models(model, currentUbiScores, cell_line, phase, protected_reactions);
+    extracted_models = extract_mCADRE_models(model, currentUbiScores, cell_line, phase, protected_reactions, 1);
 
     % Retrieve the extracted model
     r1 = extracted_models.red_models.rxns(any(extracted_models.red_models.retained_rxns, 2));
