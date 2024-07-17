@@ -1,5 +1,5 @@
 % Step 1: Initialize the COBRA toolbox
-% initCobraToolbox(0);
+initCobraToolbox(0);
 % 
 % path = '/Users/pablodigiusto/Documents/GitHub/Whole-Cell-Network-Reconstruction-for-CHO-cells';
 % addpath('/Users/pablodigiusto/Documents/GitHub/Whole-Cell-Network-Reconstruction-for-CHO-cells/Notebooks/Matlab/Model_Extraction');
@@ -103,4 +103,13 @@ for i = 9:10
 
     % Save the reduced model for this sample condition
     save(['reduced_model_' condition '.mat'], 'reduced_model');
+end
+
+for i = 1:length(protected_reactions)
+reaction_to_check = protected_reactions{i};
+if ismember(reaction_to_check, reduced_model.rxns)
+    fprintf('The reaction "%s" is present in reduced_model.rxns.\n', reaction_to_check);
+else
+    fprintf('The reaction "%s" is not present in reduced_model.rxns.\n', reaction_to_check);
+end
 end
