@@ -71,14 +71,14 @@ protected_reactions = {
     'biomass_cho_s', 'DNAsyn', 'LipidSyn_cho_s', 'PROTsyn_cho_s', 'RNAsyn_cho_s', 'EX_bhb_e', 'EX_nh4_e', 'EX_ac_e', 'EX_ala_L_e', 'EX_arg_L_e', 'EX_asn_L_e', 'EX_asp_L_e', 'EX_2hb_e', 'EX_cit_e', ...
     'EX_cys_L_e', 'EX_etoh_e', 'EX_for_e', 'EX_fum_e', 'EX_glc_e', 'EX_glu_L_e', 'EX_gln_L_e', 'EX_gly_e', 'EX_his_L_e', 'EX_4hpro_e', ...
     'EX_ile_L_e', 'EX_lac_L_e', 'EX_leu_L_e', 'EX_lys_L_e', 'EX_mal_L_e', 'EX_met_L_e', 'EX_phe_L_e', 'EX_pro_L_e', 'EX_5oxpro_e', ...
-    'EX_pyr_e', 'EX_ser_L_e', 'EX_thr_L_e', 'EX_trp_L_e', 'EX_tyr_L_e', 'EX_val_L_e'
+    'EX_pyr_e', 'EX_ser_L_e', 'EX_thr_L_e', 'EX_trp_L_e', 'EX_tyr_L_e', 'EX_val_L_e', 'EX_h2o_e', 'EX_h_e'
 };
 
 % Step 4: Model extraction using mCADRE
 sampleConditions = UbiData.Condition;
 
 % for i = 1:length(UbiData.ubiScores(1,:))
-for i = 9:10
+for i = 9:9
     % Determine the corresponding cell line and phase
     condition = sampleConditions{1, i};
     fprintf('Succesfully loaded condition "%s.\n"',condition);
@@ -102,7 +102,7 @@ for i = 9:10
     reduced_model = removeUnusedGenes(reduced_model);
 
     % Save the reduced model for this sample condition
-    save(['reduced_model_' condition '.mat'], 'reduced_model');
+    save(['reduced_model_CF_' condition '.mat'], 'reduced_model');
 end
 
 for i = 1:length(protected_reactions)
