@@ -70,11 +70,18 @@ disp(UbiData);
 protected_reactions = {
     'biomass_cho_s', 'DNAsyn', 'LipidSyn_cho_s', 'PROTsyn_cho_s', 'RNAsyn_cho_s', 'EX_bhb_e', 'EX_nh4_e', 'EX_ac_e', 'EX_ala_L_e', 'EX_arg_L_e', 'EX_asn_L_e', 'EX_asp_L_e', 'EX_2hb_e', 'EX_cit_e', ...
     'EX_cys_L_e', 'EX_etoh_e', 'EX_for_e', 'EX_fum_e', 'EX_glc_e', 'EX_glu_L_e', 'EX_gln_L_e', 'EX_gly_e', 'EX_his_L_e', 'EX_4hpro_e', ...
-    'EX_ile_L_e', 'EX_lac_L_e', 'EX_leu_L_e', 'EX_lys_L_e', 'EX_mal_L_e', 'EX_met_L_e', 'EX_phe_L_e', 'EX_pro_L_e', 'EX_5oxpro_e', ...
-    'EX_pyr_e', 'EX_ser_L_e', 'EX_thr_L_e', 'EX_trp_L_e', 'EX_tyr_L_e', 'EX_val_L_e', 'EX_h2o_e', 'EX_h_e'
+    'EX_ile_L_e', 'EX_lac_L_e', 'EX_leu_L_e', 'EX_lys_L_e', 'EX_mal_L_e', 'EX_met_L_e', 'EX_phe_L_e', 'EX_pro_L_e', 'EX_5oxpro_e', 'EX_pyr_e', ...
+    'EX_ser_L_e', 'EX_thr_L_e', 'EX_trp_L_e', 'EX_tyr_L_e', 'EX_val_L_e', 'EX_h2o_e', 'EX_h_e', 'EX_o2_e', 'EX_hco3_e', 'EX_so4_e', 'EX_pi_e', ...
+    'SK_Asn_X_Ser_Thr_r', 'SK_Tyr_ggn_c', 'SK_Ser_Thr_g', 'SK_pre_prot_r'
 };
 
-% Step 4: Model extraction using mCADRE
+
+% Step 5: Load the Python dictionary for reaction bounds
+uptsec_intrvl_wt = py.pickle.load(py.open('../Data/Uptake_Secretion_Rates/uptake_secretion_intrvl_wt_dict.pkl', 'rb'));
+uptsec_intrvl_zela = py.pickle.load(py.open('../Data/Uptake_Secretion_Rates/uptake_secretion_intrvl_zela_dict.pkl', 'rb'));
+
+
+% Step 6: Model extraction using mCADRE
 sampleConditions = UbiData.Condition;
 
 % for i = 1:length(UbiData.ubiScores(1,:))
@@ -86,12 +93,36 @@ for i = 9:9
     cell_line = splitCondition{1};
     phase = [splitCondition{2} '_' splitCondition{3}];
 
+    % Select the appropriate dictionary based on the cell line name
+    if startsWith(cell_line, 'WT')
+        bounds_dict = uptsec_intrvl_wt;
+    elseif strcmp(cell_line, 'ZeLa')
+        bounds_dict = uptsec_intrvl_zela;
+    else
+        error('Unknown cell line: %s', cell_line);
+    end
+
     % Update the ubiquity scores for the current sample
     currentUbiScores = UbiData;
     currentUbiScores.ubiScores = UbiData.ubiScores(:, i);
     
+    % Constrain the bounds of reactions based on the experimental data
+    time = 'P2 to P4';
+    for j = 1:length(model.rxns)
+        rxn = model.rxns{j};
+        if strcmp(rxn, 'EX_etoh_e') % Models are not feasible when forced to secrete ethanol
+            model = changeRxnBounds(model, rxn, -0.1, 'l');  % Lower bound
+            model = changeRxnBounds(model, rxn, 0.1, 'u');  % Upper bound
+        elseif isKey(bounds_dict, rxn)
+            bounds = bounds_dict{rxn}{time};
+            model = changeRxnBounds(model, rxn, bounds{1}, 'l');  % Lower bound
+            model = changeRxnBounds(model, rxn, bounds{2}, 'u');  % Upper bound
+        end
+    end
+
     % Set COBRA solver parameters
     changeCobraSolverParams('LP', 'feasTol', 1e-9);
+
 
     % Extract the models
     extracted_models = extract_mCADRE_models(model, currentUbiScores, cell_line, phase, protected_reactions, 1);
