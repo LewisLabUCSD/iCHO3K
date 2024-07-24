@@ -81,7 +81,7 @@ uptsec_intrvl_wt = py.pickle.load(py.open('../Data/Uptake_Secretion_Rates/uptake
 uptsec_intrvl_zela = py.pickle.load(py.open('../Data/Uptake_Secretion_Rates/uptake_secretion_intrvl_zela_dict.pkl', 'rb'));
 
 
-% Step 6: Model extraction using mCADRE
+% Step 6: Model extraction using mCADRE -- We can start with all the P4 models (P2 to P4). And then we can move to P2 models (P0 to P2)
 sampleConditions = UbiData.Condition;
 
 % for i = 1:length(UbiData.ubiScores(1,:))
@@ -92,6 +92,9 @@ for i = 9:9
     splitCondition = strsplit(condition, '_');
     cell_line = splitCondition{1};
     phase = [splitCondition{2} '_' splitCondition{3}];
+
+    % Add filtering on P4 cell lines
+    %if startsWith(phase, 'P4')
 
     % Select the appropriate dictionary based on the cell line name
     if startsWith(cell_line, 'WT')
@@ -110,6 +113,10 @@ for i = 9:9
     time = 'P2 to P4';
     for j = 1:length(model.rxns)
         rxn = model.rxns{j};
+        if strcmp(rxn, 'biomass_cho_s') % Set constrains for biomass
+            bounds = bounds_dict{'exp_growth_rate'}{time};
+            model = changeRxnBounds(model, rxn, bounds{1}, 'l');  % Lower bound
+            model = changeRxnBounds(model, rxn, bounds{2}, 'u');  % Upper bound
         if strcmp(rxn, 'EX_etoh_e') % Models are not feasible when forced to secrete ethanol
             model = changeRxnBounds(model, rxn, -0.1, 'l');  % Lower bound
             model = changeRxnBounds(model, rxn, 0.1, 'u');  % Upper bound
