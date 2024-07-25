@@ -1,5 +1,5 @@
 % Step 1: Initialize the COBRA toolbox
-% initCobraToolbox(0);
+initCobraToolbox(0);
 % 
 % path = '/Users/pablodigiusto/Documents/GitHub/Whole-Cell-Network-Reconstruction-for-CHO-cells';
 % addpath('/Users/pablodigiusto/Documents/GitHub/Whole-Cell-Network-Reconstruction-for-CHO-cells/Notebooks/Matlab/Model_Extraction');
@@ -118,7 +118,7 @@ for i = 1:length(UbiData.ubiScores(1,:))
         else
             error('Unknown cell line: %s', cell_line);
         end
-        fprintf('Successfully loaded phase for "%s".\n', phase);
+
         % Update the ubiquity scores for the current sample
         currentUbiScores = UbiData;
         currentUbiScores.ubiScores = UbiData.ubiScores(:, i);
@@ -128,19 +128,16 @@ for i = 1:length(UbiData.ubiScores(1,:))
         for j = 1:length(model.rxns)
             rxn = model.rxns{j};
             if strcmp(rxn, 'biomass_cho_s') % Set constrains for biomass
-                bounds = bounds_dict.exp_growth_rate.(time);
-%                 model = changeRxnBounds(model, rxn, bounds(1), 'l');  % Lower bound
-%                 model = changeRxnBounds(model, rxn, bounds(2), 'u');  % Upper bound
-            end
+                bounds = bounds_dict{'exp_growth_rate'}{time};
+                model = changeRxnBounds(model, rxn, bounds{1}, 'l');  % Lower bound
+                model = changeRxnBounds(model, rxn, bounds{2}, 'u');  % Upper bound
             if strcmp(rxn, 'EX_etoh_e') % Models are not feasible when forced to secrete ethanol
                 model = changeRxnBounds(model, rxn, -0.1, 'l');  % Lower bound
                 model = changeRxnBounds(model, rxn, 0.1, 'u');  % Upper bound
-           elseif isfield(bounds_dict, rxn)
-                bounds = bounds_dict.(rxn).(time);
-                model = changeRxnBounds(model, rxn, bounds(1), 'l');  % Lower bound
-                model = changeRxnBounds(model, rxn, bounds(2), 'u');  % Upper bound
-            else
-                
+            elseif isKey(bounds_dict, rxn)
+                bounds = bounds_dict{rxn}{time};
+                model = changeRxnBounds(model, rxn, bounds{1}, 'l');  % Lower bound
+                model = changeRxnBounds(model, rxn, bounds{2}, 'u');  % Upper bound
             end
         end
 
@@ -158,9 +155,9 @@ for i = 1:length(UbiData.ubiScores(1,:))
 
         % Save the reduced model for this sample condition
         save(['reduced_model_CF_' condition '.mat'], 'reduced_model');
+        end
     end
 end
-
 
 for i = 1:length(protected_reactions)
 reaction_to_check = protected_reactions{i};
