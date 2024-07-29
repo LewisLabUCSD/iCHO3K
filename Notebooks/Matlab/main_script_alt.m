@@ -100,7 +100,7 @@ uptsec_intrvl_zela = load('uptake_secretion_zela.mat');
 sampleConditions = UbiData.Condition;
 
 % for i = 1:length(UbiData.ubiScores(1,:))
-for i = 1:length(UbiData.ubiScores(1,:))
+for i = 10:length(UbiData.ubiScores(1,:))
     % Determine the corresponding cell line and phase
     condition = sampleConditions{1, i};
     fprintf('Successfully loaded condition "%s".\n', condition);
