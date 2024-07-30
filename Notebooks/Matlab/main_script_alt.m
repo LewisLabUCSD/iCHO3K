@@ -100,7 +100,7 @@ uptsec_intrvl_zela = load('uptake_secretion_zela.mat');
 sampleConditions = UbiData.Condition;
 
 % for i = 1:length(UbiData.ubiScores(1,:))
-for i = 10:length(UbiData.ubiScores(1,:))
+for i = 1:length(UbiData.ubiScores(1,:))
     % Determine the corresponding cell line and phase
     condition = sampleConditions{1, i};
     fprintf('Successfully loaded condition "%s".\n', condition);
@@ -129,8 +129,8 @@ for i = 10:length(UbiData.ubiScores(1,:))
             rxn = model.rxns{j};
             if strcmp(rxn, 'biomass_cho_s') % Set constrains for biomass
                 bounds = bounds_dict.exp_growth_rate.(time);
-%                 model = changeRxnBounds(model, rxn, bounds(1), 'l');  % Lower bound
-%                 model = changeRxnBounds(model, rxn, bounds(2), 'u');  % Upper bound
+                model = changeRxnBounds(model, rxn, bounds(1), 'l');  % Lower bound
+                model = changeRxnBounds(model, rxn, bounds(2), 'u');  % Upper bound
             end
             if strcmp(rxn, 'EX_etoh_e') % Models are not feasible when forced to secrete ethanol
                 model = changeRxnBounds(model, rxn, -0.1, 'l');  % Lower bound
@@ -149,8 +149,8 @@ for i = 10:length(UbiData.ubiScores(1,:))
 
 
         % Extract the models
+%         extracted_models = extract_mCADRE_models(model, currentUbiScores, cell_line, phase, protected_reactions, 0);
         extracted_models = extract_mCADRE_models(model, currentUbiScores, cell_line, phase, protected_reactions, 1);
-
         % Retrieve the extracted model
         r1 = extracted_models.red_models.rxns(any(extracted_models.red_models.retained_rxns, 2));
         reduced_model = removeRxns(model, model.rxns(~ismember(model.rxns, r1)));
