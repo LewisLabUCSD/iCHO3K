@@ -1,5 +1,5 @@
 % Step 1: Initialize the COBRA toolbox
-% initCobraToolbox(0);
+initCobraToolbox(0);
 % 
 % path = '/Users/pablodigiusto/Documents/GitHub/Whole-Cell-Network-Reconstruction-for-CHO-cells';
 % addpath('/Users/pablodigiusto/Documents/GitHub/Whole-Cell-Network-Reconstruction-for-CHO-cells/Notebooks/Matlab/Model_Extraction');
@@ -27,30 +27,31 @@ else
     error('The variable "ubiData" does not exist in the loaded .mat file.');
 end
 
-
-% Check if the confidence score exists in the loaded data
-if isfield(UbiData, 'confidenceScores')
-    confidenceScores = UbiData.confidenceScores;    
-else
-    % Load confidence scores from CSV file
-    csvFilePath = fullfile(path, 'Data/Context_specific_models', 'confidence_scores.csv');
-    csvData = readtable(csvFilePath);
-    
-    % Ensure rxn exists in the loadedData
-    if isfield(UbiData, 'rxns')
-        rxns = UbiData.rxns;
-        
-        % Check if the lengths of rxn and confidenceScores are equal
-        if height(csvData) == length(rxns)
-            UbiData.confidenceScores = csvData.Var1; % Assuming the scores are in the first column
-            fprintf('The confidence scores were successfully added to loadedData.\n');
-        else
-            error('The length of "confidenceScores" from CSV does not match the length of "rxn".');
-        end
-    else
-        error('The variable "rxns" does not exist in the UbiData.');
-    end
-end
+confidenceScores = zeros(size(model.rxns));
+UbiData.confidenceScores = confidenceScores;
+% % Check if the confidence score exists in the loaded data
+% if isfield(UbiData, 'confidenceScores')
+%     confidenceScores = UbiData.confidenceScores;    
+% else
+%     % Load confidence scores from CSV file
+%     csvFilePath = fullfile(path, 'Data/Context_specific_models', 'confidence_scores.csv');
+%     csvData = readtable(csvFilePath);
+%     
+%     % Ensure rxn exists in the loadedData
+%     if isfield(UbiData, 'rxns')
+%         rxns = UbiData.rxns;
+%         
+%         % Check if the lengths of rxn and confidenceScores are equal
+%         if height(csvData) == length(rxns)
+%             UbiData.confidenceScores = csvData.Var1; % Assuming the scores are in the first column
+%             fprintf('The confidence scores were successfully added to loadedData.\n');
+%         else
+%             error('The length of "confidenceScores" from CSV does not match the length of "rxn".');
+%         end
+%     else
+%         error('The variable "rxns" does not exist in the UbiData.');
+%     end
+% end
 
 % Verify that UbiData is a structure and contains the field 'ubiScores'
 if ~isstruct(UbiData)
@@ -149,8 +150,8 @@ for i = 1:length(UbiData.ubiScores(1,:))
 
 
         % Extract the models
-%         extracted_models = extract_mCADRE_models(model, currentUbiScores, cell_line, phase, protected_reactions, 0);
-        extracted_models = extract_mCADRE_models(model, currentUbiScores, cell_line, phase, protected_reactions, 1);
+        extracted_models = extract_mCADRE_models(model, currentUbiScores, cell_line, phase, protected_reactions, 0);
+%         extracted_models = extract_mCADRE_models(model, currentUbiScores, cell_line, phase, protected_reactions, 1);
         % Retrieve the extracted model
         r1 = extracted_models.red_models.rxns(any(extracted_models.red_models.retained_rxns, 2));
         reduced_model = removeRxns(model, model.rxns(~ismember(model.rxns, r1)));

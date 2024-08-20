@@ -81,7 +81,7 @@ function [tissueModel, cRes] = pruningModel_v2(model, rankNonCore, coreRxn, zero
         end
 
         if rStatus && rmf_stat
-
+            tic;
             % Check for inactive reactions after removal of r
             if numel(r)
                 % Remove reaction r from the model
@@ -93,10 +93,19 @@ function [tissueModel, cRes] = pruningModel_v2(model, rankNonCore, coreRxn, zero
             
             inactiveCore = intersect(inactive_G, coreRxn);
             inactiveNonCore = setdiff(inactive_G, inactiveCore);
+            % Calculate the number of elements in inactiveCore and inactive_G
+            numInactiveCore = numel(inactiveCore);
+            numInactiveG = numel(inactive_G);
+            numinactiveNonCore = numel(inactiveNonCore);
 
+            % Print the number of elements in both variables simultaneously
+            fprintf('Number of elements in inactiveCore/inactiveNonCore: %d,%d Number of elements in inactive_G: %d\n', numInactiveCore, numinactiveNonCore, numInactiveG);
+            time1= toc;
+            disp(time1)
             % Remove reactions with zero expression (previously penalized in
             % rank_reactions) and corresponding inactive core reactions, only if
             % sufficiently more non-core reactions are removed
+            tic
             if ismember(r, zeroExpRxns)
                 
                 display('Zero-expression evidence for reaction...')
@@ -189,6 +198,8 @@ function [tissueModel, cRes] = pruningModel_v2(model, rankNonCore, coreRxn, zero
                     result = 2 + tmpStatus / 10;
                 end
             end
+            time2 = toc;
+            disp(time2)
         else
             num_removed = nonCoreRemoved + coreRemoved;
             rankNonCore(1) = [];
@@ -196,7 +207,7 @@ function [tissueModel, cRes] = pruningModel_v2(model, rankNonCore, coreRxn, zero
             % result = 3 indicates that no reactions were removed because
             % removal of r by itself prevented production of required
             % metabolites
-            result = 3;
+           result = 3;
         end
 
         cRes(count) = result;
