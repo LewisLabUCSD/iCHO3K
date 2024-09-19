@@ -52,7 +52,7 @@ sampleConditions = {
     'S5', 'WT_P12_Bio141';'S11', 'WT_P12_Bio142';
     'S6', 'WT_P14_Bio141';'S12', 'WT_P14_Bio142';'S17', 'WT_P14_Bio143';
     'S18', 'ZeLa_P4_Bio144'; 'S23', 'ZeLa_P4_Bio145'; 'S28', 'ZeLa_P4_Bio146'; 'S34', 'ZeLa_P4_Bio147'; 'S39', 'ZeLa_P4_Bio148';
-    'S19', 'ZeLa_P6_Bio144'; 'S29', 'ZeLa_P6_Bio146'; 'S35', 'ZeLa_P6_Bio17'; 'S40', 'ZeLa_P6_Bio148';
+    'S19', 'ZeLa_P6_Bio144'; 'S29', 'ZeLa_P6_Bio146'; 'S35', 'ZeLa_P6_Bio147'; 'S40', 'ZeLa_P6_Bio148';
     'S20', 'ZeLa_P8_Bio144'; 'S24', 'ZeLa_P8_Bio145'; 'S30', 'ZeLa_P8_Bio146'; 'S36', 'ZeLa_P8_Bio147'; 'S41', 'ZeLa_P8_Bio148';
     'S25', 'ZeLa_P12_Bio145';'S31', 'ZeLa_P12_Bio146';'S42', 'ZeLa_P12_Bio148';
     'S21', 'ZeLa_P14_Bio144';'S26', 'ZeLa_P14_Bio145';'S32', 'ZeLa_P14_Bio146';'S37', 'ZeLa_P14_Bio147';'S43', 'ZeLa_P14_Bio148';
