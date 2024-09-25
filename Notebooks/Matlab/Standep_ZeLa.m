@@ -90,7 +90,7 @@ prom = getPromEnzymes(model);
 enzymeData = comparePromiscuousSpecific(spec,prom,modelData);
 
 edgeX = [-2 -1 0 1 2 2.5 3 4]; % bins  
-k = 3; % what value should we use
+k = 5;
 distMethod = 'euclidean'; % distance method  
 linkageMethod = 'complete'; % linkage metric for hierarchical clustering
 
