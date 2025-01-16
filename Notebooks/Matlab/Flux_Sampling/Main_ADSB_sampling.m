@@ -38,7 +38,7 @@ for i = 1:length(modelFiles)
         fprintf('Processing model: %s\n', fileName);
         % Define sampling options
         options.numSamples = 5000;  % Adjust the number of samples as needed
-        options.stepsPerPoint = 100;
+        options.stepsPerPoint = 1;
         options.populationScale = 2;
 %         model_1 = model
         model_1 = changeModelCondition(model, [1,2,3], removeReactions_ATP, checkReactions, checkReactions, ref_model.iCHO3K);
@@ -50,8 +50,8 @@ for i = 1:length(modelFiles)
         model_1.ub(strcmp(model.rxns, 'ATPM')) = 1000;
 %%
         % Run the sampling for the loaded model
-%         sample = fluxSamplerADSB(model_1, options);
-        sample = fluxSamplerADSB_v2(model_1, options);
+        sample = fluxSamplerADSB(model_1, options);
+%         sample = fluxSamplerADSB_v2(model_1, options);
         fprintf('\nChecking specified reactions:\n');
         for i3 = 1:length(checkReactions)
             reaction = checkReactions{i3};
@@ -70,7 +70,7 @@ for i = 1:length(modelFiles)
             end
         end
         % Save the sampling result to a new .mat file with model context
-        save_filename = fullfile('C:\Users\user\Documents\DC\Manual curation_iCHO\Whole-Cell-Network-Reconstruction-for-CHO-cells_origin\Whole-Cell-Network-Reconstruction-for-CHO-cells\Data\Context_specific_models\sampling_ADSB_tmp', sprintf('ADSB_v2_sample_%s_%s.mat',identifier, fileName));
+        save_filename = fullfile('C:\Users\user\Documents\DC\Manual curation_iCHO\Whole-Cell-Network-Reconstruction-for-CHO-cells_origin\temp_code\sampled_results', sprintf('ATP0_sample_%s_%s.mat',identifier, fileName));
         save(save_filename, 'sample', 'fileName');
         fprintf('Saved sampling result to %s\n', save_filename);
         
@@ -87,7 +87,7 @@ for i = 1:length(modelFiles)
                                  'VariableNames', {'ReactionID', 'ReactionName', 'Formula', 'Mean_Flux', 'Std_Flux'});
 
         % Save the summary table to an Excel file
-        output_filename = fullfile('C:\Users\user\Documents\DC\Manual curation_iCHO\Whole-Cell-Network-Reconstruction-for-CHO-cells_origin\temp_code\sampled_results', sprintf('ADSB_v2_reaction_summary_%s_%s.xlsx', identifier, fileName));
+        output_filename = fullfile('C:\Users\user\Documents\DC\Manual curation_iCHO\Whole-Cell-Network-Reconstruction-for-CHO-cells_origin\temp_code\sampled_results', sprintf('ATP0_reaction_summary_%s_%s.xlsx', identifier, fileName));
         writetable(reaction_summary, output_filename);
 
         fprintf('Summary data exported to %s\n', output_filename);
