@@ -11,7 +11,7 @@ full_path = fullfile(file_path, file_name);
 df_tmp = readtable(full_path, 'Sheet', sheet_name, 'Range', '18:129', 'ReadVariableNames', true);
 
 
-% Select the specific columns from the imported data
+% Select the specific columns from the imported data∑
 selected_columns = {'BatchID', 'SampleID', 'ViableCells', 'Age_h_', 'TotalVolume', 'BaseVolume', 'EffFeedBVolume', 'GlucFeedVolume'};
 df = df_tmp(:, selected_columns);
 % Define the row range to select
