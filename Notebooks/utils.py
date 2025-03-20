@@ -29,7 +29,7 @@ def get_gene_info(gene_id):
     input: Gene Entrez ID
     output: Gene Symbol, Gene Name, Gene Description, Gene Ensembl ID, NCBI Transcript ID, NCBI Protein ID
     '''
-    Entrez.email = 'account1@theta-ocean-377718.iam.gserviceaccount.com'
+
     handle = Entrez.efetch(db='gene', id=gene_id, retmode='xml')
     record = Entrez.read(handle)[0]
 
