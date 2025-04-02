@@ -1,6 +1,17 @@
-% Define the file path, file name, and sheet name
+%% Data Loading and Initial Processing Script
+% Description: This script loads cell culture process data from two Excel files,
+%              selects necessary columns, and groups the data by Batch ID.
+% Author: Dong-Hyuk Choi
+% Date: 2025-04-02
+%
+% Usage:
+% 1. Create a subfolder named 'Data' in the same directory as this script file.
+% 2. Place the required Excel files inside the 'Data' folder:
+%    - 'ELN_Excel data sheet_Bio141 to Bio148.xlsx'
+%    - 'processing_ELN_Excel data sheet_Bio141 to Bio148.xlsx'
+% 3. Run the script.file_path = '';
+%%
 file_path = '';
-% file_path = 'C:\Users\user\Documents\DC\Manual curation_iCHO\Whole-Cell-Network-Reconstruction-for-CHO-cells_origin\Whole-Cell-Network-Reconstruction-for-CHO-cells\Data\ZeLa Data';
 file_name = 'ELN_Excel data sheet_Bio141 to Bio148.xlsx';
 sheet_name = 'All data';
 
@@ -24,7 +35,7 @@ disp(viable_cells);
 
 
 
-file_path_meta = "C:\Users\user\Documents\DC\Manual curation_iCHO\Whole-Cell-Network-Reconstruction-for-CHO-cells_origin\Whole-Cell-Network-Reconstruction-for-CHO-cells\Data\ZeLa Data";
+file_path_meta = "";
 file_name_meta = "processing_ELN_Excel data sheet_Bio141 to Bio148.xlsx";
 sheet_name_meta = "Amount of uptake and secretion";
 sheet_name_gr = "Growth_Rate";
