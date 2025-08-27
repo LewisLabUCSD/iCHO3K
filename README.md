@@ -1,63 +1,305 @@
-# Whole Cell Network Reconstruction for CHO cells
+# iCHO3K — CHO Whole-Cell Network Repository
 
-<div align="center">
-  <img src="https://www.nist.gov/sites/default/files/styles/2800_x_2800_limit/public/images/2019/08/21/fluorescence_cho1.jpg?itok=rLzay7Vu" width="400">
-</div>
+> A community-driven, systems-scale reconstruction and analysis toolkit for Chinese Hamster Ovary (CHO) cells.
 
-Welcome to the **Whole Cell Network Reconstruction for CHO cells** repository! This project aims to create the most up-to-date and complete whole-cell network reconstruction for Chinese Hamster Ovary (CHO) cells. Our goal is to enable researchers and biotechnologists to better understand CHO cell biology, optimize bioprocesses, and advance the field of cell line engineering.
+**Highlights**
+- **Scope:** 11,004 reactions • 7,377 metabolites • 3,597 genes • 3,489 mapped protein structures  
+- **Use cases:** context-specific modeling (WT vs ZeLa), pFBA/ecFBA, flux sampling, subsystem coverage, structure-guided hypotheses (e.g., putative PEP allosteric inhibition of PFK)  
+- **Artifacts:** curated datasets, notebooks (Python & MATLAB), figures, and utilities to reproduce key analyses
 
-## 🧬 Background
+> If you use this repository or the iCHO3K model, please see **Citing** below. A manuscript is in preparation; formal citation details will be added upon release.
 
-CHO cells are widely used as a platform for the production of recombinant proteins and biopharmaceuticals. However, despite their widespread use, our understanding of CHO cell biology remains limited. A comprehensive, high-quality whole-cell network reconstruction can help bridge this gap by providing a detailed blueprint of the cell's molecular components and their interactions.
+---
 
-## 🚀 Project Objectives
+## Table of contents
 
-* Integrate the latest knowledge and data on CHO cell biology to create a comprehensive and accurate whole-cell network reconstruction.
-* Develop a user-friendly platform for researchers to interact with and analyze the reconstructed network.
-* Facilitate collaboration between researchers and the broader community to continuously update and improve the network reconstruction.
+- [Repository layout](#repository-layout)
+- [Installation & setup](#installation--setup)
+- [Quickstart (Python)](#quickstart-python)
+- [Quickstart (MATLAB)](#quickstart-matlab)
+- [Reproducing key analyses](#reproducing-key-analyses)
+- [Data & provenance](#data--provenance)
+- [Model formats & I/O](#model-formats--io)
+- [Solvers & performance tips](#solvers--performance-tips)
+- [Contributing](#contributing)
+- [Citing](#citing)
+- [License](#license)
+- [Maintainers & contact](#maintainers--contact)
+- [Acknowledgments](#acknowledgments)
+- [FAQ / Troubleshooting](#faq--troubleshooting)
 
-## 📚 Data Sources
+---
 
-Our network reconstruction is based on a wide range of data sources, including:
+## Repository layout
 
-* Genomic, transcriptomic, and proteomic data from CHO cells.
-* Public databases such as BiGG, KEGG, Brenda, and MetaNetX.
-* Published literature and experimental data from the research community.
+```
+Analyses/                     # Results & figures from analyses
+├── conf_score_distribution.png
+├── flux_enrichment_analysis/
+├── growth_rate_pred/
+├── recons_comparisons/
+├── sampled_results/
+├── subsystem_overview/
+└── tSNE/
 
-We encourage researchers to contribute their data and knowledge to improve the quality of the network reconstruction.
+Data/                         # Curated datasets & model assets
+├── Context_specific_models/  # Context-specific models (MAT, JSON) + scores
+├── GPR_Curation/
+├── Gene_Essentiality/
+├── Metabolites/
+├── Orthologs/
+├── Reconciliation/           # source reconstructions & derived models
+│   ├── datasets/
+│   └── models/
+├── Sec_Recon_shared_genes/
+├── Subsystem/
+├── Uptake_Secretion_Rates/
+├── kcat_values/
+├── iCHO3K_final/             # finalized iCHO3K (Excel format)
+├── sampling_ADSB/
+├── ZeLa Data/
+└── Supplementary Data.xlsx, mart_GO.txt, ncbi_dataset.tsv
 
-## 🛠️ Tools and Methods
+Networks/                     # Static images illustrating mass/flux flow
 
-The repository contains a collection of tools and scripts for building, validating, and analyzing the whole-cell network reconstruction, including:
+Notebooks/                    # Jupyter & MATLAB notebooks/scripts
+├── Matlab/                   # extraction, flux sampling, context-specific
+├── Supplementary Notebooks/
+├── Website Data/
+├── metabolite_identifiers.py
+├── google_sheet.py
+├── utils.py
+└── *Comparison of Metabolic Reconstructions.ipynb,* *Final CHO Model.ipynb*, etc.
 
-* Data preprocessing and integration scripts
-* Network reconstruction algorithms
-* Model validation and refinement tools
-* Visualization and analysis tools
+Other top-level files
+├── CHO_Genome.xlsx
+└── Notebooks.ipynb           # overview notebook linking to others
+```
 
-## 💡 How to Contribute
+> **Large files:** Some assets may use **Git LFS**. If you see pointer files, run:
+> ```bash
+> git lfs install && git lfs pull
+> ```
 
-We welcome contributions from researchers and the community to help improve the whole-cell network reconstruction for CHO cells. Here's how you can contribute:
+---
 
-1. **Report issues and suggest improvements:** If you find any issues or have ideas for improvements, please [create an issue](https://github.com/LewisLabUCSD/Whole-Cell-Network-Reconstruction-for-CHO-cells/issues) in the repository.
-2. **Contribute data or knowledge:** If you have data or knowledge that can improve the network reconstruction, please [submit a pull request](https://github.com/LewisLabUCSD/Whole-Cell-Network-Reconstruction-for-CHO-cells/pulls) with the relevant information.
-3. **Spread the word:** Share the project with your colleagues and collaborators, and help us build a strong community around CHO cell network reconstruction.
+## Installation & setup
 
-## 📖 Citation
+### Recommended: conda environment
 
-If you use the whole-cell network reconstruction or any associated tools in your research, please cite our project as follows:
+```bash
+conda create -n icho3k python=3.11 -y
+conda activate icho3k
+pip install cobra pandas numpy scipy matplotlib optlang networkx jupyterlab escher seaborn
+```
 
+Optional (for graph utilities & network export):
+```bash
+pip install ndex2 pygraphviz
+```
 
-## 📃 License
+> If `environment.yml` or `requirements.txt` is provided in the repo or a release, prefer installing from those for exact reproducibility.
 
+### MATLAB (optional)
+- MATLAB R2022b+ recommended (earlier versions likely workable).
+- Add `Notebooks/Matlab/` to your MATLAB path.
 
+---
 
-## 🤝 Contact
+## Quickstart (Python)
 
-<div align="center">
-  <img src="https://www.biopharma-reporter.com/var/wrbm_gb_food_pharma/storage/images/_aliases/wrbm_large/publications/pharmaceutical-science/biopharma-reporter.com/headlines/upstream-processing/bioprocessing-survey-report-is-the-cho-cho-train-slowing-down/7504580-1-eng-GB/Bioprocessing-survey-report-Is-the-CHO-CHO-train-slowing-down.jpg">
-</div>
+### 1) Load a context-specific model and run pFBA
+```python
+import cobra
+from cobra.flux_analysis import pfba
 
+model = cobra.io.load_json_model("Data/Context_specific_models/ZeLa_model.json")
+solution = pfba(model)
+print(f"Objective ({model.objective.direction}): {solution.objective_value:.4f}")
 
-Happy reconstructing! 🧪🔬🧫
+# Top 10 absolute fluxes
+top = sorted(solution.fluxes.items(), key=lambda x: abs(x[1]), reverse=True)[:10]
+for rxn, v in top:
+    print(f"{rxn:25s} {v:10.3f}")
+```
 
+### 2) Compare WT vs ZeLa growth under the same media
+```python
+import cobra, pandas as pd
+
+wt   = cobra.io.load_json_model("Data/Context_specific_models/WT_model.json")
+zela = cobra.io.load_json_model("Data/Context_specific_models/ZeLa_model.json")
+
+# Example: harmonize key exchange bounds
+for ex in ["EX_glc__D_e", "EX_gln__L_e", "EX_o2_e"]:
+    for m in (wt, zela):
+        if ex in m.reactions:
+            m.reactions.get_by_id(ex).lower_bound = -10.0
+
+res = []
+for name, m in [("WT", wt), ("ZeLa", zela)]:
+    sol = m.optimize()
+    res.append({"model": name, "mu": sol.objective_value})
+
+print(pd.DataFrame(res))
+```
+
+### 3) Flux sampling (optlang-compatible solver required)
+```python
+from cobra.sampling import sample
+model = cobra.io.load_json_model("Data/Context_specific_models/WT_model.json")
+samples = sample(model, n=1000)   # DataFrame
+samples.to_csv("Analyses/sampled_results/wt_samples.csv", index=False)
+```
+
+---
+
+## Quickstart (MATLAB)
+
+```matlab
+% Ensure COBRA Toolbox is installed & initialized
+initCobraToolbox(false)  % without updates
+changeCobraSolver('glpk', 'LP');
+
+% Load a JSON context-specific model
+model = readCbModel('Data/Context_specific_models/WT_model.json');
+
+% Optimize & print objective
+solution = optimizeCbModel(model);
+fprintf('Growth objective: %.4f\n', solution.f);
+```
+
+> MATLAB scripts for extraction, flux sampling, and context-specific modeling are under `Notebooks/Matlab/`.
+
+---
+
+## Reproducing key analyses
+
+Many figures in **Analyses/** are generated from notebooks in **Notebooks/**:
+
+- **Reconstruction comparisons** →  
+  *Notebooks/*`Comparison of Metabolic Reconstructions.ipynb` → *Analyses/recons_comparisons/*
+- **Subsystem coverage & sunbursts** →  
+  *Analyses/subsystem_overview/*
+- **Flux enrichment & sampling** →  
+  *Analyses/flux_enrichment_analysis/*, *Analyses/sampled_results/*
+- **Growth rate prediction (WT vs ZeLa)** →  
+  *Analyses/growth_rate_pred/*
+- **Topology & t-SNE** →  
+  *Analyses/tSNE/*
+
+> Most notebooks begin with a “Paths & Environment” cell—update paths as needed. For strict reproducibility, pin exact package versions via `environment.yml` and use releases/DOI snapshots.
+
+---
+
+## Data & provenance
+
+Curated inputs and derived artifacts are organized under **Data/**. Key elements:
+
+- **Source reconstructions** → `Reconciliation/datasets/` (inputs) and `Reconciliation/models/` (intermediate models).  
+- **Annotations & mappings** → `Metabolites/`, `Subsystem/`, `Orthologs/`.  
+- **Evidence & curation** → `GPR_Curation/`, `Gene_Essentiality/`, `kcat_values/`.  
+- **Experimental constraints** → `Uptake_Secretion_Rates/`, `ZeLa Data/`.  
+- **Secretory overlap** → `Sec_Recon_shared_genes/`.  
+- **Final model** → `iCHO3K_final/` (Excel format; conversion notebooks provided).
+
+During manual curation, compartment and subsystem information were inherited from source reconstructions; discrepancies were resolved using authoritative resources (see notes within notebooks).
+
+---
+
+## Model formats & I/O
+
+- **Excel**: Final iCHO3K lives in `Data/iCHO3K_final/` for inspection and conversion.
+- **SBML / JSON**: Preferred for simulation. Use conversion notebooks (e.g., *Notebooks/Final CHO Model.ipynb*) or COBRApy I/O:
+  ```python
+  import cobra
+  m = cobra.io.load_json_model("path/to/model.json")
+  cobra.io.save_json_model(m, "out.json")
+  cobra.io.write_sbml_model(m, "out.xml")
+  ```
+
+> Some scripts expect standardized BiGG-style IDs. See `Notebooks/metabolite_identifiers.py` for mapping helpers.
+
+---
+
+## Solvers & performance tips
+
+- **LP/QP solvers:** GLPK (free), CPLEX/Gurobi (commercial, academic licenses). Set via COBRApy:
+  ```python
+  import cobra
+  cobra.Configuration().solver = "glpk"  # or "gurobi", "cplex"
+  ```
+- **Speed:** Prefer commercial solvers for large sampling tasks; reduce model size using context-specific models; cache solutions where possible.
+- **Numerics:** Tighten feasibility/optimality tolerances for sensitive analyses.
+
+---
+
+## Contributing
+
+Contributions are welcome!
+
+1. **Issues**: Report bugs, request features, or flag data discrepancies.  
+2. **PRs**: Use feature branches; include a clear description, minimal reproducible example or notebook, and updated docs.  
+3. **Style**: PEP 8 for Python; strip heavy notebook outputs before committing.  
+4. **Data**: Avoid committing large binaries; use **Git LFS** or attach to Releases/Zenodo.
+
+If contributing new datasets or model variants, please include:
+- Data dictionary (column descriptions, units)
+- Provenance (source links/versions)
+- Minimal script/notebook to regenerate derived artifacts
+
+---
+
+## Citing
+
+Until a formal publication is available, please cite this repository:
+
+```
+Di Giusto P., Richelle A., Lewis N.E., et al. (2025).
+iCHO3K — CHO Whole-Cell Network Reconstruction. GitHub repository.
+https://github.com/<org-or-user>/<repo>
+```
+
+A `CITATION.cff` will be provided upon manuscript/publication release. If you reuse specific datasets or scripts, also cite the upstream resources referenced in the notebooks (e.g., Recon3D, BiGG, MetaNetX, Rhea, UniProt, BRENDA).
+
+---
+
+## License
+
+See the `LICENSE` file in this repository for terms of use.  
+If no license is present, usage defaults to **“all rights reserved”** until a license is added.
+
+---
+
+## Maintainers & contact
+
+- **Pablo Di Giusto** — pdigiusto@health.ucsd.edu · pablodigiusto91@gmail.com  
+  Systems Biology & Cell Engineering Lab (Lewis Lab), UC San Diego & University of Georgia
+
+---
+
+## Acknowledgments
+
+We thank the iCHO3K community contributors and collaborators (including secRecon curators). This work builds upon public resources: Recon3D, BiGG, MetaNetX, Rhea, UniProt, BRENDA, and others referenced throughout the notebooks.
+
+---
+
+## FAQ / Troubleshooting
+
+**I see *.gitattributes* LFS pointers instead of files.**  
+Run:
+```bash
+git lfs install
+git lfs pull
+```
+
+**Solver not found / poor performance.**  
+Install an LP solver (GLPK works; Gurobi/CPLEX recommended for speed). Set `cobra.Configuration().solver = "gurobi"` once installed.
+
+**Model won’t optimize (infeasible).**  
+- Harmonize exchange bounds across conditions.
+- Check blocked reactions / dead-end metabolites.
+- For comparative runs (WT vs ZeLa), ensure identical media constraints.
+
+**Notebook paths are wrong.**  
+Edit the first “Paths & Environment” cell—most notebooks expose a single place to set root paths.
