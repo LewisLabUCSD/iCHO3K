@@ -41,8 +41,8 @@ Analyses/                     # Results & figures from analyses
 ├── subsystem_overview/
 └── tSNE/
 
-Data/                         # Curated datasets & model assets
-├── Context_specific_models/  # Context-specific models (MAT, JSON) + scores
+Data/                         
+├── Context_specific_models/  # Context-specific ZeLa and WT models (MAT, JSON)
 ├── GPR_Curation/             # Supplementary data for GPR Mapping from Recon3D to iCHO3K
 ├── Gene_Essentiality/        # Set of experimentally validated CHO essential genes
 ├── Metabolites/              # Supplementary data for metabolites information
