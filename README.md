@@ -1,13 +1,12 @@
-# iCHO3K — CHO Whole-Cell Network Repository
-
-> A community-driven, systems-scale reconstruction and analysis toolkit for Chinese Hamster Ovary (CHO) cells.
+# iCHO3K
+> A community-driven, genome-scale metabolic reconstruction and analysis toolkit for Chinese Hamster Ovary (CHO) cells.
 
 **Highlights**
 - **Scope:** 11,004 reactions • 7,377 metabolites • 3,597 genes • 3,489 mapped protein structures  
 - **Use cases:** context-specific modeling (WT vs ZeLa), pFBA/ecFBA, flux sampling, subsystem coverage, structure-guided hypotheses (e.g., putative PEP allosteric inhibition of PFK)  
 - **Artifacts:** curated datasets, notebooks (Python & MATLAB), figures, and utilities to reproduce key analyses
 
-> If you use this repository or the iCHO3K model, please see **Citing** below. A manuscript is in preparation; formal citation details will be added upon release.
+> If you use this repository or the iCHO3K model, please see **Citing** below.
 
 ---
 
@@ -254,13 +253,15 @@ If contributing new datasets or model variants, please include:
 
 Until a formal publication is available, please cite this repository:
 
-```
-Di Giusto P., Richelle A., Lewis N.E., et al. (2025).
-iCHO3K — CHO Whole-Cell Network Reconstruction. GitHub repository.
-https://github.com/<org-or-user>/<repo>
-```
-
-A `CITATION.cff` will be provided upon manuscript/publication release. If you reuse specific datasets or scripts, also cite the upstream resources referenced in the notebooks (e.g., Recon3D, BiGG, MetaNetX, Rhea, UniProt, BRENDA).
+@article{DiGiusto_iCHO3K_2025,
+  author  = {Di Giusto, Pablo, Choi, Dong-Hyuk, Lakshmanan, Meiyappan Lee, Dong-Yup, Richelle, Anne, Lewis, Nathan E. and others},
+  title   = {A community-consensus reconstruction of Chinese Hamster metabolism enables structural systems biology analyses to decipher metabolic rewiring in lactate-free CHO cells},
+  journal = {bioRxiv},
+  year    = {2025},
+  doi     = {10.1101/2025.04.10.647063},
+  note    = {Version v1, posted April 17, 2025},
+  url     = {https://www.biorxiv.org/content/10.1101/2025.04.10.647063v1}
+}
 
 ---
 
