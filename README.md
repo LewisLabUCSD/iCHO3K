@@ -32,32 +32,31 @@
 ## Repository layout
 
 ```
-Analyses/                     # Results & figures from analyses
-├── conf_score_distribution.png
-├── flux_enrichment_analysis/
-├── growth_rate_pred/
-├── recons_comparisons/
+Analyses/
+├── conf_score_distribution.png            # Confidence Score distribution across all reactions from iCHO3K
+├── growth_rate_pred/                      # pFBA simulations from ZeLa and WT context-specific models
+├── recons_comparisons/                    # Plot comparisions between iCHO3K and previous CHO reconstructions
 ├── sampled_results/
-├── subsystem_overview/
-└── tSNE/
+├── subsystem_overview/                    #Subsystem/System classification sunburst plot
+└── tSNE/                                  #tSNE embedding analysis
 
-Data/                         # Curated datasets & model assets
-├── Context_specific_models/  # Context-specific models (MAT, JSON) + scores
-├── GPR_Curation/
-├── Gene_Essentiality/
-├── Metabolites/
-├── Orthologs/
-├── Reconciliation/           # source reconstructions & derived models
+Data/                         
+├── Context_specific_models/              # Context-specific ZeLa and WT models (MAT, JSON)
+│   ├── ecModels/                         # Context-specific ec models
+│   └── unblocked_ecModel_generic/        # Generic iCHO3K ec model
+├── GPR_Curation/                         # Supplementary data for GPR Mapping from Recon3D to iCHO3K
+├── Gene_Essentiality/                    # Set of experimentally validated CHO essential genes
+├── Metabolites/                          # Supplementary data for metabolites information
+├── Orthologs/                            # Ortholog mapping information from Human to Chinese Hamster
+├── Reconciliation/                       # Source reconstructions & derived models and datasets
 │   ├── datasets/
 │   └── models/
-├── Sec_Recon_shared_genes/
-├── Subsystem/
-├── Uptake_Secretion_Rates/
-├── kcat_values/
-├── iCHO3K_final/             # finalized iCHO3K (Excel format)
-├── sampling_ADSB/
-├── ZeLa Data/
-└── Supplementary Data.xlsx, mart_GO.txt, ncbi_dataset.tsv
+├── Uptake_Secretion_Rates/               # Pre-processed uptake and secretion rates from ZeLa fed-batch data
+└── ZeLa Data/                            # ZeLa 14 fed-batch raw transcriptomics and spent media data
+
+iCHO3K/
+├── Dataset/                              # iCHO3K source dataset for model generation
+└── Model/                                # iCHO3K generic model variants
 
 Networks/                     # Static images illustrating mass/flux flow
 
@@ -253,7 +252,6 @@ If contributing new datasets or model variants, please include:
 
 If you use **iCHO3K** or materials from this repository, please cite the **bioRxiv preprint**:
 
-**Plain text:**  
 Di Giusto, P., Choi, D.-H., *et al.* (2025). *A community-consensus reconstruction of Chinese Hamster metabolism enables structural systems biology analyses to decipher metabolic rewiring in lactate-free CHO cells.* **bioRxiv**. https://doi.org/10.1101/2025.04.10.647063 (v1 posted April 17, 2025).
 
 ---
