@@ -251,10 +251,15 @@ If contributing new datasets or model variants, please include:
 
 ## Citing
 
-Until a formal publication is available, please cite this repository:
+If you use **iCHO3K** or materials from this repository, please cite the **bioRxiv preprint**:
 
+**Plain text:**  
+Di Giusto, P., Choi, D.-H., *et al.* (2025). *A community-consensus reconstruction of Chinese Hamster metabolism enables structural systems biology analyses to decipher metabolic rewiring in lactate-free CHO cells.* **bioRxiv**. https://doi.org/10.1101/2025.04.10.647063 (v1 posted April 17, 2025).
+
+**BibTeX:**
+```bibtex
 @article{DiGiusto_iCHO3K_2025,
-  author  = {Di Giusto, Pablo, Choi, Dong-Hyuk, Lakshmanan, Meiyappan Lee, Dong-Yup, Richelle, Anne, Lewis, Nathan E. and others},
+  author  = {Di Giusto, Pablo and Choi, Dong-Hyuk and Lakshmanan, Meiyappan and Lee, Dong-Yup and Richelle, Anne and Lewis, Nathan E. and others},
   title   = {A community-consensus reconstruction of Chinese Hamster metabolism enables structural systems biology analyses to decipher metabolic rewiring in lactate-free CHO cells},
   journal = {bioRxiv},
   year    = {2025},
