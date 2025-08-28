@@ -32,14 +32,13 @@
 ## Repository layout
 
 ```
-Analyses/                     # Results & figures from analyses
-├── conf_score_distribution.png
-├── flux_enrichment_analysis/
-├── growth_rate_pred/
-├── recons_comparisons/
+Analyses/
+├── conf_score_distribution.png            # Confidence Score distribution across all reactions from iCHO3K
+├── growth_rate_pred/                      # pFBA simulations from ZeLa and WT context-specific models
+├── recons_comparisons/                    # Plot comparisions between iCHO3K and previous CHO reconstructions
 ├── sampled_results/
-├── subsystem_overview/
-└── tSNE/
+├── subsystem_overview/                    #Subsystem/System classification sunburst plot
+└── tSNE/                                  #tSNE embedding analysis
 
 Data/                         
 ├── Context_specific_models/              # Context-specific ZeLa and WT models (MAT, JSON)
@@ -54,6 +53,10 @@ Data/
 │   └── models/
 ├── Uptake_Secretion_Rates/               # Pre-processed uptake and secretion rates from ZeLa fed-batch data
 └── ZeLa Data/                            # ZeLa 14 fed-batch raw transcriptomics and spent media data
+
+iCHO3K/
+├── Dataset/                              # iCHO3K source dataset for model generation
+└── Model/                                # iCHO3K generic model variants
 
 Networks/                     # Static images illustrating mass/flux flow
 
