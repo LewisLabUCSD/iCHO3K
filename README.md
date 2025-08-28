@@ -42,17 +42,18 @@ Analyses/                     # Results & figures from analyses
 └── tSNE/
 
 Data/                         
-├── Context_specific_models/  # Context-specific ZeLa and WT models (MAT, JSON)
-├── GPR_Curation/             # Supplementary data for GPR Mapping from Recon3D to iCHO3K
-├── Gene_Essentiality/        # Set of experimentally validated CHO essential genes
-├── Metabolites/              # Supplementary data for metabolites information
-├── Orthologs/                # Ortholog mapping information from Human to Chinese Hamster
-├── Reconciliation/           # Source reconstructions & derived models and datasets
+├── Context_specific_models/              # Context-specific ZeLa and WT models (MAT, JSON)
+│   ├── ecModels/                         # Context-specific ec models
+│   └── unblocked_ecModel_generic/        # Generic iCHO3K ec model
+├── GPR_Curation/                         # Supplementary data for GPR Mapping from Recon3D to iCHO3K
+├── Gene_Essentiality/                    # Set of experimentally validated CHO essential genes
+├── Metabolites/                          # Supplementary data for metabolites information
+├── Orthologs/                            # Ortholog mapping information from Human to Chinese Hamster
+├── Reconciliation/                       # Source reconstructions & derived models and datasets
 │   ├── datasets/
 │   └── models/
-├── Uptake_Secretion_Rates/   #Pre-processed uptake and secretion rates from ZeLa fed-batch data
-├── iCHO3K_final/             # finalized iCHO3K (Excel format)
-└── ZeLa Data/                #ZeLa 14 fed-batch raw transcriptomics and spent media data
+├── Uptake_Secretion_Rates/               # Pre-processed uptake and secretion rates from ZeLa fed-batch data
+└── ZeLa Data/                            # ZeLa 14 fed-batch raw transcriptomics and spent media data
 
 Networks/                     # Static images illustrating mass/flux flow
 
