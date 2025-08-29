@@ -71,7 +71,7 @@ Matlab/
 Python/
 ├── Network Reconstruction/              # Notebooks related to the reconciliation of previous reconstructions and building of iCHO3K
 │   ├── Genes.ipynb                      # Retrieval of Gene information from databases
-│   ├── Metabolites.ipynb
+│   ├── Metabolites.ipynb                # Integration of metabolite information, de-duplication and analysis
 │   ├── Reactions.ipynb
 │   ├── retrieveTurnoverNumber.ipynb                    
 │   └── Standarization of Datasets.ipynb       
