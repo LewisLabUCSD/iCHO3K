@@ -1,4 +1,11 @@
 # iCHO3K
+
+<p align="center">
+  <img src="iCHO3K/banner/icho3k_figure.png"
+       alt="Stylized hamster-shaped metabolic network (iCHO3K)"
+       width="960">
+</p>
+
 > A community-driven, genome-scale metabolic reconstruction and analysis toolkit for Chinese Hamster Ovary (CHO) cells.
 
 **Highlights**
