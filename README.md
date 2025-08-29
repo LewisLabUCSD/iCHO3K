@@ -79,10 +79,9 @@ Python/
 │                 
 ├── Supplementary Notebooks/             # Supplementary Notebooks with extra information of previous reconstructions
 ├── Comparison..Reconstructions.ipynb    # Comparison of iCHO3K with previous CHO reconstructions
-├── Computational_Tests.ipynb            # Fetch turnover numbers and molecular weights from the BRENDA
+├── Computational_Tests.ipynb            # 
 ├── Final CHO Model.ipynb
-├── Visual..Distribution.ipynb
-└── main_standep.m                       # Main code for Standep data preprocessing
+└── Visual..Distribution.ipynb
 
 ```
 
