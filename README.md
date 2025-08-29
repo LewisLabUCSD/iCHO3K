@@ -45,6 +45,7 @@ Data/
 ├── Context_specific_models/              # Context-specific ZeLa and WT models (MAT, JSON)
 │   ├── ecModels/                         # Context-specific ec models
 │   └── unblocked_ecModel_generic/        # Generic iCHO3K ec model
+│
 ├── GPR_Curation/                         # Supplementary data for GPR Mapping from Recon3D to iCHO3K
 ├── Gene_Essentiality/                    # Set of experimentally validated CHO essential genes
 ├── Metabolites/                          # Supplementary data for metabolites information
@@ -52,6 +53,7 @@ Data/
 ├── Reconciliation/                       # Source reconstructions & derived models and datasets
 │   ├── datasets/
 │   └── models/
+│
 ├── Uptake_Secretion_Rates/               # Pre-processed uptake and secretion rates from ZeLa fed-batch data
 └── ZeLa Data/                            # ZeLa 14 fed-batch raw transcriptomics and spent media data
 
@@ -73,11 +75,11 @@ Python/
 │   ├── Genes.ipynb                      # Retrieval of Gene information from databases
 │   ├── Metabolites.ipynb                # Integration of metabolite information, de-duplication and analysis
 │   ├── Reactions.ipynb                  # Reconciliation of previous CHO and Recon3D reconstructions, de-duplication, subsytem re-organization 
-│   ├── retrieveTurnoverNumber.ipynb                    
-│   └── Standarization of Datasets.ipynb       
+│   └──retrieveTurnoverNumber.ipynb      # Fetch turnover numbers and molecular weights from the BRENDA
+│                 
 ├── Supplementary Notebooks/             # Supplementary Notebooks with extra information of previous reconstructions
 ├── Comparison..Reconstructions.ipynb    # Comparison of iCHO3K with previous CHO reconstructions
-├── Computational_Tests.ipynb            
+├── Computational_Tests.ipynb            # Fetch turnover numbers and molecular weights from the BRENDA
 ├── Final CHO Model.ipynb
 ├── Visual..Distribution.ipynb
 └── main_standep.m                       # Main code for Standep data preprocessing
