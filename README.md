@@ -4,7 +4,7 @@
   <!-- Dark mode image (your current PNG works great here) -->
   <source media="(prefers-color-scheme: dark)" srcset="assets/readme/icho3k_figure.png">
   <!-- Light mode image (export a version with a light-friendly background & darker text marks) -->
-  <source media="(prefers-color-scheme: light)" srcset="assets/readme/hamster-banner-light.png">
+  <source media="(prefers-color-scheme: light)" srcset="assets/readme/icho3k_figure_light.png">
   <img src="assets/readme/hamster-banner-light.png" alt="iCHO3K metabolic network hamster" width="100%">
 </picture>
 
