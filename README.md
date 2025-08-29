@@ -1,5 +1,13 @@
 # iCHO3K
 
+<picture>
+  <!-- Dark mode image (your current PNG works great here) -->
+  <source media="(prefers-color-scheme: dark)" srcset="assets/readme/hamster-banner-dark.png">
+  <!-- Light mode image (export a version with a light-friendly background & darker text marks) -->
+  <source media="(prefers-color-scheme: light)" srcset="assets/readme/hamster-banner-light.png">
+  <img src="assets/readme/hamster-banner-light.png" alt="iCHO3K metabolic network hamster" width="100%">
+</picture>
+
 <p align="center">
   <img src="iCHO3K/banner/icho3k_figure.png"
        alt="Stylized hamster-shaped metabolic network (iCHO3K)"
