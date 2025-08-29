@@ -22,13 +22,15 @@ def df_to_dict(df, key_col):
     
     return my_dict
 
-def get_gene_info(gene_id):
+def get_gene_info(gene_id, email):
     '''
     This function retrieves information from the NIH Gene database
     
     input: Gene Entrez ID
     output: Gene Symbol, Gene Name, Gene Description, Gene Ensembl ID, NCBI Transcript ID, NCBI Protein ID
     '''
+    
+    Entrez.email = email
 
     handle = Entrez.efetch(db='gene', id=gene_id, retmode='xml')
     record = Entrez.read(handle)[0]
@@ -82,7 +84,7 @@ def get_gene_info(gene_id):
             mRNA_ncbi_id = ''
             protein_ncbi_id = ''
     
-    df = pd.read_csv('orthologs&GO.txt')
+    df = pd.read_csv('../../Data/Orthologs/orthologs&GO.txt')
     for i,row in df.iterrows():
         if row['CHO GeneID'] == gene_id:
             go_terms = row['GO_ids']
