@@ -58,16 +58,23 @@ iCHO3K/
 ├── Dataset/                              # iCHO3K source dataset for model generation
 └── Model/                                # iCHO3K generic model variants
 
-Networks/                     # Static images illustrating mass/flux flow
+Matlab/
+├── ecFBA/                               # ecFBA scripts
+├── Flux_Sampling/                       # Flux Sampling ADSB Scripts
+├── Model_curation/
+├── Model_Extraction/                    # Model Extraction with mCADRE scripts
+├── Standep/                             # ubiquityScore calculation with Standep
+├── main_Model_Extraction.m              # Main code for mCADRE model extraction
+└── main_standep.m                       # Main code for Standep data preprocessing
 
-Notebooks/                    # Jupyter & MATLAB notebooks/scripts
-├── Matlab/                   # extraction, flux sampling, context-specific
-├── Supplementary Notebooks/
-├── Website Data/
-├── metabolite_identifiers.py
-├── google_sheet.py
-├── utils.py
-└── *Comparison of Metabolic Reconstructions.ipynb,* *Final CHO Model.ipynb*, etc.
+Python/
+├── Network Reconstruction/              # Notebooks related to the reconciliation of previous reconstructions and building of iCHO3K
+├── Supplementary Notebooks/             # Supplementary Notebooks with extra information of previous reconstructions
+├── Comparison of Metabolic Reconstructions.ipynb
+├── Model_Extraction/                    # Model Extraction with mCADRE scripts
+├── Standep/                             # ubiquityScore calculation with Standep
+├── main_Model_Extraction.m              # Main code for mCADRE model extraction
+└── main_standep.m                       # Main code for Standep data preprocessing
 
 Other top-level files
 ├── CHO_Genome.xlsx
