@@ -36,6 +36,7 @@ Analyses/
 ├── conf_score_distribution.png            # Confidence Score distribution across all reactions from iCHO3K
 ├── growth_rate_pred/                      # pFBA simulations from ZeLa and WT context-specific models
 ├── recons_comparisons/                    # Plot comparisions between iCHO3K and previous CHO reconstructions
+├── Relevant_mets/                         # Analysis of subsystems related to metabolites relevant to biomass sysnthesis
 ├── sampled_results/
 ├── subsystem_overview/                    #Subsystem/System classification sunburst plot
 └── tSNE/                                  #tSNE embedding analysis
@@ -69,6 +70,11 @@ Matlab/
 
 Python/
 ├── Network Reconstruction/              # Notebooks related to the reconciliation of previous reconstructions and building of iCHO3K
+│   ├── Genes.ipynb                      # Retrieval of Gene information from databases
+│   ├── Metabolites.ipynb
+│   ├── Reactions.ipynb
+│   ├── retrieveTurnoverNumber.ipynb                    
+│   └── Standarization of Datasets.ipynb       
 ├── Supplementary Notebooks/             # Supplementary Notebooks with extra information of previous reconstructions
 ├── Comparison..Reconstructions.ipynb    # Comparison of iCHO3K with previous CHO reconstructions
 ├── Computational_Tests.ipynb            
