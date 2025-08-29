@@ -70,15 +70,12 @@ Matlab/
 Python/
 ├── Network Reconstruction/              # Notebooks related to the reconciliation of previous reconstructions and building of iCHO3K
 ├── Supplementary Notebooks/             # Supplementary Notebooks with extra information of previous reconstructions
-├── Comparison of Metabolic Reconstructions.ipynb
-├── Model_Extraction/                    # Model Extraction with mCADRE scripts
-├── Standep/                             # ubiquityScore calculation with Standep
-├── main_Model_Extraction.m              # Main code for mCADRE model extraction
+├── Comparison..Reconstructions.ipynb    # Comparison of iCHO3K with previous CHO reconstructions
+├── Computational_Tests.ipynb            
+├── Final CHO Model.ipynb
+├── Visual..Distribution.ipynb
 └── main_standep.m                       # Main code for Standep data preprocessing
 
-Other top-level files
-├── CHO_Genome.xlsx
-└── Notebooks.ipynb           # overview notebook linking to others
 ```
 
 > **Large files:** Some assets may use **Git LFS**. If you see pointer files, run:
