@@ -43,6 +43,7 @@
 ```
 Analyses/
 ├── conf_score_distribution.png            # Confidence Score distribution across all reactions from iCHO3K
+├── data_preprocessing                     # ZeLa vs WT growth rate and spent media data analysis
 ├── growth_rate_pred/                      # pFBA simulations from ZeLa and WT context-specific models
 ├── recons_comparisons/                    # Plot comparisions between iCHO3K and previous CHO reconstructions
 ├── Relevant_mets/                         # Analysis of subsystems related to metabolites relevant to biomass sysnthesis
@@ -84,7 +85,7 @@ Python/
 │   ├── Genes.ipynb                      # Retrieval of Gene information from databases
 │   ├── Metabolites.ipynb                # Integration of metabolite information, de-duplication and analysis
 │   ├── Reactions.ipynb                  # Reconciliation of previous CHO and Recon3D reconstructions, de-duplication, subsytem re-organization 
-│   └──retrieveTurnoverNumber.ipynb      # Fetch turnover numbers and molecular weights from the BRENDA
+│   └── retrieveTurnoverNumber.ipynb      # Fetch turnover numbers and molecular weights from the BRENDA
 │                 
 ├── Supplementary Notebooks/             # Supplementary Notebooks with extra information of previous reconstructions
 ├── Comparison..Reconstructions.ipynb    # Comparison of iCHO3K with previous CHO reconstructions
