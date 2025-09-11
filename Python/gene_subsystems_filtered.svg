@@ -1,0 +1,4703 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="858.67186pt" height="1813.275625pt" viewBox="0 0 858.67186 1813.275625" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2025-09-11T15:45:53.385252</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 1813.275625 
+L 858.67186 1813.275625 
+L 858.67186 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 300.54375 1773.873125 
+L 837.768456 1773.873125 
+L 837.768456 27.993125 
+L 300.54375 27.993125 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 300.54375 1694.514943 
+L 301.247882 1694.514943 
+L 301.247882 1675.787349 
+L 300.54375 1675.787349 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #1f77b4"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 300.54375 1671.10545 
+L 301.247882 1671.10545 
+L 301.247882 1652.377855 
+L 300.54375 1652.377855 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #1f77b4"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 300.54375 1647.695957 
+L 301.247882 1647.695957 
+L 301.247882 1628.968362 
+L 300.54375 1628.968362 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #1f77b4"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 300.54375 1624.286464 
+L 301.247882 1624.286464 
+L 301.247882 1605.558869 
+L 300.54375 1605.558869 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #1f77b4"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 300.54375 1600.876971 
+L 301.247882 1600.876971 
+L 301.247882 1582.149376 
+L 300.54375 1582.149376 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #aec7e8"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 300.54375 1577.467477 
+L 301.247882 1577.467477 
+L 301.247882 1558.739883 
+L 300.54375 1558.739883 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #aec7e8"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 300.54375 1554.057984 
+L 301.247882 1554.057984 
+L 301.247882 1535.33039 
+L 300.54375 1535.33039 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #aec7e8"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 300.54375 1530.648491 
+L 301.247882 1530.648491 
+L 301.247882 1511.920897 
+L 300.54375 1511.920897 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #ff7f0e"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 300.54375 1507.238998 
+L 301.247882 1507.238998 
+L 301.247882 1488.511403 
+L 300.54375 1488.511403 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #ff7f0e"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 300.54375 1483.829505 
+L 301.247882 1483.829505 
+L 301.247882 1465.10191 
+L 300.54375 1465.10191 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #ff7f0e"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 300.54375 1460.420012 
+L 301.247882 1460.420012 
+L 301.247882 1441.692417 
+L 300.54375 1441.692417 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #ff7f0e"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 300.54375 1437.010518 
+L 301.247882 1437.010518 
+L 301.247882 1418.282924 
+L 300.54375 1418.282924 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #ffbb78"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 300.54375 1413.601025 
+L 301.247882 1413.601025 
+L 301.247882 1394.873431 
+L 300.54375 1394.873431 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #ffbb78"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 300.54375 1390.191532 
+L 301.247882 1390.191532 
+L 301.247882 1371.463938 
+L 300.54375 1371.463938 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #ffbb78"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 300.54375 1366.782039 
+L 301.247882 1366.782039 
+L 301.247882 1348.054444 
+L 300.54375 1348.054444 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #2ca02c"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 300.54375 1343.372546 
+L 301.247882 1343.372546 
+L 301.247882 1324.644951 
+L 300.54375 1324.644951 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #2ca02c"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 300.54375 1319.963053 
+L 301.247882 1319.963053 
+L 301.247882 1301.235458 
+L 300.54375 1301.235458 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #2ca02c"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 300.54375 1296.553559 
+L 301.247882 1296.553559 
+L 301.247882 1277.825965 
+L 300.54375 1277.825965 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #98df8a"/>
+   </g>
+   <g id="patch_21">
+    <path d="M 300.54375 1273.144066 
+L 301.247882 1273.144066 
+L 301.247882 1254.416472 
+L 300.54375 1254.416472 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #98df8a"/>
+   </g>
+   <g id="patch_22">
+    <path d="M 300.54375 1249.734573 
+L 301.247882 1249.734573 
+L 301.247882 1231.006979 
+L 300.54375 1231.006979 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #98df8a"/>
+   </g>
+   <g id="patch_23">
+    <path d="M 300.54375 1226.32508 
+L 301.247882 1226.32508 
+L 301.247882 1207.597485 
+L 300.54375 1207.597485 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #98df8a"/>
+   </g>
+   <g id="patch_24">
+    <path d="M 300.54375 1202.915587 
+L 301.247882 1202.915587 
+L 301.247882 1184.187992 
+L 300.54375 1184.187992 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #d62728"/>
+   </g>
+   <g id="patch_25">
+    <path d="M 300.54375 1179.506094 
+L 301.247882 1179.506094 
+L 301.247882 1160.778499 
+L 300.54375 1160.778499 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #d62728"/>
+   </g>
+   <g id="patch_26">
+    <path d="M 300.54375 1156.0966 
+L 301.247882 1156.0966 
+L 301.247882 1137.369006 
+L 300.54375 1137.369006 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #d62728"/>
+   </g>
+   <g id="patch_27">
+    <path d="M 300.54375 1132.687107 
+L 301.952014 1132.687107 
+L 301.952014 1113.959513 
+L 300.54375 1113.959513 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #ff9896"/>
+   </g>
+   <g id="patch_28">
+    <path d="M 300.54375 1109.277614 
+L 301.952014 1109.277614 
+L 301.952014 1090.55002 
+L 300.54375 1090.55002 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #ff9896"/>
+   </g>
+   <g id="patch_29">
+    <path d="M 300.54375 1085.868121 
+L 301.952014 1085.868121 
+L 301.952014 1067.140526 
+L 300.54375 1067.140526 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #ff9896"/>
+   </g>
+   <g id="patch_30">
+    <path d="M 300.54375 1062.458628 
+L 301.952014 1062.458628 
+L 301.952014 1043.731033 
+L 300.54375 1043.731033 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #9467bd"/>
+   </g>
+   <g id="patch_31">
+    <path d="M 300.54375 1039.049135 
+L 301.952014 1039.049135 
+L 301.952014 1020.32154 
+L 300.54375 1020.32154 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #9467bd"/>
+   </g>
+   <g id="patch_32">
+    <path d="M 300.54375 1015.639641 
+L 302.656147 1015.639641 
+L 302.656147 996.912047 
+L 300.54375 996.912047 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #9467bd"/>
+   </g>
+   <g id="patch_33">
+    <path d="M 300.54375 992.230148 
+L 302.656147 992.230148 
+L 302.656147 973.502554 
+L 300.54375 973.502554 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #9467bd"/>
+   </g>
+   <g id="patch_34">
+    <path d="M 300.54375 968.820655 
+L 302.656147 968.820655 
+L 302.656147 950.093061 
+L 300.54375 950.093061 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #c5b0d5"/>
+   </g>
+   <g id="patch_35">
+    <path d="M 300.54375 945.411162 
+L 302.656147 945.411162 
+L 302.656147 926.683567 
+L 300.54375 926.683567 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #c5b0d5"/>
+   </g>
+   <g id="patch_36">
+    <path d="M 300.54375 922.001669 
+L 303.360279 922.001669 
+L 303.360279 903.274074 
+L 300.54375 903.274074 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #c5b0d5"/>
+   </g>
+   <g id="patch_37">
+    <path d="M 300.54375 898.592176 
+L 303.360279 898.592176 
+L 303.360279 879.864581 
+L 300.54375 879.864581 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #8c564b"/>
+   </g>
+   <g id="patch_38">
+    <path d="M 300.54375 875.182683 
+L 304.064411 875.182683 
+L 304.064411 856.455088 
+L 300.54375 856.455088 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #8c564b"/>
+   </g>
+   <g id="patch_39">
+    <path d="M 300.54375 851.773189 
+L 304.064411 851.773189 
+L 304.064411 833.045595 
+L 300.54375 833.045595 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #8c564b"/>
+   </g>
+   <g id="patch_40">
+    <path d="M 300.54375 828.363696 
+L 304.064411 828.363696 
+L 304.064411 809.636102 
+L 300.54375 809.636102 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #c49c94"/>
+   </g>
+   <g id="patch_41">
+    <path d="M 300.54375 804.954203 
+L 304.768543 804.954203 
+L 304.768543 786.226609 
+L 300.54375 786.226609 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #c49c94"/>
+   </g>
+   <g id="patch_42">
+    <path d="M 300.54375 781.54471 
+L 304.768543 781.54471 
+L 304.768543 762.817115 
+L 300.54375 762.817115 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #c49c94"/>
+   </g>
+   <g id="patch_43">
+    <path d="M 300.54375 758.135217 
+L 304.768543 758.135217 
+L 304.768543 739.407622 
+L 300.54375 739.407622 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #c49c94"/>
+   </g>
+   <g id="patch_44">
+    <path d="M 300.54375 734.725724 
+L 304.768543 734.725724 
+L 304.768543 715.998129 
+L 300.54375 715.998129 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #e377c2"/>
+   </g>
+   <g id="patch_45">
+    <path d="M 300.54375 711.31623 
+L 304.768543 711.31623 
+L 304.768543 692.588636 
+L 300.54375 692.588636 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #e377c2"/>
+   </g>
+   <g id="patch_46">
+    <path d="M 300.54375 687.906737 
+L 304.768543 687.906737 
+L 304.768543 669.179143 
+L 300.54375 669.179143 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #e377c2"/>
+   </g>
+   <g id="patch_47">
+    <path d="M 300.54375 664.497244 
+L 304.768543 664.497244 
+L 304.768543 645.76965 
+L 300.54375 645.76965 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #f7b6d2"/>
+   </g>
+   <g id="patch_48">
+    <path d="M 300.54375 641.087751 
+L 305.472675 641.087751 
+L 305.472675 622.360156 
+L 300.54375 622.360156 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #f7b6d2"/>
+   </g>
+   <g id="patch_49">
+    <path d="M 300.54375 617.678258 
+L 305.472675 617.678258 
+L 305.472675 598.950663 
+L 300.54375 598.950663 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #f7b6d2"/>
+   </g>
+   <g id="patch_50">
+    <path d="M 300.54375 594.268765 
+L 305.472675 594.268765 
+L 305.472675 575.54117 
+L 300.54375 575.54117 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #7f7f7f"/>
+   </g>
+   <g id="patch_51">
+    <path d="M 300.54375 570.859271 
+L 306.176808 570.859271 
+L 306.176808 552.131677 
+L 300.54375 552.131677 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #7f7f7f"/>
+   </g>
+   <g id="patch_52">
+    <path d="M 300.54375 547.449778 
+L 306.88094 547.449778 
+L 306.88094 528.722184 
+L 300.54375 528.722184 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #7f7f7f"/>
+   </g>
+   <g id="patch_53">
+    <path d="M 300.54375 524.040285 
+L 306.88094 524.040285 
+L 306.88094 505.312691 
+L 300.54375 505.312691 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #7f7f7f"/>
+   </g>
+   <g id="patch_54">
+    <path d="M 300.54375 500.630792 
+L 306.88094 500.630792 
+L 306.88094 481.903197 
+L 300.54375 481.903197 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #c7c7c7"/>
+   </g>
+   <g id="patch_55">
+    <path d="M 300.54375 477.221299 
+L 307.585072 477.221299 
+L 307.585072 458.493704 
+L 300.54375 458.493704 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #c7c7c7"/>
+   </g>
+   <g id="patch_56">
+    <path d="M 300.54375 453.811806 
+L 307.585072 453.811806 
+L 307.585072 435.084211 
+L 300.54375 435.084211 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #c7c7c7"/>
+   </g>
+   <g id="patch_57">
+    <path d="M 300.54375 430.402312 
+L 308.289204 430.402312 
+L 308.289204 411.674718 
+L 300.54375 411.674718 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #bcbd22"/>
+   </g>
+   <g id="patch_58">
+    <path d="M 300.54375 406.992819 
+L 308.993336 406.992819 
+L 308.993336 388.265225 
+L 300.54375 388.265225 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #bcbd22"/>
+   </g>
+   <g id="patch_59">
+    <path d="M 300.54375 383.583326 
+L 308.993336 383.583326 
+L 308.993336 364.855732 
+L 300.54375 364.855732 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #bcbd22"/>
+   </g>
+   <g id="patch_60">
+    <path d="M 300.54375 360.173833 
+L 310.401601 360.173833 
+L 310.401601 341.446238 
+L 300.54375 341.446238 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #dbdb8d"/>
+   </g>
+   <g id="patch_61">
+    <path d="M 300.54375 336.76434 
+L 310.401601 336.76434 
+L 310.401601 318.036745 
+L 300.54375 318.036745 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #dbdb8d"/>
+   </g>
+   <g id="patch_62">
+    <path d="M 300.54375 313.354847 
+L 311.105733 313.354847 
+L 311.105733 294.627252 
+L 300.54375 294.627252 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #dbdb8d"/>
+   </g>
+   <g id="patch_63">
+    <path d="M 300.54375 289.945353 
+L 312.513997 289.945353 
+L 312.513997 271.217759 
+L 300.54375 271.217759 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #dbdb8d"/>
+   </g>
+   <g id="patch_64">
+    <path d="M 300.54375 266.53586 
+L 312.513997 266.53586 
+L 312.513997 247.808266 
+L 300.54375 247.808266 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #17becf"/>
+   </g>
+   <g id="patch_65">
+    <path d="M 300.54375 243.126367 
+L 313.21813 243.126367 
+L 313.21813 224.398773 
+L 300.54375 224.398773 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #17becf"/>
+   </g>
+   <g id="patch_66">
+    <path d="M 300.54375 219.716874 
+L 313.922262 219.716874 
+L 313.922262 200.989279 
+L 300.54375 200.989279 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #17becf"/>
+   </g>
+   <g id="patch_67">
+    <path d="M 300.54375 196.307381 
+L 320.963584 196.307381 
+L 320.963584 177.579786 
+L 300.54375 177.579786 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #9edae5"/>
+   </g>
+   <g id="patch_68">
+    <path d="M 300.54375 172.897888 
+L 324.484245 172.897888 
+L 324.484245 154.170293 
+L 300.54375 154.170293 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #9edae5"/>
+   </g>
+   <g id="patch_69">
+    <path d="M 300.54375 149.488395 
+L 439.961926 149.488395 
+L 439.961926 130.7608 
+L 300.54375 130.7608 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #9edae5"/>
+   </g>
+   <g id="patch_70">
+    <path d="M 300.54375 126.078901 
+L 827.234638 126.078901 
+L 827.234638 107.351307 
+L 300.54375 107.351307 
+z
+" clip-path="url(#p854d7fd1cf)" style="fill: #9edae5"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 300.54375 1773.873125 
+L 300.54375 27.993125 
+" clip-path="url(#p854d7fd1cf)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="m16ce59d181" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m16ce59d181" x="300.54375" y="1773.873125" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <!-- 0 -->
+      <g transform="translate(297.382031 1788.5825) scale(0.1 -0.1)">
+       <defs>
+        <path id="LucidaGrande-30" d="M 2006 -116 
+Q 1291 -116 848 557 
+Q 406 1231 406 2316 
+Q 406 3409 851 4075 
+Q 1297 4741 2025 4741 
+Q 2753 4741 3198 4075 
+Q 3644 3409 3644 2325 
+Q 3644 1213 3198 548 
+Q 2753 -116 2006 -116 
+z
+M 2013 347 
+Q 2991 347 2991 2334 
+Q 2991 4278 2025 4278 
+Q 1063 4278 1063 2316 
+Q 1063 347 2013 347 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#LucidaGrande-30"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 370.95697 1773.873125 
+L 370.95697 27.993125 
+" clip-path="url(#p854d7fd1cf)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m16ce59d181" x="370.95697" y="1773.873125" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <!-- 100 -->
+      <g transform="translate(361.471814 1788.5825) scale(0.1 -0.1)">
+       <defs>
+        <path id="LucidaGrande-31" d="M 963 0 
+L 963 463 
+L 1888 463 
+L 1888 4113 
+L 963 3881 
+L 963 4356 
+L 2506 4741 
+L 2506 463 
+L 3431 463 
+L 3431 0 
+L 963 0 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#LucidaGrande-31"/>
+       <use xlink:href="#LucidaGrande-30" x="63.232422"/>
+       <use xlink:href="#LucidaGrande-30" x="126.464844"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 441.370191 1773.873125 
+L 441.370191 27.993125 
+" clip-path="url(#p854d7fd1cf)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m16ce59d181" x="441.370191" y="1773.873125" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <!-- 200 -->
+      <g transform="translate(431.885034 1788.5825) scale(0.1 -0.1)">
+       <defs>
+        <path id="LucidaGrande-32" d="M 531 0 
+L 531 541 
+Q 800 1169 1619 1909 
+L 1972 2225 
+Q 2653 2841 2653 3447 
+Q 2653 3834 2420 4056 
+Q 2188 4278 1781 4278 
+Q 1300 4278 647 3906 
+L 647 4450 
+Q 1263 4741 1869 4741 
+Q 2519 4741 2912 4391 
+Q 3306 4041 3306 3463 
+Q 3306 3047 3107 2725 
+Q 2909 2403 2369 1944 
+L 2131 1741 
+Q 1391 1113 1275 541 
+L 3284 541 
+L 3284 0 
+L 531 0 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#LucidaGrande-32"/>
+       <use xlink:href="#LucidaGrande-30" x="63.232422"/>
+       <use xlink:href="#LucidaGrande-30" x="126.464844"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 511.783411 1773.873125 
+L 511.783411 27.993125 
+" clip-path="url(#p854d7fd1cf)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m16ce59d181" x="511.783411" y="1773.873125" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <!-- 300 -->
+      <g transform="translate(502.298255 1788.5825) scale(0.1 -0.1)">
+       <defs>
+        <path id="LucidaGrande-33" d="M 650 34 
+L 650 609 
+Q 1313 347 1694 347 
+Q 2134 347 2411 605 
+Q 2688 863 2688 1272 
+Q 2688 2247 1322 2247 
+L 1078 2247 
+L 1078 2663 
+L 1294 2666 
+Q 2575 2666 2575 3569 
+Q 2575 4278 1731 4278 
+Q 1269 4278 713 4019 
+L 713 4556 
+Q 1259 4741 1775 4741 
+Q 3194 4741 3194 3669 
+Q 3194 2853 2228 2506 
+Q 3347 2247 3347 1281 
+Q 3347 628 2915 256 
+Q 2484 -116 1731 -116 
+Q 1303 -116 650 34 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#LucidaGrande-33"/>
+       <use xlink:href="#LucidaGrande-30" x="63.232422"/>
+       <use xlink:href="#LucidaGrande-30" x="126.464844"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 582.196631 1773.873125 
+L 582.196631 27.993125 
+" clip-path="url(#p854d7fd1cf)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m16ce59d181" x="582.196631" y="1773.873125" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <!-- 400 -->
+      <g transform="translate(572.711475 1788.5825) scale(0.1 -0.1)">
+       <defs>
+        <path id="LucidaGrande-34" d="M 2409 0 
+L 2409 1309 
+L 328 1309 
+L 328 1775 
+L 2409 4625 
+L 2988 4625 
+L 2988 1813 
+L 3606 1813 
+L 3606 1309 
+L 2988 1309 
+L 2988 0 
+L 2409 0 
+z
+M 931 1813 
+L 2450 1813 
+L 2450 3869 
+L 931 1813 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#LucidaGrande-34"/>
+       <use xlink:href="#LucidaGrande-30" x="63.232422"/>
+       <use xlink:href="#LucidaGrande-30" x="126.464844"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_11">
+      <path d="M 652.609852 1773.873125 
+L 652.609852 27.993125 
+" clip-path="url(#p854d7fd1cf)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m16ce59d181" x="652.609852" y="1773.873125" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <!-- 500 -->
+      <g transform="translate(643.124695 1788.5825) scale(0.1 -0.1)">
+       <defs>
+        <path id="LucidaGrande-35" d="M 778 -19 
+L 778 531 
+Q 1238 347 1653 347 
+Q 2109 347 2370 615 
+Q 2631 884 2631 1356 
+Q 2631 2397 1197 2397 
+Q 1034 2397 856 2375 
+L 856 4625 
+L 3197 4625 
+L 3197 4088 
+L 1397 4088 
+L 1397 2869 
+Q 2288 2869 2788 2459 
+Q 3288 2050 3288 1325 
+Q 3288 650 2833 267 
+Q 2378 -116 1572 -116 
+Q 1222 -116 778 -19 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#LucidaGrande-35"/>
+       <use xlink:href="#LucidaGrande-30" x="63.232422"/>
+       <use xlink:href="#LucidaGrande-30" x="126.464844"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_13">
+      <path d="M 723.023072 1773.873125 
+L 723.023072 27.993125 
+" clip-path="url(#p854d7fd1cf)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m16ce59d181" x="723.023072" y="1773.873125" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <!-- 600 -->
+      <g transform="translate(713.537916 1788.5825) scale(0.1 -0.1)">
+       <defs>
+        <path id="LucidaGrande-36" d="M 1100 2397 
+Q 1541 2969 2209 2969 
+Q 2816 2969 3202 2567 
+Q 3588 2166 3588 1538 
+Q 3588 816 3155 350 
+Q 2722 -116 2056 -116 
+Q 1291 -116 859 500 
+Q 428 1116 428 2209 
+Q 428 3413 923 4078 
+Q 1419 4744 2319 4744 
+Q 2731 4744 3350 4569 
+L 3350 4031 
+Q 2697 4281 2281 4281 
+Q 1100 4281 1100 2397 
+z
+M 2969 1400 
+Q 2969 1925 2733 2225 
+Q 2497 2525 2078 2525 
+Q 1688 2525 1406 2262 
+Q 1125 2000 1125 1631 
+Q 1125 1050 1392 698 
+Q 1659 347 2100 347 
+Q 2497 347 2733 633 
+Q 2969 919 2969 1400 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#LucidaGrande-36"/>
+       <use xlink:href="#LucidaGrande-30" x="63.232422"/>
+       <use xlink:href="#LucidaGrande-30" x="126.464844"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_15">
+      <path d="M 793.436292 1773.873125 
+L 793.436292 27.993125 
+" clip-path="url(#p854d7fd1cf)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#m16ce59d181" x="793.436292" y="1773.873125" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <!-- 700 -->
+      <g transform="translate(783.951136 1788.5825) scale(0.1 -0.1)">
+       <defs>
+        <path id="LucidaGrande-37" d="M 963 0 
+Q 1053 541 1220 934 
+Q 1388 1328 1813 2016 
+L 3075 4047 
+L 694 4047 
+L 694 4625 
+L 3663 4625 
+L 3663 4047 
+Q 1884 1425 1672 0 
+L 963 0 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#LucidaGrande-37"/>
+       <use xlink:href="#LucidaGrande-30" x="63.232422"/>
+       <use xlink:href="#LucidaGrande-30" x="126.464844"/>
+      </g>
+     </g>
+    </g>
+    <g id="text_9">
+     <!-- Genes (unique IDs) -->
+     <g transform="translate(514.345165 1803.761875) scale(0.12 -0.12)">
+      <defs>
+       <path id="LucidaGrande-47" d="M 4072 125 
+Q 3231 -116 2606 -116 
+Q 1503 -116 914 512 
+Q 325 1141 325 2313 
+Q 325 3463 922 4102 
+Q 1519 4741 2597 4741 
+Q 3303 4741 4066 4531 
+L 4066 3925 
+Q 3109 4250 2600 4250 
+Q 1850 4250 1436 3740 
+Q 1022 3231 1022 2306 
+Q 1022 1391 1465 883 
+Q 1909 375 2709 375 
+Q 3038 375 3419 491 
+L 3419 1997 
+L 4072 1997 
+L 4072 125 
+z
+" transform="scale(0.015625)"/>
+       <path id="LucidaGrande-65" d="M 3103 109 
+Q 2484 -78 2044 -78 
+Q 1294 -78 820 420 
+Q 347 919 347 1713 
+Q 347 2484 764 2978 
+Q 1181 3472 1831 3472 
+Q 2447 3472 2783 3034 
+Q 3119 2597 3119 1791 
+L 3116 1600 
+L 975 1600 
+Q 1109 391 2159 391 
+Q 2544 391 3103 597 
+L 3103 109 
+z
+M 1003 2063 
+L 2500 2063 
+Q 2500 3009 1794 3009 
+Q 1084 3009 1003 2063 
+z
+" transform="scale(0.015625)"/>
+       <path id="LucidaGrande-6e" d="M 616 0 
+L 616 3394 
+L 1231 3394 
+L 1231 2756 
+Q 1719 3469 2425 3469 
+Q 2866 3469 3128 3189 
+Q 3391 2909 3391 2438 
+L 3391 0 
+L 2775 0 
+L 2775 2238 
+Q 2775 2616 2664 2777 
+Q 2553 2938 2297 2938 
+Q 1731 2938 1231 2197 
+L 1231 0 
+L 616 0 
+z
+" transform="scale(0.015625)"/>
+       <path id="LucidaGrande-73" d="M 1516 -78 
+Q 1094 -78 491 119 
+L 491 684 
+Q 1094 384 1541 384 
+Q 1806 384 1981 528 
+Q 2156 672 2156 888 
+Q 2156 1203 1666 1409 
+L 1306 1563 
+Q 509 1894 509 2516 
+Q 509 2959 823 3214 
+Q 1138 3469 1684 3469 
+Q 1969 3469 2388 3391 
+L 2516 3366 
+L 2516 2853 
+Q 2000 3006 1697 3006 
+Q 1103 3006 1103 2575 
+Q 1103 2297 1553 2106 
+L 1850 1981 
+Q 2353 1769 2562 1533 
+Q 2772 1297 2772 944 
+Q 2772 497 2419 209 
+Q 2066 -78 1516 -78 
+z
+" transform="scale(0.015625)"/>
+       <path id="LucidaGrande-20" transform="scale(0.015625)"/>
+       <path id="LucidaGrande-28" d="M 1850 -500 
+L 1850 -925 
+Q 1175 -466 779 323 
+Q 384 1113 384 2006 
+Q 384 2897 779 3686 
+Q 1175 4475 1850 4934 
+L 1850 4509 
+Q 1391 4009 1195 3434 
+Q 1000 2859 1000 2006 
+Q 1000 1150 1195 575 
+Q 1391 0 1850 -500 
+z
+" transform="scale(0.015625)"/>
+       <path id="LucidaGrande-75" d="M 2738 0 
+L 2738 638 
+Q 2247 -78 1547 -78 
+Q 1103 -78 840 201 
+Q 578 481 578 956 
+L 578 3394 
+L 1194 3394 
+L 1194 1156 
+Q 1194 775 1305 614 
+Q 1416 453 1675 453 
+Q 2238 453 2738 1194 
+L 2738 3394 
+L 3353 3394 
+L 3353 0 
+L 2738 0 
+z
+" transform="scale(0.015625)"/>
+       <path id="LucidaGrande-69" d="M 616 0 
+L 616 3394 
+L 1231 3394 
+L 1231 0 
+L 616 0 
+z
+M 616 4009 
+L 616 4625 
+L 1231 4625 
+L 1231 4009 
+L 616 4009 
+z
+" transform="scale(0.015625)"/>
+       <path id="LucidaGrande-71" d="M 2794 -1234 
+L 2794 638 
+Q 2419 -78 1663 -78 
+Q 1050 -78 698 369 
+Q 347 816 347 1591 
+Q 347 2438 745 2953 
+Q 1144 3469 1794 3469 
+Q 2397 3469 2794 3006 
+L 2794 3394 
+L 3413 3394 
+L 3413 -1234 
+L 2794 -1234 
+z
+M 2794 2584 
+Q 2316 3006 1888 3006 
+Q 1003 3006 1003 1653 
+Q 1003 463 1791 463 
+Q 2303 463 2794 1022 
+L 2794 2584 
+z
+" transform="scale(0.015625)"/>
+       <path id="LucidaGrande-49" d="M 594 0 
+L 594 4625 
+L 1250 4625 
+L 1250 0 
+L 594 0 
+z
+" transform="scale(0.015625)"/>
+       <path id="LucidaGrande-44" d="M 597 0 
+L 597 4625 
+L 2134 4625 
+Q 2822 4625 3245 4472 
+Q 3669 4319 3978 3953 
+Q 4469 3372 4469 2422 
+Q 4469 1269 3859 634 
+Q 3250 0 2144 0 
+L 597 0 
+z
+M 1253 491 
+L 2094 491 
+Q 2994 491 3369 975 
+Q 3772 1491 3772 2359 
+Q 3772 3175 3375 3641 
+Q 3134 3925 2800 4029 
+Q 2466 4134 1794 4134 
+L 1253 4134 
+L 1253 491 
+z
+" transform="scale(0.015625)"/>
+       <path id="LucidaGrande-29" d="M 231 -500 
+L 231 -925 
+Q 906 -466 1301 323 
+Q 1697 1113 1697 2006 
+Q 1697 2897 1301 3686 
+Q 906 4475 231 4934 
+L 231 4509 
+Q 691 4009 886 3434 
+Q 1081 2859 1081 2006 
+Q 1081 1150 886 575 
+Q 691 0 231 -500 
+z
+" transform="scale(0.015625)"/>
+      </defs>
+      <use xlink:href="#LucidaGrande-47"/>
+      <use xlink:href="#LucidaGrande-65" x="72.265625"/>
+      <use xlink:href="#LucidaGrande-6e" x="127.978516"/>
+      <use xlink:href="#LucidaGrande-65" x="190.039062"/>
+      <use xlink:href="#LucidaGrande-73" x="245.751953"/>
+      <use xlink:href="#LucidaGrande-20" x="296.728516"/>
+      <use xlink:href="#LucidaGrande-28" x="328.369141"/>
+      <use xlink:href="#LucidaGrande-75" x="360.888672"/>
+      <use xlink:href="#LucidaGrande-6e" x="422.949219"/>
+      <use xlink:href="#LucidaGrande-69" x="485.009766"/>
+      <use xlink:href="#LucidaGrande-71" x="513.916016"/>
+      <use xlink:href="#LucidaGrande-75" x="576.855469"/>
+      <use xlink:href="#LucidaGrande-65" x="638.916016"/>
+      <use xlink:href="#LucidaGrande-20" x="694.628906"/>
+      <use xlink:href="#LucidaGrande-49" x="726.269531"/>
+      <use xlink:href="#LucidaGrande-44" x="755.078125"/>
+      <use xlink:href="#LucidaGrande-73" x="829.980469"/>
+      <use xlink:href="#LucidaGrande-29" x="880.957031"/>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_17">
+      <defs>
+       <path id="m976a7e63d8" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="1685.151146" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <!-- ALANINE AND ASPARTATE METABOLISM -->
+      <g transform="translate(101.067187 1689.005833) scale(0.1 -0.1)">
+       <defs>
+        <path id="LucidaGrande-41" d="M 2941 1769 
+L 2153 3763 
+L 1363 1769 
+L 2941 1769 
+z
+M 3634 0 
+L 3131 1281 
+L 1172 1281 
+L 663 0 
+L 53 0 
+L 1888 4625 
+L 2538 4625 
+L 4344 0 
+L 3634 0 
+z
+" transform="scale(0.015625)"/>
+        <path id="LucidaGrande-4c" d="M 597 0 
+L 597 4625 
+L 1253 4625 
+L 1253 491 
+L 3334 491 
+L 3334 0 
+L 597 0 
+z
+" transform="scale(0.015625)"/>
+        <path id="LucidaGrande-4e" d="M 597 0 
+L 597 4625 
+L 1241 4625 
+L 3569 1053 
+L 3569 4625 
+L 4131 4625 
+L 4131 0 
+L 3491 0 
+L 1159 3572 
+L 1159 0 
+L 597 0 
+z
+" transform="scale(0.015625)"/>
+        <path id="LucidaGrande-45" d="M 597 0 
+L 597 4625 
+L 3181 4625 
+L 3181 4134 
+L 1253 4134 
+L 1253 2650 
+L 2869 2650 
+L 2869 2166 
+L 1253 2166 
+L 1253 491 
+L 3316 491 
+L 3316 0 
+L 597 0 
+z
+" transform="scale(0.015625)"/>
+        <path id="LucidaGrande-53" d="M 1503 -116 
+Q 1038 -116 313 88 
+L 313 738 
+Q 1094 375 1597 375 
+Q 1984 375 2220 578 
+Q 2456 781 2456 1113 
+Q 2456 1384 2301 1575 
+Q 2147 1766 1731 2000 
+L 1413 2184 
+Q 822 2522 580 2820 
+Q 338 3119 338 3516 
+Q 338 4050 725 4395 
+Q 1113 4741 1713 4741 
+Q 2247 4741 2841 4563 
+L 2841 3963 
+Q 2109 4250 1750 4250 
+Q 1409 4250 1187 4069 
+Q 966 3888 966 3613 
+Q 966 3381 1128 3203 
+Q 1291 3025 1722 2778 
+L 2053 2591 
+Q 2653 2250 2890 1947 
+Q 3128 1644 3128 1219 
+Q 3128 616 2683 250 
+Q 2238 -116 1503 -116 
+z
+" transform="scale(0.015625)"/>
+        <path id="LucidaGrande-50" d="M 597 0 
+L 597 4625 
+L 1856 4625 
+Q 2694 4625 3059 4342 
+Q 3425 4059 3425 3413 
+Q 3425 2675 2925 2256 
+Q 2425 1838 1538 1838 
+L 1247 1838 
+L 1247 0 
+L 597 0 
+z
+M 1247 2334 
+L 1513 2334 
+Q 2097 2334 2415 2603 
+Q 2734 2872 2734 3363 
+Q 2734 3778 2484 3956 
+Q 2234 4134 1650 4134 
+L 1247 4134 
+L 1247 2334 
+z
+" transform="scale(0.015625)"/>
+        <path id="LucidaGrande-52" d="M 597 0 
+L 597 4625 
+L 1997 4625 
+Q 2663 4625 3017 4331 
+Q 3372 4038 3372 3478 
+Q 3372 2553 2438 2166 
+L 3981 0 
+L 3175 0 
+L 1859 1956 
+L 1247 1956 
+L 1247 0 
+L 597 0 
+z
+M 1247 2447 
+L 1459 2447 
+Q 2697 2447 2697 3419 
+Q 2697 4134 1659 4134 
+L 1247 4134 
+L 1247 2447 
+z
+" transform="scale(0.015625)"/>
+        <path id="LucidaGrande-54" d="M 1697 0 
+L 1697 4134 
+L 56 4134 
+L 56 4625 
+L 3994 4625 
+L 3994 4134 
+L 2353 4134 
+L 2353 0 
+L 1697 0 
+z
+" transform="scale(0.015625)"/>
+        <path id="LucidaGrande-4d" d="M 597 0 
+L 597 4625 
+L 1506 4625 
+L 2788 1047 
+L 4106 4625 
+L 4919 4625 
+L 4919 0 
+L 4306 0 
+L 4306 3763 
+L 3031 309 
+L 2397 309 
+L 1159 3772 
+L 1159 0 
+L 597 0 
+z
+" transform="scale(0.015625)"/>
+        <path id="LucidaGrande-42" d="M 597 0 
+L 597 4625 
+L 1797 4625 
+Q 2491 4625 2861 4362 
+Q 3231 4100 3231 3606 
+Q 3231 2766 2281 2409 
+Q 3416 2063 3416 1156 
+Q 3416 594 3041 297 
+Q 2666 0 1959 0 
+L 597 0 
+z
+M 1247 491 
+L 1381 491 
+Q 2103 491 2316 581 
+Q 2722 753 2722 1219 
+Q 2722 1631 2353 1904 
+Q 1984 2178 1431 2178 
+L 1247 2178 
+L 1247 491 
+z
+M 1247 2594 
+L 1456 2594 
+Q 1981 2594 2270 2819 
+Q 2559 3044 2559 3453 
+Q 2559 4134 1503 4134 
+L 1247 4134 
+L 1247 2594 
+z
+" transform="scale(0.015625)"/>
+        <path id="LucidaGrande-4f" d="M 2459 -116 
+Q 1497 -116 911 551 
+Q 325 1219 325 2316 
+Q 325 3419 914 4080 
+Q 1503 4741 2488 4741 
+Q 3469 4741 4059 4081 
+Q 4650 3422 4650 2322 
+Q 4650 1200 4059 542 
+Q 3469 -116 2459 -116 
+z
+M 2469 375 
+Q 3178 375 3565 886 
+Q 3953 1397 3953 2328 
+Q 3953 3231 3564 3740 
+Q 3175 4250 2488 4250 
+Q 1797 4250 1409 3739 
+Q 1022 3228 1022 2319 
+Q 1022 1413 1406 894 
+Q 1791 375 2469 375 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#LucidaGrande-41"/>
+       <use xlink:href="#LucidaGrande-4c" x="68.994141"/>
+       <use xlink:href="#LucidaGrande-41" x="122.314453"/>
+       <use xlink:href="#LucidaGrande-4e" x="191.308594"/>
+       <use xlink:href="#LucidaGrande-49" x="265.185547"/>
+       <use xlink:href="#LucidaGrande-4e" x="293.994141"/>
+       <use xlink:href="#LucidaGrande-45" x="367.871094"/>
+       <use xlink:href="#LucidaGrande-20" x="422.070312"/>
+       <use xlink:href="#LucidaGrande-41" x="453.710938"/>
+       <use xlink:href="#LucidaGrande-4e" x="522.705078"/>
+       <use xlink:href="#LucidaGrande-44" x="596.582031"/>
+       <use xlink:href="#LucidaGrande-20" x="671.484375"/>
+       <use xlink:href="#LucidaGrande-41" x="703.125"/>
+       <use xlink:href="#LucidaGrande-53" x="772.119141"/>
+       <use xlink:href="#LucidaGrande-50" x="825.976562"/>
+       <use xlink:href="#LucidaGrande-41" x="881.25"/>
+       <use xlink:href="#LucidaGrande-52" x="950.244141"/>
+       <use xlink:href="#LucidaGrande-54" x="1013.476562"/>
+       <use xlink:href="#LucidaGrande-41" x="1076.708984"/>
+       <use xlink:href="#LucidaGrande-54" x="1145.703125"/>
+       <use xlink:href="#LucidaGrande-45" x="1208.935547"/>
+       <use xlink:href="#LucidaGrande-20" x="1263.134766"/>
+       <use xlink:href="#LucidaGrande-4d" x="1294.775391"/>
+       <use xlink:href="#LucidaGrande-45" x="1380.908203"/>
+       <use xlink:href="#LucidaGrande-54" x="1435.107422"/>
+       <use xlink:href="#LucidaGrande-41" x="1498.339844"/>
+       <use xlink:href="#LucidaGrande-42" x="1567.333984"/>
+       <use xlink:href="#LucidaGrande-4f" x="1624.853516"/>
+       <use xlink:href="#LucidaGrande-4c" x="1702.539062"/>
+       <use xlink:href="#LucidaGrande-49" x="1755.859375"/>
+       <use xlink:href="#LucidaGrande-53" x="1784.667969"/>
+       <use xlink:href="#LucidaGrande-4d" x="1838.525391"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="1661.741653" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <!-- KERATAN SULFATE SYNTHESIS -->
+      <g transform="translate(148.03125 1665.59634) scale(0.1 -0.1)">
+       <defs>
+        <path id="LucidaGrande-4b" d="M 597 0 
+L 597 4625 
+L 1213 4625 
+L 1213 2350 
+L 3084 4625 
+L 3744 4625 
+L 1931 2419 
+L 4066 0 
+L 3234 0 
+L 1213 2344 
+L 1213 0 
+L 597 0 
+z
+" transform="scale(0.015625)"/>
+        <path id="LucidaGrande-55" d="M 559 4625 
+L 1216 4625 
+L 1216 1706 
+Q 1216 1009 1473 692 
+Q 1731 375 2294 375 
+Q 2844 375 3073 673 
+Q 3303 972 3303 1684 
+L 3303 4625 
+L 3878 4625 
+L 3878 1694 
+Q 3878 747 3489 315 
+Q 3100 -116 2250 -116 
+Q 1384 -116 971 331 
+Q 559 778 559 1713 
+L 559 4625 
+z
+" transform="scale(0.015625)"/>
+        <path id="LucidaGrande-46" d="M 597 0 
+L 597 4625 
+L 3181 4625 
+L 3181 4134 
+L 1253 4134 
+L 1253 2584 
+L 2872 2584 
+L 2872 2100 
+L 1253 2100 
+L 1253 0 
+L 597 0 
+z
+" transform="scale(0.015625)"/>
+        <path id="LucidaGrande-59" d="M 1597 0 
+L 1597 1931 
+L 53 4625 
+L 803 4625 
+L 2003 2538 
+L 3297 4625 
+L 3906 4625 
+L 2253 1944 
+L 2253 0 
+L 1597 0 
+z
+" transform="scale(0.015625)"/>
+        <path id="LucidaGrande-48" d="M 597 0 
+L 597 4625 
+L 1253 4625 
+L 1253 2675 
+L 3453 2675 
+L 3453 4625 
+L 4109 4625 
+L 4109 0 
+L 3453 0 
+L 3453 2184 
+L 1253 2184 
+L 1253 0 
+L 597 0 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#LucidaGrande-4b"/>
+       <use xlink:href="#LucidaGrande-45" x="65.283203"/>
+       <use xlink:href="#LucidaGrande-52" x="119.482422"/>
+       <use xlink:href="#LucidaGrande-41" x="182.714844"/>
+       <use xlink:href="#LucidaGrande-54" x="251.708984"/>
+       <use xlink:href="#LucidaGrande-41" x="314.941406"/>
+       <use xlink:href="#LucidaGrande-4e" x="383.935547"/>
+       <use xlink:href="#LucidaGrande-20" x="457.8125"/>
+       <use xlink:href="#LucidaGrande-53" x="489.453125"/>
+       <use xlink:href="#LucidaGrande-55" x="543.310547"/>
+       <use xlink:href="#LucidaGrande-4c" x="612.597656"/>
+       <use xlink:href="#LucidaGrande-46" x="665.917969"/>
+       <use xlink:href="#LucidaGrande-41" x="719.53125"/>
+       <use xlink:href="#LucidaGrande-54" x="788.525391"/>
+       <use xlink:href="#LucidaGrande-45" x="851.757812"/>
+       <use xlink:href="#LucidaGrande-20" x="905.957031"/>
+       <use xlink:href="#LucidaGrande-53" x="937.597656"/>
+       <use xlink:href="#LucidaGrande-59" x="991.455078"/>
+       <use xlink:href="#LucidaGrande-4e" x="1053.759766"/>
+       <use xlink:href="#LucidaGrande-54" x="1127.636719"/>
+       <use xlink:href="#LucidaGrande-48" x="1190.869141"/>
+       <use xlink:href="#LucidaGrande-45" x="1264.355469"/>
+       <use xlink:href="#LucidaGrande-53" x="1318.554688"/>
+       <use xlink:href="#LucidaGrande-49" x="1372.412109"/>
+       <use xlink:href="#LucidaGrande-53" x="1401.220703"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_19">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="1638.33216" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <!-- GLYOXYLATE AND DICARBOXYLATE METABOLISM -->
+      <g transform="translate(55.753125 1642.186847) scale(0.1 -0.1)">
+       <defs>
+        <path id="LucidaGrande-58" d="M 50 0 
+L 1584 2322 
+L 125 4625 
+L 900 4625 
+L 2013 2881 
+L 3181 4625 
+L 3800 4625 
+L 2322 2391 
+L 3838 0 
+L 3063 0 
+L 1888 1834 
+L 672 0 
+L 50 0 
+z
+" transform="scale(0.015625)"/>
+        <path id="LucidaGrande-43" d="M 2578 -116 
+Q 1500 -116 912 517 
+Q 325 1150 325 2309 
+Q 325 3466 923 4103 
+Q 1522 4741 2609 4741 
+Q 3231 4741 4066 4538 
+L 4066 3922 
+Q 3116 4250 2600 4250 
+Q 1847 4250 1434 3740 
+Q 1022 3231 1022 2303 
+Q 1022 1419 1462 908 
+Q 1903 397 2666 397 
+Q 3322 397 4072 800 
+L 4072 238 
+Q 3388 -116 2578 -116 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#LucidaGrande-47"/>
+       <use xlink:href="#LucidaGrande-4c" x="72.265625"/>
+       <use xlink:href="#LucidaGrande-59" x="125.585938"/>
+       <use xlink:href="#LucidaGrande-4f" x="187.890625"/>
+       <use xlink:href="#LucidaGrande-58" x="265.576172"/>
+       <use xlink:href="#LucidaGrande-59" x="328.173828"/>
+       <use xlink:href="#LucidaGrande-4c" x="390.478516"/>
+       <use xlink:href="#LucidaGrande-41" x="443.798828"/>
+       <use xlink:href="#LucidaGrande-54" x="512.792969"/>
+       <use xlink:href="#LucidaGrande-45" x="576.025391"/>
+       <use xlink:href="#LucidaGrande-20" x="630.224609"/>
+       <use xlink:href="#LucidaGrande-41" x="661.865234"/>
+       <use xlink:href="#LucidaGrande-4e" x="730.859375"/>
+       <use xlink:href="#LucidaGrande-44" x="804.736328"/>
+       <use xlink:href="#LucidaGrande-20" x="879.638672"/>
+       <use xlink:href="#LucidaGrande-44" x="911.279297"/>
+       <use xlink:href="#LucidaGrande-49" x="986.181641"/>
+       <use xlink:href="#LucidaGrande-43" x="1014.990234"/>
+       <use xlink:href="#LucidaGrande-41" x="1084.179688"/>
+       <use xlink:href="#LucidaGrande-52" x="1153.173828"/>
+       <use xlink:href="#LucidaGrande-42" x="1216.40625"/>
+       <use xlink:href="#LucidaGrande-4f" x="1273.925781"/>
+       <use xlink:href="#LucidaGrande-58" x="1351.611328"/>
+       <use xlink:href="#LucidaGrande-59" x="1414.208984"/>
+       <use xlink:href="#LucidaGrande-4c" x="1476.513672"/>
+       <use xlink:href="#LucidaGrande-41" x="1529.833984"/>
+       <use xlink:href="#LucidaGrande-54" x="1598.828125"/>
+       <use xlink:href="#LucidaGrande-45" x="1662.060547"/>
+       <use xlink:href="#LucidaGrande-20" x="1716.259766"/>
+       <use xlink:href="#LucidaGrande-4d" x="1747.900391"/>
+       <use xlink:href="#LucidaGrande-45" x="1834.033203"/>
+       <use xlink:href="#LucidaGrande-54" x="1888.232422"/>
+       <use xlink:href="#LucidaGrande-41" x="1951.464844"/>
+       <use xlink:href="#LucidaGrande-42" x="2020.458984"/>
+       <use xlink:href="#LucidaGrande-4f" x="2077.978516"/>
+       <use xlink:href="#LucidaGrande-4c" x="2155.664062"/>
+       <use xlink:href="#LucidaGrande-49" x="2208.984375"/>
+       <use xlink:href="#LucidaGrande-53" x="2237.792969"/>
+       <use xlink:href="#LucidaGrande-4d" x="2291.650391"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="1614.922666" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <!-- TAURINE AND HYPOTAURINE METABOLISM -->
+      <g transform="translate(88.076562 1618.777354) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-54"/>
+       <use xlink:href="#LucidaGrande-41" x="63.232422"/>
+       <use xlink:href="#LucidaGrande-55" x="132.226562"/>
+       <use xlink:href="#LucidaGrande-52" x="201.513672"/>
+       <use xlink:href="#LucidaGrande-49" x="264.746094"/>
+       <use xlink:href="#LucidaGrande-4e" x="293.554688"/>
+       <use xlink:href="#LucidaGrande-45" x="367.431641"/>
+       <use xlink:href="#LucidaGrande-20" x="421.630859"/>
+       <use xlink:href="#LucidaGrande-41" x="453.271484"/>
+       <use xlink:href="#LucidaGrande-4e" x="522.265625"/>
+       <use xlink:href="#LucidaGrande-44" x="596.142578"/>
+       <use xlink:href="#LucidaGrande-20" x="671.044922"/>
+       <use xlink:href="#LucidaGrande-48" x="702.685547"/>
+       <use xlink:href="#LucidaGrande-59" x="776.171875"/>
+       <use xlink:href="#LucidaGrande-50" x="838.476562"/>
+       <use xlink:href="#LucidaGrande-4f" x="893.75"/>
+       <use xlink:href="#LucidaGrande-54" x="971.435547"/>
+       <use xlink:href="#LucidaGrande-41" x="1034.667969"/>
+       <use xlink:href="#LucidaGrande-55" x="1103.662109"/>
+       <use xlink:href="#LucidaGrande-52" x="1172.949219"/>
+       <use xlink:href="#LucidaGrande-49" x="1236.181641"/>
+       <use xlink:href="#LucidaGrande-4e" x="1264.990234"/>
+       <use xlink:href="#LucidaGrande-45" x="1338.867188"/>
+       <use xlink:href="#LucidaGrande-20" x="1393.066406"/>
+       <use xlink:href="#LucidaGrande-4d" x="1424.707031"/>
+       <use xlink:href="#LucidaGrande-45" x="1510.839844"/>
+       <use xlink:href="#LucidaGrande-54" x="1565.039062"/>
+       <use xlink:href="#LucidaGrande-41" x="1628.271484"/>
+       <use xlink:href="#LucidaGrande-42" x="1697.265625"/>
+       <use xlink:href="#LucidaGrande-4f" x="1754.785156"/>
+       <use xlink:href="#LucidaGrande-4c" x="1832.470703"/>
+       <use xlink:href="#LucidaGrande-49" x="1885.791016"/>
+       <use xlink:href="#LucidaGrande-53" x="1914.599609"/>
+       <use xlink:href="#LucidaGrande-4d" x="1968.457031"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_21">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="1591.513173" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_14">
+      <!-- PHOSPHATIDYLINOSITOL PHOSPHATE METABOLISM -->
+      <g transform="translate(46.875 1595.367861) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-50"/>
+       <use xlink:href="#LucidaGrande-48" x="55.273438"/>
+       <use xlink:href="#LucidaGrande-4f" x="128.759766"/>
+       <use xlink:href="#LucidaGrande-53" x="206.445312"/>
+       <use xlink:href="#LucidaGrande-50" x="260.302734"/>
+       <use xlink:href="#LucidaGrande-48" x="315.576172"/>
+       <use xlink:href="#LucidaGrande-41" x="389.0625"/>
+       <use xlink:href="#LucidaGrande-54" x="458.056641"/>
+       <use xlink:href="#LucidaGrande-49" x="521.289062"/>
+       <use xlink:href="#LucidaGrande-44" x="550.097656"/>
+       <use xlink:href="#LucidaGrande-59" x="625"/>
+       <use xlink:href="#LucidaGrande-4c" x="687.304688"/>
+       <use xlink:href="#LucidaGrande-49" x="740.625"/>
+       <use xlink:href="#LucidaGrande-4e" x="769.433594"/>
+       <use xlink:href="#LucidaGrande-4f" x="843.310547"/>
+       <use xlink:href="#LucidaGrande-53" x="920.996094"/>
+       <use xlink:href="#LucidaGrande-49" x="974.853516"/>
+       <use xlink:href="#LucidaGrande-54" x="1003.662109"/>
+       <use xlink:href="#LucidaGrande-4f" x="1066.894531"/>
+       <use xlink:href="#LucidaGrande-4c" x="1144.580078"/>
+       <use xlink:href="#LucidaGrande-20" x="1197.900391"/>
+       <use xlink:href="#LucidaGrande-50" x="1229.541016"/>
+       <use xlink:href="#LucidaGrande-48" x="1284.814453"/>
+       <use xlink:href="#LucidaGrande-4f" x="1358.300781"/>
+       <use xlink:href="#LucidaGrande-53" x="1435.986328"/>
+       <use xlink:href="#LucidaGrande-50" x="1489.84375"/>
+       <use xlink:href="#LucidaGrande-48" x="1545.117188"/>
+       <use xlink:href="#LucidaGrande-41" x="1618.603516"/>
+       <use xlink:href="#LucidaGrande-54" x="1687.597656"/>
+       <use xlink:href="#LucidaGrande-45" x="1750.830078"/>
+       <use xlink:href="#LucidaGrande-20" x="1805.029297"/>
+       <use xlink:href="#LucidaGrande-4d" x="1836.669922"/>
+       <use xlink:href="#LucidaGrande-45" x="1922.802734"/>
+       <use xlink:href="#LucidaGrande-54" x="1977.001953"/>
+       <use xlink:href="#LucidaGrande-41" x="2040.234375"/>
+       <use xlink:href="#LucidaGrande-42" x="2109.228516"/>
+       <use xlink:href="#LucidaGrande-4f" x="2166.748047"/>
+       <use xlink:href="#LucidaGrande-4c" x="2244.433594"/>
+       <use xlink:href="#LucidaGrande-49" x="2297.753906"/>
+       <use xlink:href="#LucidaGrande-53" x="2326.5625"/>
+       <use xlink:href="#LucidaGrande-4d" x="2380.419922"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_22">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="1568.10368" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_15">
+      <!-- GLYCINE, SERINE, ALANINE AND THREONINE METABOLISM -->
+      <g transform="translate(13.9375 1571.958368) scale(0.1 -0.1)">
+       <defs>
+        <path id="LucidaGrande-2c" d="M 625 -1003 
+L 625 -772 
+Q 925 -688 925 -63 
+L 925 0 
+L 625 0 
+L 625 772 
+L 1397 772 
+L 1397 103 
+Q 1397 -925 625 -1003 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#LucidaGrande-47"/>
+       <use xlink:href="#LucidaGrande-4c" x="72.265625"/>
+       <use xlink:href="#LucidaGrande-59" x="125.585938"/>
+       <use xlink:href="#LucidaGrande-43" x="187.890625"/>
+       <use xlink:href="#LucidaGrande-49" x="257.080078"/>
+       <use xlink:href="#LucidaGrande-4e" x="285.888672"/>
+       <use xlink:href="#LucidaGrande-45" x="359.765625"/>
+       <use xlink:href="#LucidaGrande-2c" x="413.964844"/>
+       <use xlink:href="#LucidaGrande-20" x="445.605469"/>
+       <use xlink:href="#LucidaGrande-53" x="477.246094"/>
+       <use xlink:href="#LucidaGrande-45" x="531.103516"/>
+       <use xlink:href="#LucidaGrande-52" x="585.302734"/>
+       <use xlink:href="#LucidaGrande-49" x="648.535156"/>
+       <use xlink:href="#LucidaGrande-4e" x="677.34375"/>
+       <use xlink:href="#LucidaGrande-45" x="751.220703"/>
+       <use xlink:href="#LucidaGrande-2c" x="805.419922"/>
+       <use xlink:href="#LucidaGrande-20" x="837.060547"/>
+       <use xlink:href="#LucidaGrande-41" x="868.701172"/>
+       <use xlink:href="#LucidaGrande-4c" x="937.695312"/>
+       <use xlink:href="#LucidaGrande-41" x="991.015625"/>
+       <use xlink:href="#LucidaGrande-4e" x="1060.009766"/>
+       <use xlink:href="#LucidaGrande-49" x="1133.886719"/>
+       <use xlink:href="#LucidaGrande-4e" x="1162.695312"/>
+       <use xlink:href="#LucidaGrande-45" x="1236.572266"/>
+       <use xlink:href="#LucidaGrande-20" x="1290.771484"/>
+       <use xlink:href="#LucidaGrande-41" x="1322.412109"/>
+       <use xlink:href="#LucidaGrande-4e" x="1391.40625"/>
+       <use xlink:href="#LucidaGrande-44" x="1465.283203"/>
+       <use xlink:href="#LucidaGrande-20" x="1540.185547"/>
+       <use xlink:href="#LucidaGrande-54" x="1571.826172"/>
+       <use xlink:href="#LucidaGrande-48" x="1635.058594"/>
+       <use xlink:href="#LucidaGrande-52" x="1708.544922"/>
+       <use xlink:href="#LucidaGrande-45" x="1771.777344"/>
+       <use xlink:href="#LucidaGrande-4f" x="1825.976562"/>
+       <use xlink:href="#LucidaGrande-4e" x="1903.662109"/>
+       <use xlink:href="#LucidaGrande-49" x="1977.539062"/>
+       <use xlink:href="#LucidaGrande-4e" x="2006.347656"/>
+       <use xlink:href="#LucidaGrande-45" x="2080.224609"/>
+       <use xlink:href="#LucidaGrande-20" x="2134.423828"/>
+       <use xlink:href="#LucidaGrande-4d" x="2166.064453"/>
+       <use xlink:href="#LucidaGrande-45" x="2252.197266"/>
+       <use xlink:href="#LucidaGrande-54" x="2306.396484"/>
+       <use xlink:href="#LucidaGrande-41" x="2369.628906"/>
+       <use xlink:href="#LucidaGrande-42" x="2438.623047"/>
+       <use xlink:href="#LucidaGrande-4f" x="2496.142578"/>
+       <use xlink:href="#LucidaGrande-4c" x="2573.828125"/>
+       <use xlink:href="#LucidaGrande-49" x="2627.148438"/>
+       <use xlink:href="#LucidaGrande-53" x="2655.957031"/>
+       <use xlink:href="#LucidaGrande-4d" x="2709.814453"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_23">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="1544.694187" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_16">
+      <!-- LIPOATE METABOLISM -->
+      <g transform="translate(187.232812 1548.548874) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-4c"/>
+       <use xlink:href="#LucidaGrande-49" x="53.320312"/>
+       <use xlink:href="#LucidaGrande-50" x="82.128906"/>
+       <use xlink:href="#LucidaGrande-4f" x="137.402344"/>
+       <use xlink:href="#LucidaGrande-41" x="215.087891"/>
+       <use xlink:href="#LucidaGrande-54" x="284.082031"/>
+       <use xlink:href="#LucidaGrande-45" x="347.314453"/>
+       <use xlink:href="#LucidaGrande-20" x="401.513672"/>
+       <use xlink:href="#LucidaGrande-4d" x="433.154297"/>
+       <use xlink:href="#LucidaGrande-45" x="519.287109"/>
+       <use xlink:href="#LucidaGrande-54" x="573.486328"/>
+       <use xlink:href="#LucidaGrande-41" x="636.71875"/>
+       <use xlink:href="#LucidaGrande-42" x="705.712891"/>
+       <use xlink:href="#LucidaGrande-4f" x="763.232422"/>
+       <use xlink:href="#LucidaGrande-4c" x="840.917969"/>
+       <use xlink:href="#LucidaGrande-49" x="894.238281"/>
+       <use xlink:href="#LucidaGrande-53" x="923.046875"/>
+       <use xlink:href="#LucidaGrande-4d" x="976.904297"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_24">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="1521.284694" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_17">
+      <!-- GLYCEROLIPID METABOLISM -->
+      <g transform="translate(158.051562 1525.139381) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-47"/>
+       <use xlink:href="#LucidaGrande-4c" x="72.265625"/>
+       <use xlink:href="#LucidaGrande-59" x="125.585938"/>
+       <use xlink:href="#LucidaGrande-43" x="187.890625"/>
+       <use xlink:href="#LucidaGrande-45" x="257.080078"/>
+       <use xlink:href="#LucidaGrande-52" x="311.279297"/>
+       <use xlink:href="#LucidaGrande-4f" x="374.511719"/>
+       <use xlink:href="#LucidaGrande-4c" x="452.197266"/>
+       <use xlink:href="#LucidaGrande-49" x="505.517578"/>
+       <use xlink:href="#LucidaGrande-50" x="534.326172"/>
+       <use xlink:href="#LucidaGrande-49" x="589.599609"/>
+       <use xlink:href="#LucidaGrande-44" x="618.408203"/>
+       <use xlink:href="#LucidaGrande-20" x="693.310547"/>
+       <use xlink:href="#LucidaGrande-4d" x="724.951172"/>
+       <use xlink:href="#LucidaGrande-45" x="811.083984"/>
+       <use xlink:href="#LucidaGrande-54" x="865.283203"/>
+       <use xlink:href="#LucidaGrande-41" x="928.515625"/>
+       <use xlink:href="#LucidaGrande-42" x="997.509766"/>
+       <use xlink:href="#LucidaGrande-4f" x="1055.029297"/>
+       <use xlink:href="#LucidaGrande-4c" x="1132.714844"/>
+       <use xlink:href="#LucidaGrande-49" x="1186.035156"/>
+       <use xlink:href="#LucidaGrande-53" x="1214.84375"/>
+       <use xlink:href="#LucidaGrande-4d" x="1268.701172"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_25">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="1497.875201" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_18">
+      <!-- GLUTATHIONE METABOLISM -->
+      <g transform="translate(157.546875 1501.729888) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-47"/>
+       <use xlink:href="#LucidaGrande-4c" x="72.265625"/>
+       <use xlink:href="#LucidaGrande-55" x="125.585938"/>
+       <use xlink:href="#LucidaGrande-54" x="194.873047"/>
+       <use xlink:href="#LucidaGrande-41" x="258.105469"/>
+       <use xlink:href="#LucidaGrande-54" x="327.099609"/>
+       <use xlink:href="#LucidaGrande-48" x="390.332031"/>
+       <use xlink:href="#LucidaGrande-49" x="463.818359"/>
+       <use xlink:href="#LucidaGrande-4f" x="492.626953"/>
+       <use xlink:href="#LucidaGrande-4e" x="570.3125"/>
+       <use xlink:href="#LucidaGrande-45" x="644.189453"/>
+       <use xlink:href="#LucidaGrande-20" x="698.388672"/>
+       <use xlink:href="#LucidaGrande-4d" x="730.029297"/>
+       <use xlink:href="#LucidaGrande-45" x="816.162109"/>
+       <use xlink:href="#LucidaGrande-54" x="870.361328"/>
+       <use xlink:href="#LucidaGrande-41" x="933.59375"/>
+       <use xlink:href="#LucidaGrande-42" x="1002.587891"/>
+       <use xlink:href="#LucidaGrande-4f" x="1060.107422"/>
+       <use xlink:href="#LucidaGrande-4c" x="1137.792969"/>
+       <use xlink:href="#LucidaGrande-49" x="1191.113281"/>
+       <use xlink:href="#LucidaGrande-53" x="1219.921875"/>
+       <use xlink:href="#LucidaGrande-4d" x="1273.779297"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_26">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="1474.465707" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_19">
+      <!-- GALACTOSE METABOLISM -->
+      <g transform="translate(169.210938 1478.320395) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-47"/>
+       <use xlink:href="#LucidaGrande-41" x="72.265625"/>
+       <use xlink:href="#LucidaGrande-4c" x="141.259766"/>
+       <use xlink:href="#LucidaGrande-41" x="194.580078"/>
+       <use xlink:href="#LucidaGrande-43" x="263.574219"/>
+       <use xlink:href="#LucidaGrande-54" x="332.763672"/>
+       <use xlink:href="#LucidaGrande-4f" x="395.996094"/>
+       <use xlink:href="#LucidaGrande-53" x="473.681641"/>
+       <use xlink:href="#LucidaGrande-45" x="527.539062"/>
+       <use xlink:href="#LucidaGrande-20" x="581.738281"/>
+       <use xlink:href="#LucidaGrande-4d" x="613.378906"/>
+       <use xlink:href="#LucidaGrande-45" x="699.511719"/>
+       <use xlink:href="#LucidaGrande-54" x="753.710938"/>
+       <use xlink:href="#LucidaGrande-41" x="816.943359"/>
+       <use xlink:href="#LucidaGrande-42" x="885.9375"/>
+       <use xlink:href="#LucidaGrande-4f" x="943.457031"/>
+       <use xlink:href="#LucidaGrande-4c" x="1021.142578"/>
+       <use xlink:href="#LucidaGrande-49" x="1074.462891"/>
+       <use xlink:href="#LucidaGrande-53" x="1103.271484"/>
+       <use xlink:href="#LucidaGrande-4d" x="1157.128906"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_27">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="1451.056214" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_20">
+      <!-- FRUCTOSE AND MANNOSE METABOLISM -->
+      <g transform="translate(99.9875 1454.910902) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-46"/>
+       <use xlink:href="#LucidaGrande-52" x="53.613281"/>
+       <use xlink:href="#LucidaGrande-55" x="116.845703"/>
+       <use xlink:href="#LucidaGrande-43" x="186.132812"/>
+       <use xlink:href="#LucidaGrande-54" x="255.322266"/>
+       <use xlink:href="#LucidaGrande-4f" x="318.554688"/>
+       <use xlink:href="#LucidaGrande-53" x="396.240234"/>
+       <use xlink:href="#LucidaGrande-45" x="450.097656"/>
+       <use xlink:href="#LucidaGrande-20" x="504.296875"/>
+       <use xlink:href="#LucidaGrande-41" x="535.9375"/>
+       <use xlink:href="#LucidaGrande-4e" x="604.931641"/>
+       <use xlink:href="#LucidaGrande-44" x="678.808594"/>
+       <use xlink:href="#LucidaGrande-20" x="753.710938"/>
+       <use xlink:href="#LucidaGrande-4d" x="785.351562"/>
+       <use xlink:href="#LucidaGrande-41" x="871.484375"/>
+       <use xlink:href="#LucidaGrande-4e" x="940.478516"/>
+       <use xlink:href="#LucidaGrande-4e" x="1014.355469"/>
+       <use xlink:href="#LucidaGrande-4f" x="1088.232422"/>
+       <use xlink:href="#LucidaGrande-53" x="1165.917969"/>
+       <use xlink:href="#LucidaGrande-45" x="1219.775391"/>
+       <use xlink:href="#LucidaGrande-20" x="1273.974609"/>
+       <use xlink:href="#LucidaGrande-4d" x="1305.615234"/>
+       <use xlink:href="#LucidaGrande-45" x="1391.748047"/>
+       <use xlink:href="#LucidaGrande-54" x="1445.947266"/>
+       <use xlink:href="#LucidaGrande-41" x="1509.179688"/>
+       <use xlink:href="#LucidaGrande-42" x="1578.173828"/>
+       <use xlink:href="#LucidaGrande-4f" x="1635.693359"/>
+       <use xlink:href="#LucidaGrande-4c" x="1713.378906"/>
+       <use xlink:href="#LucidaGrande-49" x="1766.699219"/>
+       <use xlink:href="#LucidaGrande-53" x="1795.507812"/>
+       <use xlink:href="#LucidaGrande-4d" x="1849.365234"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_12">
+     <g id="line2d_28">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="1427.646721" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_21">
+      <!-- PYRUVATE METABOLISM -->
+      <g transform="translate(177.195312 1431.501409) scale(0.1 -0.1)">
+       <defs>
+        <path id="LucidaGrande-56" d="M 1859 0 
+L 113 4625 
+L 769 4625 
+L 2200 838 
+L 3581 4625 
+L 4156 4625 
+L 2478 0 
+L 1859 0 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#LucidaGrande-50"/>
+       <use xlink:href="#LucidaGrande-59" x="55.273438"/>
+       <use xlink:href="#LucidaGrande-52" x="117.578125"/>
+       <use xlink:href="#LucidaGrande-55" x="180.810547"/>
+       <use xlink:href="#LucidaGrande-56" x="250.097656"/>
+       <use xlink:href="#LucidaGrande-41" x="315.478516"/>
+       <use xlink:href="#LucidaGrande-54" x="384.472656"/>
+       <use xlink:href="#LucidaGrande-45" x="447.705078"/>
+       <use xlink:href="#LucidaGrande-20" x="501.904297"/>
+       <use xlink:href="#LucidaGrande-4d" x="533.544922"/>
+       <use xlink:href="#LucidaGrande-45" x="619.677734"/>
+       <use xlink:href="#LucidaGrande-54" x="673.876953"/>
+       <use xlink:href="#LucidaGrande-41" x="737.109375"/>
+       <use xlink:href="#LucidaGrande-42" x="806.103516"/>
+       <use xlink:href="#LucidaGrande-4f" x="863.623047"/>
+       <use xlink:href="#LucidaGrande-4c" x="941.308594"/>
+       <use xlink:href="#LucidaGrande-49" x="994.628906"/>
+       <use xlink:href="#LucidaGrande-53" x="1023.4375"/>
+       <use xlink:href="#LucidaGrande-4d" x="1077.294922"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_13">
+     <g id="line2d_29">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="1404.237228" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_22">
+      <!-- TRANSPORT, NUCLEAR -->
+      <g transform="translate(183.740625 1408.091915) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-54"/>
+       <use xlink:href="#LucidaGrande-52" x="63.232422"/>
+       <use xlink:href="#LucidaGrande-41" x="126.464844"/>
+       <use xlink:href="#LucidaGrande-4e" x="195.458984"/>
+       <use xlink:href="#LucidaGrande-53" x="269.335938"/>
+       <use xlink:href="#LucidaGrande-50" x="323.193359"/>
+       <use xlink:href="#LucidaGrande-4f" x="378.466797"/>
+       <use xlink:href="#LucidaGrande-52" x="456.152344"/>
+       <use xlink:href="#LucidaGrande-54" x="519.384766"/>
+       <use xlink:href="#LucidaGrande-2c" x="582.617188"/>
+       <use xlink:href="#LucidaGrande-20" x="614.257812"/>
+       <use xlink:href="#LucidaGrande-4e" x="645.898438"/>
+       <use xlink:href="#LucidaGrande-55" x="719.775391"/>
+       <use xlink:href="#LucidaGrande-43" x="789.0625"/>
+       <use xlink:href="#LucidaGrande-4c" x="858.251953"/>
+       <use xlink:href="#LucidaGrande-45" x="911.572266"/>
+       <use xlink:href="#LucidaGrande-41" x="965.771484"/>
+       <use xlink:href="#LucidaGrande-52" x="1034.765625"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_14">
+     <g id="line2d_30">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="1380.827735" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_23">
+      <!-- METHIONINE AND CYSTEINE METABOLISM -->
+      <g transform="translate(91.879687 1384.682422) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-4d"/>
+       <use xlink:href="#LucidaGrande-45" x="86.132812"/>
+       <use xlink:href="#LucidaGrande-54" x="140.332031"/>
+       <use xlink:href="#LucidaGrande-48" x="203.564453"/>
+       <use xlink:href="#LucidaGrande-49" x="277.050781"/>
+       <use xlink:href="#LucidaGrande-4f" x="305.859375"/>
+       <use xlink:href="#LucidaGrande-4e" x="383.544922"/>
+       <use xlink:href="#LucidaGrande-49" x="457.421875"/>
+       <use xlink:href="#LucidaGrande-4e" x="486.230469"/>
+       <use xlink:href="#LucidaGrande-45" x="560.107422"/>
+       <use xlink:href="#LucidaGrande-20" x="614.306641"/>
+       <use xlink:href="#LucidaGrande-41" x="645.947266"/>
+       <use xlink:href="#LucidaGrande-4e" x="714.941406"/>
+       <use xlink:href="#LucidaGrande-44" x="788.818359"/>
+       <use xlink:href="#LucidaGrande-20" x="863.720703"/>
+       <use xlink:href="#LucidaGrande-43" x="895.361328"/>
+       <use xlink:href="#LucidaGrande-59" x="964.550781"/>
+       <use xlink:href="#LucidaGrande-53" x="1026.855469"/>
+       <use xlink:href="#LucidaGrande-54" x="1080.712891"/>
+       <use xlink:href="#LucidaGrande-45" x="1143.945312"/>
+       <use xlink:href="#LucidaGrande-49" x="1198.144531"/>
+       <use xlink:href="#LucidaGrande-4e" x="1226.953125"/>
+       <use xlink:href="#LucidaGrande-45" x="1300.830078"/>
+       <use xlink:href="#LucidaGrande-20" x="1355.029297"/>
+       <use xlink:href="#LucidaGrande-4d" x="1386.669922"/>
+       <use xlink:href="#LucidaGrande-45" x="1472.802734"/>
+       <use xlink:href="#LucidaGrande-54" x="1527.001953"/>
+       <use xlink:href="#LucidaGrande-41" x="1590.234375"/>
+       <use xlink:href="#LucidaGrande-42" x="1659.228516"/>
+       <use xlink:href="#LucidaGrande-4f" x="1716.748047"/>
+       <use xlink:href="#LucidaGrande-4c" x="1794.433594"/>
+       <use xlink:href="#LucidaGrande-49" x="1847.753906"/>
+       <use xlink:href="#LucidaGrande-53" x="1876.5625"/>
+       <use xlink:href="#LucidaGrande-4d" x="1930.419922"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_15">
+     <g id="line2d_31">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="1357.418242" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_24">
+      <!-- CYTOCHROME METABOLISM -->
+      <g transform="translate(157.751562 1361.272929) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-43"/>
+       <use xlink:href="#LucidaGrande-59" x="69.189453"/>
+       <use xlink:href="#LucidaGrande-54" x="131.494141"/>
+       <use xlink:href="#LucidaGrande-4f" x="194.726562"/>
+       <use xlink:href="#LucidaGrande-43" x="272.412109"/>
+       <use xlink:href="#LucidaGrande-48" x="341.601562"/>
+       <use xlink:href="#LucidaGrande-52" x="415.087891"/>
+       <use xlink:href="#LucidaGrande-4f" x="478.320312"/>
+       <use xlink:href="#LucidaGrande-4d" x="556.005859"/>
+       <use xlink:href="#LucidaGrande-45" x="642.138672"/>
+       <use xlink:href="#LucidaGrande-20" x="696.337891"/>
+       <use xlink:href="#LucidaGrande-4d" x="727.978516"/>
+       <use xlink:href="#LucidaGrande-45" x="814.111328"/>
+       <use xlink:href="#LucidaGrande-54" x="868.310547"/>
+       <use xlink:href="#LucidaGrande-41" x="931.542969"/>
+       <use xlink:href="#LucidaGrande-42" x="1000.537109"/>
+       <use xlink:href="#LucidaGrande-4f" x="1058.056641"/>
+       <use xlink:href="#LucidaGrande-4c" x="1135.742188"/>
+       <use xlink:href="#LucidaGrande-49" x="1189.0625"/>
+       <use xlink:href="#LucidaGrande-53" x="1217.871094"/>
+       <use xlink:href="#LucidaGrande-4d" x="1271.728516"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_16">
+     <g id="line2d_32">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="1334.008748" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_25">
+      <!-- COA METABOLISM -->
+      <g transform="translate(205.8 1337.863436) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-43"/>
+       <use xlink:href="#LucidaGrande-4f" x="69.189453"/>
+       <use xlink:href="#LucidaGrande-41" x="146.875"/>
+       <use xlink:href="#LucidaGrande-20" x="215.869141"/>
+       <use xlink:href="#LucidaGrande-4d" x="247.509766"/>
+       <use xlink:href="#LucidaGrande-45" x="333.642578"/>
+       <use xlink:href="#LucidaGrande-54" x="387.841797"/>
+       <use xlink:href="#LucidaGrande-41" x="451.074219"/>
+       <use xlink:href="#LucidaGrande-42" x="520.068359"/>
+       <use xlink:href="#LucidaGrande-4f" x="577.587891"/>
+       <use xlink:href="#LucidaGrande-4c" x="655.273438"/>
+       <use xlink:href="#LucidaGrande-49" x="708.59375"/>
+       <use xlink:href="#LucidaGrande-53" x="737.402344"/>
+       <use xlink:href="#LucidaGrande-4d" x="791.259766"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_17">
+     <g id="line2d_33">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="1310.599255" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_26">
+      <!-- CITRIC ACID CYCLE -->
+      <g transform="translate(199.95625 1314.453943) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-43"/>
+       <use xlink:href="#LucidaGrande-49" x="69.189453"/>
+       <use xlink:href="#LucidaGrande-54" x="97.998047"/>
+       <use xlink:href="#LucidaGrande-52" x="161.230469"/>
+       <use xlink:href="#LucidaGrande-49" x="224.462891"/>
+       <use xlink:href="#LucidaGrande-43" x="253.271484"/>
+       <use xlink:href="#LucidaGrande-20" x="322.460938"/>
+       <use xlink:href="#LucidaGrande-41" x="354.101562"/>
+       <use xlink:href="#LucidaGrande-43" x="423.095703"/>
+       <use xlink:href="#LucidaGrande-49" x="492.285156"/>
+       <use xlink:href="#LucidaGrande-44" x="521.09375"/>
+       <use xlink:href="#LucidaGrande-20" x="595.996094"/>
+       <use xlink:href="#LucidaGrande-43" x="627.636719"/>
+       <use xlink:href="#LucidaGrande-59" x="696.826172"/>
+       <use xlink:href="#LucidaGrande-43" x="759.130859"/>
+       <use xlink:href="#LucidaGrande-4c" x="828.320312"/>
+       <use xlink:href="#LucidaGrande-45" x="881.640625"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_18">
+     <g id="line2d_34">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="1287.189762" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_27">
+      <!-- CHONDROITIN SYNTHESIS -->
+      <g transform="translate(168.15 1291.04445) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-43"/>
+       <use xlink:href="#LucidaGrande-48" x="69.189453"/>
+       <use xlink:href="#LucidaGrande-4f" x="142.675781"/>
+       <use xlink:href="#LucidaGrande-4e" x="220.361328"/>
+       <use xlink:href="#LucidaGrande-44" x="294.238281"/>
+       <use xlink:href="#LucidaGrande-52" x="369.140625"/>
+       <use xlink:href="#LucidaGrande-4f" x="432.373047"/>
+       <use xlink:href="#LucidaGrande-49" x="510.058594"/>
+       <use xlink:href="#LucidaGrande-54" x="538.867188"/>
+       <use xlink:href="#LucidaGrande-49" x="602.099609"/>
+       <use xlink:href="#LucidaGrande-4e" x="630.908203"/>
+       <use xlink:href="#LucidaGrande-20" x="704.785156"/>
+       <use xlink:href="#LucidaGrande-53" x="736.425781"/>
+       <use xlink:href="#LucidaGrande-59" x="790.283203"/>
+       <use xlink:href="#LucidaGrande-4e" x="852.587891"/>
+       <use xlink:href="#LucidaGrande-54" x="926.464844"/>
+       <use xlink:href="#LucidaGrande-48" x="989.697266"/>
+       <use xlink:href="#LucidaGrande-45" x="1063.183594"/>
+       <use xlink:href="#LucidaGrande-53" x="1117.382812"/>
+       <use xlink:href="#LucidaGrande-49" x="1171.240234"/>
+       <use xlink:href="#LucidaGrande-53" x="1200.048828"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_19">
+     <g id="line2d_35">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="1263.780269" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_28">
+      <!-- CHOLESTEROL METABOLISM -->
+      <g transform="translate(158.04375 1267.634957) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-43"/>
+       <use xlink:href="#LucidaGrande-48" x="69.189453"/>
+       <use xlink:href="#LucidaGrande-4f" x="142.675781"/>
+       <use xlink:href="#LucidaGrande-4c" x="220.361328"/>
+       <use xlink:href="#LucidaGrande-45" x="273.681641"/>
+       <use xlink:href="#LucidaGrande-53" x="327.880859"/>
+       <use xlink:href="#LucidaGrande-54" x="381.738281"/>
+       <use xlink:href="#LucidaGrande-45" x="444.970703"/>
+       <use xlink:href="#LucidaGrande-52" x="499.169922"/>
+       <use xlink:href="#LucidaGrande-4f" x="562.402344"/>
+       <use xlink:href="#LucidaGrande-4c" x="640.087891"/>
+       <use xlink:href="#LucidaGrande-20" x="693.408203"/>
+       <use xlink:href="#LucidaGrande-4d" x="725.048828"/>
+       <use xlink:href="#LucidaGrande-45" x="811.181641"/>
+       <use xlink:href="#LucidaGrande-54" x="865.380859"/>
+       <use xlink:href="#LucidaGrande-41" x="928.613281"/>
+       <use xlink:href="#LucidaGrande-42" x="997.607422"/>
+       <use xlink:href="#LucidaGrande-4f" x="1055.126953"/>
+       <use xlink:href="#LucidaGrande-4c" x="1132.8125"/>
+       <use xlink:href="#LucidaGrande-49" x="1186.132812"/>
+       <use xlink:href="#LucidaGrande-53" x="1214.941406"/>
+       <use xlink:href="#LucidaGrande-4d" x="1268.798828"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_20">
+     <g id="line2d_36">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="1240.370776" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_29">
+      <!-- VITAMIN B6 METABOLISM -->
+      <g transform="translate(170.623437 1244.225463) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-56"/>
+       <use xlink:href="#LucidaGrande-49" x="65.380859"/>
+       <use xlink:href="#LucidaGrande-54" x="94.189453"/>
+       <use xlink:href="#LucidaGrande-41" x="157.421875"/>
+       <use xlink:href="#LucidaGrande-4d" x="226.416016"/>
+       <use xlink:href="#LucidaGrande-49" x="312.548828"/>
+       <use xlink:href="#LucidaGrande-4e" x="341.357422"/>
+       <use xlink:href="#LucidaGrande-20" x="415.234375"/>
+       <use xlink:href="#LucidaGrande-42" x="446.875"/>
+       <use xlink:href="#LucidaGrande-36" x="504.394531"/>
+       <use xlink:href="#LucidaGrande-20" x="567.626953"/>
+       <use xlink:href="#LucidaGrande-4d" x="599.267578"/>
+       <use xlink:href="#LucidaGrande-45" x="685.400391"/>
+       <use xlink:href="#LucidaGrande-54" x="739.599609"/>
+       <use xlink:href="#LucidaGrande-41" x="802.832031"/>
+       <use xlink:href="#LucidaGrande-42" x="871.826172"/>
+       <use xlink:href="#LucidaGrande-4f" x="929.345703"/>
+       <use xlink:href="#LucidaGrande-4c" x="1007.03125"/>
+       <use xlink:href="#LucidaGrande-49" x="1060.351562"/>
+       <use xlink:href="#LucidaGrande-53" x="1089.160156"/>
+       <use xlink:href="#LucidaGrande-4d" x="1143.017578"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_21">
+     <g id="line2d_37">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="1216.961283" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_30">
+      <!-- PURINE METABOLISM -->
+      <g transform="translate(192.91875 1220.81597) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-50"/>
+       <use xlink:href="#LucidaGrande-55" x="55.273438"/>
+       <use xlink:href="#LucidaGrande-52" x="124.560547"/>
+       <use xlink:href="#LucidaGrande-49" x="187.792969"/>
+       <use xlink:href="#LucidaGrande-4e" x="216.601562"/>
+       <use xlink:href="#LucidaGrande-45" x="290.478516"/>
+       <use xlink:href="#LucidaGrande-20" x="344.677734"/>
+       <use xlink:href="#LucidaGrande-4d" x="376.318359"/>
+       <use xlink:href="#LucidaGrande-45" x="462.451172"/>
+       <use xlink:href="#LucidaGrande-54" x="516.650391"/>
+       <use xlink:href="#LucidaGrande-41" x="579.882812"/>
+       <use xlink:href="#LucidaGrande-42" x="648.876953"/>
+       <use xlink:href="#LucidaGrande-4f" x="706.396484"/>
+       <use xlink:href="#LucidaGrande-4c" x="784.082031"/>
+       <use xlink:href="#LucidaGrande-49" x="837.402344"/>
+       <use xlink:href="#LucidaGrande-53" x="866.210938"/>
+       <use xlink:href="#LucidaGrande-4d" x="920.068359"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_22">
+     <g id="line2d_38">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="1193.55179" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_31">
+      <!-- AMINOSUGAR METABOLISM -->
+      <g transform="translate(161.071875 1197.406477) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-41"/>
+       <use xlink:href="#LucidaGrande-4d" x="68.994141"/>
+       <use xlink:href="#LucidaGrande-49" x="155.126953"/>
+       <use xlink:href="#LucidaGrande-4e" x="183.935547"/>
+       <use xlink:href="#LucidaGrande-4f" x="257.8125"/>
+       <use xlink:href="#LucidaGrande-53" x="335.498047"/>
+       <use xlink:href="#LucidaGrande-55" x="389.355469"/>
+       <use xlink:href="#LucidaGrande-47" x="458.642578"/>
+       <use xlink:href="#LucidaGrande-41" x="530.908203"/>
+       <use xlink:href="#LucidaGrande-52" x="599.902344"/>
+       <use xlink:href="#LucidaGrande-20" x="663.134766"/>
+       <use xlink:href="#LucidaGrande-4d" x="694.775391"/>
+       <use xlink:href="#LucidaGrande-45" x="780.908203"/>
+       <use xlink:href="#LucidaGrande-54" x="835.107422"/>
+       <use xlink:href="#LucidaGrande-41" x="898.339844"/>
+       <use xlink:href="#LucidaGrande-42" x="967.333984"/>
+       <use xlink:href="#LucidaGrande-4f" x="1024.853516"/>
+       <use xlink:href="#LucidaGrande-4c" x="1102.539062"/>
+       <use xlink:href="#LucidaGrande-49" x="1155.859375"/>
+       <use xlink:href="#LucidaGrande-53" x="1184.667969"/>
+       <use xlink:href="#LucidaGrande-4d" x="1238.525391"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_23">
+     <g id="line2d_39">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="1170.142296" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_32">
+      <!-- HYALURONAN METABOLISM -->
+      <g transform="translate(158.879687 1173.996984) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-48"/>
+       <use xlink:href="#LucidaGrande-59" x="73.486328"/>
+       <use xlink:href="#LucidaGrande-41" x="135.791016"/>
+       <use xlink:href="#LucidaGrande-4c" x="204.785156"/>
+       <use xlink:href="#LucidaGrande-55" x="258.105469"/>
+       <use xlink:href="#LucidaGrande-52" x="327.392578"/>
+       <use xlink:href="#LucidaGrande-4f" x="390.625"/>
+       <use xlink:href="#LucidaGrande-4e" x="468.310547"/>
+       <use xlink:href="#LucidaGrande-41" x="542.1875"/>
+       <use xlink:href="#LucidaGrande-4e" x="611.181641"/>
+       <use xlink:href="#LucidaGrande-20" x="685.058594"/>
+       <use xlink:href="#LucidaGrande-4d" x="716.699219"/>
+       <use xlink:href="#LucidaGrande-45" x="802.832031"/>
+       <use xlink:href="#LucidaGrande-54" x="857.03125"/>
+       <use xlink:href="#LucidaGrande-41" x="920.263672"/>
+       <use xlink:href="#LucidaGrande-42" x="989.257812"/>
+       <use xlink:href="#LucidaGrande-4f" x="1046.777344"/>
+       <use xlink:href="#LucidaGrande-4c" x="1124.462891"/>
+       <use xlink:href="#LucidaGrande-49" x="1177.783203"/>
+       <use xlink:href="#LucidaGrande-53" x="1206.591797"/>
+       <use xlink:href="#LucidaGrande-4d" x="1260.449219"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_24">
+     <g id="line2d_40">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="1146.732803" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_33">
+      <!-- STARCH AND SUCROSE METABOLISM -->
+      <g transform="translate(115.95 1150.587491) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-53"/>
+       <use xlink:href="#LucidaGrande-54" x="53.857422"/>
+       <use xlink:href="#LucidaGrande-41" x="117.089844"/>
+       <use xlink:href="#LucidaGrande-52" x="186.083984"/>
+       <use xlink:href="#LucidaGrande-43" x="249.316406"/>
+       <use xlink:href="#LucidaGrande-48" x="318.505859"/>
+       <use xlink:href="#LucidaGrande-20" x="391.992188"/>
+       <use xlink:href="#LucidaGrande-41" x="423.632812"/>
+       <use xlink:href="#LucidaGrande-4e" x="492.626953"/>
+       <use xlink:href="#LucidaGrande-44" x="566.503906"/>
+       <use xlink:href="#LucidaGrande-20" x="641.40625"/>
+       <use xlink:href="#LucidaGrande-53" x="673.046875"/>
+       <use xlink:href="#LucidaGrande-55" x="726.904297"/>
+       <use xlink:href="#LucidaGrande-43" x="796.191406"/>
+       <use xlink:href="#LucidaGrande-52" x="865.380859"/>
+       <use xlink:href="#LucidaGrande-4f" x="928.613281"/>
+       <use xlink:href="#LucidaGrande-53" x="1006.298828"/>
+       <use xlink:href="#LucidaGrande-45" x="1060.15625"/>
+       <use xlink:href="#LucidaGrande-20" x="1114.355469"/>
+       <use xlink:href="#LucidaGrande-4d" x="1145.996094"/>
+       <use xlink:href="#LucidaGrande-45" x="1232.128906"/>
+       <use xlink:href="#LucidaGrande-54" x="1286.328125"/>
+       <use xlink:href="#LucidaGrande-41" x="1349.560547"/>
+       <use xlink:href="#LucidaGrande-42" x="1418.554688"/>
+       <use xlink:href="#LucidaGrande-4f" x="1476.074219"/>
+       <use xlink:href="#LucidaGrande-4c" x="1553.759766"/>
+       <use xlink:href="#LucidaGrande-49" x="1607.080078"/>
+       <use xlink:href="#LucidaGrande-53" x="1635.888672"/>
+       <use xlink:href="#LucidaGrande-4d" x="1689.746094"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_25">
+     <g id="line2d_41">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="1123.32331" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_34">
+      <!-- OXIDATIVE PHOSPHORYLATION -->
+      <g transform="translate(142.092187 1127.177998) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-4f"/>
+       <use xlink:href="#LucidaGrande-58" x="77.685547"/>
+       <use xlink:href="#LucidaGrande-49" x="140.283203"/>
+       <use xlink:href="#LucidaGrande-44" x="169.091797"/>
+       <use xlink:href="#LucidaGrande-41" x="243.994141"/>
+       <use xlink:href="#LucidaGrande-54" x="312.988281"/>
+       <use xlink:href="#LucidaGrande-49" x="376.220703"/>
+       <use xlink:href="#LucidaGrande-56" x="405.029297"/>
+       <use xlink:href="#LucidaGrande-45" x="470.410156"/>
+       <use xlink:href="#LucidaGrande-20" x="524.609375"/>
+       <use xlink:href="#LucidaGrande-50" x="556.25"/>
+       <use xlink:href="#LucidaGrande-48" x="611.523438"/>
+       <use xlink:href="#LucidaGrande-4f" x="685.009766"/>
+       <use xlink:href="#LucidaGrande-53" x="762.695312"/>
+       <use xlink:href="#LucidaGrande-50" x="816.552734"/>
+       <use xlink:href="#LucidaGrande-48" x="871.826172"/>
+       <use xlink:href="#LucidaGrande-4f" x="945.3125"/>
+       <use xlink:href="#LucidaGrande-52" x="1022.998047"/>
+       <use xlink:href="#LucidaGrande-59" x="1086.230469"/>
+       <use xlink:href="#LucidaGrande-4c" x="1148.535156"/>
+       <use xlink:href="#LucidaGrande-41" x="1201.855469"/>
+       <use xlink:href="#LucidaGrande-54" x="1270.849609"/>
+       <use xlink:href="#LucidaGrande-49" x="1334.082031"/>
+       <use xlink:href="#LucidaGrande-4f" x="1362.890625"/>
+       <use xlink:href="#LucidaGrande-4e" x="1440.576172"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_26">
+     <g id="line2d_42">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="1099.913817" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_35">
+      <!-- PHENYLALANINE METABOLISM -->
+      <g transform="translate(147.929687 1103.768504) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-50"/>
+       <use xlink:href="#LucidaGrande-48" x="55.273438"/>
+       <use xlink:href="#LucidaGrande-45" x="128.759766"/>
+       <use xlink:href="#LucidaGrande-4e" x="182.958984"/>
+       <use xlink:href="#LucidaGrande-59" x="256.835938"/>
+       <use xlink:href="#LucidaGrande-4c" x="319.140625"/>
+       <use xlink:href="#LucidaGrande-41" x="372.460938"/>
+       <use xlink:href="#LucidaGrande-4c" x="441.455078"/>
+       <use xlink:href="#LucidaGrande-41" x="494.775391"/>
+       <use xlink:href="#LucidaGrande-4e" x="563.769531"/>
+       <use xlink:href="#LucidaGrande-49" x="637.646484"/>
+       <use xlink:href="#LucidaGrande-4e" x="666.455078"/>
+       <use xlink:href="#LucidaGrande-45" x="740.332031"/>
+       <use xlink:href="#LucidaGrande-20" x="794.53125"/>
+       <use xlink:href="#LucidaGrande-4d" x="826.171875"/>
+       <use xlink:href="#LucidaGrande-45" x="912.304688"/>
+       <use xlink:href="#LucidaGrande-54" x="966.503906"/>
+       <use xlink:href="#LucidaGrande-41" x="1029.736328"/>
+       <use xlink:href="#LucidaGrande-42" x="1098.730469"/>
+       <use xlink:href="#LucidaGrande-4f" x="1156.25"/>
+       <use xlink:href="#LucidaGrande-4c" x="1233.935547"/>
+       <use xlink:href="#LucidaGrande-49" x="1287.255859"/>
+       <use xlink:href="#LucidaGrande-53" x="1316.064453"/>
+       <use xlink:href="#LucidaGrande-4d" x="1369.921875"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_27">
+     <g id="line2d_43">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="1076.504324" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_36">
+      <!-- PORPHYRIN METABOLISM -->
+      <g transform="translate(172.067187 1080.359011) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-50"/>
+       <use xlink:href="#LucidaGrande-4f" x="55.273438"/>
+       <use xlink:href="#LucidaGrande-52" x="132.958984"/>
+       <use xlink:href="#LucidaGrande-50" x="196.191406"/>
+       <use xlink:href="#LucidaGrande-48" x="251.464844"/>
+       <use xlink:href="#LucidaGrande-59" x="324.951172"/>
+       <use xlink:href="#LucidaGrande-52" x="387.255859"/>
+       <use xlink:href="#LucidaGrande-49" x="450.488281"/>
+       <use xlink:href="#LucidaGrande-4e" x="479.296875"/>
+       <use xlink:href="#LucidaGrande-20" x="553.173828"/>
+       <use xlink:href="#LucidaGrande-4d" x="584.814453"/>
+       <use xlink:href="#LucidaGrande-45" x="670.947266"/>
+       <use xlink:href="#LucidaGrande-54" x="725.146484"/>
+       <use xlink:href="#LucidaGrande-41" x="788.378906"/>
+       <use xlink:href="#LucidaGrande-42" x="857.373047"/>
+       <use xlink:href="#LucidaGrande-4f" x="914.892578"/>
+       <use xlink:href="#LucidaGrande-4c" x="992.578125"/>
+       <use xlink:href="#LucidaGrande-49" x="1045.898438"/>
+       <use xlink:href="#LucidaGrande-53" x="1074.707031"/>
+       <use xlink:href="#LucidaGrande-4d" x="1128.564453"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_28">
+     <g id="line2d_44">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="1053.094831" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_37">
+      <!-- BLOOD GROUP SYNTHESIS -->
+      <g transform="translate(167.578125 1056.949518) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-42"/>
+       <use xlink:href="#LucidaGrande-4c" x="57.519531"/>
+       <use xlink:href="#LucidaGrande-4f" x="110.839844"/>
+       <use xlink:href="#LucidaGrande-4f" x="188.525391"/>
+       <use xlink:href="#LucidaGrande-44" x="266.210938"/>
+       <use xlink:href="#LucidaGrande-20" x="341.113281"/>
+       <use xlink:href="#LucidaGrande-47" x="372.753906"/>
+       <use xlink:href="#LucidaGrande-52" x="445.019531"/>
+       <use xlink:href="#LucidaGrande-4f" x="508.251953"/>
+       <use xlink:href="#LucidaGrande-55" x="585.9375"/>
+       <use xlink:href="#LucidaGrande-50" x="655.224609"/>
+       <use xlink:href="#LucidaGrande-20" x="710.498047"/>
+       <use xlink:href="#LucidaGrande-53" x="742.138672"/>
+       <use xlink:href="#LucidaGrande-59" x="795.996094"/>
+       <use xlink:href="#LucidaGrande-4e" x="858.300781"/>
+       <use xlink:href="#LucidaGrande-54" x="932.177734"/>
+       <use xlink:href="#LucidaGrande-48" x="995.410156"/>
+       <use xlink:href="#LucidaGrande-45" x="1068.896484"/>
+       <use xlink:href="#LucidaGrande-53" x="1123.095703"/>
+       <use xlink:href="#LucidaGrande-49" x="1176.953125"/>
+       <use xlink:href="#LucidaGrande-53" x="1205.761719"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_29">
+     <g id="line2d_45">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="1029.685337" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_38">
+      <!-- VALINE, LEUCINE, AND ISOLEUCINE METABOLISM -->
+      <g transform="translate(58.715625 1033.540025) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-56"/>
+       <use xlink:href="#LucidaGrande-41" x="65.380859"/>
+       <use xlink:href="#LucidaGrande-4c" x="134.375"/>
+       <use xlink:href="#LucidaGrande-49" x="187.695312"/>
+       <use xlink:href="#LucidaGrande-4e" x="216.503906"/>
+       <use xlink:href="#LucidaGrande-45" x="290.380859"/>
+       <use xlink:href="#LucidaGrande-2c" x="344.580078"/>
+       <use xlink:href="#LucidaGrande-20" x="376.220703"/>
+       <use xlink:href="#LucidaGrande-4c" x="407.861328"/>
+       <use xlink:href="#LucidaGrande-45" x="461.181641"/>
+       <use xlink:href="#LucidaGrande-55" x="515.380859"/>
+       <use xlink:href="#LucidaGrande-43" x="584.667969"/>
+       <use xlink:href="#LucidaGrande-49" x="653.857422"/>
+       <use xlink:href="#LucidaGrande-4e" x="682.666016"/>
+       <use xlink:href="#LucidaGrande-45" x="756.542969"/>
+       <use xlink:href="#LucidaGrande-2c" x="810.742188"/>
+       <use xlink:href="#LucidaGrande-20" x="842.382812"/>
+       <use xlink:href="#LucidaGrande-41" x="874.023438"/>
+       <use xlink:href="#LucidaGrande-4e" x="943.017578"/>
+       <use xlink:href="#LucidaGrande-44" x="1016.894531"/>
+       <use xlink:href="#LucidaGrande-20" x="1091.796875"/>
+       <use xlink:href="#LucidaGrande-49" x="1123.4375"/>
+       <use xlink:href="#LucidaGrande-53" x="1152.246094"/>
+       <use xlink:href="#LucidaGrande-4f" x="1206.103516"/>
+       <use xlink:href="#LucidaGrande-4c" x="1283.789062"/>
+       <use xlink:href="#LucidaGrande-45" x="1337.109375"/>
+       <use xlink:href="#LucidaGrande-55" x="1391.308594"/>
+       <use xlink:href="#LucidaGrande-43" x="1460.595703"/>
+       <use xlink:href="#LucidaGrande-49" x="1529.785156"/>
+       <use xlink:href="#LucidaGrande-4e" x="1558.59375"/>
+       <use xlink:href="#LucidaGrande-45" x="1632.470703"/>
+       <use xlink:href="#LucidaGrande-20" x="1686.669922"/>
+       <use xlink:href="#LucidaGrande-4d" x="1718.310547"/>
+       <use xlink:href="#LucidaGrande-45" x="1804.443359"/>
+       <use xlink:href="#LucidaGrande-54" x="1858.642578"/>
+       <use xlink:href="#LucidaGrande-41" x="1921.875"/>
+       <use xlink:href="#LucidaGrande-42" x="1990.869141"/>
+       <use xlink:href="#LucidaGrande-4f" x="2048.388672"/>
+       <use xlink:href="#LucidaGrande-4c" x="2126.074219"/>
+       <use xlink:href="#LucidaGrande-49" x="2179.394531"/>
+       <use xlink:href="#LucidaGrande-53" x="2208.203125"/>
+       <use xlink:href="#LucidaGrande-4d" x="2262.060547"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_30">
+     <g id="line2d_46">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="1006.275844" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_39">
+      <!-- LIMONENE AND PINENE DEGRADATION -->
+      <g transform="translate(105.923437 1010.130532) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-4c"/>
+       <use xlink:href="#LucidaGrande-49" x="53.320312"/>
+       <use xlink:href="#LucidaGrande-4d" x="82.128906"/>
+       <use xlink:href="#LucidaGrande-4f" x="168.261719"/>
+       <use xlink:href="#LucidaGrande-4e" x="245.947266"/>
+       <use xlink:href="#LucidaGrande-45" x="319.824219"/>
+       <use xlink:href="#LucidaGrande-4e" x="374.023438"/>
+       <use xlink:href="#LucidaGrande-45" x="447.900391"/>
+       <use xlink:href="#LucidaGrande-20" x="502.099609"/>
+       <use xlink:href="#LucidaGrande-41" x="533.740234"/>
+       <use xlink:href="#LucidaGrande-4e" x="602.734375"/>
+       <use xlink:href="#LucidaGrande-44" x="676.611328"/>
+       <use xlink:href="#LucidaGrande-20" x="751.513672"/>
+       <use xlink:href="#LucidaGrande-50" x="783.154297"/>
+       <use xlink:href="#LucidaGrande-49" x="838.427734"/>
+       <use xlink:href="#LucidaGrande-4e" x="867.236328"/>
+       <use xlink:href="#LucidaGrande-45" x="941.113281"/>
+       <use xlink:href="#LucidaGrande-4e" x="995.3125"/>
+       <use xlink:href="#LucidaGrande-45" x="1069.189453"/>
+       <use xlink:href="#LucidaGrande-20" x="1123.388672"/>
+       <use xlink:href="#LucidaGrande-44" x="1155.029297"/>
+       <use xlink:href="#LucidaGrande-45" x="1229.931641"/>
+       <use xlink:href="#LucidaGrande-47" x="1284.130859"/>
+       <use xlink:href="#LucidaGrande-52" x="1356.396484"/>
+       <use xlink:href="#LucidaGrande-41" x="1419.628906"/>
+       <use xlink:href="#LucidaGrande-44" x="1488.623047"/>
+       <use xlink:href="#LucidaGrande-41" x="1563.525391"/>
+       <use xlink:href="#LucidaGrande-54" x="1632.519531"/>
+       <use xlink:href="#LucidaGrande-49" x="1695.751953"/>
+       <use xlink:href="#LucidaGrande-4f" x="1724.560547"/>
+       <use xlink:href="#LucidaGrande-4e" x="1802.246094"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_31">
+     <g id="line2d_47">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="982.866351" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_40">
+      <!-- N-GLYCAN METABOLISM -->
+      <g transform="translate(174.217187 986.721039) scale(0.1 -0.1)">
+       <defs>
+        <path id="LucidaGrande-2d" d="M 463 1619 
+L 463 2081 
+L 3238 2081 
+L 3238 1619 
+L 463 1619 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#LucidaGrande-4e"/>
+       <use xlink:href="#LucidaGrande-2d" x="73.876953"/>
+       <use xlink:href="#LucidaGrande-47" x="131.738281"/>
+       <use xlink:href="#LucidaGrande-4c" x="204.003906"/>
+       <use xlink:href="#LucidaGrande-59" x="257.324219"/>
+       <use xlink:href="#LucidaGrande-43" x="319.628906"/>
+       <use xlink:href="#LucidaGrande-41" x="388.818359"/>
+       <use xlink:href="#LucidaGrande-4e" x="457.8125"/>
+       <use xlink:href="#LucidaGrande-20" x="531.689453"/>
+       <use xlink:href="#LucidaGrande-4d" x="563.330078"/>
+       <use xlink:href="#LucidaGrande-45" x="649.462891"/>
+       <use xlink:href="#LucidaGrande-54" x="703.662109"/>
+       <use xlink:href="#LucidaGrande-41" x="766.894531"/>
+       <use xlink:href="#LucidaGrande-42" x="835.888672"/>
+       <use xlink:href="#LucidaGrande-4f" x="893.408203"/>
+       <use xlink:href="#LucidaGrande-4c" x="971.09375"/>
+       <use xlink:href="#LucidaGrande-49" x="1024.414062"/>
+       <use xlink:href="#LucidaGrande-53" x="1053.222656"/>
+       <use xlink:href="#LucidaGrande-4d" x="1107.080078"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_32">
+     <g id="line2d_48">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="959.456858" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_41">
+      <!-- UREA CYCLE -->
+      <g transform="translate(233.985937 963.311545) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-55"/>
+       <use xlink:href="#LucidaGrande-52" x="69.287109"/>
+       <use xlink:href="#LucidaGrande-45" x="132.519531"/>
+       <use xlink:href="#LucidaGrande-41" x="186.71875"/>
+       <use xlink:href="#LucidaGrande-20" x="255.712891"/>
+       <use xlink:href="#LucidaGrande-43" x="287.353516"/>
+       <use xlink:href="#LucidaGrande-59" x="356.542969"/>
+       <use xlink:href="#LucidaGrande-43" x="418.847656"/>
+       <use xlink:href="#LucidaGrande-4c" x="488.037109"/>
+       <use xlink:href="#LucidaGrande-45" x="541.357422"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_33">
+     <g id="line2d_49">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="936.047365" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_42">
+      <!-- PENTOSE PHOSPHATE PATHWAY -->
+      <g transform="translate(138.64375 939.902052) scale(0.1 -0.1)">
+       <defs>
+        <path id="LucidaGrande-57" d="M 1197 0 
+L 6 4625 
+L 638 4625 
+L 1584 972 
+L 2456 4625 
+L 3088 4625 
+L 3913 1022 
+L 4931 4625 
+L 5466 4625 
+L 4169 0 
+L 3516 0 
+L 2700 3566 
+L 1847 0 
+L 1197 0 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#LucidaGrande-50"/>
+       <use xlink:href="#LucidaGrande-45" x="55.273438"/>
+       <use xlink:href="#LucidaGrande-4e" x="109.472656"/>
+       <use xlink:href="#LucidaGrande-54" x="183.349609"/>
+       <use xlink:href="#LucidaGrande-4f" x="246.582031"/>
+       <use xlink:href="#LucidaGrande-53" x="324.267578"/>
+       <use xlink:href="#LucidaGrande-45" x="378.125"/>
+       <use xlink:href="#LucidaGrande-20" x="432.324219"/>
+       <use xlink:href="#LucidaGrande-50" x="463.964844"/>
+       <use xlink:href="#LucidaGrande-48" x="519.238281"/>
+       <use xlink:href="#LucidaGrande-4f" x="592.724609"/>
+       <use xlink:href="#LucidaGrande-53" x="670.410156"/>
+       <use xlink:href="#LucidaGrande-50" x="724.267578"/>
+       <use xlink:href="#LucidaGrande-48" x="779.541016"/>
+       <use xlink:href="#LucidaGrande-41" x="853.027344"/>
+       <use xlink:href="#LucidaGrande-54" x="922.021484"/>
+       <use xlink:href="#LucidaGrande-45" x="985.253906"/>
+       <use xlink:href="#LucidaGrande-20" x="1039.453125"/>
+       <use xlink:href="#LucidaGrande-50" x="1071.09375"/>
+       <use xlink:href="#LucidaGrande-41" x="1126.367188"/>
+       <use xlink:href="#LucidaGrande-54" x="1195.361328"/>
+       <use xlink:href="#LucidaGrande-48" x="1258.59375"/>
+       <use xlink:href="#LucidaGrande-57" x="1332.080078"/>
+       <use xlink:href="#LucidaGrande-41" x="1417.626953"/>
+       <use xlink:href="#LucidaGrande-59" x="1486.621094"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_34">
+     <g id="line2d_50">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="912.637872" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_43">
+      <!-- LINOLEATE METABOLISM -->
+      <g transform="translate(174.620312 916.492559) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-4c"/>
+       <use xlink:href="#LucidaGrande-49" x="53.320312"/>
+       <use xlink:href="#LucidaGrande-4e" x="82.128906"/>
+       <use xlink:href="#LucidaGrande-4f" x="156.005859"/>
+       <use xlink:href="#LucidaGrande-4c" x="233.691406"/>
+       <use xlink:href="#LucidaGrande-45" x="287.011719"/>
+       <use xlink:href="#LucidaGrande-41" x="341.210938"/>
+       <use xlink:href="#LucidaGrande-54" x="410.205078"/>
+       <use xlink:href="#LucidaGrande-45" x="473.4375"/>
+       <use xlink:href="#LucidaGrande-20" x="527.636719"/>
+       <use xlink:href="#LucidaGrande-4d" x="559.277344"/>
+       <use xlink:href="#LucidaGrande-45" x="645.410156"/>
+       <use xlink:href="#LucidaGrande-54" x="699.609375"/>
+       <use xlink:href="#LucidaGrande-41" x="762.841797"/>
+       <use xlink:href="#LucidaGrande-42" x="831.835938"/>
+       <use xlink:href="#LucidaGrande-4f" x="889.355469"/>
+       <use xlink:href="#LucidaGrande-4c" x="967.041016"/>
+       <use xlink:href="#LucidaGrande-49" x="1020.361328"/>
+       <use xlink:href="#LucidaGrande-53" x="1049.169922"/>
+       <use xlink:href="#LucidaGrande-4d" x="1103.027344"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_35">
+     <g id="line2d_51">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="889.228378" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_44">
+      <!-- FOLATE METABOLISM -->
+      <g transform="translate(190.28125 893.083066) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-46"/>
+       <use xlink:href="#LucidaGrande-4f" x="53.613281"/>
+       <use xlink:href="#LucidaGrande-4c" x="131.298828"/>
+       <use xlink:href="#LucidaGrande-41" x="184.619141"/>
+       <use xlink:href="#LucidaGrande-54" x="253.613281"/>
+       <use xlink:href="#LucidaGrande-45" x="316.845703"/>
+       <use xlink:href="#LucidaGrande-20" x="371.044922"/>
+       <use xlink:href="#LucidaGrande-4d" x="402.685547"/>
+       <use xlink:href="#LucidaGrande-45" x="488.818359"/>
+       <use xlink:href="#LucidaGrande-54" x="543.017578"/>
+       <use xlink:href="#LucidaGrande-41" x="606.25"/>
+       <use xlink:href="#LucidaGrande-42" x="675.244141"/>
+       <use xlink:href="#LucidaGrande-4f" x="732.763672"/>
+       <use xlink:href="#LucidaGrande-4c" x="810.449219"/>
+       <use xlink:href="#LucidaGrande-49" x="863.769531"/>
+       <use xlink:href="#LucidaGrande-53" x="892.578125"/>
+       <use xlink:href="#LucidaGrande-4d" x="946.435547"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_36">
+     <g id="line2d_52">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="865.818885" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_45">
+      <!-- PYRIMIDINE METABOLISM -->
+      <g transform="translate(171.748437 869.673573) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-50"/>
+       <use xlink:href="#LucidaGrande-59" x="55.273438"/>
+       <use xlink:href="#LucidaGrande-52" x="117.578125"/>
+       <use xlink:href="#LucidaGrande-49" x="180.810547"/>
+       <use xlink:href="#LucidaGrande-4d" x="209.619141"/>
+       <use xlink:href="#LucidaGrande-49" x="295.751953"/>
+       <use xlink:href="#LucidaGrande-44" x="324.560547"/>
+       <use xlink:href="#LucidaGrande-49" x="399.462891"/>
+       <use xlink:href="#LucidaGrande-4e" x="428.271484"/>
+       <use xlink:href="#LucidaGrande-45" x="502.148438"/>
+       <use xlink:href="#LucidaGrande-20" x="556.347656"/>
+       <use xlink:href="#LucidaGrande-4d" x="587.988281"/>
+       <use xlink:href="#LucidaGrande-45" x="674.121094"/>
+       <use xlink:href="#LucidaGrande-54" x="728.320312"/>
+       <use xlink:href="#LucidaGrande-41" x="791.552734"/>
+       <use xlink:href="#LucidaGrande-42" x="860.546875"/>
+       <use xlink:href="#LucidaGrande-4f" x="918.066406"/>
+       <use xlink:href="#LucidaGrande-4c" x="995.751953"/>
+       <use xlink:href="#LucidaGrande-49" x="1049.072266"/>
+       <use xlink:href="#LucidaGrande-53" x="1077.880859"/>
+       <use xlink:href="#LucidaGrande-4d" x="1131.738281"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_37">
+     <g id="line2d_53">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="842.409392" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_46">
+      <!-- VITAMIN A METABOLISM -->
+      <g transform="translate(175.798437 846.26408) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-56"/>
+       <use xlink:href="#LucidaGrande-49" x="65.380859"/>
+       <use xlink:href="#LucidaGrande-54" x="94.189453"/>
+       <use xlink:href="#LucidaGrande-41" x="157.421875"/>
+       <use xlink:href="#LucidaGrande-4d" x="226.416016"/>
+       <use xlink:href="#LucidaGrande-49" x="312.548828"/>
+       <use xlink:href="#LucidaGrande-4e" x="341.357422"/>
+       <use xlink:href="#LucidaGrande-20" x="415.234375"/>
+       <use xlink:href="#LucidaGrande-41" x="446.875"/>
+       <use xlink:href="#LucidaGrande-20" x="515.869141"/>
+       <use xlink:href="#LucidaGrande-4d" x="547.509766"/>
+       <use xlink:href="#LucidaGrande-45" x="633.642578"/>
+       <use xlink:href="#LucidaGrande-54" x="687.841797"/>
+       <use xlink:href="#LucidaGrande-41" x="751.074219"/>
+       <use xlink:href="#LucidaGrande-42" x="820.068359"/>
+       <use xlink:href="#LucidaGrande-4f" x="877.587891"/>
+       <use xlink:href="#LucidaGrande-4c" x="955.273438"/>
+       <use xlink:href="#LucidaGrande-49" x="1008.59375"/>
+       <use xlink:href="#LucidaGrande-53" x="1037.402344"/>
+       <use xlink:href="#LucidaGrande-4d" x="1091.259766"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_38">
+     <g id="line2d_54">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="818.999899" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_47">
+      <!-- TRANSPORT, ENDOPLASMIC RETICULAR -->
+      <g transform="translate(102.807812 822.854586) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-54"/>
+       <use xlink:href="#LucidaGrande-52" x="63.232422"/>
+       <use xlink:href="#LucidaGrande-41" x="126.464844"/>
+       <use xlink:href="#LucidaGrande-4e" x="195.458984"/>
+       <use xlink:href="#LucidaGrande-53" x="269.335938"/>
+       <use xlink:href="#LucidaGrande-50" x="323.193359"/>
+       <use xlink:href="#LucidaGrande-4f" x="378.466797"/>
+       <use xlink:href="#LucidaGrande-52" x="456.152344"/>
+       <use xlink:href="#LucidaGrande-54" x="519.384766"/>
+       <use xlink:href="#LucidaGrande-2c" x="582.617188"/>
+       <use xlink:href="#LucidaGrande-20" x="614.257812"/>
+       <use xlink:href="#LucidaGrande-45" x="645.898438"/>
+       <use xlink:href="#LucidaGrande-4e" x="700.097656"/>
+       <use xlink:href="#LucidaGrande-44" x="773.974609"/>
+       <use xlink:href="#LucidaGrande-4f" x="848.876953"/>
+       <use xlink:href="#LucidaGrande-50" x="926.5625"/>
+       <use xlink:href="#LucidaGrande-4c" x="981.835938"/>
+       <use xlink:href="#LucidaGrande-41" x="1035.15625"/>
+       <use xlink:href="#LucidaGrande-53" x="1104.150391"/>
+       <use xlink:href="#LucidaGrande-4d" x="1158.007812"/>
+       <use xlink:href="#LucidaGrande-49" x="1244.140625"/>
+       <use xlink:href="#LucidaGrande-43" x="1272.949219"/>
+       <use xlink:href="#LucidaGrande-20" x="1342.138672"/>
+       <use xlink:href="#LucidaGrande-52" x="1373.779297"/>
+       <use xlink:href="#LucidaGrande-45" x="1437.011719"/>
+       <use xlink:href="#LucidaGrande-54" x="1491.210938"/>
+       <use xlink:href="#LucidaGrande-49" x="1554.443359"/>
+       <use xlink:href="#LucidaGrande-43" x="1583.251953"/>
+       <use xlink:href="#LucidaGrande-55" x="1652.441406"/>
+       <use xlink:href="#LucidaGrande-4c" x="1721.728516"/>
+       <use xlink:href="#LucidaGrande-41" x="1775.048828"/>
+       <use xlink:href="#LucidaGrande-52" x="1844.042969"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_39">
+     <g id="line2d_55">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="795.590406" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_48">
+      <!-- TRANSPORT, MITOCHONDRIAL -->
+      <g transform="translate(145.0125 799.445093) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-54"/>
+       <use xlink:href="#LucidaGrande-52" x="63.232422"/>
+       <use xlink:href="#LucidaGrande-41" x="126.464844"/>
+       <use xlink:href="#LucidaGrande-4e" x="195.458984"/>
+       <use xlink:href="#LucidaGrande-53" x="269.335938"/>
+       <use xlink:href="#LucidaGrande-50" x="323.193359"/>
+       <use xlink:href="#LucidaGrande-4f" x="378.466797"/>
+       <use xlink:href="#LucidaGrande-52" x="456.152344"/>
+       <use xlink:href="#LucidaGrande-54" x="519.384766"/>
+       <use xlink:href="#LucidaGrande-2c" x="582.617188"/>
+       <use xlink:href="#LucidaGrande-20" x="614.257812"/>
+       <use xlink:href="#LucidaGrande-4d" x="645.898438"/>
+       <use xlink:href="#LucidaGrande-49" x="732.03125"/>
+       <use xlink:href="#LucidaGrande-54" x="760.839844"/>
+       <use xlink:href="#LucidaGrande-4f" x="824.072266"/>
+       <use xlink:href="#LucidaGrande-43" x="901.757812"/>
+       <use xlink:href="#LucidaGrande-48" x="970.947266"/>
+       <use xlink:href="#LucidaGrande-4f" x="1044.433594"/>
+       <use xlink:href="#LucidaGrande-4e" x="1122.119141"/>
+       <use xlink:href="#LucidaGrande-44" x="1195.996094"/>
+       <use xlink:href="#LucidaGrande-52" x="1270.898438"/>
+       <use xlink:href="#LucidaGrande-49" x="1334.130859"/>
+       <use xlink:href="#LucidaGrande-41" x="1362.939453"/>
+       <use xlink:href="#LucidaGrande-4c" x="1431.933594"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_40">
+     <g id="line2d_56">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="772.180913" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_49">
+      <!-- TYROSINE METABOLISM -->
+      <g transform="translate(179.665625 776.0356) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-54"/>
+       <use xlink:href="#LucidaGrande-59" x="63.232422"/>
+       <use xlink:href="#LucidaGrande-52" x="125.537109"/>
+       <use xlink:href="#LucidaGrande-4f" x="188.769531"/>
+       <use xlink:href="#LucidaGrande-53" x="266.455078"/>
+       <use xlink:href="#LucidaGrande-49" x="320.3125"/>
+       <use xlink:href="#LucidaGrande-4e" x="349.121094"/>
+       <use xlink:href="#LucidaGrande-45" x="422.998047"/>
+       <use xlink:href="#LucidaGrande-20" x="477.197266"/>
+       <use xlink:href="#LucidaGrande-4d" x="508.837891"/>
+       <use xlink:href="#LucidaGrande-45" x="594.970703"/>
+       <use xlink:href="#LucidaGrande-54" x="649.169922"/>
+       <use xlink:href="#LucidaGrande-41" x="712.402344"/>
+       <use xlink:href="#LucidaGrande-42" x="781.396484"/>
+       <use xlink:href="#LucidaGrande-4f" x="838.916016"/>
+       <use xlink:href="#LucidaGrande-4c" x="916.601562"/>
+       <use xlink:href="#LucidaGrande-49" x="969.921875"/>
+       <use xlink:href="#LucidaGrande-53" x="998.730469"/>
+       <use xlink:href="#LucidaGrande-4d" x="1052.587891"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_41">
+     <g id="line2d_57">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="748.771419" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_50">
+      <!-- STEROID METABOLISM -->
+      <g transform="translate(185.79375 752.626107) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-53"/>
+       <use xlink:href="#LucidaGrande-54" x="53.857422"/>
+       <use xlink:href="#LucidaGrande-45" x="117.089844"/>
+       <use xlink:href="#LucidaGrande-52" x="171.289062"/>
+       <use xlink:href="#LucidaGrande-4f" x="234.521484"/>
+       <use xlink:href="#LucidaGrande-49" x="312.207031"/>
+       <use xlink:href="#LucidaGrande-44" x="341.015625"/>
+       <use xlink:href="#LucidaGrande-20" x="415.917969"/>
+       <use xlink:href="#LucidaGrande-4d" x="447.558594"/>
+       <use xlink:href="#LucidaGrande-45" x="533.691406"/>
+       <use xlink:href="#LucidaGrande-54" x="587.890625"/>
+       <use xlink:href="#LucidaGrande-41" x="651.123047"/>
+       <use xlink:href="#LucidaGrande-42" x="720.117188"/>
+       <use xlink:href="#LucidaGrande-4f" x="777.636719"/>
+       <use xlink:href="#LucidaGrande-4c" x="855.322266"/>
+       <use xlink:href="#LucidaGrande-49" x="908.642578"/>
+       <use xlink:href="#LucidaGrande-53" x="937.451172"/>
+       <use xlink:href="#LucidaGrande-4d" x="991.308594"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_42">
+     <g id="line2d_58">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="725.361926" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_51">
+      <!-- NAD METABOLISM -->
+      <g transform="translate(205.609375 729.216614) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-4e"/>
+       <use xlink:href="#LucidaGrande-41" x="73.876953"/>
+       <use xlink:href="#LucidaGrande-44" x="142.871094"/>
+       <use xlink:href="#LucidaGrande-20" x="217.773438"/>
+       <use xlink:href="#LucidaGrande-4d" x="249.414062"/>
+       <use xlink:href="#LucidaGrande-45" x="335.546875"/>
+       <use xlink:href="#LucidaGrande-54" x="389.746094"/>
+       <use xlink:href="#LucidaGrande-41" x="452.978516"/>
+       <use xlink:href="#LucidaGrande-42" x="521.972656"/>
+       <use xlink:href="#LucidaGrande-4f" x="579.492188"/>
+       <use xlink:href="#LucidaGrande-4c" x="657.177734"/>
+       <use xlink:href="#LucidaGrande-49" x="710.498047"/>
+       <use xlink:href="#LucidaGrande-53" x="739.306641"/>
+       <use xlink:href="#LucidaGrande-4d" x="793.164062"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_43">
+     <g id="line2d_59">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="701.952433" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_52">
+      <!-- ARACHIDONIC ACID METABOLISM -->
+      <g transform="translate(130.314062 705.807121) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-41"/>
+       <use xlink:href="#LucidaGrande-52" x="68.994141"/>
+       <use xlink:href="#LucidaGrande-41" x="132.226562"/>
+       <use xlink:href="#LucidaGrande-43" x="201.220703"/>
+       <use xlink:href="#LucidaGrande-48" x="270.410156"/>
+       <use xlink:href="#LucidaGrande-49" x="343.896484"/>
+       <use xlink:href="#LucidaGrande-44" x="372.705078"/>
+       <use xlink:href="#LucidaGrande-4f" x="447.607422"/>
+       <use xlink:href="#LucidaGrande-4e" x="525.292969"/>
+       <use xlink:href="#LucidaGrande-49" x="599.169922"/>
+       <use xlink:href="#LucidaGrande-43" x="627.978516"/>
+       <use xlink:href="#LucidaGrande-20" x="697.167969"/>
+       <use xlink:href="#LucidaGrande-41" x="728.808594"/>
+       <use xlink:href="#LucidaGrande-43" x="797.802734"/>
+       <use xlink:href="#LucidaGrande-49" x="866.992188"/>
+       <use xlink:href="#LucidaGrande-44" x="895.800781"/>
+       <use xlink:href="#LucidaGrande-20" x="970.703125"/>
+       <use xlink:href="#LucidaGrande-4d" x="1002.34375"/>
+       <use xlink:href="#LucidaGrande-45" x="1088.476562"/>
+       <use xlink:href="#LucidaGrande-54" x="1142.675781"/>
+       <use xlink:href="#LucidaGrande-41" x="1205.908203"/>
+       <use xlink:href="#LucidaGrande-42" x="1274.902344"/>
+       <use xlink:href="#LucidaGrande-4f" x="1332.421875"/>
+       <use xlink:href="#LucidaGrande-4c" x="1410.107422"/>
+       <use xlink:href="#LucidaGrande-49" x="1463.427734"/>
+       <use xlink:href="#LucidaGrande-53" x="1492.236328"/>
+       <use xlink:href="#LucidaGrande-4d" x="1546.09375"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_44">
+     <g id="line2d_60">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="678.54294" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_53">
+      <!-- HISTIDINE METABOLISM -->
+      <g transform="translate(179.3875 682.397627) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-48"/>
+       <use xlink:href="#LucidaGrande-49" x="73.486328"/>
+       <use xlink:href="#LucidaGrande-53" x="102.294922"/>
+       <use xlink:href="#LucidaGrande-54" x="156.152344"/>
+       <use xlink:href="#LucidaGrande-49" x="219.384766"/>
+       <use xlink:href="#LucidaGrande-44" x="248.193359"/>
+       <use xlink:href="#LucidaGrande-49" x="323.095703"/>
+       <use xlink:href="#LucidaGrande-4e" x="351.904297"/>
+       <use xlink:href="#LucidaGrande-45" x="425.78125"/>
+       <use xlink:href="#LucidaGrande-20" x="479.980469"/>
+       <use xlink:href="#LucidaGrande-4d" x="511.621094"/>
+       <use xlink:href="#LucidaGrande-45" x="597.753906"/>
+       <use xlink:href="#LucidaGrande-54" x="651.953125"/>
+       <use xlink:href="#LucidaGrande-41" x="715.185547"/>
+       <use xlink:href="#LucidaGrande-42" x="784.179688"/>
+       <use xlink:href="#LucidaGrande-4f" x="841.699219"/>
+       <use xlink:href="#LucidaGrande-4c" x="919.384766"/>
+       <use xlink:href="#LucidaGrande-49" x="972.705078"/>
+       <use xlink:href="#LucidaGrande-53" x="1001.513672"/>
+       <use xlink:href="#LucidaGrande-4d" x="1055.371094"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_45">
+     <g id="line2d_61">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="655.133447" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_54">
+      <!-- EICOSANOID METABOLISM -->
+      <g transform="translate(166.584375 658.988134) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-45"/>
+       <use xlink:href="#LucidaGrande-49" x="54.199219"/>
+       <use xlink:href="#LucidaGrande-43" x="83.007812"/>
+       <use xlink:href="#LucidaGrande-4f" x="152.197266"/>
+       <use xlink:href="#LucidaGrande-53" x="229.882812"/>
+       <use xlink:href="#LucidaGrande-41" x="283.740234"/>
+       <use xlink:href="#LucidaGrande-4e" x="352.734375"/>
+       <use xlink:href="#LucidaGrande-4f" x="426.611328"/>
+       <use xlink:href="#LucidaGrande-49" x="504.296875"/>
+       <use xlink:href="#LucidaGrande-44" x="533.105469"/>
+       <use xlink:href="#LucidaGrande-20" x="608.007812"/>
+       <use xlink:href="#LucidaGrande-4d" x="639.648438"/>
+       <use xlink:href="#LucidaGrande-45" x="725.78125"/>
+       <use xlink:href="#LucidaGrande-54" x="779.980469"/>
+       <use xlink:href="#LucidaGrande-41" x="843.212891"/>
+       <use xlink:href="#LucidaGrande-42" x="912.207031"/>
+       <use xlink:href="#LucidaGrande-4f" x="969.726562"/>
+       <use xlink:href="#LucidaGrande-4c" x="1047.412109"/>
+       <use xlink:href="#LucidaGrande-49" x="1100.732422"/>
+       <use xlink:href="#LucidaGrande-53" x="1129.541016"/>
+       <use xlink:href="#LucidaGrande-4d" x="1183.398438"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_46">
+     <g id="line2d_62">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="631.723954" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_55">
+      <!-- BILE ACID SYNTHESIS -->
+      <g transform="translate(191.889062 635.578641) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-42"/>
+       <use xlink:href="#LucidaGrande-49" x="57.519531"/>
+       <use xlink:href="#LucidaGrande-4c" x="86.328125"/>
+       <use xlink:href="#LucidaGrande-45" x="139.648438"/>
+       <use xlink:href="#LucidaGrande-20" x="193.847656"/>
+       <use xlink:href="#LucidaGrande-41" x="225.488281"/>
+       <use xlink:href="#LucidaGrande-43" x="294.482422"/>
+       <use xlink:href="#LucidaGrande-49" x="363.671875"/>
+       <use xlink:href="#LucidaGrande-44" x="392.480469"/>
+       <use xlink:href="#LucidaGrande-20" x="467.382812"/>
+       <use xlink:href="#LucidaGrande-53" x="499.023438"/>
+       <use xlink:href="#LucidaGrande-59" x="552.880859"/>
+       <use xlink:href="#LucidaGrande-4e" x="615.185547"/>
+       <use xlink:href="#LucidaGrande-54" x="689.0625"/>
+       <use xlink:href="#LucidaGrande-48" x="752.294922"/>
+       <use xlink:href="#LucidaGrande-45" x="825.78125"/>
+       <use xlink:href="#LucidaGrande-53" x="879.980469"/>
+       <use xlink:href="#LucidaGrande-49" x="933.837891"/>
+       <use xlink:href="#LucidaGrande-53" x="962.646484"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_47">
+     <g id="line2d_63">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="608.31446" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_56">
+      <!-- UBIQUINONE AND OTHER TERPENOID-QUINONE SYNTHESIS -->
+      <g transform="translate(7.2 612.169148) scale(0.1 -0.1)">
+       <defs>
+        <path id="LucidaGrande-51" d="M 4703 -925 
+Q 3613 -572 2875 -84 
+Q 2581 -116 2422 -116 
+Q 1491 -116 908 559 
+Q 325 1234 325 2313 
+Q 325 3419 914 4080 
+Q 1503 4741 2488 4741 
+Q 3475 4741 4062 4078 
+Q 4650 3416 4650 2303 
+Q 4650 709 3466 97 
+Q 4263 -253 5119 -403 
+L 4703 -925 
+z
+M 2469 375 
+Q 3178 375 3565 884 
+Q 3953 1394 3953 2325 
+Q 3953 3228 3565 3739 
+Q 3178 4250 2488 4250 
+Q 1797 4250 1409 3739 
+Q 1022 3228 1022 2319 
+Q 1022 1413 1406 894 
+Q 1791 375 2469 375 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#LucidaGrande-55"/>
+       <use xlink:href="#LucidaGrande-42" x="69.287109"/>
+       <use xlink:href="#LucidaGrande-49" x="126.806641"/>
+       <use xlink:href="#LucidaGrande-51" x="155.615234"/>
+       <use xlink:href="#LucidaGrande-55" x="233.300781"/>
+       <use xlink:href="#LucidaGrande-49" x="302.587891"/>
+       <use xlink:href="#LucidaGrande-4e" x="331.396484"/>
+       <use xlink:href="#LucidaGrande-4f" x="405.273438"/>
+       <use xlink:href="#LucidaGrande-4e" x="482.958984"/>
+       <use xlink:href="#LucidaGrande-45" x="556.835938"/>
+       <use xlink:href="#LucidaGrande-20" x="611.035156"/>
+       <use xlink:href="#LucidaGrande-41" x="642.675781"/>
+       <use xlink:href="#LucidaGrande-4e" x="711.669922"/>
+       <use xlink:href="#LucidaGrande-44" x="785.546875"/>
+       <use xlink:href="#LucidaGrande-20" x="860.449219"/>
+       <use xlink:href="#LucidaGrande-4f" x="892.089844"/>
+       <use xlink:href="#LucidaGrande-54" x="969.775391"/>
+       <use xlink:href="#LucidaGrande-48" x="1033.007812"/>
+       <use xlink:href="#LucidaGrande-45" x="1106.494141"/>
+       <use xlink:href="#LucidaGrande-52" x="1160.693359"/>
+       <use xlink:href="#LucidaGrande-20" x="1223.925781"/>
+       <use xlink:href="#LucidaGrande-54" x="1255.566406"/>
+       <use xlink:href="#LucidaGrande-45" x="1318.798828"/>
+       <use xlink:href="#LucidaGrande-52" x="1372.998047"/>
+       <use xlink:href="#LucidaGrande-50" x="1436.230469"/>
+       <use xlink:href="#LucidaGrande-45" x="1491.503906"/>
+       <use xlink:href="#LucidaGrande-4e" x="1545.703125"/>
+       <use xlink:href="#LucidaGrande-4f" x="1619.580078"/>
+       <use xlink:href="#LucidaGrande-49" x="1697.265625"/>
+       <use xlink:href="#LucidaGrande-44" x="1726.074219"/>
+       <use xlink:href="#LucidaGrande-2d" x="1800.976562"/>
+       <use xlink:href="#LucidaGrande-51" x="1858.837891"/>
+       <use xlink:href="#LucidaGrande-55" x="1936.523438"/>
+       <use xlink:href="#LucidaGrande-49" x="2005.810547"/>
+       <use xlink:href="#LucidaGrande-4e" x="2034.619141"/>
+       <use xlink:href="#LucidaGrande-4f" x="2108.496094"/>
+       <use xlink:href="#LucidaGrande-4e" x="2186.181641"/>
+       <use xlink:href="#LucidaGrande-45" x="2260.058594"/>
+       <use xlink:href="#LucidaGrande-20" x="2314.257812"/>
+       <use xlink:href="#LucidaGrande-53" x="2345.898438"/>
+       <use xlink:href="#LucidaGrande-59" x="2399.755859"/>
+       <use xlink:href="#LucidaGrande-4e" x="2462.060547"/>
+       <use xlink:href="#LucidaGrande-54" x="2535.9375"/>
+       <use xlink:href="#LucidaGrande-48" x="2599.169922"/>
+       <use xlink:href="#LucidaGrande-45" x="2672.65625"/>
+       <use xlink:href="#LucidaGrande-53" x="2726.855469"/>
+       <use xlink:href="#LucidaGrande-49" x="2780.712891"/>
+       <use xlink:href="#LucidaGrande-53" x="2809.521484"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_48">
+     <g id="line2d_64">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="584.904967" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_57">
+      <!-- INOSITOL PHOSPHATE METABOLISM -->
+      <g transform="translate(120.942187 588.759655) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-49"/>
+       <use xlink:href="#LucidaGrande-4e" x="28.808594"/>
+       <use xlink:href="#LucidaGrande-4f" x="102.685547"/>
+       <use xlink:href="#LucidaGrande-53" x="180.371094"/>
+       <use xlink:href="#LucidaGrande-49" x="234.228516"/>
+       <use xlink:href="#LucidaGrande-54" x="263.037109"/>
+       <use xlink:href="#LucidaGrande-4f" x="326.269531"/>
+       <use xlink:href="#LucidaGrande-4c" x="403.955078"/>
+       <use xlink:href="#LucidaGrande-20" x="457.275391"/>
+       <use xlink:href="#LucidaGrande-50" x="488.916016"/>
+       <use xlink:href="#LucidaGrande-48" x="544.189453"/>
+       <use xlink:href="#LucidaGrande-4f" x="617.675781"/>
+       <use xlink:href="#LucidaGrande-53" x="695.361328"/>
+       <use xlink:href="#LucidaGrande-50" x="749.21875"/>
+       <use xlink:href="#LucidaGrande-48" x="804.492188"/>
+       <use xlink:href="#LucidaGrande-41" x="877.978516"/>
+       <use xlink:href="#LucidaGrande-54" x="946.972656"/>
+       <use xlink:href="#LucidaGrande-45" x="1010.205078"/>
+       <use xlink:href="#LucidaGrande-20" x="1064.404297"/>
+       <use xlink:href="#LucidaGrande-4d" x="1096.044922"/>
+       <use xlink:href="#LucidaGrande-45" x="1182.177734"/>
+       <use xlink:href="#LucidaGrande-54" x="1236.376953"/>
+       <use xlink:href="#LucidaGrande-41" x="1299.609375"/>
+       <use xlink:href="#LucidaGrande-42" x="1368.603516"/>
+       <use xlink:href="#LucidaGrande-4f" x="1426.123047"/>
+       <use xlink:href="#LucidaGrande-4c" x="1503.808594"/>
+       <use xlink:href="#LucidaGrande-49" x="1557.128906"/>
+       <use xlink:href="#LucidaGrande-53" x="1585.9375"/>
+       <use xlink:href="#LucidaGrande-4d" x="1639.794922"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_49">
+     <g id="line2d_65">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="561.495474" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_58">
+      <!-- TRYPTOPHAN METABOLISM -->
+      <g transform="translate(161.725 565.350162) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-54"/>
+       <use xlink:href="#LucidaGrande-52" x="63.232422"/>
+       <use xlink:href="#LucidaGrande-59" x="126.464844"/>
+       <use xlink:href="#LucidaGrande-50" x="188.769531"/>
+       <use xlink:href="#LucidaGrande-54" x="244.042969"/>
+       <use xlink:href="#LucidaGrande-4f" x="307.275391"/>
+       <use xlink:href="#LucidaGrande-50" x="384.960938"/>
+       <use xlink:href="#LucidaGrande-48" x="440.234375"/>
+       <use xlink:href="#LucidaGrande-41" x="513.720703"/>
+       <use xlink:href="#LucidaGrande-4e" x="582.714844"/>
+       <use xlink:href="#LucidaGrande-20" x="656.591797"/>
+       <use xlink:href="#LucidaGrande-4d" x="688.232422"/>
+       <use xlink:href="#LucidaGrande-45" x="774.365234"/>
+       <use xlink:href="#LucidaGrande-54" x="828.564453"/>
+       <use xlink:href="#LucidaGrande-41" x="891.796875"/>
+       <use xlink:href="#LucidaGrande-42" x="960.791016"/>
+       <use xlink:href="#LucidaGrande-4f" x="1018.310547"/>
+       <use xlink:href="#LucidaGrande-4c" x="1095.996094"/>
+       <use xlink:href="#LucidaGrande-49" x="1149.316406"/>
+       <use xlink:href="#LucidaGrande-53" x="1178.125"/>
+       <use xlink:href="#LucidaGrande-4d" x="1231.982422"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_50">
+     <g id="line2d_66">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="538.085981" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_59">
+      <!-- ANDROGEN AND ESTROGEN SYNTHESIS AND METABOLISM -->
+      <g transform="translate(12.264062 541.940668) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-41"/>
+       <use xlink:href="#LucidaGrande-4e" x="68.994141"/>
+       <use xlink:href="#LucidaGrande-44" x="142.871094"/>
+       <use xlink:href="#LucidaGrande-52" x="217.773438"/>
+       <use xlink:href="#LucidaGrande-4f" x="281.005859"/>
+       <use xlink:href="#LucidaGrande-47" x="358.691406"/>
+       <use xlink:href="#LucidaGrande-45" x="430.957031"/>
+       <use xlink:href="#LucidaGrande-4e" x="485.15625"/>
+       <use xlink:href="#LucidaGrande-20" x="559.033203"/>
+       <use xlink:href="#LucidaGrande-41" x="590.673828"/>
+       <use xlink:href="#LucidaGrande-4e" x="659.667969"/>
+       <use xlink:href="#LucidaGrande-44" x="733.544922"/>
+       <use xlink:href="#LucidaGrande-20" x="808.447266"/>
+       <use xlink:href="#LucidaGrande-45" x="840.087891"/>
+       <use xlink:href="#LucidaGrande-53" x="894.287109"/>
+       <use xlink:href="#LucidaGrande-54" x="948.144531"/>
+       <use xlink:href="#LucidaGrande-52" x="1011.376953"/>
+       <use xlink:href="#LucidaGrande-4f" x="1074.609375"/>
+       <use xlink:href="#LucidaGrande-47" x="1152.294922"/>
+       <use xlink:href="#LucidaGrande-45" x="1224.560547"/>
+       <use xlink:href="#LucidaGrande-4e" x="1278.759766"/>
+       <use xlink:href="#LucidaGrande-20" x="1352.636719"/>
+       <use xlink:href="#LucidaGrande-53" x="1384.277344"/>
+       <use xlink:href="#LucidaGrande-59" x="1438.134766"/>
+       <use xlink:href="#LucidaGrande-4e" x="1500.439453"/>
+       <use xlink:href="#LucidaGrande-54" x="1574.316406"/>
+       <use xlink:href="#LucidaGrande-48" x="1637.548828"/>
+       <use xlink:href="#LucidaGrande-45" x="1711.035156"/>
+       <use xlink:href="#LucidaGrande-53" x="1765.234375"/>
+       <use xlink:href="#LucidaGrande-49" x="1819.091797"/>
+       <use xlink:href="#LucidaGrande-53" x="1847.900391"/>
+       <use xlink:href="#LucidaGrande-20" x="1901.757812"/>
+       <use xlink:href="#LucidaGrande-41" x="1933.398438"/>
+       <use xlink:href="#LucidaGrande-4e" x="2002.392578"/>
+       <use xlink:href="#LucidaGrande-44" x="2076.269531"/>
+       <use xlink:href="#LucidaGrande-20" x="2151.171875"/>
+       <use xlink:href="#LucidaGrande-4d" x="2182.8125"/>
+       <use xlink:href="#LucidaGrande-45" x="2268.945312"/>
+       <use xlink:href="#LucidaGrande-54" x="2323.144531"/>
+       <use xlink:href="#LucidaGrande-41" x="2386.376953"/>
+       <use xlink:href="#LucidaGrande-42" x="2455.371094"/>
+       <use xlink:href="#LucidaGrande-4f" x="2512.890625"/>
+       <use xlink:href="#LucidaGrande-4c" x="2590.576172"/>
+       <use xlink:href="#LucidaGrande-49" x="2643.896484"/>
+       <use xlink:href="#LucidaGrande-53" x="2672.705078"/>
+       <use xlink:href="#LucidaGrande-4d" x="2726.5625"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_51">
+     <g id="line2d_67">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="514.676488" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_60">
+      <!-- SPHINGOLIPID METABOLISM -->
+      <g transform="translate(159.746875 518.531175) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-53"/>
+       <use xlink:href="#LucidaGrande-50" x="53.857422"/>
+       <use xlink:href="#LucidaGrande-48" x="109.130859"/>
+       <use xlink:href="#LucidaGrande-49" x="182.617188"/>
+       <use xlink:href="#LucidaGrande-4e" x="211.425781"/>
+       <use xlink:href="#LucidaGrande-47" x="285.302734"/>
+       <use xlink:href="#LucidaGrande-4f" x="357.568359"/>
+       <use xlink:href="#LucidaGrande-4c" x="435.253906"/>
+       <use xlink:href="#LucidaGrande-49" x="488.574219"/>
+       <use xlink:href="#LucidaGrande-50" x="517.382812"/>
+       <use xlink:href="#LucidaGrande-49" x="572.65625"/>
+       <use xlink:href="#LucidaGrande-44" x="601.464844"/>
+       <use xlink:href="#LucidaGrande-20" x="676.367188"/>
+       <use xlink:href="#LucidaGrande-4d" x="708.007812"/>
+       <use xlink:href="#LucidaGrande-45" x="794.140625"/>
+       <use xlink:href="#LucidaGrande-54" x="848.339844"/>
+       <use xlink:href="#LucidaGrande-41" x="911.572266"/>
+       <use xlink:href="#LucidaGrande-42" x="980.566406"/>
+       <use xlink:href="#LucidaGrande-4f" x="1038.085938"/>
+       <use xlink:href="#LucidaGrande-4c" x="1115.771484"/>
+       <use xlink:href="#LucidaGrande-49" x="1169.091797"/>
+       <use xlink:href="#LucidaGrande-53" x="1197.900391"/>
+       <use xlink:href="#LucidaGrande-4d" x="1251.757812"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_52">
+     <g id="line2d_68">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="491.266995" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_61">
+      <!-- TRANSPORT, LYSOSOMAL -->
+      <g transform="translate(170.23125 495.121682) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-54"/>
+       <use xlink:href="#LucidaGrande-52" x="63.232422"/>
+       <use xlink:href="#LucidaGrande-41" x="126.464844"/>
+       <use xlink:href="#LucidaGrande-4e" x="195.458984"/>
+       <use xlink:href="#LucidaGrande-53" x="269.335938"/>
+       <use xlink:href="#LucidaGrande-50" x="323.193359"/>
+       <use xlink:href="#LucidaGrande-4f" x="378.466797"/>
+       <use xlink:href="#LucidaGrande-52" x="456.152344"/>
+       <use xlink:href="#LucidaGrande-54" x="519.384766"/>
+       <use xlink:href="#LucidaGrande-2c" x="582.617188"/>
+       <use xlink:href="#LucidaGrande-20" x="614.257812"/>
+       <use xlink:href="#LucidaGrande-4c" x="645.898438"/>
+       <use xlink:href="#LucidaGrande-59" x="699.21875"/>
+       <use xlink:href="#LucidaGrande-53" x="761.523438"/>
+       <use xlink:href="#LucidaGrande-4f" x="815.380859"/>
+       <use xlink:href="#LucidaGrande-53" x="893.066406"/>
+       <use xlink:href="#LucidaGrande-4f" x="946.923828"/>
+       <use xlink:href="#LucidaGrande-4d" x="1024.609375"/>
+       <use xlink:href="#LucidaGrande-41" x="1110.742188"/>
+       <use xlink:href="#LucidaGrande-4c" x="1179.736328"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_53">
+     <g id="line2d_69">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="467.857502" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_62">
+      <!-- NUCLEOTIDE METABOLISM -->
+      <g transform="translate(165.515625 471.712189) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-4e"/>
+       <use xlink:href="#LucidaGrande-55" x="73.876953"/>
+       <use xlink:href="#LucidaGrande-43" x="143.164062"/>
+       <use xlink:href="#LucidaGrande-4c" x="212.353516"/>
+       <use xlink:href="#LucidaGrande-45" x="265.673828"/>
+       <use xlink:href="#LucidaGrande-4f" x="319.873047"/>
+       <use xlink:href="#LucidaGrande-54" x="397.558594"/>
+       <use xlink:href="#LucidaGrande-49" x="460.791016"/>
+       <use xlink:href="#LucidaGrande-44" x="489.599609"/>
+       <use xlink:href="#LucidaGrande-45" x="564.501953"/>
+       <use xlink:href="#LucidaGrande-20" x="618.701172"/>
+       <use xlink:href="#LucidaGrande-4d" x="650.341797"/>
+       <use xlink:href="#LucidaGrande-45" x="736.474609"/>
+       <use xlink:href="#LucidaGrande-54" x="790.673828"/>
+       <use xlink:href="#LucidaGrande-41" x="853.90625"/>
+       <use xlink:href="#LucidaGrande-42" x="922.900391"/>
+       <use xlink:href="#LucidaGrande-4f" x="980.419922"/>
+       <use xlink:href="#LucidaGrande-4c" x="1058.105469"/>
+       <use xlink:href="#LucidaGrande-49" x="1111.425781"/>
+       <use xlink:href="#LucidaGrande-53" x="1140.234375"/>
+       <use xlink:href="#LucidaGrande-4d" x="1194.091797"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_54">
+     <g id="line2d_70">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="444.448008" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_63">
+      <!-- PROPANOATE METABOLISM -->
+      <g transform="translate(161.539062 448.302696) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-50"/>
+       <use xlink:href="#LucidaGrande-52" x="55.273438"/>
+       <use xlink:href="#LucidaGrande-4f" x="118.505859"/>
+       <use xlink:href="#LucidaGrande-50" x="196.191406"/>
+       <use xlink:href="#LucidaGrande-41" x="251.464844"/>
+       <use xlink:href="#LucidaGrande-4e" x="320.458984"/>
+       <use xlink:href="#LucidaGrande-4f" x="394.335938"/>
+       <use xlink:href="#LucidaGrande-41" x="472.021484"/>
+       <use xlink:href="#LucidaGrande-54" x="541.015625"/>
+       <use xlink:href="#LucidaGrande-45" x="604.248047"/>
+       <use xlink:href="#LucidaGrande-20" x="658.447266"/>
+       <use xlink:href="#LucidaGrande-4d" x="690.087891"/>
+       <use xlink:href="#LucidaGrande-45" x="776.220703"/>
+       <use xlink:href="#LucidaGrande-54" x="830.419922"/>
+       <use xlink:href="#LucidaGrande-41" x="893.652344"/>
+       <use xlink:href="#LucidaGrande-42" x="962.646484"/>
+       <use xlink:href="#LucidaGrande-4f" x="1020.166016"/>
+       <use xlink:href="#LucidaGrande-4c" x="1097.851562"/>
+       <use xlink:href="#LucidaGrande-49" x="1151.171875"/>
+       <use xlink:href="#LucidaGrande-53" x="1179.980469"/>
+       <use xlink:href="#LucidaGrande-4d" x="1233.837891"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_55">
+     <g id="line2d_71">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="421.038515" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_64">
+      <!-- GLYCOLYSIS/GLUCONEOGENESIS -->
+      <g transform="translate(135.745312 424.893203) scale(0.1 -0.1)">
+       <defs>
+        <path id="LucidaGrande-2f" d="M 603 -925 
+L 2269 4625 
+L 2753 4625 
+L 1088 -925 
+L 603 -925 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#LucidaGrande-47"/>
+       <use xlink:href="#LucidaGrande-4c" x="72.265625"/>
+       <use xlink:href="#LucidaGrande-59" x="125.585938"/>
+       <use xlink:href="#LucidaGrande-43" x="187.890625"/>
+       <use xlink:href="#LucidaGrande-4f" x="257.080078"/>
+       <use xlink:href="#LucidaGrande-4c" x="334.765625"/>
+       <use xlink:href="#LucidaGrande-59" x="388.085938"/>
+       <use xlink:href="#LucidaGrande-53" x="450.390625"/>
+       <use xlink:href="#LucidaGrande-49" x="504.248047"/>
+       <use xlink:href="#LucidaGrande-53" x="533.056641"/>
+       <use xlink:href="#LucidaGrande-2f" x="586.914062"/>
+       <use xlink:href="#LucidaGrande-47" x="639.355469"/>
+       <use xlink:href="#LucidaGrande-4c" x="711.621094"/>
+       <use xlink:href="#LucidaGrande-55" x="764.941406"/>
+       <use xlink:href="#LucidaGrande-43" x="834.228516"/>
+       <use xlink:href="#LucidaGrande-4f" x="903.417969"/>
+       <use xlink:href="#LucidaGrande-4e" x="981.103516"/>
+       <use xlink:href="#LucidaGrande-45" x="1054.980469"/>
+       <use xlink:href="#LucidaGrande-4f" x="1109.179688"/>
+       <use xlink:href="#LucidaGrande-47" x="1186.865234"/>
+       <use xlink:href="#LucidaGrande-45" x="1259.130859"/>
+       <use xlink:href="#LucidaGrande-4e" x="1313.330078"/>
+       <use xlink:href="#LucidaGrande-45" x="1387.207031"/>
+       <use xlink:href="#LucidaGrande-53" x="1441.40625"/>
+       <use xlink:href="#LucidaGrande-49" x="1495.263672"/>
+       <use xlink:href="#LucidaGrande-53" x="1524.072266"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_56">
+     <g id="line2d_72">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="397.629022" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_65">
+      <!-- TRANSPORT, GOLGI APPARATUS -->
+      <g transform="translate(138.634375 401.48371) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-54"/>
+       <use xlink:href="#LucidaGrande-52" x="63.232422"/>
+       <use xlink:href="#LucidaGrande-41" x="126.464844"/>
+       <use xlink:href="#LucidaGrande-4e" x="195.458984"/>
+       <use xlink:href="#LucidaGrande-53" x="269.335938"/>
+       <use xlink:href="#LucidaGrande-50" x="323.193359"/>
+       <use xlink:href="#LucidaGrande-4f" x="378.466797"/>
+       <use xlink:href="#LucidaGrande-52" x="456.152344"/>
+       <use xlink:href="#LucidaGrande-54" x="519.384766"/>
+       <use xlink:href="#LucidaGrande-2c" x="582.617188"/>
+       <use xlink:href="#LucidaGrande-20" x="614.257812"/>
+       <use xlink:href="#LucidaGrande-47" x="645.898438"/>
+       <use xlink:href="#LucidaGrande-4f" x="718.164062"/>
+       <use xlink:href="#LucidaGrande-4c" x="795.849609"/>
+       <use xlink:href="#LucidaGrande-47" x="849.169922"/>
+       <use xlink:href="#LucidaGrande-49" x="921.435547"/>
+       <use xlink:href="#LucidaGrande-20" x="950.244141"/>
+       <use xlink:href="#LucidaGrande-41" x="981.884766"/>
+       <use xlink:href="#LucidaGrande-50" x="1050.878906"/>
+       <use xlink:href="#LucidaGrande-50" x="1106.152344"/>
+       <use xlink:href="#LucidaGrande-41" x="1161.425781"/>
+       <use xlink:href="#LucidaGrande-52" x="1230.419922"/>
+       <use xlink:href="#LucidaGrande-41" x="1293.652344"/>
+       <use xlink:href="#LucidaGrande-54" x="1362.646484"/>
+       <use xlink:href="#LucidaGrande-55" x="1425.878906"/>
+       <use xlink:href="#LucidaGrande-53" x="1495.166016"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_57">
+     <g id="line2d_73">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="374.219529" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_66">
+      <!-- TRANSPORT, PEROXISOMAL -->
+      <g transform="translate(160.76875 378.074216) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-54"/>
+       <use xlink:href="#LucidaGrande-52" x="63.232422"/>
+       <use xlink:href="#LucidaGrande-41" x="126.464844"/>
+       <use xlink:href="#LucidaGrande-4e" x="195.458984"/>
+       <use xlink:href="#LucidaGrande-53" x="269.335938"/>
+       <use xlink:href="#LucidaGrande-50" x="323.193359"/>
+       <use xlink:href="#LucidaGrande-4f" x="378.466797"/>
+       <use xlink:href="#LucidaGrande-52" x="456.152344"/>
+       <use xlink:href="#LucidaGrande-54" x="519.384766"/>
+       <use xlink:href="#LucidaGrande-2c" x="582.617188"/>
+       <use xlink:href="#LucidaGrande-20" x="614.257812"/>
+       <use xlink:href="#LucidaGrande-50" x="645.898438"/>
+       <use xlink:href="#LucidaGrande-45" x="701.171875"/>
+       <use xlink:href="#LucidaGrande-52" x="755.371094"/>
+       <use xlink:href="#LucidaGrande-4f" x="818.603516"/>
+       <use xlink:href="#LucidaGrande-58" x="896.289062"/>
+       <use xlink:href="#LucidaGrande-49" x="958.886719"/>
+       <use xlink:href="#LucidaGrande-53" x="987.695312"/>
+       <use xlink:href="#LucidaGrande-4f" x="1041.552734"/>
+       <use xlink:href="#LucidaGrande-4d" x="1119.238281"/>
+       <use xlink:href="#LucidaGrande-41" x="1205.371094"/>
+       <use xlink:href="#LucidaGrande-4c" x="1274.365234"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_58">
+     <g id="line2d_74">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="350.810036" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_67">
+      <!-- XENOBIOTICS METABOLISM -->
+      <g transform="translate(162.640625 354.664723) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-58"/>
+       <use xlink:href="#LucidaGrande-45" x="62.597656"/>
+       <use xlink:href="#LucidaGrande-4e" x="116.796875"/>
+       <use xlink:href="#LucidaGrande-4f" x="190.673828"/>
+       <use xlink:href="#LucidaGrande-42" x="268.359375"/>
+       <use xlink:href="#LucidaGrande-49" x="325.878906"/>
+       <use xlink:href="#LucidaGrande-4f" x="354.6875"/>
+       <use xlink:href="#LucidaGrande-54" x="432.373047"/>
+       <use xlink:href="#LucidaGrande-49" x="495.605469"/>
+       <use xlink:href="#LucidaGrande-43" x="524.414062"/>
+       <use xlink:href="#LucidaGrande-53" x="593.603516"/>
+       <use xlink:href="#LucidaGrande-20" x="647.460938"/>
+       <use xlink:href="#LucidaGrande-4d" x="679.101562"/>
+       <use xlink:href="#LucidaGrande-45" x="765.234375"/>
+       <use xlink:href="#LucidaGrande-54" x="819.433594"/>
+       <use xlink:href="#LucidaGrande-41" x="882.666016"/>
+       <use xlink:href="#LucidaGrande-42" x="951.660156"/>
+       <use xlink:href="#LucidaGrande-4f" x="1009.179688"/>
+       <use xlink:href="#LucidaGrande-4c" x="1086.865234"/>
+       <use xlink:href="#LucidaGrande-49" x="1140.185547"/>
+       <use xlink:href="#LucidaGrande-53" x="1168.994141"/>
+       <use xlink:href="#LucidaGrande-4d" x="1222.851562"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_59">
+     <g id="line2d_75">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="327.400543" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_68">
+      <!-- O-GLYCAN SYNTHESIS -->
+      <g transform="translate(185.078125 331.25523) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-4f"/>
+       <use xlink:href="#LucidaGrande-2d" x="77.685547"/>
+       <use xlink:href="#LucidaGrande-47" x="135.546875"/>
+       <use xlink:href="#LucidaGrande-4c" x="207.8125"/>
+       <use xlink:href="#LucidaGrande-59" x="261.132812"/>
+       <use xlink:href="#LucidaGrande-43" x="323.4375"/>
+       <use xlink:href="#LucidaGrande-41" x="392.626953"/>
+       <use xlink:href="#LucidaGrande-4e" x="461.621094"/>
+       <use xlink:href="#LucidaGrande-20" x="535.498047"/>
+       <use xlink:href="#LucidaGrande-53" x="567.138672"/>
+       <use xlink:href="#LucidaGrande-59" x="620.996094"/>
+       <use xlink:href="#LucidaGrande-4e" x="683.300781"/>
+       <use xlink:href="#LucidaGrande-54" x="757.177734"/>
+       <use xlink:href="#LucidaGrande-48" x="820.410156"/>
+       <use xlink:href="#LucidaGrande-45" x="893.896484"/>
+       <use xlink:href="#LucidaGrande-53" x="948.095703"/>
+       <use xlink:href="#LucidaGrande-49" x="1001.953125"/>
+       <use xlink:href="#LucidaGrande-53" x="1030.761719"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_60">
+     <g id="line2d_76">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="303.991049" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_69">
+      <!-- LYSINE METABOLISM -->
+      <g transform="translate(194.748437 307.845737) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-4c"/>
+       <use xlink:href="#LucidaGrande-59" x="53.320312"/>
+       <use xlink:href="#LucidaGrande-53" x="115.625"/>
+       <use xlink:href="#LucidaGrande-49" x="169.482422"/>
+       <use xlink:href="#LucidaGrande-4e" x="198.291016"/>
+       <use xlink:href="#LucidaGrande-45" x="272.167969"/>
+       <use xlink:href="#LucidaGrande-20" x="326.367188"/>
+       <use xlink:href="#LucidaGrande-4d" x="358.007812"/>
+       <use xlink:href="#LucidaGrande-45" x="444.140625"/>
+       <use xlink:href="#LucidaGrande-54" x="498.339844"/>
+       <use xlink:href="#LucidaGrande-41" x="561.572266"/>
+       <use xlink:href="#LucidaGrande-42" x="630.566406"/>
+       <use xlink:href="#LucidaGrande-4f" x="688.085938"/>
+       <use xlink:href="#LucidaGrande-4c" x="765.771484"/>
+       <use xlink:href="#LucidaGrande-49" x="819.091797"/>
+       <use xlink:href="#LucidaGrande-53" x="847.900391"/>
+       <use xlink:href="#LucidaGrande-4d" x="901.757812"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_61">
+     <g id="line2d_77">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="280.581556" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_70">
+      <!-- GLYCEROPHOSPHOLIPID METABOLISM -->
+      <g transform="translate(111.375 284.436244) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-47"/>
+       <use xlink:href="#LucidaGrande-4c" x="72.265625"/>
+       <use xlink:href="#LucidaGrande-59" x="125.585938"/>
+       <use xlink:href="#LucidaGrande-43" x="187.890625"/>
+       <use xlink:href="#LucidaGrande-45" x="257.080078"/>
+       <use xlink:href="#LucidaGrande-52" x="311.279297"/>
+       <use xlink:href="#LucidaGrande-4f" x="374.511719"/>
+       <use xlink:href="#LucidaGrande-50" x="452.197266"/>
+       <use xlink:href="#LucidaGrande-48" x="507.470703"/>
+       <use xlink:href="#LucidaGrande-4f" x="580.957031"/>
+       <use xlink:href="#LucidaGrande-53" x="658.642578"/>
+       <use xlink:href="#LucidaGrande-50" x="712.5"/>
+       <use xlink:href="#LucidaGrande-48" x="767.773438"/>
+       <use xlink:href="#LucidaGrande-4f" x="841.259766"/>
+       <use xlink:href="#LucidaGrande-4c" x="918.945312"/>
+       <use xlink:href="#LucidaGrande-49" x="972.265625"/>
+       <use xlink:href="#LucidaGrande-50" x="1001.074219"/>
+       <use xlink:href="#LucidaGrande-49" x="1056.347656"/>
+       <use xlink:href="#LucidaGrande-44" x="1085.15625"/>
+       <use xlink:href="#LucidaGrande-20" x="1160.058594"/>
+       <use xlink:href="#LucidaGrande-4d" x="1191.699219"/>
+       <use xlink:href="#LucidaGrande-45" x="1277.832031"/>
+       <use xlink:href="#LucidaGrande-54" x="1332.03125"/>
+       <use xlink:href="#LucidaGrande-41" x="1395.263672"/>
+       <use xlink:href="#LucidaGrande-42" x="1464.257812"/>
+       <use xlink:href="#LucidaGrande-4f" x="1521.777344"/>
+       <use xlink:href="#LucidaGrande-4c" x="1599.462891"/>
+       <use xlink:href="#LucidaGrande-49" x="1652.783203"/>
+       <use xlink:href="#LucidaGrande-53" x="1681.591797"/>
+       <use xlink:href="#LucidaGrande-4d" x="1735.449219"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_62">
+     <g id="line2d_78">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="257.172063" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_71">
+      <!-- FATTY ACID METABOLISM -->
+      <g transform="translate(168.89375 261.026751) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-46"/>
+       <use xlink:href="#LucidaGrande-41" x="53.613281"/>
+       <use xlink:href="#LucidaGrande-54" x="122.607422"/>
+       <use xlink:href="#LucidaGrande-54" x="185.839844"/>
+       <use xlink:href="#LucidaGrande-59" x="249.072266"/>
+       <use xlink:href="#LucidaGrande-20" x="311.376953"/>
+       <use xlink:href="#LucidaGrande-41" x="343.017578"/>
+       <use xlink:href="#LucidaGrande-43" x="412.011719"/>
+       <use xlink:href="#LucidaGrande-49" x="481.201172"/>
+       <use xlink:href="#LucidaGrande-44" x="510.009766"/>
+       <use xlink:href="#LucidaGrande-20" x="584.912109"/>
+       <use xlink:href="#LucidaGrande-4d" x="616.552734"/>
+       <use xlink:href="#LucidaGrande-45" x="702.685547"/>
+       <use xlink:href="#LucidaGrande-54" x="756.884766"/>
+       <use xlink:href="#LucidaGrande-41" x="820.117188"/>
+       <use xlink:href="#LucidaGrande-42" x="889.111328"/>
+       <use xlink:href="#LucidaGrande-4f" x="946.630859"/>
+       <use xlink:href="#LucidaGrande-4c" x="1024.316406"/>
+       <use xlink:href="#LucidaGrande-49" x="1077.636719"/>
+       <use xlink:href="#LucidaGrande-53" x="1106.445312"/>
+       <use xlink:href="#LucidaGrande-4d" x="1160.302734"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_63">
+     <g id="line2d_79">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="233.76257" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_72">
+      <!-- PROTEIN DEGRADATION -->
+      <g transform="translate(176.634375 237.617257) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-50"/>
+       <use xlink:href="#LucidaGrande-52" x="55.273438"/>
+       <use xlink:href="#LucidaGrande-4f" x="118.505859"/>
+       <use xlink:href="#LucidaGrande-54" x="196.191406"/>
+       <use xlink:href="#LucidaGrande-45" x="259.423828"/>
+       <use xlink:href="#LucidaGrande-49" x="313.623047"/>
+       <use xlink:href="#LucidaGrande-4e" x="342.431641"/>
+       <use xlink:href="#LucidaGrande-20" x="416.308594"/>
+       <use xlink:href="#LucidaGrande-44" x="447.949219"/>
+       <use xlink:href="#LucidaGrande-45" x="522.851562"/>
+       <use xlink:href="#LucidaGrande-47" x="577.050781"/>
+       <use xlink:href="#LucidaGrande-52" x="649.316406"/>
+       <use xlink:href="#LucidaGrande-41" x="712.548828"/>
+       <use xlink:href="#LucidaGrande-44" x="781.542969"/>
+       <use xlink:href="#LucidaGrande-41" x="856.445312"/>
+       <use xlink:href="#LucidaGrande-54" x="925.439453"/>
+       <use xlink:href="#LucidaGrande-49" x="988.671875"/>
+       <use xlink:href="#LucidaGrande-4f" x="1017.480469"/>
+       <use xlink:href="#LucidaGrande-4e" x="1095.166016"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_64">
+     <g id="line2d_80">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="210.353077" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_73">
+      <!-- GLYCOSPHINGOLIPID METABOLISM -->
+      <g transform="translate(126.26875 214.207764) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-47"/>
+       <use xlink:href="#LucidaGrande-4c" x="72.265625"/>
+       <use xlink:href="#LucidaGrande-59" x="125.585938"/>
+       <use xlink:href="#LucidaGrande-43" x="187.890625"/>
+       <use xlink:href="#LucidaGrande-4f" x="257.080078"/>
+       <use xlink:href="#LucidaGrande-53" x="334.765625"/>
+       <use xlink:href="#LucidaGrande-50" x="388.623047"/>
+       <use xlink:href="#LucidaGrande-48" x="443.896484"/>
+       <use xlink:href="#LucidaGrande-49" x="517.382812"/>
+       <use xlink:href="#LucidaGrande-4e" x="546.191406"/>
+       <use xlink:href="#LucidaGrande-47" x="620.068359"/>
+       <use xlink:href="#LucidaGrande-4f" x="692.333984"/>
+       <use xlink:href="#LucidaGrande-4c" x="770.019531"/>
+       <use xlink:href="#LucidaGrande-49" x="823.339844"/>
+       <use xlink:href="#LucidaGrande-50" x="852.148438"/>
+       <use xlink:href="#LucidaGrande-49" x="907.421875"/>
+       <use xlink:href="#LucidaGrande-44" x="936.230469"/>
+       <use xlink:href="#LucidaGrande-20" x="1011.132812"/>
+       <use xlink:href="#LucidaGrande-4d" x="1042.773438"/>
+       <use xlink:href="#LucidaGrande-45" x="1128.90625"/>
+       <use xlink:href="#LucidaGrande-54" x="1183.105469"/>
+       <use xlink:href="#LucidaGrande-41" x="1246.337891"/>
+       <use xlink:href="#LucidaGrande-42" x="1315.332031"/>
+       <use xlink:href="#LucidaGrande-4f" x="1372.851562"/>
+       <use xlink:href="#LucidaGrande-4c" x="1450.537109"/>
+       <use xlink:href="#LucidaGrande-49" x="1503.857422"/>
+       <use xlink:href="#LucidaGrande-53" x="1532.666016"/>
+       <use xlink:href="#LucidaGrande-4d" x="1586.523438"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_65">
+     <g id="line2d_81">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="186.943584" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_74">
+      <!-- PROTEIN ASSEMBLY -->
+      <g transform="translate(199.725 190.798271) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-50"/>
+       <use xlink:href="#LucidaGrande-52" x="55.273438"/>
+       <use xlink:href="#LucidaGrande-4f" x="118.505859"/>
+       <use xlink:href="#LucidaGrande-54" x="196.191406"/>
+       <use xlink:href="#LucidaGrande-45" x="259.423828"/>
+       <use xlink:href="#LucidaGrande-49" x="313.623047"/>
+       <use xlink:href="#LucidaGrande-4e" x="342.431641"/>
+       <use xlink:href="#LucidaGrande-20" x="416.308594"/>
+       <use xlink:href="#LucidaGrande-41" x="447.949219"/>
+       <use xlink:href="#LucidaGrande-53" x="516.943359"/>
+       <use xlink:href="#LucidaGrande-53" x="570.800781"/>
+       <use xlink:href="#LucidaGrande-45" x="624.658203"/>
+       <use xlink:href="#LucidaGrande-4d" x="678.857422"/>
+       <use xlink:href="#LucidaGrande-42" x="764.990234"/>
+       <use xlink:href="#LucidaGrande-4c" x="822.509766"/>
+       <use xlink:href="#LucidaGrande-59" x="875.830078"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_66">
+     <g id="line2d_82">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="163.53409" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_75">
+      <!-- TRANSPORT, EXTRACELLULAR -->
+      <g transform="translate(149.235937 167.388778) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-54"/>
+       <use xlink:href="#LucidaGrande-52" x="63.232422"/>
+       <use xlink:href="#LucidaGrande-41" x="126.464844"/>
+       <use xlink:href="#LucidaGrande-4e" x="195.458984"/>
+       <use xlink:href="#LucidaGrande-53" x="269.335938"/>
+       <use xlink:href="#LucidaGrande-50" x="323.193359"/>
+       <use xlink:href="#LucidaGrande-4f" x="378.466797"/>
+       <use xlink:href="#LucidaGrande-52" x="456.152344"/>
+       <use xlink:href="#LucidaGrande-54" x="519.384766"/>
+       <use xlink:href="#LucidaGrande-2c" x="582.617188"/>
+       <use xlink:href="#LucidaGrande-20" x="614.257812"/>
+       <use xlink:href="#LucidaGrande-45" x="645.898438"/>
+       <use xlink:href="#LucidaGrande-58" x="700.097656"/>
+       <use xlink:href="#LucidaGrande-54" x="762.695312"/>
+       <use xlink:href="#LucidaGrande-52" x="825.927734"/>
+       <use xlink:href="#LucidaGrande-41" x="889.160156"/>
+       <use xlink:href="#LucidaGrande-43" x="958.154297"/>
+       <use xlink:href="#LucidaGrande-45" x="1027.34375"/>
+       <use xlink:href="#LucidaGrande-4c" x="1081.542969"/>
+       <use xlink:href="#LucidaGrande-4c" x="1134.863281"/>
+       <use xlink:href="#LucidaGrande-55" x="1188.183594"/>
+       <use xlink:href="#LucidaGrande-4c" x="1257.470703"/>
+       <use xlink:href="#LucidaGrande-41" x="1310.791016"/>
+       <use xlink:href="#LucidaGrande-52" x="1379.785156"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_67">
+     <g id="line2d_83">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="140.124597" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_76">
+      <!-- PROTEIN MODIFICATION -->
+      <g transform="translate(175.570312 143.979285) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-50"/>
+       <use xlink:href="#LucidaGrande-52" x="55.273438"/>
+       <use xlink:href="#LucidaGrande-4f" x="118.505859"/>
+       <use xlink:href="#LucidaGrande-54" x="196.191406"/>
+       <use xlink:href="#LucidaGrande-45" x="259.423828"/>
+       <use xlink:href="#LucidaGrande-49" x="313.623047"/>
+       <use xlink:href="#LucidaGrande-4e" x="342.431641"/>
+       <use xlink:href="#LucidaGrande-20" x="416.308594"/>
+       <use xlink:href="#LucidaGrande-4d" x="447.949219"/>
+       <use xlink:href="#LucidaGrande-4f" x="534.082031"/>
+       <use xlink:href="#LucidaGrande-44" x="611.767578"/>
+       <use xlink:href="#LucidaGrande-49" x="686.669922"/>
+       <use xlink:href="#LucidaGrande-46" x="715.478516"/>
+       <use xlink:href="#LucidaGrande-49" x="769.091797"/>
+       <use xlink:href="#LucidaGrande-43" x="797.900391"/>
+       <use xlink:href="#LucidaGrande-41" x="867.089844"/>
+       <use xlink:href="#LucidaGrande-54" x="936.083984"/>
+       <use xlink:href="#LucidaGrande-49" x="999.316406"/>
+       <use xlink:href="#LucidaGrande-4f" x="1028.125"/>
+       <use xlink:href="#LucidaGrande-4e" x="1105.810547"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_68">
+     <g id="line2d_84">
+      <g>
+       <use xlink:href="#m976a7e63d8" x="300.54375" y="116.715104" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_77">
+      <!-- UNASSIGNED -->
+      <g transform="translate(231.15 120.569792) scale(0.1 -0.1)">
+       <use xlink:href="#LucidaGrande-55"/>
+       <use xlink:href="#LucidaGrande-4e" x="69.287109"/>
+       <use xlink:href="#LucidaGrande-41" x="143.164062"/>
+       <use xlink:href="#LucidaGrande-53" x="212.158203"/>
+       <use xlink:href="#LucidaGrande-53" x="266.015625"/>
+       <use xlink:href="#LucidaGrande-49" x="319.873047"/>
+       <use xlink:href="#LucidaGrande-47" x="348.681641"/>
+       <use xlink:href="#LucidaGrande-4e" x="420.947266"/>
+       <use xlink:href="#LucidaGrande-45" x="494.824219"/>
+       <use xlink:href="#LucidaGrande-44" x="549.023438"/>
+      </g>
+     </g>
+    </g>
+   </g>
+   <g id="patch_71">
+    <path d="M 300.54375 1773.873125 
+L 300.54375 27.993125 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_72">
+    <path d="M 300.54375 1773.873125 
+L 837.768456 1773.873125 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_78">
+    <!-- 1 -->
+    <g transform="translate(306.514791 1688.041771) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+    </g>
+   </g>
+   <g id="text_79">
+    <!-- 1 -->
+    <g transform="translate(306.514791 1664.632278) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+    </g>
+   </g>
+   <g id="text_80">
+    <!-- 1 -->
+    <g transform="translate(306.514791 1641.222785) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+    </g>
+   </g>
+   <g id="text_81">
+    <!-- 1 -->
+    <g transform="translate(306.514791 1617.813291) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+    </g>
+   </g>
+   <g id="text_82">
+    <!-- 1 -->
+    <g transform="translate(306.514791 1594.403798) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+    </g>
+   </g>
+   <g id="text_83">
+    <!-- 1 -->
+    <g transform="translate(306.514791 1570.994305) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+    </g>
+   </g>
+   <g id="text_84">
+    <!-- 1 -->
+    <g transform="translate(306.514791 1547.584812) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+    </g>
+   </g>
+   <g id="text_85">
+    <!-- 1 -->
+    <g transform="translate(306.514791 1524.175319) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+    </g>
+   </g>
+   <g id="text_86">
+    <!-- 1 -->
+    <g transform="translate(306.514791 1500.765826) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+    </g>
+   </g>
+   <g id="text_87">
+    <!-- 1 -->
+    <g transform="translate(306.514791 1477.356332) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+    </g>
+   </g>
+   <g id="text_88">
+    <!-- 1 -->
+    <g transform="translate(306.514791 1453.946839) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+    </g>
+   </g>
+   <g id="text_89">
+    <!-- 1 -->
+    <g transform="translate(306.514791 1430.537346) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+    </g>
+   </g>
+   <g id="text_90">
+    <!-- 1 -->
+    <g transform="translate(306.514791 1407.127853) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+    </g>
+   </g>
+   <g id="text_91">
+    <!-- 1 -->
+    <g transform="translate(306.514791 1383.71836) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+    </g>
+   </g>
+   <g id="text_92">
+    <!-- 1 -->
+    <g transform="translate(306.514791 1360.308867) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+    </g>
+   </g>
+   <g id="text_93">
+    <!-- 1 -->
+    <g transform="translate(306.514791 1336.899373) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+    </g>
+   </g>
+   <g id="text_94">
+    <!-- 1 -->
+    <g transform="translate(306.514791 1313.48988) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+    </g>
+   </g>
+   <g id="text_95">
+    <!-- 1 -->
+    <g transform="translate(306.514791 1290.080387) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+    </g>
+   </g>
+   <g id="text_96">
+    <!-- 1 -->
+    <g transform="translate(306.514791 1266.670894) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+    </g>
+   </g>
+   <g id="text_97">
+    <!-- 1 -->
+    <g transform="translate(306.514791 1243.261401) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+    </g>
+   </g>
+   <g id="text_98">
+    <!-- 1 -->
+    <g transform="translate(306.514791 1219.851908) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+    </g>
+   </g>
+   <g id="text_99">
+    <!-- 1 -->
+    <g transform="translate(306.514791 1196.442415) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+    </g>
+   </g>
+   <g id="text_100">
+    <!-- 1 -->
+    <g transform="translate(306.514791 1173.032921) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+    </g>
+   </g>
+   <g id="text_101">
+    <!-- 1 -->
+    <g transform="translate(306.514791 1149.623428) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+    </g>
+   </g>
+   <g id="text_102">
+    <!-- 2 -->
+    <g transform="translate(307.218923 1126.213935) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-32"/>
+    </g>
+   </g>
+   <g id="text_103">
+    <!-- 2 -->
+    <g transform="translate(307.218923 1102.804442) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-32"/>
+    </g>
+   </g>
+   <g id="text_104">
+    <!-- 2 -->
+    <g transform="translate(307.218923 1079.394949) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-32"/>
+    </g>
+   </g>
+   <g id="text_105">
+    <!-- 2 -->
+    <g transform="translate(307.218923 1055.985456) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-32"/>
+    </g>
+   </g>
+   <g id="text_106">
+    <!-- 2 -->
+    <g transform="translate(307.218923 1032.575962) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-32"/>
+    </g>
+   </g>
+   <g id="text_107">
+    <!-- 3 -->
+    <g transform="translate(307.923055 1009.166469) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-33"/>
+    </g>
+   </g>
+   <g id="text_108">
+    <!-- 3 -->
+    <g transform="translate(307.923055 985.756976) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-33"/>
+    </g>
+   </g>
+   <g id="text_109">
+    <!-- 3 -->
+    <g transform="translate(307.923055 962.347483) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-33"/>
+    </g>
+   </g>
+   <g id="text_110">
+    <!-- 3 -->
+    <g transform="translate(307.923055 938.93799) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-33"/>
+    </g>
+   </g>
+   <g id="text_111">
+    <!-- 4 -->
+    <g transform="translate(308.627188 915.528497) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-34"/>
+    </g>
+   </g>
+   <g id="text_112">
+    <!-- 4 -->
+    <g transform="translate(308.627188 892.119003) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-34"/>
+    </g>
+   </g>
+   <g id="text_113">
+    <!-- 5 -->
+    <g transform="translate(309.33132 868.70951) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-35"/>
+    </g>
+   </g>
+   <g id="text_114">
+    <!-- 5 -->
+    <g transform="translate(309.33132 845.300017) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-35"/>
+    </g>
+   </g>
+   <g id="text_115">
+    <!-- 5 -->
+    <g transform="translate(309.33132 821.890524) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-35"/>
+    </g>
+   </g>
+   <g id="text_116">
+    <!-- 6 -->
+    <g transform="translate(310.035452 798.481031) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-36"/>
+    </g>
+   </g>
+   <g id="text_117">
+    <!-- 6 -->
+    <g transform="translate(310.035452 775.071538) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-36"/>
+    </g>
+   </g>
+   <g id="text_118">
+    <!-- 6 -->
+    <g transform="translate(310.035452 751.662044) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-36"/>
+    </g>
+   </g>
+   <g id="text_119">
+    <!-- 6 -->
+    <g transform="translate(310.035452 728.252551) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-36"/>
+    </g>
+   </g>
+   <g id="text_120">
+    <!-- 6 -->
+    <g transform="translate(310.035452 704.843058) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-36"/>
+    </g>
+   </g>
+   <g id="text_121">
+    <!-- 6 -->
+    <g transform="translate(310.035452 681.433565) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-36"/>
+    </g>
+   </g>
+   <g id="text_122">
+    <!-- 6 -->
+    <g transform="translate(310.035452 658.024072) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-36"/>
+    </g>
+   </g>
+   <g id="text_123">
+    <!-- 7 -->
+    <g transform="translate(310.739584 634.614579) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-37"/>
+    </g>
+   </g>
+   <g id="text_124">
+    <!-- 7 -->
+    <g transform="translate(310.739584 611.205085) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-37"/>
+    </g>
+   </g>
+   <g id="text_125">
+    <!-- 7 -->
+    <g transform="translate(310.739584 587.795592) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-37"/>
+    </g>
+   </g>
+   <g id="text_126">
+    <!-- 8 -->
+    <g transform="translate(311.443717 564.386099) scale(0.1 -0.1)">
+     <defs>
+      <path id="LucidaGrande-38" d="M 1472 2519 
+Q 794 2991 794 3563 
+Q 794 4088 1178 4416 
+Q 1563 4744 2181 4744 
+Q 2753 4744 3108 4466 
+Q 3463 4188 3463 3744 
+Q 3463 3072 2600 2519 
+Q 3647 2006 3647 1197 
+Q 3647 616 3208 250 
+Q 2769 -116 2075 -116 
+Q 1394 -116 973 229 
+Q 553 575 553 1138 
+Q 553 1969 1472 2519 
+z
+M 2256 2713 
+Q 2903 3138 2903 3659 
+Q 2903 3938 2687 4108 
+Q 2472 4278 2119 4278 
+Q 1778 4278 1565 4111 
+Q 1353 3944 1353 3678 
+Q 1353 3419 1545 3214 
+Q 1738 3009 2256 2713 
+z
+M 1806 2269 
+Q 1434 1981 1301 1767 
+Q 1169 1553 1169 1234 
+Q 1169 838 1425 592 
+Q 1681 347 2100 347 
+Q 2503 347 2758 556 
+Q 3013 766 3013 1100 
+Q 3013 1369 2855 1555 
+Q 2697 1741 2244 2009 
+L 1806 2269 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#LucidaGrande-38"/>
+    </g>
+   </g>
+   <g id="text_127">
+    <!-- 9 -->
+    <g transform="translate(312.147849 540.976606) scale(0.1 -0.1)">
+     <defs>
+      <path id="LucidaGrande-39" d="M 728 28 
+L 728 550 
+Q 1316 347 1728 347 
+Q 2303 347 2626 836 
+Q 2950 1325 2950 2197 
+Q 2481 1619 1884 1619 
+Q 1300 1619 894 2048 
+Q 488 2478 488 3097 
+Q 488 3806 920 4273 
+Q 1353 4741 2009 4741 
+Q 2763 4741 3197 4136 
+Q 3631 3531 3631 2481 
+Q 3631 1288 3101 586 
+Q 2572 -116 1669 -116 
+Q 1306 -116 728 28 
+z
+M 1103 3219 
+Q 1103 2681 1342 2372 
+Q 1581 2063 1997 2063 
+Q 2388 2063 2664 2328 
+Q 2941 2594 2941 2969 
+Q 2941 3559 2673 3920 
+Q 2406 4281 1972 4281 
+Q 1569 4281 1336 3995 
+Q 1103 3709 1103 3219 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#LucidaGrande-39"/>
+    </g>
+   </g>
+   <g id="text_128">
+    <!-- 9 -->
+    <g transform="translate(312.147849 517.567113) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-39"/>
+    </g>
+   </g>
+   <g id="text_129">
+    <!-- 9 -->
+    <g transform="translate(312.147849 494.15762) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-39"/>
+    </g>
+   </g>
+   <g id="text_130">
+    <!-- 10 -->
+    <g transform="translate(312.851981 470.748127) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+     <use xlink:href="#LucidaGrande-30" x="63.232422"/>
+    </g>
+   </g>
+   <g id="text_131">
+    <!-- 10 -->
+    <g transform="translate(312.851981 447.338633) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+     <use xlink:href="#LucidaGrande-30" x="63.232422"/>
+    </g>
+   </g>
+   <g id="text_132">
+    <!-- 11 -->
+    <g transform="translate(313.556113 423.92914) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+     <use xlink:href="#LucidaGrande-31" x="63.232422"/>
+    </g>
+   </g>
+   <g id="text_133">
+    <!-- 12 -->
+    <g transform="translate(314.260245 400.519647) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+     <use xlink:href="#LucidaGrande-32" x="63.232422"/>
+    </g>
+   </g>
+   <g id="text_134">
+    <!-- 12 -->
+    <g transform="translate(314.260245 377.110154) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+     <use xlink:href="#LucidaGrande-32" x="63.232422"/>
+    </g>
+   </g>
+   <g id="text_135">
+    <!-- 14 -->
+    <g transform="translate(315.66851 353.700661) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+     <use xlink:href="#LucidaGrande-34" x="63.232422"/>
+    </g>
+   </g>
+   <g id="text_136">
+    <!-- 14 -->
+    <g transform="translate(315.66851 330.291168) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+     <use xlink:href="#LucidaGrande-34" x="63.232422"/>
+    </g>
+   </g>
+   <g id="text_137">
+    <!-- 15 -->
+    <g transform="translate(316.372642 306.881674) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+     <use xlink:href="#LucidaGrande-35" x="63.232422"/>
+    </g>
+   </g>
+   <g id="text_138">
+    <!-- 17 -->
+    <g transform="translate(317.780906 283.472181) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+     <use xlink:href="#LucidaGrande-37" x="63.232422"/>
+    </g>
+   </g>
+   <g id="text_139">
+    <!-- 17 -->
+    <g transform="translate(317.780906 260.062688) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+     <use xlink:href="#LucidaGrande-37" x="63.232422"/>
+    </g>
+   </g>
+   <g id="text_140">
+    <!-- 18 -->
+    <g transform="translate(318.485039 236.653195) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+     <use xlink:href="#LucidaGrande-38" x="63.232422"/>
+    </g>
+   </g>
+   <g id="text_141">
+    <!-- 19 -->
+    <g transform="translate(319.189171 213.243702) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+     <use xlink:href="#LucidaGrande-39" x="63.232422"/>
+    </g>
+   </g>
+   <g id="text_142">
+    <!-- 29 -->
+    <g transform="translate(326.230493 189.834209) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-32"/>
+     <use xlink:href="#LucidaGrande-39" x="63.232422"/>
+    </g>
+   </g>
+   <g id="text_143">
+    <!-- 34 -->
+    <g transform="translate(329.751154 166.424715) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-33"/>
+     <use xlink:href="#LucidaGrande-34" x="63.232422"/>
+    </g>
+   </g>
+   <g id="text_144">
+    <!-- 198 -->
+    <g transform="translate(445.228835 143.015222) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-31"/>
+     <use xlink:href="#LucidaGrande-39" x="63.232422"/>
+     <use xlink:href="#LucidaGrande-38" x="126.464844"/>
+    </g>
+   </g>
+   <g id="text_145">
+    <!-- 748 -->
+    <g transform="translate(832.501547 119.605729) scale(0.1 -0.1)">
+     <use xlink:href="#LucidaGrande-37"/>
+     <use xlink:href="#LucidaGrande-34" x="63.232422"/>
+     <use xlink:href="#LucidaGrande-38" x="126.464844"/>
+    </g>
+   </g>
+   <g id="text_146">
+    <!-- Gene counts per subsystem (iCHO3K unique genes) -->
+    <g transform="translate(394.125478 17.993125) scale(0.14 -0.14)">
+     <defs>
+      <path id="LucidaGrande-63" d="M 1941 -78 
+Q 1253 -78 800 431 
+Q 347 941 347 1716 
+Q 347 2544 795 3006 
+Q 1244 3469 2047 3469 
+Q 2444 3469 2934 3359 
+L 2934 2844 
+Q 2413 2997 2084 2997 
+Q 1613 2997 1327 2642 
+Q 1041 2288 1041 1697 
+Q 1041 1125 1334 772 
+Q 1628 419 2103 419 
+Q 2525 419 2972 634 
+L 2972 103 
+Q 2375 -78 1941 -78 
+z
+" transform="scale(0.015625)"/>
+      <path id="LucidaGrande-6f" d="M 1944 -78 
+Q 1216 -78 781 405 
+Q 347 888 347 1697 
+Q 347 2516 783 2992 
+Q 1219 3469 1966 3469 
+Q 2713 3469 3148 2992 
+Q 3584 2516 3584 1703 
+Q 3584 872 3146 397 
+Q 2709 -78 1944 -78 
+z
+M 1953 384 
+Q 2931 384 2931 1703 
+Q 2931 3006 1966 3006 
+Q 1003 3006 1003 1697 
+Q 1003 384 1953 384 
+z
+" transform="scale(0.015625)"/>
+      <path id="LucidaGrande-74" d="M 1634 -78 
+Q 1166 -78 903 190 
+Q 641 459 641 938 
+L 641 2931 
+L 216 2931 
+L 216 3394 
+L 641 3394 
+L 641 4009 
+L 1256 4069 
+L 1256 3394 
+L 2144 3394 
+L 2144 2931 
+L 1256 2931 
+L 1256 1050 
+Q 1256 384 1831 384 
+Q 1953 384 2128 425 
+L 2128 0 
+Q 1844 -78 1634 -78 
+z
+" transform="scale(0.015625)"/>
+      <path id="LucidaGrande-70" d="M 616 -1234 
+L 616 3394 
+L 1231 3394 
+L 1231 2756 
+Q 1609 3469 2366 3469 
+Q 2978 3469 3329 3022 
+Q 3681 2575 3681 1800 
+Q 3681 956 3282 439 
+Q 2884 -78 2234 -78 
+Q 1631 -78 1231 384 
+L 1231 -1234 
+L 616 -1234 
+z
+M 1231 809 
+Q 1706 384 2138 384 
+Q 3025 384 3025 1738 
+Q 3025 2931 2238 2931 
+Q 1722 2931 1231 2372 
+L 1231 809 
+z
+" transform="scale(0.015625)"/>
+      <path id="LucidaGrande-72" d="M 616 0 
+L 616 3394 
+L 1231 3394 
+L 1231 2756 
+Q 1597 3469 2294 3469 
+Q 2388 3469 2491 3453 
+L 2491 2878 
+Q 2331 2931 2209 2931 
+Q 1625 2931 1231 2238 
+L 1231 0 
+L 616 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="LucidaGrande-62" d="M 616 -38 
+L 616 4934 
+L 1231 4934 
+L 1231 2756 
+Q 1609 3469 2366 3469 
+Q 2978 3469 3329 3022 
+Q 3681 2575 3681 1800 
+Q 3681 956 3282 439 
+Q 2884 -78 2234 -78 
+Q 1631 -78 1231 384 
+L 1156 -38 
+L 616 -38 
+z
+M 1231 809 
+Q 1706 384 2138 384 
+Q 3025 384 3025 1738 
+Q 3025 2931 2238 2931 
+Q 1722 2931 1231 2372 
+L 1231 809 
+z
+" transform="scale(0.015625)"/>
+      <path id="LucidaGrande-79" d="M 813 -1234 
+L 1363 0 
+L 50 3394 
+L 716 3394 
+L 1688 838 
+L 2725 3394 
+L 3306 3394 
+L 1453 -1234 
+L 813 -1234 
+z
+" transform="scale(0.015625)"/>
+      <path id="LucidaGrande-6d" d="M 616 0 
+L 616 3394 
+L 1231 3394 
+L 1231 2756 
+Q 1681 3469 2388 3469 
+Q 3069 3469 3316 2756 
+Q 3753 3472 4453 3472 
+Q 4903 3472 5150 3208 
+Q 5397 2944 5397 2469 
+L 5397 0 
+L 4778 0 
+L 4778 2372 
+Q 4778 2953 4319 2953 
+Q 3841 2953 3316 2275 
+L 3316 0 
+L 2697 0 
+L 2697 2372 
+Q 2697 2956 2228 2956 
+Q 1763 2956 1231 2275 
+L 1231 0 
+L 616 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="LucidaGrande-67" d="M 628 -1128 
+L 700 -594 
+Q 1234 -847 1753 -847 
+Q 2794 -847 2794 256 
+L 2794 791 
+Q 2453 78 1675 78 
+Q 1066 78 706 522 
+Q 347 966 347 1719 
+Q 347 2494 756 2981 
+Q 1166 3469 1816 3469 
+Q 2384 3469 2794 3006 
+L 2794 3394 
+L 3413 3394 
+L 3413 925 
+Q 3413 128 3330 -255 
+Q 3247 -638 3019 -881 
+Q 2616 -1309 1766 -1309 
+Q 1172 -1309 628 -1128 
+z
+M 2794 1175 
+L 2794 2584 
+Q 2388 3006 1909 3006 
+Q 1484 3006 1243 2665 
+Q 1003 2325 1003 1731 
+Q 1003 616 1788 616 
+Q 2322 616 2794 1175 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#LucidaGrande-47"/>
+     <use xlink:href="#LucidaGrande-65" x="72.265625"/>
+     <use xlink:href="#LucidaGrande-6e" x="127.978516"/>
+     <use xlink:href="#LucidaGrande-65" x="190.039062"/>
+     <use xlink:href="#LucidaGrande-20" x="245.751953"/>
+     <use xlink:href="#LucidaGrande-63" x="277.392578"/>
+     <use xlink:href="#LucidaGrande-6f" x="328.613281"/>
+     <use xlink:href="#LucidaGrande-75" x="390.039062"/>
+     <use xlink:href="#LucidaGrande-6e" x="452.099609"/>
+     <use xlink:href="#LucidaGrande-74" x="514.160156"/>
+     <use xlink:href="#LucidaGrande-73" x="551.5625"/>
+     <use xlink:href="#LucidaGrande-20" x="602.539062"/>
+     <use xlink:href="#LucidaGrande-70" x="634.179688"/>
+     <use xlink:href="#LucidaGrande-65" x="697.119141"/>
+     <use xlink:href="#LucidaGrande-72" x="752.832031"/>
+     <use xlink:href="#LucidaGrande-20" x="793.75"/>
+     <use xlink:href="#LucidaGrande-73" x="825.390625"/>
+     <use xlink:href="#LucidaGrande-75" x="876.367188"/>
+     <use xlink:href="#LucidaGrande-62" x="938.427734"/>
+     <use xlink:href="#LucidaGrande-73" x="1001.367188"/>
+     <use xlink:href="#LucidaGrande-79" x="1052.34375"/>
+     <use xlink:href="#LucidaGrande-73" x="1104.589844"/>
+     <use xlink:href="#LucidaGrande-74" x="1155.566406"/>
+     <use xlink:href="#LucidaGrande-65" x="1192.96875"/>
+     <use xlink:href="#LucidaGrande-6d" x="1248.681641"/>
+     <use xlink:href="#LucidaGrande-20" x="1342.041016"/>
+     <use xlink:href="#LucidaGrande-28" x="1373.681641"/>
+     <use xlink:href="#LucidaGrande-69" x="1406.201172"/>
+     <use xlink:href="#LucidaGrande-43" x="1435.107422"/>
+     <use xlink:href="#LucidaGrande-48" x="1504.296875"/>
+     <use xlink:href="#LucidaGrande-4f" x="1577.783203"/>
+     <use xlink:href="#LucidaGrande-33" x="1655.46875"/>
+     <use xlink:href="#LucidaGrande-4b" x="1718.701172"/>
+     <use xlink:href="#LucidaGrande-20" x="1783.984375"/>
+     <use xlink:href="#LucidaGrande-75" x="1815.625"/>
+     <use xlink:href="#LucidaGrande-6e" x="1877.685547"/>
+     <use xlink:href="#LucidaGrande-69" x="1939.746094"/>
+     <use xlink:href="#LucidaGrande-71" x="1968.652344"/>
+     <use xlink:href="#LucidaGrande-75" x="2031.591797"/>
+     <use xlink:href="#LucidaGrande-65" x="2093.652344"/>
+     <use xlink:href="#LucidaGrande-20" x="2149.365234"/>
+     <use xlink:href="#LucidaGrande-67" x="2181.005859"/>
+     <use xlink:href="#LucidaGrande-65" x="2243.359375"/>
+     <use xlink:href="#LucidaGrande-6e" x="2299.072266"/>
+     <use xlink:href="#LucidaGrande-65" x="2361.132812"/>
+     <use xlink:href="#LucidaGrande-73" x="2416.845703"/>
+     <use xlink:href="#LucidaGrande-29" x="2467.822266"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p854d7fd1cf">
+   <rect x="300.54375" y="27.993125" width="537.224706" height="1745.88"/>
+  </clipPath>
+ </defs>
+</svg>
