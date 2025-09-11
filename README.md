@@ -91,7 +91,8 @@ Python/
 ├── Comparison..Reconstructions.ipynb    # Comparison of iCHO3K with previous CHO reconstructions
 ├── Computational_Tests.ipynb            # 
 ├── Final CHO Model.ipynb
-└── Visual..Distribution.ipynb
+├── Calculate_specific_rates.ipynb       # Preprocess of spent media data into GEM fluxes
+└── ZeLa_fluxomics.ipynb                 # ZeLa fluxomics data
 
 ```
 
