@@ -73,7 +73,6 @@ iCHO3K/
 
 Matlab/
 ├── ecFBA/                               # ecFBA scripts
-├── Flux_Sampling/                       # Flux Sampling ADSB Scripts
 ├── Model_Extraction/                    # Model Extraction with mCADRE scripts
 ├── Standep/                             # ubiquityScore calculation with Standep
 ├── main_Model_Extraction.m              # Main code for mCADRE model extraction
