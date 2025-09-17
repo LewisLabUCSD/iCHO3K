@@ -1,11 +1,10 @@
 system,n_genes
 Nucleotide Metabolism,15
 Energy Metabolism,16
-Unmapped,18
 Carbohydrates Metabolism,20
 Vitamin & Cofactor Metabolism,44
 Amino Acid Metabolism,46
 Exchange/Transport,65
-Lipid Metabolism,67
+Lipid Metabolism,80
 Protein Product Synthesis,265
-Unassigned,748
+Unassigned,686
