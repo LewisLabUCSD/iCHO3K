@@ -275,13 +275,11 @@ Many figures in **Analyses/** and the accompanying manuscript (https://doi.org/1
 - **Reconstruction comparisons and Gene Essentiality Analysis** →  
   *Python/*`Comparison of Metabolic Reconstructions.ipynb` → *Analyses/recons_comparisons/*
 - **Subsystem coverage & sunbursts** →  
-  *Python/*`Comparison of Computational Tests.ipynb /1. Subsystem Overview and Analysis` → *Analyses/recons_comparisons/*
-- **Flux enrichment & sampling** →  
-  *Analyses/flux_enrichment_analysis/*, *Analyses/sampled_results/*
-- **Growth rate prediction (WT vs ZeLa)** →  
-  *Analyses/growth_rate_pred/*
+  *Python/*`Comparison of Computational Tests.ipynb /1. Subsystem Overview and Analysis` → *Analyses/subsystem_overview/*
 - **Topology & t-SNE** →  
-  *Analyses/tSNE/*
+  *Python/*`Comparison of Computational Tests.ipynb /4. tSNE Comparison of Models` → *Analyses/tSNE/*
+- **Growth rate prediction (WT vs ZeLa)** →  
+  *Python/*`Comparison of Computational Tests.ipynb /5. pFBA` → *Analyses/growth_rate_pred/*
 
 > Most notebooks begin with a “Paths & Environment” cell—update paths as needed. For strict reproducibility, pin exact package versions via `environment.yml` and use releases/DOI snapshots.
 
