@@ -144,14 +144,95 @@ conda install -c conda-forge graphviz pygraphviz ndex2
 
 ## Quickstart (Python)
 
-### 1) Load a context-specific model and run pFBA
+### 1) Create iCHO3K Specific Model
 ```python
+import pandas as pd
 import cobra
-from cobra.flux_analysis import pfba
+from cobra import Model, Reaction, Metabolite
 
-model = cobra.io.load_json_model("Data/Context_specific_models/ZeLa_model.json")
-solution = pfba(model)
-print(f"Objective ({model.objective.direction}): {solution.objective_value:.4f}")
+#Read iCHO3K Dataset
+FILE_PATH = 'iCHO3K/Dataset/iCHO3K.xlsx'
+metabolites      = pd.read_excel(FILE_PATH, sheet_name='Metabolites')
+rxns             = pd.read_excel(FILE_PATH, sheet_name='Rxns')
+rxns_attributes  = pd.read_excel(FILE_PATH, sheet_name='Attributes')
+boundary_rxns    = pd.read_excel(FILE_PATH, sheet_name='BoundaryRxns')
+genes_df         = pd.read_excel(FILE_PATH, sheet_name='Genes')
+
+# Create a cobra model and add reactions
+model = Model("iCHO3K_vX")
+lr = []
+for _, row in rxns.iterrows():
+    r = Reaction(row['Reaction'])
+    lr.append(r)    
+model.add_reactions(lr)
+
+# Add reaction-specific information
+
+for i,r in enumerate(tqdm(model.reactions)):
+    r.build_reaction_from_string(rxns['Reaction Formula'][i])
+    r.name = rxns['Reaction Name'][i]
+    r.subsystem = rxns['Subsystem'][i]
+    if not (pd.isna(rxns['GPR_iCHO3K'][i]) or rxns['GPR_iCHO3K'][i] == ''):
+        r.gene_reaction_rule = str(rxns['GPR_iCHO3K'][i])
+    r.lower_bound = float(rxns_attributes['Lower bound'][i])
+    r.upper_bound = float(rxns_attributes['Upper bound'][i])
+    r.annotation['confidence_score'] = str(rxns['Conf. Score'][i])
+    r.annotation['molwt'] = str(rxns_attributes['Mol wt'][i])
+    r.annotation['kcat_f'] = str(rxns_attributes['kcat_forward'][i])
+    r.annotation['kcat_b'] = str(rxns_attributes['kcat_backward'][i])
+
+# Add Boundary Reactions
+dr = []
+for _, row in boundary_rxns.iterrows():
+    r = Reaction(row['Reaction'])
+    dr.append(r)    
+model.add_reactions(dr)
+
+boundary_rxns_dict = boundary_rxns.set_index('Reaction').to_dict()
+boundary_rxns_dict
+
+for i,r in enumerate(tqdm(model.reactions)):
+    if r in dr:
+        r.build_reaction_from_string(boundary_rxns_dict['Reaction Formula'][r.id])
+        r.name = boundary_rxns_dict['Reaction Name'][r.id]
+        r.subsystem = boundary_rxns_dict['Subsystem'][r.id]
+        r.lower_bound = float(boundary_rxns_dict['Lower bound'][r.id])
+        r.upper_bound = float(boundary_rxns_dict['Upper bound'][r.id])
+        r.annotation['confidence_score'] = str(1)
+
+# Add information for each metabolite
+metabolites_dict = metabolites.set_index('BiGG ID').to_dict('dict')
+for met in model.metabolites:
+    try:
+        met.name = metabolites_dict['Name'][f'{met}']
+        met.formula = metabolites_dict['Formula'][f'{met}']
+        met.compartment = metabolites_dict['Compartment'][f'{met}'].split(' - ')[0]
+        try:
+            met.charge = int(metabolites_dict['Charge'][f'{met}'])
+        except (ValueError, TypeError):
+            print(f'{met} doesnt have charge')
+    except (KeyError):
+        print('----------------------------')
+        print(f'{met} doesnt exist in the df')
+        print('----------------------------')
+
+#OPTIONAL: Add Gene Name information
+genes_dict = genes_df.iloc[:,:2].set_index('Gene Entrez ID').to_dict('dict')
+for g in model.genes:
+    if g.id in list(genes_dict['Gene Symbol'].keys()):
+        g.name = genes_dict['Gene Symbol'][f'{g}']
+
+# Set biomass objective function and save the model
+
+name  = 'CHO-Generic'  # or 'CHO-S', or 'CHO-Generic'
+if name == 'CHO-Generic':
+    model.objective = 'biomass_cho'
+elif name == 'CHO-S':
+    model.objective = 'biomass_cho_s'
+elif name == 'CHO-Prod-Generic':
+    model.objective = 'biomass_cho_prod'
+else:
+    raise ValueError(f"Unrecognized model name: {name}")
 
 # Top 10 absolute fluxes
 top = sorted(solution.fluxes.items(), key=lambda x: abs(x[1]), reverse=True)[:10]
