@@ -31,7 +31,6 @@
 - [Solvers & performance tips](#solvers--performance-tips)
 - [Contributing](#contributing)
 - [Citing](#citing)
-- [License](#license)
 - [Maintainers & contact](#maintainers--contact)
 - [Acknowledgments](#acknowledgments)
 - [FAQ / Troubleshooting](#faq--troubleshooting)
@@ -348,23 +347,16 @@ Di Giusto, P., Choi, D.-H., *et al.* (2025). *A community-consensus reconstructi
 
 ---
 
-## License
-
-See the `LICENSE` file in this repository for terms of use.  
-If no license is present, usage defaults to **“all rights reserved”** until a license is added.
-
----
-
 ## Maintainers & contact
 
 - **Pablo Di Giusto** — pdigiusto@health.ucsd.edu · pablodigiusto91@gmail.com  
-  Systems Biology & Cell Engineering Lab (Lewis Lab), UC San Diego & University of Georgia
+  Systems Biology & Cell Engineering Lab (Lewis Lab), University of Georgia
 
 ---
 
 ## Acknowledgments
 
-We thank the iCHO3K community contributors and collaborators (including secRecon curators). This work builds upon public resources: Recon3D, BiGG, MetaNetX, Rhea, UniProt, BRENDA, and others referenced throughout the notebooks.
+We thank the iCHO3K community contributors and collaborators. This work builds upon public resources: iCHO1766, iCHO2101, iCHO2291, iCHO2441, Recon3D, Human-GEM, BiGG, MetaNetX, Rhea, UniProt, BRENDA, and others referenced throughout the notebooks and the manuscript.
 
 ---
 
