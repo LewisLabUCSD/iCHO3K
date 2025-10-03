@@ -87,8 +87,8 @@ Python/
 │                 
 ├── Supplementary Notebooks/             # Supplementary Notebooks with extra information of previous reconstructions
 ├── Comparison..Reconstructions.ipynb    # Comparison of iCHO3K with previous CHO reconstructions
-├── Computational_Tests.ipynb            # 
-├── Final CHO Model.ipynb
+├── Computational_Tests.ipynb            # pFBA Simulations & tSNE embeddings
+├── Model_builder.ipynb                  # iCHO3K Model Buider
 ├── Calculate_specific_rates.ipynb       # Preprocess of spent media data into GEM fluxes
 └── ZeLa_fluxomics.ipynb                 # ZeLa fluxomics data
 
@@ -96,8 +96,16 @@ Python/
 
 > **Large files:** Some assets may use **Git LFS**. If you see pointer files, run:
 > ```bash
-> git lfs install && git lfs pull
+> git lfs install
+> git lfs pull --include="Data/**"
 > ```
+> **Optional:** clone without data, then fetch only Data/:
+> ```bash
+> GIT_LFS_SKIP_SMUDGE=1 git clone <repo-url>
+> cd iCHO3K && git lfs install
+> git lfs pull --include="Data/**" --exclude=""
+> ```
+
 
 ---
 
