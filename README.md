@@ -296,9 +296,7 @@ Curated inputs and derived artifacts are organized under **Data/**. Key elements
 - **Soruce Reconstructions Datasets and Models** → `Data/Metabolites/`  
 - **ZeLa vs WT Fed-batch Process Raw Data** → `Data/ZeLa Data/`
 - **ZeLa vs WT Fed-batch Process pre-processed Data** → `Data/Uptake_Secretion_Rates/`
-
-During manual curation, compartment and subsystem information were inherited from source reconstructions; discrepancies were resolved using authoritative resources (see notes within notebooks).
-
+  
 ---
 
 ## Model formats & I/O
