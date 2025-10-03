@@ -87,8 +87,8 @@ Python/
 │                 
 ├── Supplementary Notebooks/             # Supplementary Notebooks with extra information of previous reconstructions
 ├── Comparison..Reconstructions.ipynb    # Comparison of iCHO3K with previous CHO reconstructions
-├── Computational_Tests.ipynb            # 
-├── Final CHO Model.ipynb
+├── Computational_Tests.ipynb            # pFBA Simulations & tSNE embeddings
+├── Model_builder.ipynb                  # iCHO3K Model Buider
 ├── Calculate_specific_rates.ipynb       # Preprocess of spent media data into GEM fluxes
 └── ZeLa_fluxomics.ipynb                 # ZeLa fluxomics data
 
@@ -96,27 +96,45 @@ Python/
 
 > **Large files:** Some assets may use **Git LFS**. If you see pointer files, run:
 > ```bash
-> git lfs install && git lfs pull
+> git lfs install
+> git lfs pull --include="Data/**"
 > ```
+> **Optional:** clone without data, then fetch only Data/:
+> ```bash
+> GIT_LFS_SKIP_SMUDGE=1 git clone <repo-url>
+> cd iCHO3K && git lfs install
+> git lfs pull --include="Data/**" --exclude=""
+> ```
+
 
 ---
 
 ## Installation & setup
 
-### Recommended: conda environment
+### Option 1 — Recommended (via environment.yml)
+Create the exact conda environment shipped with the repo:
 
 ```bash
-conda create -n icho3k python=3.11 -y
+conda env create -f environment.yml
 conda activate icho3k
-pip install cobra pandas numpy scipy matplotlib optlang networkx jupyterlab escher seaborn
 ```
 
-Optional (for graph utilities & network export):
+### Option 2 — Pip-only (subset)
+If you prefer pip, use the lightweight set (no native solvers or libSBML):
 ```bash
-pip install ndex2 pygraphviz
+python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
 ```
 
-> If `environment.yml` or `requirements.txt` is provided in the repo or a release, prefer installing from those for exact reproducibility.
+### Optional: graph utilities & network export
+```bash
+# conda-forge (recommended)
+conda install -c conda-forge graphviz pygraphviz ndex2
+# If you use pip for pygraphviz, ensure system Graphviz is installed first.
+```
+
+> If you plan to use commercial solvers (e.g., Gurobi/CPLEX), install them separately and set the solver in your code (see **Solvers & performance tips**).
+
 
 ### MATLAB (optional)
 - MATLAB R2022b+ recommended (earlier versions likely workable).
@@ -124,71 +142,130 @@ pip install ndex2 pygraphviz
 
 ---
 
-## Quickstart (Python)
-
-### 1) Load a context-specific model and run pFBA
+## Create iCHO3K Model
 ```python
+import pandas as pd
 import cobra
-from cobra.flux_analysis import pfba
+from cobra import Model, Reaction, Metabolite
 
-model = cobra.io.load_json_model("Data/Context_specific_models/ZeLa_model.json")
-solution = pfba(model)
-print(f"Objective ({model.objective.direction}): {solution.objective_value:.4f}")
+#Read iCHO3K Dataset
+FILE_PATH = 'iCHO3K/Dataset/iCHO3K.xlsx'
+metabolites      = pd.read_excel(FILE_PATH, sheet_name='Metabolites')
+rxns             = pd.read_excel(FILE_PATH, sheet_name='Rxns')
+rxns_attributes  = pd.read_excel(FILE_PATH, sheet_name='Attributes')
+boundary_rxns    = pd.read_excel(FILE_PATH, sheet_name='BoundaryRxns')
+genes_df         = pd.read_excel(FILE_PATH, sheet_name='Genes')
 
-# Top 10 absolute fluxes
-top = sorted(solution.fluxes.items(), key=lambda x: abs(x[1]), reverse=True)[:10]
-for rxn, v in top:
-    print(f"{rxn:25s} {v:10.3f}")
+# Create a cobra model and add reactions
+model = Model("iCHO3K_vX")
+lr = []
+for _, row in rxns.iterrows():
+    r = Reaction(row['Reaction'])
+    lr.append(r)    
+model.add_reactions(lr)
+
+# Add reaction-specific information
+for i,r in enumerate(tqdm(model.reactions)):
+    r.build_reaction_from_string(rxns['Reaction Formula'][i])
+    r.name = rxns['Reaction Name'][i]
+    r.subsystem = rxns['Subsystem'][i]
+    if not (pd.isna(rxns['GPR_iCHO3K'][i]) or rxns['GPR_iCHO3K'][i] == ''):
+        r.gene_reaction_rule = str(rxns['GPR_iCHO3K'][i])
+    r.lower_bound = float(rxns_attributes['Lower bound'][i])
+    r.upper_bound = float(rxns_attributes['Upper bound'][i])
+    r.annotation['confidence_score'] = str(rxns['Conf. Score'][i])
+    r.annotation['molwt'] = str(rxns_attributes['Mol wt'][i])
+    r.annotation['kcat_f'] = str(rxns_attributes['kcat_forward'][i])
+    r.annotation['kcat_b'] = str(rxns_attributes['kcat_backward'][i])
+
+# Add Boundary Reactions
+dr = []
+for _, row in boundary_rxns.iterrows():
+    r = Reaction(row['Reaction'])
+    dr.append(r)    
+model.add_reactions(dr)
+
+boundary_rxns_dict = boundary_rxns.set_index('Reaction').to_dict()
+boundary_rxns_dict
+
+for i,r in enumerate(tqdm(model.reactions)):
+    if r in dr:
+        r.build_reaction_from_string(boundary_rxns_dict['Reaction Formula'][r.id])
+        r.name = boundary_rxns_dict['Reaction Name'][r.id]
+        r.subsystem = boundary_rxns_dict['Subsystem'][r.id]
+        r.lower_bound = float(boundary_rxns_dict['Lower bound'][r.id])
+        r.upper_bound = float(boundary_rxns_dict['Upper bound'][r.id])
+        r.annotation['confidence_score'] = str(1)
+
+# Add information for each metabolite
+metabolites_dict = metabolites.set_index('BiGG ID').to_dict('dict')
+for met in model.metabolites:
+    try:
+        met.name = metabolites_dict['Name'][f'{met}']
+        met.formula = metabolites_dict['Formula'][f'{met}']
+        met.compartment = metabolites_dict['Compartment'][f'{met}'].split(' - ')[0]
+        try:
+            met.charge = int(metabolites_dict['Charge'][f'{met}'])
+        except (ValueError, TypeError):
+            print(f'{met} doesnt have charge')
+    except (KeyError):
+        print('----------------------------')
+        print(f'{met} doesnt exist in the df')
+        print('----------------------------')
+
+#OPTIONAL: Add Gene Name information
+genes_dict = genes_df.iloc[:,:2].set_index('Gene Entrez ID').to_dict('dict')
+for g in model.genes:
+    if g.id in list(genes_dict['Gene Symbol'].keys()):
+        g.name = genes_dict['Gene Symbol'][f'{g}']
+
+# Set biomass objective function and save the model
+name  = 'CHO-Generic'  # or 'CHO-S', or 'CHO-Generic'
+if name == 'CHO-Generic':
+    model.objective = 'biomass_cho'
+elif name == 'CHO-S':
+    model.objective = 'biomass_cho_s'
+elif name == 'CHO-Prod-Generic':
+    model.objective = 'biomass_cho_prod'
+else:
+    raise ValueError(f"Unrecognized model name: {name}")
+
+# OPTIONAL: remove infeasible loop-generating reactions:
+glucloop_reactions = [
+    'GapFill-R01206', 'GAUGE-R00557', 
+    'GAUGE-R00558', 'FNOR', 'GGH', 'r0741', 'r1479', 'XOLESTPOOL'
+]
+
+try:
+    model.remove_reactions(glucloop_reactions, remove_orphans=True)
+except KeyError:
+    print(f'Reaction {reaction_id} not in model {model.id}')
+
+atp_loop_reactions = [
+    'SCP22x','TMNDNCCOAtx','OCCOAtx','r0391','BiGGRxn67','r2247','r2280',
+    'r2246','r2279','r2245','r2305','r2317','r2335','HMR_0293','HMR_7741',
+    'r0509','r1453','HMR_4343','ACONTm','PDHm','r0426','r0383','r0555',
+    'r1393','NICRNS','GAUGE-R00648','GAUGE-R03326','GapFill-R08726','RE2915M',
+    'HMR_3288','HMR_1325','HMR_7599','r1431','r1433','RE2439C','r0791',
+    'r1450','GAUGE-R00270','GAUGE-R02285','GAUGE-R04283','GAUGE-R06127','GAUGE-R06128',
+    'GAUGE-R06238','GAUGE-R00524','RE3477C','AAPSAS','RE3347C','HMR_0960','HMR_0980',
+    'RE3476C','r0708','r0777','r0424','r0698','3HDH260p','HMR_3272','ACOAD183n3m',
+    'HMR_1996','GapFill-R01463','GapFill-R04807','r1468','r2435','r0655','r0603','r0541',
+    'RE0383C','HMR_1329','TYRA','NRPPHRt_2H','GAUGE-R07364','GapFill-R03599','ARD',
+    'RE3095C','RE3104C','RE3104R','ACONT','ICDHxm','ICDHy',
+    'r0425','r0556','NH4t4r','PROPAT4te','r0085','r0156','r0464','ABUTDm',
+    'OIVD1m','OIVD2m','OIVD3m','r2194','r2202','HMR_9617','r2197','r2195',
+    '2OXOADOXm','r2328','r0386','r0451','FAS100COA','FAS120COA','FAS140COA',
+    'FAS80COA_L','r0604','r0670','r2334','r0193','r0595','r0795','GLYCLm',
+    'MACACI','r2193','r0779','r0669','UDCHOLt','r2146','r2139'
+]
+
+try:
+    model.remove_reactions(atp_loop_reactions, remove_orphans=True)
+except KeyError:
+    print(f'Reaction {reaction_id} not in model {model.id}')
+
 ```
-
-### 2) Compare WT vs ZeLa growth under the same media
-```python
-import cobra, pandas as pd
-
-wt   = cobra.io.load_json_model("Data/Context_specific_models/WT_model.json")
-zela = cobra.io.load_json_model("Data/Context_specific_models/ZeLa_model.json")
-
-# Example: harmonize key exchange bounds
-for ex in ["EX_glc__D_e", "EX_gln__L_e", "EX_o2_e"]:
-    for m in (wt, zela):
-        if ex in m.reactions:
-            m.reactions.get_by_id(ex).lower_bound = -10.0
-
-res = []
-for name, m in [("WT", wt), ("ZeLa", zela)]:
-    sol = m.optimize()
-    res.append({"model": name, "mu": sol.objective_value})
-
-print(pd.DataFrame(res))
-```
-
-### 3) Flux sampling (optlang-compatible solver required)
-```python
-from cobra.sampling import sample
-model = cobra.io.load_json_model("Data/Context_specific_models/WT_model.json")
-samples = sample(model, n=1000)   # DataFrame
-samples.to_csv("Analyses/sampled_results/wt_samples.csv", index=False)
-```
-
----
-
-## Quickstart (MATLAB)
-
-```matlab
-% Ensure COBRA Toolbox is installed & initialized
-initCobraToolbox(false)  % without updates
-changeCobraSolver('glpk', 'LP');
-
-% Load a JSON context-specific model
-model = readCbModel('Data/Context_specific_models/WT_model.json');
-
-% Optimize & print objective
-solution = optimizeCbModel(model);
-fprintf('Growth objective: %.4f\n', solution.f);
-```
-
-> MATLAB scripts for extraction, flux sampling, and context-specific modeling are under `Notebooks/Matlab/`.
-
 ---
 
 ## Reproducing key analyses
