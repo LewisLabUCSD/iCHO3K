@@ -55,7 +55,7 @@ Data/
 │   ├── ecModels/                         # Context-specific ec models
 │   └── unblocked_ecModel_generic/        # Generic iCHO3K ec model
 │
-├── GPR_Mapping/                         # Supplementary data for GPR Mapping from Recon3D to iCHO3K
+├── GPR_Mapping/                          # Supplementary data for GPR Mapping from Recon3D to iCHO3K
 ├── Gene_Essentiality/                    # Set of experimentally validated CHO essential genes
 ├── Metabolites/                          # Supplementary data for metabolites information
 ├── Orthologs/                            # Ortholog mapping information from Human to Chinese Hamster
@@ -82,7 +82,7 @@ Python/
 │   ├── Genes.ipynb                      # Retrieval of Gene information from databases
 │   ├── Metabolites.ipynb                # Integration of metabolite information, de-duplication and analysis
 │   ├── Reactions.ipynb                  # Reconciliation of previous CHO and Recon3D reconstructions, de-duplication, subsytem re-organization 
-│   └── retrieveTurnoverNumber.ipynb      # Fetch turnover numbers and molecular weights from the BRENDA
+│   └── retrieveTurnoverNumber.ipynb     # Fetch turnover numbers and molecular weights from the BRENDA
 │                 
 ├── Supplementary Notebooks/             # Supplementary Notebooks with extra information of previous reconstructions
 ├── Comparison..Reconstructions.ipynb    # Comparison of iCHO3K with previous CHO reconstructions
