@@ -270,12 +270,12 @@ except KeyError:
 
 ## Reproducing key analyses
 
-Many figures in **Analyses/** are generated from notebooks in **Notebooks/**:
+Many figures in **Analyses/** and the accompanying manuscript (https://doi.org/10.1101/2025.04.10.647063) were generated from notebooks in **Python/**:
 
-- **Reconstruction comparisons** →  
-  *Notebooks/*`Comparison of Metabolic Reconstructions.ipynb` → *Analyses/recons_comparisons/*
+- **Reconstruction comparisons and Gene Essentiality Analysis** →  
+  *Python/*`Comparison of Metabolic Reconstructions.ipynb` → *Analyses/recons_comparisons/*
 - **Subsystem coverage & sunbursts** →  
-  *Analyses/subsystem_overview/*
+  *Python/*`Comparison of Computational Tests.ipynb /1. Subsystem Overview and Analysis` → *Analyses/recons_comparisons/*
 - **Flux enrichment & sampling** →  
   *Analyses/flux_enrichment_analysis/*, *Analyses/sampled_results/*
 - **Growth rate prediction (WT vs ZeLa)** →  
