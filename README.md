@@ -167,7 +167,6 @@ for _, row in rxns.iterrows():
 model.add_reactions(lr)
 
 # Add reaction-specific information
-
 for i,r in enumerate(tqdm(model.reactions)):
     r.build_reaction_from_string(rxns['Reaction Formula'][i])
     r.name = rxns['Reaction Name'][i]
@@ -223,7 +222,6 @@ for g in model.genes:
         g.name = genes_dict['Gene Symbol'][f'{g}']
 
 # Set biomass objective function and save the model
-
 name  = 'CHO-Generic'  # or 'CHO-S', or 'CHO-Generic'
 if name == 'CHO-Generic':
     model.objective = 'biomass_cho'
@@ -234,10 +232,41 @@ elif name == 'CHO-Prod-Generic':
 else:
     raise ValueError(f"Unrecognized model name: {name}")
 
-# Top 10 absolute fluxes
-top = sorted(solution.fluxes.items(), key=lambda x: abs(x[1]), reverse=True)[:10]
-for rxn, v in top:
-    print(f"{rxn:25s} {v:10.3f}")
+# OPTIONAL: remove infeasible loop-generating reactions:
+glucloop_reactions = [
+    'GapFill-R01206', 'GAUGE-R00557', 
+    'GAUGE-R00558', 'FNOR', 'GGH', 'r0741', 'r1479', 'XOLESTPOOL'
+]
+
+try:
+    model.remove_reactions(glucloop_reactions, remove_orphans=True)
+except KeyError:
+    print(f'Reaction {reaction_id} not in model {model.id}')
+
+atp_loop_reactions = [
+    'SCP22x','TMNDNCCOAtx','OCCOAtx','r0391','BiGGRxn67','r2247','r2280',
+    'r2246','r2279','r2245','r2305','r2317','r2335','HMR_0293','HMR_7741',
+    'r0509','r1453','HMR_4343','ACONTm','PDHm','r0426','r0383','r0555',
+    'r1393','NICRNS','GAUGE-R00648','GAUGE-R03326','GapFill-R08726','RE2915M',
+    'HMR_3288','HMR_1325','HMR_7599','r1431','r1433','RE2439C','r0791',
+    'r1450','GAUGE-R00270','GAUGE-R02285','GAUGE-R04283','GAUGE-R06127','GAUGE-R06128',
+    'GAUGE-R06238','GAUGE-R00524','RE3477C','AAPSAS','RE3347C','HMR_0960','HMR_0980',
+    'RE3476C','r0708','r0777','r0424','r0698','3HDH260p','HMR_3272','ACOAD183n3m',
+    'HMR_1996','GapFill-R01463','GapFill-R04807','r1468','r2435','r0655','r0603','r0541',
+    'RE0383C','HMR_1329','TYRA','NRPPHRt_2H','GAUGE-R07364','GapFill-R03599','ARD',
+    'RE3095C','RE3104C','RE3104R','ACONT','ICDHxm','ICDHy',
+    'r0425','r0556','NH4t4r','PROPAT4te','r0085','r0156','r0464','ABUTDm',
+    'OIVD1m','OIVD2m','OIVD3m','r2194','r2202','HMR_9617','r2197','r2195',
+    '2OXOADOXm','r2328','r0386','r0451','FAS100COA','FAS120COA','FAS140COA',
+    'FAS80COA_L','r0604','r0670','r2334','r0193','r0595','r0795','GLYCLm',
+    'MACACI','r2193','r0779','r0669','UDCHOLt','r2146','r2139'
+]
+
+try:
+    model.remove_reactions(atp_loop_reactions, remove_orphans=True)
+except KeyError:
+    print(f'Reaction {reaction_id} not in model {model.id}')
+
 ```
 
 ### 2) Compare WT vs ZeLa growth under the same media
