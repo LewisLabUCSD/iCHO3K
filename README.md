@@ -56,7 +56,7 @@ Data/
 │   ├── ecModels/                         # Context-specific ec models
 │   └── unblocked_ecModel_generic/        # Generic iCHO3K ec model
 │
-├── GPR_Curation/                         # Supplementary data for GPR Mapping from Recon3D to iCHO3K
+├── GPR_Mapping/                         # Supplementary data for GPR Mapping from Recon3D to iCHO3K
 ├── Gene_Essentiality/                    # Set of experimentally validated CHO essential genes
 ├── Metabolites/                          # Supplementary data for metabolites information
 ├── Orthologs/                            # Ortholog mapping information from Human to Chinese Hamster
@@ -291,10 +291,11 @@ Curated inputs and derived artifacts are organized under **Data/**. Key elements
 
 - **WT & ZeLa context-specific models** → `Data/Context_specific_models/`
 - **Experimentally validated CHO essential genes** → `Data/Gene_Essentiality/`  
-- **Evidence & curation** → `GPR_Curation/`, `Gene_Essentiality/`, `kcat_values/`.  
-- **Experimental constraints** → `Uptake_Secretion_Rates/`, `ZeLa Data/`.  
-- **Secretory overlap** → `Sec_Recon_shared_genes/`.  
-- **Final model** → `iCHO3K_final/` (Excel format; conversion notebooks provided).
+- **GPR from Recon3D to CHO mapping** → `Data/GPR_Mapping/`   
+- **Metabolite Curation Files** → `Data/Metabolites/`  
+- **Soruce Reconstructions Datasets and Models** → `Data/Metabolites/`  
+- **ZeLa vs WT Fed-batch Process Raw Data** → `Data/ZeLa Data/`
+- **ZeLa vs WT Fed-batch Process pre-processed Data** → `Data/Uptake_Secretion_Rates/`
 
 During manual curation, compartment and subsystem information were inherited from source reconstructions; discrepancies were resolved using authoritative resources (see notes within notebooks).
 
