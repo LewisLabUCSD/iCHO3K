@@ -301,16 +301,14 @@ Curated inputs and derived artifacts are organized under **Data/**. Key elements
 
 ## Model formats & I/O
 
-- **Excel**: Final iCHO3K lives in `Data/iCHO3K_final/` for inspection and conversion.
-- **SBML / JSON**: Preferred for simulation. Use conversion notebooks (e.g., *Notebooks/Final CHO Model.ipynb*) or COBRApy I/O:
+- **Excel**: Final iCHO3K lives in `iCHO3K/Dataset` for inspection and conversion.
+- **SBML/JSON/MATLAB**: Final iCHO3K models are stored in `iCHO3K/Model`. Use conversion notebooks (e.g., *Notebooks/Final CHO Model.ipynb*) or COBRApy I/O:
   ```python
   import cobra
   m = cobra.io.load_json_model("path/to/model.json")
   cobra.io.save_json_model(m, "out.json")
   cobra.io.write_sbml_model(m, "out.xml")
   ```
-
-> Some scripts expect standardized BiGG-style IDs. See `Notebooks/metabolite_identifiers.py` for mapping helpers.
 
 ---
 
