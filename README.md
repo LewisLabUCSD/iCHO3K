@@ -289,8 +289,8 @@ Many figures in **Analyses/** and the accompanying manuscript (https://doi.org/1
 
 Curated inputs and derived artifacts are organized under **Data/**. Key elements:
 
-- **Source reconstructions** → `Reconciliation/datasets/` (inputs) and `Reconciliation/models/` (intermediate models).  
-- **Annotations & mappings** → `Metabolites/`, `Subsystem/`, `Orthologs/`.  
+- **WT & ZeLa context-specific models** → `Data/Context_specific_models/`
+- **Experimentally validated CHO essential genes** → `Data/Gene_Essentiality/`  
 - **Evidence & curation** → `GPR_Curation/`, `Gene_Essentiality/`, `kcat_values/`.  
 - **Experimental constraints** → `Uptake_Secretion_Rates/`, `ZeLa Data/`.  
 - **Secretory overlap** → `Sec_Recon_shared_genes/`.  
