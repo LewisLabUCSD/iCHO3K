@@ -111,20 +111,30 @@ Python/
 
 ## Installation & setup
 
-### Recommended: conda environment
+### Option 1 — Recommended (via environment.yml)
+Create the exact conda environment shipped with the repo:
 
 ```bash
-conda create -n icho3k python=3.11 -y
+conda env create -f environment.yml
 conda activate icho3k
-pip install cobra pandas numpy scipy matplotlib optlang networkx jupyterlab escher seaborn
 ```
 
-Optional (for graph utilities & network export):
+### Option 2 — Pip-only (subset)
+If you prefer pip, use the lightweight set (no native solvers or libSBML):
 ```bash
-pip install ndex2 pygraphviz
+python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
 ```
 
-> If `environment.yml` or `requirements.txt` is provided in the repo or a release, prefer installing from those for exact reproducibility.
+### Optional: graph utilities & network export
+```bash
+# conda-forge (recommended)
+conda install -c conda-forge graphviz pygraphviz ndex2
+# If you use pip for pygraphviz, ensure system Graphviz is installed first.
+```
+
+> If you plan to use commercial solvers (e.g., Gurobi/CPLEX), install them separately and set the solver in your code (see **Solvers & performance tips**).
+
 
 ### MATLAB (optional)
 - MATLAB R2022b+ recommended (earlier versions likely workable).
