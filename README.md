@@ -51,8 +51,7 @@ Analyses/
 └── tSNE/                                  #tSNE embedding analysis
 
 Data/                         
-├── Context_specific_models/              # Context-specific ZeLa and WT models (MAT, JSON)
-│   ├── ecModels/                         # Context-specific ec models
+├── Context_specific_models/              # Context-specific ZeLa and WT reduced and ec models (MAT)
 │   └── unblocked_ecModel_generic/        # Generic iCHO3K ec model
 │
 ├── GPR_Mapping/                          # Supplementary data for GPR Mapping from Recon3D to iCHO3K
