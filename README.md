@@ -4,7 +4,7 @@
   <!-- Dark mode image (your current PNG works great here) -->
   <source media="(prefers-color-scheme: dark)" srcset="iCHO3K/banner/icho3k_figure.png">
   <!-- Light mode image (export a version with a light-friendly background & darker text marks) -->
-  <source media="(prefers-color-scheme: light)" srcset="iCHO3K/banner/icho3k_figure_light.png">
+  <source media="(prefers-color-scheme: light)" srcset="iCHO3K/banner/icho3k_figure.png">
   <img src="assets/readme/hamster-banner-light.png" alt="iCHO3K metabolic network hamster" width="100%">
 </picture>
 
@@ -31,7 +31,6 @@
 - [Solvers & performance tips](#solvers--performance-tips)
 - [Contributing](#contributing)
 - [Citing](#citing)
-- [License](#license)
 - [Maintainers & contact](#maintainers--contact)
 - [Acknowledgments](#acknowledgments)
 - [FAQ / Troubleshooting](#faq--troubleshooting)
@@ -43,7 +42,8 @@
 ```
 Analyses/
 ├── conf_score_distribution.png            # Confidence Score distribution across all reactions from iCHO3K
-├── data_preprocessing                     # ZeLa vs WT growth rate and spent media data analysis
+├── data_preprocessing/                    # ZeLa vs WT growth rate and spent media data analysis
+├── ecFBA and Flux Sum/                    # ZeLa vs WT ecFBA and Flux Sum datasets
 ├── growth_rate_pred/                      # pFBA simulations from ZeLa and WT context-specific models
 ├── recons_comparisons/                    # Plot comparisions between iCHO3K and previous CHO reconstructions
 ├── Relevant_mets/                         # Analysis of subsystems related to metabolites relevant to biomass sysnthesis
@@ -52,11 +52,10 @@ Analyses/
 └── tSNE/                                  #tSNE embedding analysis
 
 Data/                         
-├── Context_specific_models/              # Context-specific ZeLa and WT models (MAT, JSON)
-│   ├── ecModels/                         # Context-specific ec models
+├── Context_specific_models/              # Context-specific ZeLa and WT reduced and ec models (MAT)
 │   └── unblocked_ecModel_generic/        # Generic iCHO3K ec model
 │
-├── GPR_Curation/                         # Supplementary data for GPR Mapping from Recon3D to iCHO3K
+├── GPR_Mapping/                          # Supplementary data for GPR Mapping from Recon3D to iCHO3K
 ├── Gene_Essentiality/                    # Set of experimentally validated CHO essential genes
 ├── Metabolites/                          # Supplementary data for metabolites information
 ├── Orthologs/                            # Ortholog mapping information from Human to Chinese Hamster
@@ -83,7 +82,7 @@ Python/
 │   ├── Genes.ipynb                      # Retrieval of Gene information from databases
 │   ├── Metabolites.ipynb                # Integration of metabolite information, de-duplication and analysis
 │   ├── Reactions.ipynb                  # Reconciliation of previous CHO and Recon3D reconstructions, de-duplication, subsytem re-organization 
-│   └── retrieveTurnoverNumber.ipynb      # Fetch turnover numbers and molecular weights from the BRENDA
+│   └── retrieveTurnoverNumber.ipynb     # Fetch turnover numbers and molecular weights from the BRENDA
 │                 
 ├── Supplementary Notebooks/             # Supplementary Notebooks with extra information of previous reconstructions
 ├── Comparison..Reconstructions.ipynb    # Comparison of iCHO3K with previous CHO reconstructions
@@ -270,18 +269,16 @@ except KeyError:
 
 ## Reproducing key analyses
 
-Many figures in **Analyses/** are generated from notebooks in **Notebooks/**:
+Many figures in **Analyses/** and the accompanying manuscript (https://doi.org/10.1101/2025.04.10.647063) were generated from notebooks in **Python/**:
 
-- **Reconstruction comparisons** →  
-  *Notebooks/*`Comparison of Metabolic Reconstructions.ipynb` → *Analyses/recons_comparisons/*
+- **Reconstruction comparisons and Gene Essentiality Analysis** →  
+  *Python/*`Comparison of Metabolic Reconstructions.ipynb` → *Analyses/recons_comparisons/*
 - **Subsystem coverage & sunbursts** →  
-  *Analyses/subsystem_overview/*
-- **Flux enrichment & sampling** →  
-  *Analyses/flux_enrichment_analysis/*, *Analyses/sampled_results/*
-- **Growth rate prediction (WT vs ZeLa)** →  
-  *Analyses/growth_rate_pred/*
+  *Python/*`Comparison of Computational Tests.ipynb /1. Subsystem Overview and Analysis` → *Analyses/subsystem_overview/*
 - **Topology & t-SNE** →  
-  *Analyses/tSNE/*
+  *Python/*`Comparison of Computational Tests.ipynb /4. tSNE Comparison of Models` → *Analyses/tSNE/*
+- **Growth rate prediction (WT vs ZeLa)** →  
+  *Python/*`Comparison of Computational Tests.ipynb /5. pFBA` → *Analyses/growth_rate_pred/*
 
 > Most notebooks begin with a “Paths & Environment” cell—update paths as needed. For strict reproducibility, pin exact package versions via `environment.yml` and use releases/DOI snapshots.
 
@@ -291,29 +288,26 @@ Many figures in **Analyses/** are generated from notebooks in **Notebooks/**:
 
 Curated inputs and derived artifacts are organized under **Data/**. Key elements:
 
-- **Source reconstructions** → `Reconciliation/datasets/` (inputs) and `Reconciliation/models/` (intermediate models).  
-- **Annotations & mappings** → `Metabolites/`, `Subsystem/`, `Orthologs/`.  
-- **Evidence & curation** → `GPR_Curation/`, `Gene_Essentiality/`, `kcat_values/`.  
-- **Experimental constraints** → `Uptake_Secretion_Rates/`, `ZeLa Data/`.  
-- **Secretory overlap** → `Sec_Recon_shared_genes/`.  
-- **Final model** → `iCHO3K_final/` (Excel format; conversion notebooks provided).
-
-During manual curation, compartment and subsystem information were inherited from source reconstructions; discrepancies were resolved using authoritative resources (see notes within notebooks).
-
+- **WT & ZeLa context-specific models** → `Data/Context_specific_models/`
+- **Experimentally validated CHO essential genes** → `Data/Gene_Essentiality/`  
+- **GPR from Recon3D to CHO mapping** → `Data/GPR_Mapping/`   
+- **Metabolite Curation Files** → `Data/Metabolites/`  
+- **Soruce Reconstructions Datasets and Models** → `Data/Metabolites/`  
+- **ZeLa vs WT Fed-batch Process Raw Data** → `Data/ZeLa Data/`
+- **ZeLa vs WT Fed-batch Process pre-processed Data** → `Data/Uptake_Secretion_Rates/`
+  
 ---
 
 ## Model formats & I/O
 
-- **Excel**: Final iCHO3K lives in `Data/iCHO3K_final/` for inspection and conversion.
-- **SBML / JSON**: Preferred for simulation. Use conversion notebooks (e.g., *Notebooks/Final CHO Model.ipynb*) or COBRApy I/O:
+- **Excel**: Final iCHO3K lives in `iCHO3K/Dataset` for inspection and conversion.
+- **SBML/JSON/MATLAB**: Final iCHO3K models are stored in `iCHO3K/Model`. Use conversion notebooks (e.g., *Notebooks/Final CHO Model.ipynb*) or COBRApy I/O:
   ```python
   import cobra
   m = cobra.io.load_json_model("path/to/model.json")
   cobra.io.save_json_model(m, "out.json")
   cobra.io.write_sbml_model(m, "out.xml")
   ```
-
-> Some scripts expect standardized BiGG-style IDs. See `Notebooks/metabolite_identifiers.py` for mapping helpers.
 
 ---
 
@@ -353,23 +347,16 @@ Di Giusto, P., Choi, D.-H., *et al.* (2025). *A community-consensus reconstructi
 
 ---
 
-## License
-
-See the `LICENSE` file in this repository for terms of use.  
-If no license is present, usage defaults to **“all rights reserved”** until a license is added.
-
----
-
 ## Maintainers & contact
 
 - **Pablo Di Giusto** — pdigiusto@health.ucsd.edu · pablodigiusto91@gmail.com  
-  Systems Biology & Cell Engineering Lab (Lewis Lab), UC San Diego & University of Georgia
+  Systems Biology & Cell Engineering Lab (Lewis Lab), University of Georgia
 
 ---
 
 ## Acknowledgments
 
-We thank the iCHO3K community contributors and collaborators (including secRecon curators). This work builds upon public resources: Recon3D, BiGG, MetaNetX, Rhea, UniProt, BRENDA, and others referenced throughout the notebooks.
+We thank the iCHO3K community contributors and collaborators. This work builds upon public resources: iCHO1766, iCHO2101, iCHO2291, iCHO2441, Recon3D, Human-GEM, BiGG, MetaNetX, Rhea, UniProt, BRENDA, and others referenced throughout the notebooks and the manuscript.
 
 ---
 
