@@ -42,7 +42,8 @@
 ```
 Analyses/
 ├── conf_score_distribution.png            # Confidence Score distribution across all reactions from iCHO3K
-├── data_preprocessing                     # ZeLa vs WT growth rate and spent media data analysis
+├── data_preprocessing/                    # ZeLa vs WT growth rate and spent media data analysis
+├── ecFBA and Flux Sum/                    # ZeLa vs WT ecFBA and Flux Sum datasets
 ├── growth_rate_pred/                      # pFBA simulations from ZeLa and WT context-specific models
 ├── recons_comparisons/                    # Plot comparisions between iCHO3K and previous CHO reconstructions
 ├── Relevant_mets/                         # Analysis of subsystems related to metabolites relevant to biomass sysnthesis
