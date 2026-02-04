@@ -43,20 +43,6 @@ If you use this repository or the iCHO3K model, please see **Citing** below.
 
 ---
 
-## 3) (Optional) Add a second badge row later
-
-If you want more badges (without needing to know the exact GitHub org/repo name), you can add a second row like this under the first badge row:
-
-```md
-<p align="center">
-  <img alt="Model" src="https://img.shields.io/badge/iCHO3K-model%20repository-brightgreen">
-  <img alt="Formats" src="https://img.shields.io/badge/formats-SBML%20%7C%20JSON%20%7C%20MATLAB-informational">
-</p>
-```
-
-
----
-
 ## Table of contents
 
 - [Repository layout](#repository-layout)
