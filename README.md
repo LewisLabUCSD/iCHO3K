@@ -152,7 +152,7 @@ import pandas as pd
 import cobra
 from cobra import Model, Reaction, Metabolite
 
-#Read iCHO3K Dataset
+#Read iCHO3K Full Dataset (11,004 reactions • 7,377 metabolites • 3,597 genes)
 FILE_PATH = 'iCHO3K/Dataset/iCHO3K.xlsx'
 metabolites      = pd.read_excel(FILE_PATH, sheet_name='Metabolites')
 rxns             = pd.read_excel(FILE_PATH, sheet_name='Rxns')
@@ -224,7 +224,7 @@ for g in model.genes:
         g.name = genes_dict['Gene Symbol'][f'{g}']
 
 # Set biomass objective function and save the model
-name  = 'CHO-Generic'  # or 'CHO-S', or 'CHO-Generic'
+name  = 'CHO-Generic'  # OPTIONS: 'CHO-S', 'CHO-Generic', 'CHO-Prod-Generic'
 if name == 'CHO-Generic':
     model.objective = 'biomass_cho'
 elif name == 'CHO-S':
@@ -269,8 +269,117 @@ try:
 except KeyError:
     print(f'Reaction {reaction_id} not in model {model.id}')
 
+
+##### ----- Save iCHO3K full version (11,004 reactions • 7,377 metabolites • 3,597 genes) ----- #####
+
+suffix = name.lower().replace('-', '_')
+
+# XML
+model_name_xml = f'../iCHO3K/Model/iCHO3K_{suffix}.xml' 
+write_sbml_model(model, model_name_xml)
+
+# JSON, because the sbml doesnt save the subsystems
+model_name_json = f'../iCHO3K/Model/iCHO3K_{suffix}.json' 
+save_json_model(model, model_name_json)
+
+# MATLAB
+model_name_matlab = f'../iCHO3K/Model/iCHO3K_{suffix}.mat' 
+save_matlab_model(model, model_name_matlab)
+
 ```
 ---
+
+## Pre-process iCHO3K for context-specific model generation
+```python
+
+from cobra.flux_analysis import find_blocked_reactions, flux_variability_analysis
+
+## Step 1: Identify blocked reactions
+
+for rxn in model.boundary:
+    if rxn.id.startswith("EX_"):
+        rxn.bounds = (-1000,1000)
+    if rxn.id.startswith("SK_"):
+        rxn.bounds = (-1000,1000)
+    if rxn.id.startswith("DM_"):
+        rxn.bounds = (0,1000)
+
+model.solver = 'gurobi'
+blocked_reactions = find_blocked_reactions(model)
+
+## Step 2: Remove blocked reactions from the model
+
+model_unblocked = model.copy()
+blocked_reaction_objects = [model_unblocked.reactions.get_by_id(rxn_id) for rxn_id in blocked_reactions]
+model_unblocked.remove_reactions(blocked_reaction_objects, remove_orphans=True)
+print(f"Removed {len(blocked_reaction_objects)} blocked reactions from the model.")
+
+## Step 3: Set the bounds for context-specific model generation
+
+for rxn in model.boundary:
+        
+    # Models that are forced to secrete ethanol are not feasible
+    if rxn.id == 'EX_etoh_e':
+        rxn.bounds = (-1,1)
+        continue
+    
+    # Keep boundaries open for essential metabolites
+    if rxn.id == 'EX_h2o_e':
+        rxn.bounds = (-1000,1000)
+        continue
+    if rxn.id == 'EX_h_e':
+        rxn.bounds = (-1000,1000)
+        continue
+    if rxn.id == 'EX_o2_e':
+        rxn.bounds = (-1000,1000)
+        continue
+    if rxn.id == 'EX_hco3_e':
+        rxn.bounds = (-1000,1000)
+        continue
+    if rxn.id == 'EX_so4_e':
+        rxn.bounds = (-1000,1000)
+        continue
+    if rxn.id == 'EX_pi_e':
+        rxn.bounds = (-1000,1000)
+        continue
+
+    # Boundaries from Sink reactions on iCHO_v1 (100 times lower)
+    if rxn.id == 'SK_Asn_X_Ser_Thr_r':
+        rxn.bounds = (-0.001,1000)
+        continue
+    if rxn.id == 'SK_Tyr_ggn_c':
+        rxn.bounds = (-0.001,1000)
+        continue
+    if rxn.id == 'SK_Ser_Thr_g':
+        rxn.bounds = (-0.001,1000)
+        continue
+    if rxn.id == 'SK_pre_prot_r':
+        rxn.bounds = (-0.001,1000)
+        continue
+    
+    # Close uptake rates for the rest of the boundaries
+    if rxn.id.startswith("EX_"):
+        rxn.bounds = (0,1000) 
+    if rxn.id.startswith("SK_"):
+        rxn.bounds = (0,1000)
+    if rxn.id.startswith("DM_"):
+        rxn.bounds = (0,1000)
+
+##### ----- Save iCHO3K unblocked version ----- #####
+
+# XML
+model_name_xml = f'../iCHO3K/Model/iCHO3K_{suffix}_unblocked.xml' 
+write_sbml_model(model_unblocked, model_name_xml)
+
+# JSON, because the sbml doesnt save the subsystems
+model_name_json = f'../iCHO3K/Model/iCHO3K_{suffix}_unblocked.json' 
+save_json_model(model_unblocked, model_name_json)
+
+# MATLAB
+model_name_matlab = f'../iCHO3K/Model/iCHO3K_{suffix}_unblocked.mat' 
+save_matlab_model(model_unblocked, model_name_matlab)
+
+```
 
 ## Reproducing key analyses
 
