@@ -37,6 +37,12 @@ If you use this repository or the iCHO3K model, please see **Citing** below.
 
 ---
 
+|  |  |
+|---|---|
+| **A community-driven, genome-scale metabolic reconstruction and analysis toolkit for Chinese Hamster Ovary (CHO) cells.**<br><br>**Quick links:** [Installation](#installation--setup) · [Create model](#create-icho3k-model) · [Pre-process](#pre-process-icho3k-for-context-specific-model-generation) · [Citing](#citing) | <picture><source media="(prefers-color-scheme: dark)" srcset="iCHO3K/banner/icho3k_figure.png"><source media="(prefers-color-scheme: light)" srcset="iCHO3K/banner/icho3k_figure.png"><img src="iCHO3K/banner/icho3k_figure.png" alt="iCHO3K metabolic network overview" width="520"></picture> |
+
+---
+
 ## 2) (Optional) Make the banner even smaller
 
 If you want the banner to feel less dominant, change `width="900"` to one of these:
