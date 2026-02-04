@@ -15,7 +15,12 @@
 - **Use cases:** context-specific modeling (WT vs ZeLa), pFBA/ecFBA, flux sampling, subsystem coverage, structure-guided hypotheses (e.g., putative PEP allosteric inhibition of PFK)  
 - **Artifacts:** curated datasets, notebooks (Python & MATLAB), figures, and utilities to reproduce key analyses
 
-> If you use this repository or the iCHO3K model, please see **Citing** below.
+**Model provided in this repository**
+> **Note:** The model files distributed in `iCHO3K/Model/` correspond to an **unblocked** version of the full iCHO3K network. In this version, blocked reactions have been removed and boundary reactions have been configured to support context-specific model generation with tools such as **mCADRE**.  
+> The unblocked iCHO3K model contains **8,370 reactions, 4,695 metabolites, and 2,929 genes**.  
+> To generate the **full** iCHO3K model, follow the steps in [Create iCHO3K Model](#create-icho3k-model).
+
+ If you use this repository or the iCHO3K model, please see **Citing** below.
 
 ---
 
@@ -68,7 +73,7 @@ Data/
 
 iCHO3K/
 ├── Dataset/                              # iCHO3K source dataset for model generation
-└── Model/                                # iCHO3K generic model variants
+└── Model/                                # iCHO3K generic **unblocked** model variants
 
 Matlab/
 ├── ecFBA/                               # ecFBA scripts
