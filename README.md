@@ -43,15 +43,6 @@ If you use this repository or the iCHO3K model, please see **Citing** below.
 
 ---
 
-## 2) (Optional) Make the banner even smaller
-
-If you want the banner to feel less dominant, change `width="900"` to one of these:
-
-* `width="800"` (compact)
-* `width="700"` (very compact)
-
----
-
 ## 3) (Optional) Add a second badge row later
 
 If you want more badges (without needing to know the exact GitHub org/repo name), you can add a second row like this under the first badge row:
