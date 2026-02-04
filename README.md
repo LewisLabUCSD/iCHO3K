@@ -1,6 +1,6 @@
 # iCHO3K
 
-<p align="center">
+<p align="left">
   <a href="https://doi.org/10.1101/2025.04.10.647063">
     <img alt="bioRxiv DOI" src="https://img.shields.io/badge/bioRxiv-10.1101%2F2025.04.10.647063-B31B1B">
   </a>
