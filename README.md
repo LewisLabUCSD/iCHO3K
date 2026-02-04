@@ -6,6 +6,8 @@
   </a>
   <img alt="COBRApy" src="https://img.shields.io/badge/COBRApy-compatible-blue">
   <img alt="MATLAB" src="https://img.shields.io/badge/MATLAB-COBRA%20Toolbox-orange">
+  <img alt="Model" src="https://img.shields.io/badge/iCHO3K-model%20repository-brightgreen">
+  <img alt="Formats" src="https://img.shields.io/badge/formats-SBML%20%7C%20JSON%20%7C%20MATLAB-informational">
 </p>
 
 > A community-driven, genome-scale metabolic reconstruction and analysis toolkit for Chinese Hamster Ovary (CHO) cells.
