@@ -1,14 +1,24 @@
 # iCHO3K
 
-<picture>
-  <!-- Dark mode image (your current PNG works great here) -->
-  <source media="(prefers-color-scheme: dark)" srcset="iCHO3K/banner/icho3k_figure.png">
-  <!-- Light mode image (export a version with a light-friendly background & darker text marks) -->
-  <source media="(prefers-color-scheme: light)" srcset="iCHO3K/banner/icho3k_figure.png">
-  <img src="assets/readme/hamster-banner-light.png" alt="iCHO3K metabolic network hamster" width="100%">
-</picture>
+<p align="center">
+  <a href="https://doi.org/10.1101/2025.04.10.647063">
+    <img alt="bioRxiv DOI" src="https://img.shields.io/badge/bioRxiv-10.1101%2F2025.04.10.647063-B31B1B">
+  </a>
+  <img alt="COBRApy" src="https://img.shields.io/badge/COBRApy-compatible-blue">
+  <img alt="MATLAB" src="https://img.shields.io/badge/MATLAB-COBRA%20Toolbox-orange">
+</p>
 
 > A community-driven, genome-scale metabolic reconstruction and analysis toolkit for Chinese Hamster Ovary (CHO) cells.
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="iCHO3K/banner/icho3k_figure.png">
+    <source media="(prefers-color-scheme: light)" srcset="iCHO3K/banner/icho3k_figure.png">
+    <img src="iCHO3K/banner/icho3k_figure.png" alt="iCHO3K metabolic network overview" width="900">
+  </picture>
+</p>
+
+**Quick links:** [Installation](#installation--setup) · [Create model](#create-icho3k-model) · [Pre-process](#pre-process-icho3k-for-context-specific-model-generation) · [Citing](#citing)
 
 **Highlights**
 - **Scope:** 11,004 reactions • 7,377 metabolites • 3,597 genes • 3,489 mapped protein structures  
@@ -20,7 +30,31 @@
 > The unblocked iCHO3K model contains **8,370 reactions, 4,695 metabolites, and 2,929 genes**.  
 > To generate the **full** iCHO3K model, follow the steps in [Create iCHO3K Model](#create-icho3k-model).
 
- If you use this repository or the iCHO3K model, please see **Citing** below.
+If you use this repository or the iCHO3K model, please see **Citing** below.
+```
+
+---
+
+## 2) (Optional) Make the banner even smaller
+
+If you want the banner to feel less dominant, change `width="900"` to one of these:
+
+* `width="800"` (compact)
+* `width="700"` (very compact)
+
+---
+
+## 3) (Optional) Add a second badge row later
+
+If you want more badges (without needing to know the exact GitHub org/repo name), you can add a second row like this under the first badge row:
+
+```md
+<p align="center">
+  <img alt="Model" src="https://img.shields.io/badge/iCHO3K-model%20repository-brightgreen">
+  <img alt="Formats" src="https://img.shields.io/badge/formats-SBML%20%7C%20JSON%20%7C%20MATLAB-informational">
+</p>
+```
+
 
 ---
 
