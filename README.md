@@ -28,8 +28,8 @@
 
 - [Repository layout](#repository-layout)
 - [Installation & setup](#installation--setup)
-- [Quickstart (Python)](#quickstart-python)
-- [Quickstart (MATLAB)](#quickstart-matlab)
+- [Create iCHO3K Model](#create-icho3k-model)
+- [Pre-process iCHO3K for context-specific model generation](#pre-process-icho3k-for-context-specific-model-generation)
 - [Reproducing key analyses](#reproducing-key-analyses)
 - [Data & provenance](#data--provenance)
 - [Model formats & I/O](#model-formats--io)
