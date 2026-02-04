@@ -16,7 +16,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="iCHO3K/banner/Graphical Abtract.png">
     <source media="(prefers-color-scheme: light)" srcset="iCHO3K/banner/Graphical Abtract.png">
-    <img src="iCHO3K/banner/icho3k_figure.png" alt="iCHO3K metabolic network overview" width="900">
+    <img src="iCHO3K/banner/Graphical Abtract.png" alt="iCHO3K metabolic network overview" width="900">
   </picture>
 </p>
 
