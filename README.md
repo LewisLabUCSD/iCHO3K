@@ -304,16 +304,19 @@ Curated inputs and derived artifacts are organized under **Data/**. Key elements
 ---
 
 ## Model formats & I/O
-
-- **Excel**: Final iCHO3K lives in `iCHO3K/Dataset` for inspection and conversion.
-- **SBML/JSON/MATLAB**: Final iCHO3K models are stored in `iCHO3K/Model`. Use conversion notebooks (e.g., *Notebooks/Final CHO Model.ipynb*) or COBRApy I/O:
+> The models in `iCHO3K/Model/` are the **unblocked** iCHO3K variants (blocked reactions removed; boundaries configured for context-specific extraction such as mCADRE).  
+> To generate the **full** iCHO3K model directly from the Excel dataset, see [Create iCHO3K Model](#create-icho3k-model).
+- **Excel**: Final iCHO3K set of reactions, genes and metabolites lives in `iCHO3K/Dataset` for inspection and conversion.
+- **COBRApy (JSON / SBML)**
   ```python
   import cobra
-  m = cobra.io.load_json_model("path/to/model.json")
-  cobra.io.save_json_model(m, "out.json")
-  cobra.io.write_sbml_model(m, "out.xml")
-  ```
 
+  # JSON
+  m_json = cobra.io.load_json_model("iCHO3K/Model/<model_name>.json")
+
+  # SBML
+  m_sbml = cobra.io.read_sbml_model("iCHO3K/Model/<model_name>.xml")
+  ```
 ---
 
 ## Solvers & performance tips
