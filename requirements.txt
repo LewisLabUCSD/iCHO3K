@@ -12,7 +12,7 @@ pandas>=2.2,<3
 numpy>=1.26,<3
 scipy>=1.11,<2
 networkx>=3.2,<4
-lxml>=4.9,<6
+lxml==6.1.0
 openpyxl>=3.1,<4
 
 # --- Plotting & notebooks ---
