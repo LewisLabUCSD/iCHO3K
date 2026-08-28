@@ -1,8 +1,8 @@
 # iCHO3K
 
 <p align="left">
-  <a href="https://doi.org/10.1101/2025.04.10.647063">
-    <img alt="bioRxiv DOI" src="https://img.shields.io/badge/bioRxiv-10.1101%2F2025.04.10.647063-B31B1B">
+  <a href="https://doi.org/10.1016/j.cels.2026.101574">
+    <img alt="Cell Systems DOI" src="https://img.shields.io/badge/Cell%20Systems-10.1016%2Fj.cels.2026.101574-5A5A5A">
   </a>
   <img alt="COBRApy" src="https://img.shields.io/badge/COBRApy-compatible-blue">
   <img alt="MATLAB" src="https://img.shields.io/badge/MATLAB-COBRA%20Toolbox-orange">
@@ -20,7 +20,7 @@
   </picture>
 </p>
 
-**Quick links:** [Installation](#installation--setup) · [Create model](#create-icho3k-model) · [Pre-process](#pre-process-icho3k-for-context-specific-model-generation) · [Citing](#citing)
+**Quick links:** [Installation](#installation--setup) · [Create model](#create-icho3k-model) · [Pre-process](#pre-process-icho3k-for-context-specific-model-generation) · [Citing](#citing) · [License](#license)
 
 **Highlights**
 - **Scope:** 11,004 reactions • 7,377 metabolites • 3,597 genes • 3,489 mapped protein structures  
@@ -48,6 +48,7 @@ If you use this repository or the iCHO3K model, please see **Citing** below.
 - [Solvers & performance tips](#solvers--performance-tips)
 - [Contributing](#contributing)
 - [Citing](#citing)
+- [License](#license)
 - [Maintainers & contact](#maintainers--contact)
 - [Acknowledgments](#acknowledgments)
 - [FAQ / Troubleshooting](#faq--troubleshooting)
@@ -395,7 +396,7 @@ save_matlab_model(model_unblocked, model_name_matlab)
 
 ## Reproducing key analyses
 
-Many figures in **Analyses/** and the accompanying manuscript (https://doi.org/10.1101/2025.04.10.647063) were generated from notebooks in **Python/**:
+Many figures in **Analyses/** and the accompanying publication (https://doi.org/10.1016/j.cels.2026.101574) were generated from notebooks in **Python/**:
 
 - **Reconstruction comparisons and Gene Essentiality Analysis** →  
   *Python/*`Comparison of Metabolic Reconstructions.ipynb` → *Analyses/recons_comparisons/*
@@ -470,9 +471,19 @@ If contributing new datasets or model variants, please include:
 
 ## Citing
 
-If you use **iCHO3K** or materials from this repository, please cite the **bioRxiv preprint**:
+If you use **iCHO3K** or materials from this repository, please cite the **Cell Systems article**:
 
-Di Giusto, P., Choi, D.-H., *et al.* (2025). *A community-consensus reconstruction of Chinese Hamster metabolism enables structural systems biology analyses to decipher metabolic rewiring in lactate-free CHO cells.* **bioRxiv**. https://doi.org/10.1101/2025.04.10.647063 (v1 posted April 17, 2025).
+Di Giusto, P., Choi, D.-H., Antonakoudis, A., *et al.* (2026). *A community reconstruction of Chinese hamster metabolism and structural systems biology elucidate metabolic rewiring in lactate-free CHO cells.* **Cell Systems, 17**(6), 101574. https://doi.org/10.1016/j.cels.2026.101574
+
+---
+
+## License
+
+Except where otherwise noted, the iCHO3K models, datasets, documentation, figures, and other original non-software materials in this repository are licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+When sharing or adapting these materials, please credit the iCHO3K contributors, cite the publication in [Citing](#citing), link to this repository and the license, and indicate whether changes were made.
+
+Source code and third-party materials are not covered by this CC license unless expressly stated otherwise; they remain subject to their respective license terms and attribution requirements.
 
 ---
 
